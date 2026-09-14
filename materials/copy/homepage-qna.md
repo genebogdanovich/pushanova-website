@@ -80,9 +80,13 @@ Yes. Pushanova is a full iPad app with automatic counting, the 100 push-up progr
 
 Yes. You can start and save a workout without an internet connection. iCloud synchronization resumes when your device is online again. App Store purchases require an internet connection.
 
+### Do I need an account or membership?
+
+No. Pushanova does not require an account or membership. You can use the app without providing an email address or creating a password. Pushanova Premium is optional and is purchased through the App Store.
+
 ### Can I use Pushanova for free?
 
-Yes. You can train freely as often and as long as you want. The first 10 levels and automatic counting are free on iPhone, iPad, and Apple Watch. Manual workout entry and workout history are also free on iPhone and iPad. Pushanova does not require an account and does not contain ads.
+Yes. You can train freely as often and as long as you want. The first 10 levels and automatic counting are free on iPhone, iPad, and Apple Watch. Manual workout entry and workout history are also free on iPhone and iPad. Pushanova does not contain ads.
 
 ### What does Pushanova Premium include?
 
