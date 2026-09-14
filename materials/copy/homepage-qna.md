@@ -1,86 +1,95 @@
-## Questions? Answers.
+## Questions and Answers
 
 ### Do I need an Apple Watch to use Pushanova?
 
-No, you do not need an Apple Watch to use Pushanova? Your iPhone can track pushups just as well and compatible earbuds and chest straps can be connected to your phone to measure calories and heart rate during your workouts. However, iPhone only supports pushups from the floor where as Apple Watch supports elevated surfaces as well. 
+No. Pushanova can track push-ups with an iPhone or iPad. Apple Watch adds wrist-based tracking and supports elevated push-ups on benches and horizontal bars.
 
-### Do I have to tap the screen with my nose? 
+### Can I train on Apple Watch without my iPhone nearby?
 
-No, the iPhone app uses your front camera/face id depth sensors or proximity sensors if we've disallowed front camera use. Apple Watch uses motion sensors to count pushups. However, you can enable nose/screen taps to count pushups in the app if you wish.
+Yes. You can start and complete a workout on Apple Watch while your iPhone is not nearby. The Watch app focuses on workouts. Workout history and analytics are available on iPhone and iPad.
 
-### Does this app work with Apple Health?
+When you use Apple Watch and iPhone together, Apple Watch can track your push-ups while iPhone displays the synchronized workout.
 
-Yes, the app does work with Apple Health. However that does depend on wheather of not you've given it the permission. It saves your workouts as well as all captured metrics to your health store so your workouts contribute to the overall view of your health. Apple Health is stricly required to run a workout on Apple Watch. 
+### How does Pushanova count push-ups?
 
-### Do I need to pay to use the app?
+On iPhone and iPad, the front camera measures changes in the distance between your face and the device. On Apple Watch, Pushanova analyzes the movement of your wrist. You can also enable a setting that counts one push-up each time you tap the screen.
 
-No. You can train freestyle as long as you want for free. You do need to purchase the subscription or one time purchase if you want to unlock full 100 pushups program, view extended analytics, pace charts, calendar and other premium features. 
+### Can I use Pushanova without allowing camera access?
 
-### What if I can't do a single full push-up yet? 
+Yes. On iPhone, Pushanova can use another on-device sensor when camera access is unavailable. On both iPhone and iPad, you can enable counting by tapping the screen. Apple Watch does not use a camera.
 
-That's okay! The app was specifically designed to be approachable for beginners. You can start with easy levels that have sets of just a few pushups and do them from your kneeks and slowly build from there. No pressure.
+### Does Pushanova record or upload photos or video while counting push-ups?
 
-### What if I'm an experienced althlete? 
+No. Automatic counting never takes photos or records video. It does not save or upload photos or video. The camera is used only to measure changes in distance. Pushanova does not use the camera to identify you.
 
-Welcome home! You can skip ahead to the more advanced levels or even use the app as a suppliment to other kinds of workouts like HIIT for example. 
+### What kinds of push-ups are supported?
 
-### What kinds of puhsups are supported?
+iPhone and iPad support standard floor push-ups and push-ups from your knees. Apple Watch also supports elevated push-ups on a bench or horizontal bar.
 
-Traditional off the floor/group pushups are supported on iPhone and Apple Watch. Elevated surfaces pushups like bars and benches are supported. The app is not optimzed for knuckle push-ups and grip pushups when your hands are facing each other aren't supported. 
+Push-ups on parallel handles with your palms facing each other are not supported. Knuckle push-ups may work, but counting can be less accurate.
 
-### Will it accurately count all push-ups?
+### Will Pushanova count every push-up correctly?
 
-Unfortunately, no tracking mechanism is 100% accurate. We're always striving to make it better. A lot depends on your form and speed. You can send us your workout privacy friendly motion data to improve tracking. 
+No automatic tracking method can count every movement correctly. Device position, form, and speed can affect the result. After a workout, you can correct the number of push-ups in each existing set.
 
-### Can I use your app along side other workous, training methods? 
+### What if I cannot do one full push-up yet?
 
-Sure the app is made to be a great tool. You can make it central for workouts or you can use it as a little supplements. Do a few pushups between HIIT rounds for instance, a few sets between weight training, do a few pushups in the kitchen while waitng for coffee on Apple Watch. 
+You can begin with the early levels, which contain small sets. Push-ups from your knees are supported. You can repeat a level and progress at your own pace.
 
-### Can I use Pushanova without an iPhone? 
+### Can experienced athletes use Pushanova with other training?
 
-Yes, you can use Pushanova only on Apple Watch. However, to access analytics, workout history, calendar you'd need an iPhone. Apple Watch is only for workouts. 
+Yes. You can start at any level or train freely. Pushanova can record push-up sets between HIIT rounds or strength-training exercises.
 
-### How does Pushanova count push-ups? 
+### What is the Pushanova 100 push-up program?
 
-It uses your iPhone's front facing camera or proximity sensor to read your movement. But it's all in math form, iIt doesn't record your face, body, send any kind of video anywhere. On the Apple Watch it counts pushups by analyzing the movements of your wrist. 
+The program has 50 levels in three stages. Each level is a structured workout with preset sets and push-up targets. The final level is one set of 100 push-ups.
 
-### What is the Pushanova's 100 pushups program?
+You can start at any level, repeat a level, or skip to another level. The first 10 levels are free. Pushanova Premium unlocks levels 11–50.
 
-It's a progressive program that consists of levels to reach 100 pushups. Levels start easy like 2-2-3-4-3 and slowly workout their way up. If you are more experienced you can skip ahead. You do need premuim subscription though to access all the levels. 
+### Can I complete levels and also train freely?
 
-### Can I train at my own pace and take rest days
+Yes. You can complete a level in one workout and train freely in another. You can also continue training freely after you complete a level in the same workout.
 
-Sure. As a matter of fact app doesn't really force you or even suggest to do your levels at a set schedule. Life is unpredictable. The goal is to remove friction and make sure your workout is as simple and smooth as possible whenever you have time for it. 
+### Can I train at my own pace and take rest days?
 
-### Can I create my own workout? 
+Yes. Pushanova does not require a daily or weekly schedule. You can repeat levels, take rest days, and return to the program when you are ready.
 
-You can train freestyle which is like creating your own workout. But explicitly setting sets and moving through preset sets is not supported yet. However, it's a plan for the future. 
+During a level workout, Pushanova suggests 90 seconds of rest between planned sets. You can continue earlier or rest longer. When you train freely, there is no fixed rest target.
 
-### Can I set my own rest time?
+### Can I create a custom workout?
 
-Rest during the workout itself is also merly a suggestion. You can rest as long as you need or take to rest at all. It's all up to you.
+You cannot build and save a preset sequence of sets before a workout. When you train freely, you decide how many push-ups and sets to perform while you train, and Pushanova records the workout.
+
+### Does Pushanova work with Apple Health?
+
+Yes. With your permission, Pushanova saves completed strength-training workouts to Apple Health, including duration, active calories, and heart rate when available. Push-up and set counts are not saved to Apple Health.
+
+Apple Health permission is required for workouts on Apple Watch. It is optional on iPhone and iPad.
 
 ### Does Pushanova track heart rate and calories?
 
-Yes, but it requires Apple Watch or iPhone with iOS 26+ and earbugs that track heartrate or heart rate chest straps paired with your phone. 
+Yes. Pushanova estimates active calories even when no heart-rate device is available. Heart rate can come from Apple Watch, compatible heart-rate earbuds, or a Bluetooth heart-rate monitor.
 
-### Does Pushanova collect my camera data upload my push-up video?
+Heart-rate sensing with compatible earbuds requires iOS 26 or later on iPhone, or iPadOS 26 or later on iPad.
 
-Absolutely not. We know you work out in your private space, and your privacy is our top priority. Pushanova processes everything locally on your device in real time to count your reps. It never records, saves, or uploads any video or photos to the cloud.
+### Is Pushanova available on iPad?
 
-### Is there a free tial?
+Yes. Pushanova is a full iPad app with automatic counting, the 100 push-up program, the option to train freely, workout history, progress, analytics, and Apple Health.
 
-Yes! There is a free trial for Pushanova yearly subscription so you can try the app at no risk. 
+### Does Pushanova work without an internet connection?
 
-### What does Premium include?
+Yes. You can start and save a workout without an internet connection. iCloud synchronization resumes when your device is online again. App Store purchases require an internet connection.
 
-It unlocks full 100 pushups program. Gives you access to workouts calendar, full analytics, pace, heart rate charts and some widgets. 
+### Can I use Pushanova for free?
 
-### Is Pushanova on iPad? 
+Yes. You can train freely as often and as long as you want. The first 10 levels and automatic counting are free on iPhone, iPad, and Apple Watch. Manual workout entry and workout history are also free on iPhone and iPad. Pushanova does not require an account and does not contain ads.
 
-Yes, Pushanova has the same features on iPad as it has on iPhone. 
+### What does Pushanova Premium include?
 
-### What happens to my workout if the app crashes or I close the app by accedient? 
+Pushanova Premium unlocks levels 11–50 and more ways to review your progress. These include a workout calendar, weekly comparisons, detailed progress charts, and additional pace, cadence, and heart-rate details for each workout.
 
-No worries. Stable workout recovery is supported on both iPhone and Apple Watch. You can just open the app again and start right where you left off. No pushups lost.
+Pushanova Premium is available as a yearly subscription or a lifetime purchase.
 
+### Does Pushanova offer a free trial?
+
+Eligible new subscribers can try the yearly subscription free for seven days. The yearly subscription begins automatically after the trial unless it is canceled before the trial ends. The lifetime purchase does not include a free trial. The App Store shows the price and renewal terms before purchase.
