@@ -128,7 +128,7 @@ The workout stays the focus. The app avoids unnecessary configuration, social fe
 
 ### Flexibility
 
-People can follow the program’s preset sets, or ignore them and train in Freestyle.
+People choose a Level workout or Freestyle each time they train. They can switch between them from one session to the next and keep going freely after completing a level. The app never makes them commit to one training style.
 
 ### Fits alongside other training
 
@@ -167,10 +167,11 @@ A progressive program of **50 levels in 3 stages** guides people toward the abil
 - **Levels 1–10** are the free foundation.
 - **Levels 11–50** continue the path to 100 and are part of Premium.
 - People **pick a starting level**. There is no placement test.
+- A Level is one structured workout, not a permanent mode selection.
 - Every level has preset sets and repetition targets. Levels 1–49 are typically five sets. The final level is **one set of 100**.
 - After completing the structured path, people can keep training in Freestyle.
 
-Following the program is optional. Freestyle is available at any time.
+Following the program is optional. Freestyle is available at any time, and choosing it never prevents someone from returning to a Level later.
 
 **How to talk about it:** a clear path to 100, at your own pace — not a 30-day challenge that fails if you miss a day.
 
@@ -180,9 +181,21 @@ Freestyle is unrestricted workout mode.
 
 Users decide how many push-ups to do and how many sets to perform. The app observes and records the workout rather than forcing a prescribed routine. Sets are captured as the person trains.
 
+Choosing Freestyle affects only that workout. Someone can do a Level workout now, choose Freestyle an hour later or the next day, and return to the program whenever they want.
+
 **How to talk about it:** the app follows the user, not the other way around.
 
-### 6.3 Automatic push-up tracking
+### 6.3 From Level to Freestyle in one workout
+
+Completing a Level finishes the planned part of the workout; it does not end the session. Pushanova celebrates the milestone and, if the person keeps going, immediately lets the same workout continue in Freestyle.
+
+Additional push-ups extend the final planned set. After a pause, the person can add as many unrestricted sets as they want. The workout ends only when they choose **Complete Workout**.
+
+Think of this as **extra credit**: optional training beyond the Level target. It still counts and is saved, but it is never required to complete the Level and there is no penalty for stopping at the target. Extra credit is not a third workout mode; it is Freestyle after Level success.
+
+**How to talk about it:** structure when you want it, freedom when you want it — even in the same workout. Level and Freestyle complement one another; neither is a permanent choice.
+
+### 6.4 Automatic push-up tracking
 
 Push-ups can be counted automatically so the user can focus on the exercise.
 
@@ -196,17 +209,17 @@ People can also log a workout by hand, including sets and repetition counts, and
 
 **How to talk about it:** start a workout and move. The counting method stays in the background. Do not name camera technologies or sensors in marketing.
 
-### 6.4 Rest
+### 6.5 Rest
 
 Rest between sets is a suggestion, not a lock.
 
-The app recommends **90 seconds**. It counts down, then counts up to show how long the person has actually been resting. Rest can begin automatically after a short pause with no new repetition. The next push-up ends rest and starts the next set.
+In a Level workout, the app recommends **90 seconds** after a planned set. It counts down, then counts up to show how long the person has actually been resting. In Freestyle, a pause with no new repetition ends the current set and starts an unrestricted count-up rest timer. The next push-up ends rest and starts the next set.
 
 A short countdown prepares the user before the first repetition.
 
 **How to talk about it:** the app suggests recovery; it does not punish rest or block the next set.
 
-### 6.5 Apple Watch
+### 6.6 Apple Watch
 
 Pushanova includes a **standalone Apple Watch app**. A workout can be performed entirely on Watch, including when iPhone is not nearby.
 
@@ -218,7 +231,7 @@ The Watch workout includes system **Now Playing**, so people can keep listening 
 
 **How to talk about it:** a real Watch training app, not a remote for the phone. Phone and Watch stay in sync when used together.
 
-### 6.6 During the workout
+### 6.7 During the workout
 
 A live session shows the information that matters while moving:
 
@@ -236,7 +249,7 @@ On Watch, Always On display is supported so the session remains glanceable.
 
 **Personality:** when someone approaches or breaks a best-set record, the workout celebrates the moment. This is a personal record, not a social score.
 
-### 6.7 After the workout
+### 6.8 After the workout
 
 Every completed session is saved.
 
@@ -246,7 +259,7 @@ If a workout felt bad, people can optionally tag what got in the way (for exampl
 
 Completed workouts can be saved to **Apple Health** when the user allows it.
 
-### 6.8 Workout sharing
+### 6.9 Workout sharing
 
 Completed workouts can be turned into polished **share cards** or **post-workout photos** with stats overlaid.
 
@@ -254,13 +267,13 @@ Sharing is optional and personal. There is no in-app feed and no public leaderbo
 
 People may also submit a post-workout photo to be considered for the app’s official social channels. Valid submissions may receive a promo code for a year of Pushanova Premium. Being featured is not guaranteed.
 
-### 6.9 Workout calendar
+### 6.10 Workout calendar
 
 **Calendar** is a first-class tab for seeing which days someone trained. It makes consistency visible over weeks and months.
 
 Calendar is a **Premium** feature.
 
-### 6.10 Weekly Recap
+### 6.11 Weekly Recap
 
 Weekly Recap is this week compared with last week: push-ups, workouts, duration, energy, pace, and cadence.
 
@@ -268,7 +281,7 @@ It has its own screen and a **Home Screen widget**.
 
 Weekly Recap is a **Premium** feature.
 
-### 6.11 Workout analytics
+### 6.12 Workout analytics
 
 People can review training through interactive charts inspired by Apple’s Health app: information-rich without becoming visually complicated.
 
@@ -286,7 +299,7 @@ Analytics can include:
 
 Detailed trend charts and richer per-workout pace, cadence, and heart-rate views are **Premium**. The workout log itself is available without Premium.
 
-### 6.12 Momentum
+### 6.13 Momentum
 
 **Momentum** shows how consistent training has been *lately* — not how much someone has accumulated over time.
 
@@ -304,23 +317,23 @@ The same snapshot is available as a Home Screen, Lock Screen, and Apple Watch wi
 
 Momentum on Progress, lifetime totals, and best set are **free**.
 
-### 6.13 Training reminders
+### 6.14 Training reminders
 
 Optional local reminders help people come back. Users choose a time of day, and either a repeating interval (every N days) or specific weekdays.
 
 Reminders support the habit story. They are not streaks and not public accountability.
 
-### 6.14 iPad
+### 6.15 iPad
 
 Pushanova is a full iPad app: training, history, progress, analytics, and Health — not an iPhone layout stretched to a larger screen.
 
-### 6.15 Apple Health
+### 6.16 Apple Health
 
 Pushanova saves completed workouts to Apple Health when authorized, and can use health metrics such as heart rate and active energy during and after training.
 
 The Health activity type is strength training. The in-app experience remains push-ups only.
 
-### 6.16 Manual workout logging
+### 6.17 Manual workout logging
 
 If a session happened without automatic counting, users can add a push-up workout by hand, including sets and repetition counts.
 
@@ -466,6 +479,8 @@ Keep the commitment global while protecting people. Do not erase the principle t
 - Native push-up training for iPhone, Apple Watch, and iPad
 - Structured program toward 100 push-ups, at your own pace
 - Freestyle when you want to decide the sets yourself
+- Level and Freestyle can be mixed from one workout to the next; neither choice is permanent
+- After completing a Level, the same workout can continue in Freestyle as optional extra credit
 - Automatic counting on iPhone, iPad, and Apple Watch
 - Standalone Apple Watch app; train without bringing the phone into the set
 - Rest is a suggestion, not a punishment
@@ -484,6 +499,8 @@ Keep the commitment global while protecting people. Do not erase the principle t
 - That extra workouts on the same day raise Momentum
 - That lifetime totals keep Momentum full after a long break
 - That the full 50-level program is free
+- That someone must choose Level or Freestyle permanently
+- That a workout ends automatically when a Level is completed
 - That rest is mandatory or locked
 - That the app requires the internet to train
 - That Pushanova stores or uploads face photos from counting
@@ -500,7 +517,9 @@ Keep the commitment global while protecting people. Do not erase the principle t
 | --------------------- | -------------------------------------------------- |
 | **Club Pushanova**    | Full app and brand name. Do not translate.         |
 | **Pushanova**         | Everyday short form                                |
+| **Level**             | One structured workout in the progressive program |
 | **Freestyle**         | Unrestricted workout mode                          |
+| **Extra credit**      | Optional Freestyle after completing a Level; not a separate mode |
 | **Momentum**          | Recency-weighted consistency gauge and widget      |
 | **Weekly Recap**      | This week vs last week, plus widget                |
 | **Pushanova Premium** | Paid access to the full program and richer history |
@@ -529,6 +548,7 @@ Do not call Momentum a “consistency score” in user-facing copy unless produc
 
 - Progressive program toward 100 push-ups
 - Freestyle workouts with no prescribed routine
+- Choose Level or Freestyle for every workout, and keep going freely after completing a level
 - Automatic push-up counting on iPhone, iPad, and Apple Watch
 - Standalone Apple Watch app, with iPhone mirroring when both are used
 - Momentum: see if your training habit is still alive
@@ -611,7 +631,7 @@ Lead with these. They are true and hard to copy as a bundle.
 2. **Native** across iPhone, Apple Watch, and iPad
 3. **Standalone Apple Watch app**, including elevated-surface and phone-away training
 4. **Phone and Watch as one workout** when used together
-5. **Program + Freestyle** — follow preset sets, or decide sets and reps yourself
+5. **Program + Freestyle without lock-in** — choose either for every workout, or flow from a completed Level into optional extra credit in the same session
 6. **Automatic counting** that stays out of the way
 7. **Momentum** as habit temperature, not a streak
 8. **Health-inspired analytics** without dashboard clutter
