@@ -22,5 +22,6 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 
 - **Copy is the product.** Focus on the emotional relief of the features (e.g., "Leave your phone on the desk" rather than "Uses Core Motion APIs").
 - **Write for Translation.** Use simple, direct, and universally understood English. Avoid slang, idioms, abstract terms, or complex sentence structures so the copy translates flawlessly into 50 languages.
+- **Privacy policy is English-only.** Do not localize or translate `materials/copy/privacy.md`. The privacy policy remains in original English.
 - **Start Where You Are.** The tone should be welcoming. Do not write copy that sounds like an aggressive bootcamp drill sergeant. 
 
