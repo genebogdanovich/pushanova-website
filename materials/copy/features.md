@@ -134,7 +134,7 @@ Train freely for as long as you want or begin with one of the first 10 program l
 
 No account. No ads.
 
-- Terms
+- [Terms](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
 - Privacy
 - Support
 - Press Kit

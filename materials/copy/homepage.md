@@ -188,7 +188,7 @@ You can train freely for as long as you want. The first 10 levels and automatic 
 
 No account. No subscription required. No ads.
 
-- Terms
+- [Terms](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
 - Privacy
 - Support
 - Press Kit

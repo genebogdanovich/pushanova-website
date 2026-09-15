@@ -513,4 +513,4 @@ For counting problems, send **Report an Issue** from the affected workout when p
 - [Club Pushanova](homepage.md)
 - [Features](features.md)
 - [Privacy](privacy.md)
-- [Terms](terms.md)
+- [Terms](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
