@@ -1,8 +1,25 @@
+- [Club Pushanova](homepage.md)
+- [Features](features.md)
+- Support
+- English
+
 # Pushanova Support
 
-Need help with Pushanova? Find answers to common questions below.
+Find answers about workouts, push-up counting, Apple Watch, Apple Health, purchases, and privacy.
 
-Still need help? Email [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
+If you still need help, email [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
+
+## Support Topics
+
+- [Getting Started](#getting-started)
+- [Push-Up Counting](#push-up-counting)
+- [Apple Watch](#apple-watch)
+- [Apple Health, Heart Rate, and Calories](#apple-health-heart-rate-and-calories)
+- [Workouts and Progress](#workouts-and-progress)
+- [Premium and Purchases](#premium-and-purchases)
+- [Privacy and Data](#privacy-and-data)
+- [Devices and Compatibility](#devices-and-compatibility)
+- [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -10,596 +27,490 @@ Still need help? Email [info@genebogdanovich.com](mailto:info@genebogdanovich.co
 
 ### How do I start a workout?
 
-Open Pushanova on iPhone or iPad and go to the **Push-Ups** tab.
+On iPhone or iPad, open the **Training** tab. The title at the top is **Push-Ups**.
 
-- **Level** follows the structured program (sets for your current level). Tap the large start button.
-- **Freestyle** lets you do any number of push-ups and sets without the program.
+- Tap **Level** to complete a structured workout from the program.
+- Tap **Freestyle** to train without preset sets or push-up targets.
 
-A short countdown appears, then tracking starts. Your first push-up begins the set.
+A short countdown gives you time to get into position. Your first push-up begins the first set.
 
-On Apple Watch, open Pushanova and tap **Level** or **Freestyle**. You can also start a Watch workout from iPhone: turn on **Use Apple Watch** in Settings, then start Level or Freestyle on iPhone.
+On Apple Watch, open Pushanova and tap **Level** or **Freestyle**.
 
 ### How do I choose a level?
 
-On the Push-Ups tab, tap **Choose Level**. The program has 50 levels in 3 stages. Completing all required reps in a level advances you to the next one.
+On iPhone or iPad, open **Training** and tap **Choose Level**. On Apple Watch, tap **Choose** next to Level.
 
-You can also open any level you are allowed to use. Levels 1–10 are free. Levels 11–50 require Pushanova Premium.
+The program has 50 levels in three stages. You can start at any level available to you. Completing the required push-ups advances the program to the next level.
 
-On Apple Watch, tap the **Choose** control next to Level.
+Levels 1–10 are free. Levels 11–50 require Pushanova Premium.
 
-### What do the set boxes at the top of the workout screen mean?
+### How do I train without the program?
 
-The row labeled **Sets** is a map of this workout. Each rectangle is one set. The number inside is how many push-ups that set is for.
+Start **Freestyle** on iPhone, iPad, or Apple Watch. You decide how many push-ups and sets to perform.
 
-**During a Level workout**
+When Pushanova detects a rest, it finishes the current set. Your next push-up begins a new set. Tap **Complete Workout** when you are finished.
 
-- You see one box for every planned set in that level (for example, five boxes for a 8-6-6-5-9 level).
-- The **highlighted** box (blue, or red after you finish the level) is the set you are on now.
-- Before and during a planned set, the number is the **target** for that set. The large number in the middle of the screen is how many reps you have **left** in that set.
-- After a set is finished, that box switches to how many you **actually did**. If you did extra reps, the box shows the real count, not the original target.
-- Upcoming sets keep showing their planned numbers.
-- If you keep going after the level is complete, extra sets appear in the row only after you finish that extra set.
+You can train freely between program workouts. You can also continue to train freely after completing a level in the same workout.
 
-**During Freestyle**
-- A box appears only after a set is finished. The number is how many push-ups you did in that set.
-- The set you are doing right now is not shown as a box yet. The large number in the middle is the live count for the current set.
-- After you rest (about 20 seconds without a rep), the finished set is added to the row.
+### What do the set boxes mean?
 
-You can scroll the row sideways if there are many sets. Apple Watch does not show these boxes; it shows text such as **Set 2 of 5** instead.
+On iPhone and iPad, the **Sets** row shows the sets in the current workout. Each box represents one set.
 
-### How do I use Freestyle?
+During a program workout:
 
-Start **Freestyle** from the Push-Ups tab (or from Apple Watch). There is no set plan. Do as many push-ups as you want.
+- Upcoming boxes show the planned push-up targets.
+- The highlighted box shows the current set.
+- The large number shows how many push-ups remain in the current planned set.
+- A completed box shows how many push-ups you performed.
+- Additional sets appear after you continue beyond the program target.
 
-If you pause for about 20 seconds, Pushanova treats that as rest and starts a new set on the next push-up. When you are done, swipe to the controls (Watch) or use the in-workout controls (iPhone) and tap **Complete Workout**.
+When you train freely, each box appears after Pushanova finishes a set. The large number shows the push-up count for the current set.
 
-The **Sets** row at the top fills in after each rest: each box is a completed set and the number is how many push-ups you did.
+You can scroll the row when it contains many sets. Apple Watch shows text such as **Set 2 of 5** instead of boxes.
 
-Freestyle does not unlock program levels.
+### How should I position my iPhone or iPad?
 
-### How do I start a workout on Apple Watch?
+For automatic camera counting, place the device flat on the floor with the screen facing up. Keep the front camera under your face, use good light, and keep your face in view.
 
-1. Install Pushanova on Apple Watch.
-2. Allow Apple Health when Watch asks. Watch workouts require Health access.
-3. Open Pushanova on Watch and tap **Level** or **Freestyle**.
+If Camera access is unavailable on iPhone, place the top edge of the phone near your face. The screen may briefly turn black when your face is close. This is expected.
 
-To start from iPhone instead: Settings → **Use Apple Watch**, then start Level or Freestyle on iPhone. Keep Watch unlocked, awake, nearby, and with Pushanova installed.
+If you do not use Camera access on iPad, turn on **Tap to Count** and tap the screen for each push-up.
 
-Watch shows the current set as text (for example **Set 2 of 5**). After the planned sets, overtime shows as **Set 6** (no “of”). The iPhone/iPad workout screen uses the rectangle row described above.
-
-### How should I position my iPhone for push-up tracking?
-
-**Face ID iPhone or iPad (front-camera tracking)**  
-Place the device **flat on the floor directly under your face, screen up**. Stay in good light and keep your face visible. Lower and press up as usual. You do not need to tap the screen with your nose.
-
-**iPhone or iPad without Face ID, or if Camera access is off**  
-Place the device on the floor near your face, **top of the device toward you**. The app counts when your face gets close to the top of the screen.
-
-- On iPhone, a brief black screen is normal. You do not need to tap with your nose.
-- On iPad in this mode, lightly touch the screen with your nose at the bottom of each rep.
-
-Do not prop the phone at an odd angle if you want automatic counting. Floor placement in front of you is the intended setup.
+You do not need to touch the screen during automatic camera counting. Do not prop the device at an angle.
 
 ---
 
-## Push-Up Tracking
+## Push-Up Counting
 
-### Why weren't all of my push-ups counted?
+### Which kinds of push-ups are supported?
 
-Automatic counting can miss reps. Common causes:
+iPhone and iPad support standard floor push-ups and push-ups from your knees.
 
-**iPhone / iPad camera tracking**
-- Face not in view, poor light, or phone not directly under you
-- Shallow reps that do not go low enough and back to plank
-- Moving too far away or too close to the camera
-- Phone propped up instead of flat on the floor
+Apple Watch supports floor push-ups and elevated push-ups on a bench or horizontal bar.
 
-**Apple Watch**
-- Loose watch band
-- Unusual form, pause, or motion that does not look like a push-up
-- Doing push-ups on a bar or elevated surface instead of the floor
+Push-ups on parallel handles with your palms facing each other are not supported. Knuckle push-ups may work, but counting can be less accurate.
 
-Pushanova is a training tool, not a perfect judge of every rep. You can correct counts after the workout, turn on **Tap to Count**, or send a detection report.
+### What should I do if Pushanova misses or adds push-ups?
 
-### Why did Pushanova count a push-up incorrectly?
+Automatic counting can miss or add push-ups. Device position, lighting, movement, form, and speed can affect the result.
 
-The same setup issues can create extra counts: extra motion near the camera, bouncing at the bottom, tapping the screen (if Tap to Count is on), or Watch motion that looks like a rep.
+On iPhone or iPad:
 
-On camera tracking, a full rep is a clear down-and-up. Partial dips can be ignored; extra movement in frame can be counted.
+- Place the device flat on the floor.
+- Keep your face visible to the front camera.
+- Use good light.
+- Complete a clear downward and upward movement.
+- Keep other movement away from the camera.
 
-After the workout, open it and tap **Edit** on the set chart to fix each set.
+On Apple Watch:
 
-### Why did Pushanova skip a repetition?
+- Wear the band firmly and comfortably.
+- Complete a clear downward and upward movement.
+- Avoid moving the Watch arm separately from the push-up.
 
-On iPhone camera tracking, a rep is counted only after you go down far enough and return to the top. Shallow reps, stopping halfway, or leaving the camera’s view can skip a count.
+You can use **Tap to Count** when automatic counting is not suitable. After the workout, you can correct the counts for completed sets.
 
-On Watch, the motion classifier waits for a full push-up-like movement. Very fast, very slow, or non-standard reps can be skipped.
+### What should I do if automatic counting does not work at all?
 
-### Push-up tracking is not working. What should I do?
+1. Confirm that the device is in the correct position.
+2. On iPhone or iPad, check Camera access for Pushanova.
+3. On Apple Watch, check Apple Health access and wear Watch firmly on your wrist.
+4. Close and reopen Pushanova.
+5. Start a short test workout.
+6. If counting still does not work, use **Report an Issue** from the completed workout.
 
-1. Confirm how you started: iPhone on the floor, or Watch on your wrist.
-2. On iPhone/iPad, allow **Camera** for automatic face-distance counting. Without it, the app uses the proximity sensor instead.
-3. Place the device as in the tutorial (floor, screen up, face visible).
-4. On Watch, wear it snugly and keep Apple Health allowed.
-5. Try **Tap to Count** in Settings if you need a fallback.
-6. Force-quit and reopen Pushanova, then start a new workout.
-7. If it still fails, complete a workout, open it, and use **Report an Issue**.
+On iPad without Camera access, use **Tap to Count**.
 
-### Why is the screen black during a workout?
+### Why does my iPhone screen briefly turn black?
 
-If the phone is using **proximity tracking** (camera permission off), the screen **briefly turning black is expected**. That is how iPhone knows your face is close.
+When Camera access is unavailable, iPhone can use another built-in counting method. The screen may briefly turn black when your face is close to the top of the phone.
 
-With **front-camera tracking**, the screen should stay on so you can see the count. If it goes black, Camera may be off, or the device may have fallen back to proximity mode. Check Settings → Pushanova → Camera.
+This is expected and does not mean that Pushanova is taking a photo or recording video.
 
-Pushanova does not record video during counting. A black screen is not a recording indicator.
+### How do I count push-ups by tapping the screen?
 
-### What should I do if automatic tracking is inaccurate?
+Open Settings in Pushanova and turn on **Tap to Count**. During a workout, each tap on the workout screen counts one push-up.
 
-- Follow the placement tutorial again.
-- Use good light and keep your face in frame (iPhone).
-- Wear Watch snugly (Watch).
-- Turn on **Tap to Count** in Settings and tap the workout screen for each rep.
-- Afterward, **Edit** the set counts.
-- Send **Report an Issue** from that workout so the detection data can be reviewed.
+### Can I correct or add push-ups after a workout?
 
-### Can I correct or add a push-up after a workout?
+You can correct the number of push-ups in sets that already exist. Open the workout, tap **Edit** on the push-up chart, change the set counts, and tap **Save**.
 
-You can **correct counts for sets that already exist**. Open the workout → **Edit** on the push-up chart → change each set (1–200) → **Save**.
+Editing does not add another set to the workout. To record additional work as a separate session, open **Workouts**, tap **Add Workout**, and enter the sets by hand.
 
-That screen does not add new sets. To log extra work as a new session, use **Workouts** → **Add Workout** and enter sets by hand.
+### What is included in a counting issue report?
 
-### Can I use manual tapping to count push-ups?
+Open a completed workout and select **Report an Issue**. You can describe the problem and provide the push-up counts that you expected.
 
-Yes. In Settings, turn on **Tap to Count**. During a workout, tap the workout screen to register a rep.
+The report may include movement measurements, push-up counts, timing information, device information, app version, and language. It does not include photos or video.
 
-It is off by default. If you allow Camera on a Face ID device, Pushanova turns Tap to Count off after the privacy screen so automatic tracking is used; you can turn it back on in Settings.
-
-On Watch, the same setting applies when it is synced.
+The report is sent by email only when you choose to send it.
 
 ---
 
 ## Apple Watch
 
-### Why can't I start a workout on Apple Watch?
-
-Watch workouts **require Apple Health permission** to record a workout session.
-
-Also check:
-
-- Health is allowed for Pushanova on Watch (Health app or Watch Settings).
-- Another workout is not already running on Watch. If it is, stop it first.
-- Watch is unlocked and awake.
-- Pushanova is installed on Watch.
-
-If you started from iPhone and see **Apple Watch Not Responding**, look at Watch: the workout may already be running. Otherwise unlock Watch, open Pushanova there, and try again.
-
-### Why isn't my Apple Watch workout syncing with my iPhone?
-
-A Watch workout is saved on Apple Watch. If Health is allowed, it is also saved to **Apple Health** as a functional strength workout, which can appear in the Health app on iPhone.
-
-Pushanova’s own **Workouts**, **Calendar**, and **Progress** tabs live in the iPhone/iPad app. After Watch shows the summary, open Pushanova on iPhone. If the session is in Health but not in Pushanova’s list, include that when you email support.
-
-Workouts with **zero counted push-ups** are discarded and will not appear in history.
-
-Level choice, Tap to Count, and sound settings sync over Watch Connectivity when Watch is paired.
-
 ### Can I use Pushanova on Apple Watch without my iPhone?
 
-Yes for **workouts**. The Watch app can run independently after it is installed. You can start Level or Freestyle on Watch without iPhone nearby.
+Yes. You can start and complete a workout on Apple Watch without your iPhone nearby. Open Pushanova on Watch and tap **Level** or **Freestyle**.
 
-You still need Apple Health on Watch.
+Apple Health access is required for Watch workouts.
 
-Use iPhone or iPad for full history, calendar, progress charts, editing counts, issue reports, sharing photos, and redeeming offer codes.
+The Watch app is focused on active workouts and the summary shown immediately afterward. Use Pushanova on iPhone or iPad for full workout history, calendar, progress, editing, issue reports, and sharing.
 
-### Why aren't my heart rate or calorie metrics showing on Apple Watch?
+### How do I use Apple Watch and iPhone together?
 
-Heart rate and live calories come from **Apple Health** during the Watch workout.
+On iPhone, open Pushanova Settings and turn on **Use Apple Watch**. Make sure Pushanova is installed on Watch and that Watch is unlocked and nearby. Then start the workout on iPhone or Apple Watch.
 
-- Allow Pushanova to read heart rate, active energy, and related types, and to write workouts and active energy.
-- Wear Watch snugly; give it a few seconds after the countdown.
-- Calories may still be estimated from your pace and body weight if Health does not provide energy yet.
+Apple Watch counts your push-ups while iPhone displays the same workout. Push-up counts, sets, pace, and rest remain synchronized.
 
-Average heart rate of 0 on the summary means no heart-rate samples were collected for that session.
+Paired Apple Watch workouts are available with iPhone, not iPad.
 
-### Why does Pushanova need Apple Health permission on Apple Watch?
+### Why will a workout not start on Apple Watch?
 
-watchOS requires a HealthKit workout session to keep a workout running on the wrist. Pushanova uses that session to:
+Check the following:
 
-- Record the workout in Apple Health
-- Collect heart rate and energy
-- Save active calories
+- Apple Health access is allowed for Pushanova on Watch.
+- Another workout is not already running on Watch.
+- Watch is unlocked.
+- Pushanova is installed on Watch.
 
-Without Health access, a Watch workout cannot start.
+If you started from iPhone and see **Apple Watch Not Responding**, check whether the workout is already open on Watch. Otherwise, open Pushanova on Watch and try again.
+
+### Why is my Apple Watch workout missing on iPhone or iPad?
+
+Pushanova saves its workout record separately from Apple Health. When iCloud synchronization is enabled, Pushanova workout records synchronize through your personal iCloud account. The Apple Health copy is a separate strength-training workout.
+
+Confirm that:
+
+- The workout contained at least one counted push-up.
+- The workout reached its summary.
+- Your devices use the same Apple Account.
+- iCloud is enabled for Pushanova.
+- Both devices have an internet connection.
+
+Open Pushanova on iPhone or iPad and allow time for synchronization. If the workout appears in Apple Health but not in Pushanova, include that information when you contact support.
 
 ---
 
-## Apple Health
+## Apple Health, Heart Rate, and Calories
 
-### Why isn't my workout showing in Apple Health?
+### Is Apple Health required?
 
-On iPhone/iPad, Health is **optional**. If you skipped Connect Apple Health, workouts stay in Pushanova only.
+Apple Health is optional on iPhone and iPad. Without Apple Health, Pushanova still counts push-ups, saves workouts in the app, and estimates active calories.
 
-If you connected Health:
-
-- Allow Pushanova to **write Workouts and Active Energy** in the Health app → Sharing / Apps → Pushanova.
-- Finish the workout (Complete Workout) with at least one counted push-up.
-- Wait until the summary appears. A save error means it may not be in Health.
-
-Watch workouts need Health on Watch. They are saved as **functional strength training**.
-
-Deleting a workout in Pushanova also deletes the matching Health workout when Pushanova is allowed to write Health data.
+Apple Health access is required to start a workout on Apple Watch.
 
 ### How do I give Pushanova access to Apple Health?
 
-**iPhone / iPad:** Open Pushanova. If you skipped Health, you can connect later when the Health screen appears, or use the Health app: **Sharing** (or **Apps**) → Pushanova → turn on:
+Open the Health access settings for Pushanova in the Health app or system Settings. Review the categories that Pushanova can read and write.
 
-- Write: Workouts, Active Energy
-- Read: Workouts, Heart Rate, Active Energy, Basal Energy, Body Mass (weight)
+Pushanova requests only the categories needed for workouts, heart rate, active calories, and calorie estimates. You can change access later in Apple Health or system Settings.
 
-**Apple Watch:** Open Pushanova on Watch; it requests Health on first launch. You can also change access in the Watch Health settings.
+### What does Pushanova save to Apple Health?
 
-### Which Pushanova data is saved to Apple Health?
+With your permission, Pushanova saves a completed strength-training workout and active calories to Apple Health. Duration and heart rate are included when available.
 
-Pushanova may **write**:
-- The workout
-- Active energy (calories)
+Push-up counts and set counts remain in Pushanova. Apple Health does not store those counts.
 
-It may **read**:
-- Workouts
-- Heart rate
-- Active energy and basal energy
-- Body mass (to improve calorie estimates)
+Pushanova can read supported Health information, such as heart rate, active calories, and body mass, when you allow it. This information is used for workouts and calorie estimates.
 
-Health data is not used for advertising. Pushanova does not dump your full Health database to email.
+### Why is my workout missing from Apple Health?
 
-### Why are some health metrics missing from my workout?
+Check the following:
 
-Heart rate appears only if a source provided samples during a live Health workout (usually Apple Watch). Floor workouts on iPhone often have **no heart rate**.
+- Apple Health access allows Pushanova to save workouts.
+- The workout contained at least one counted push-up.
+- You completed the workout and reached the summary.
+- No save error appeared on the summary.
 
-Calories:
-- From Health when a live workout session ran and Health provided energy
-- Otherwise estimated from push-up pace, duration, and body weight (from Health if available)
+On Apple Watch, Health access must remain enabled during the workout.
 
-Detailed heart-rate, pace, and cadence charts in workout details and Progress are **Premium**. The workout itself still saves.
+### Which devices can provide heart rate?
 
-### Can I use Pushanova without Apple Health?
+Heart rate can come from:
 
-**On iPhone and iPad, yes.** Skip Health during setup. Push-ups are still counted and saved in Pushanova. Calories are estimated. Heart rate usually will not appear. Nothing is written to Health.
+- Apple Watch during a Pushanova Watch workout
+- Compatible heart-rate earbuds
+- A Bluetooth heart-rate monitor connected through Apple Watch, iPhone, or iPad
 
-**On Apple Watch, no.** Health is required to start a Watch workout.
+Pushanova does not pair heart-rate devices directly. Connect supported devices through Apple settings.
 
----
+Heart-rate sensing with compatible earbuds requires iOS 26 or later on iPhone, or iPadOS 26 or later on iPad.
 
-## Heart Rate & Calories
+### Why is heart rate missing?
 
-### How do I get heart rate during a workout?
+Confirm that:
 
-The reliable way is to **do the workout on Apple Watch** with Health allowed and Watch worn snugly.
+- Pushanova can read heart rate in Apple Health.
+- Apple Watch is worn firmly and comfortably.
+- A compatible heart-rate device is connected and active during the workout.
 
-Pushanova does not have its own heart-rate pairing screen. It reads heart rate from Apple Health during a live workout session.
+Allow a short time for heart-rate information to appear after the workout starts. An iPhone or iPad workout may not show heart rate when no compatible source provides it.
 
-iPhone-on-the-floor workouts usually will not show heart rate unless another Health heart-rate source is contributing to that session.
+### How are active calories calculated?
 
-### Which heart-rate devices can I use with Pushanova?
+Pushanova uses active calories from Apple Health when they are available. Otherwise, Pushanova estimates active calories from available workout information.
 
-- **Apple Watch** optical heart rate during a Pushanova Watch workout
-- **Bluetooth heart-rate monitors** (such as a chest strap) if they are paired with Apple Watch or iPhone and send heart rate into Apple Health during the workout
+An estimate does not require heart-rate information. Allowing Pushanova to read your weight from Apple Health can improve the estimate.
 
-There is no separate “connect strap” button in Pushanova.
-
-### Why isn't my heart rate being detected?
-
-- Workout was on iPhone only (phone on the floor)
-- Health heart-rate read access is off
-- Watch too loose, cold skin, or Watch still starting the session
-- No Bluetooth HR device connected to Apple’s Health/workout session
-
-Try a Watch workout with a snug band and Health enabled.
-
-### Why are calories missing from my workout?
-
-Calories need either:
-
-- A live Apple Health workout that recorded active energy, or
-- Pushanova’s estimate from duration, pace, and body weight
-
-If weight is not in Health, Pushanova uses a default adult body mass for the estimate. Connect Health and record a weight in the Health app for better estimates.
-
-A workout that never saved (including zero-rep sessions) will not show calories in history.
-
-### Can I use heart-rate headphones with Pushanova?
-
-Pushanova does not pair headphones itself. If your headphones send heart rate to Apple Health **during** the Pushanova workout session, it may show up. This depends on Apple and the headphones, not on a Pushanova setting.
-
-Watch optical HR is the supported, in-product path.
-
-### Can I use a Bluetooth heart-rate chest strap?
-
-Yes, if the strap is paired in iOS/watchOS and Health sees it during the workout. Pair it in Apple’s Bluetooth/Health settings, then start a Pushanova workout (Watch is the usual case). Pushanova will display HR if HealthKit collects those samples.
+Detailed heart-rate, pace, and cadence charts require Pushanova Premium. The workout and basic summary are still saved without Premium.
 
 ---
 
-## Workouts & Progress
+## Workouts and Progress
 
-### Why didn't my workout save?
+### Why did my workout not save or appear in history?
 
-Pushanova **does not save workouts with zero counted push-ups**. If tracking never registered a rep, completing the session discards it.
+Pushanova does not save a workout with zero counted push-ups. A canceled or discarded workout is also not saved.
 
-Other causes:
+Other possible causes include insufficient device storage or closing the app while the workout is being saved. If a save fails, the summary explains that the workout will not appear in history.
 
-- The workout was interrupted and could not be recovered
-- Storage is full (**Couldn't Save Workout**)
-- The app was force-quit before save finished
+If iCloud synchronization is enabled, allow time for a completed workout to appear on your other devices. Apple Health stores a separate copy and is not the source of Pushanova workout synchronization.
 
-If save fails, the summary explains that it will not appear in history. Free up storage and try again.
+### Pushanova closed during a workout. Can I recover it?
 
-### Can I recover an interrupted workout?
+Often, yes. Reopen Pushanova and follow the recovery message. The app attempts to restore the active workout or save the completed part.
 
-Often, yes. Pushanova stores in-progress workout state.
+On Apple Watch, **Workout Interrupted** may appear. Dismissing this message saves the completed part of the workout when possible.
 
-- Reopen the app. It tries to restore an unfinished session.
-- On iPhone, an interrupted session is salvaged automatically when possible.
-- On Watch, you may see **Workout Interrupted**. Dismissing it saves completed push-ups to history.
+Recovery may not be possible when the stored workout is damaged, too old, or the device does not have enough free storage.
 
-Recovery is not guaranteed if data is corrupt, too old (sessions expire after a long time), or storage is insufficient.
+If the problem continues:
 
-### Why is my workout missing from my history?
+- Update Pushanova and the device operating system.
+- Restart the device.
+- Confirm that the device has free storage.
+- Do not close Pushanova while **Complete Workout** is saving.
 
-Check:
+### How do I add a workout manually?
 
-- It had at least one counted push-up
-- You completed it (not cancelled / discarded)
-- You are looking on the **same device** that recorded it (Watch vs iPhone)
-- Sort order on the Workouts tab
-- You did not delete it (deletion also removes it from Health when allowed)
+On iPhone or iPad, open **Workouts**, tap **Add Workout**, and enter the sets and push-up counts.
 
-Watch summaries point you to iPhone/iPad for full history. If it is in Health but not in Pushanova on iPhone, email support with device details.
+Use manual entry for a push-up workout completed without automatic counting.
 
-### How do I view my previous workouts?
+### How do I view previous workouts and progress?
 
-On iPhone or iPad, open the **Workouts** tab. Tap a workout for sets, duration, calories, and (with Premium) pace, cadence, and heart-rate detail.
+On iPhone or iPad:
 
-**Calendar** (Premium) shows workouts by day.  
-**Progress** shows totals, best set, and charts (detailed charts are Premium).
+- Open **Workouts** to view individual workouts, sets, duration, calories, notes, and available details.
+- Open **Progress** to view lifetime totals, recent consistency, your highest set, and available charts.
+- Open **Calendar** to view workouts by date. Calendar requires Pushanova Premium.
 
-Apple Watch shows a summary right after the session. It does not include the full history list.
+Pushanova Premium also includes weekly comparisons, detailed progress charts, and additional pace, cadence, and heart-rate details.
 
-### How do I view my progress?
+Apple Watch shows a summary immediately after a workout. Full history and progress are available on iPhone and iPad.
 
-Open the **Progress** tab for all-time push-ups, workouts, minutes, calories, and best set.
+### How do I change or skip a program level?
 
-Premium unlocks weekly recap, push-up trends, pace, heart rate, activity charts, and the calendar.
+Open **Choose Level** on iPhone, iPad, or Apple Watch. Select any available level.
 
-The Push-Ups tab also shows your current level (for example, 3 / 50).
+Completing the required push-ups advances the program to the next level. You can also repeat a level or skip to another level. Levels 11–50 require Pushanova Premium.
 
 ### How do I reset my progress?
 
-There is no single “reset all progress” switch.
+There is no single control that resets all progress.
 
-- Delete workouts one by one in Workouts (and from Health if Pushanova can write Health)
-- Choose a different starting level in **Choose Level**
-- Uninstalling removes on-device Pushanova data. Health and App Store purchases are separate. Data already emailed to support is not removed by uninstall.
+- Change the current program level with **Choose Level**.
+- Delete workouts individually from **Workouts**.
+- Manage Pushanova data stored in iCloud through your device settings.
 
-### How do I change my current level?
-
-**Choose Level** on iPhone/iPad or Watch, then tap the level you want.
-
-Finishing a level’s required reps also moves you to the next level automatically.
-
-Premium is required for levels 11–50.
-
-### Can I skip levels?
-
-Yes. Choose any free level, or any Premium level if you have Premium. You do not have to finish every earlier level first.
-
-The program is built to progress by completing levels; skipping is allowed.
+Apple Health copies and diagnostic reports sent by email are stored separately. Uninstalling Pushanova does not remove those copies.
 
 ---
 
-## Premium & Purchases
+## Premium and Purchases
 
-### How do I restore my purchase?
+### Which features are free?
 
-On iPhone/iPad, open the Premium / paywall screen and tap **Restore**.  
-On Apple Watch, open the paywall and tap **Restore**.
+The following features are free:
 
-Use the **same Apple ID** that bought Premium. Purchases are processed by Apple, not by a Pushanova account.
+- Program levels 1–10
+- Training without preset targets
+- Automatic counting and Tap to Count
+- Manual workout entry
+- Workout history, notes, and sharing
+- Recent training consistency, lifetime totals, and your highest set
+- Live workout information on the Lock Screen and in Dynamic Island
+- Training reminders
+- Apple Health and iCloud synchronization
 
-### I paid for Premium but it is still locked. What should I do?
+Pushanova Premium unlocks program levels 11–50, the workout calendar, weekly comparisons, detailed progress charts, and additional workout details.
 
-1. Restore purchases on the device, signed into the purchasing Apple ID.
-2. Check internet and that In-App Purchases are allowed (Screen Time / Apple ID).
-3. Wait a moment and reopen Pushanova so StoreKit can refresh.
-4. Confirm you bought **Pushanova Premium** (yearly subscription or lifetime unlock), not a different app.
+### How do I restore Pushanova Premium?
 
-Premium is **not** set up for Family Sharing. It follows the purchasing Apple ID.
+Open the Pushanova Premium screen and tap **Restore**. Use the same Apple Account that purchased the yearly subscription or lifetime purchase.
 
-If it is still locked, email support with the Apple ID email you used to buy (do not send passwords) and a screenshot of the App Store purchase.
+Purchases are processed by Apple. Pushanova does not use its own account for purchases.
 
-### How do I start or manage my free trial?
+### I paid for Premium, but it is still locked. What should I do?
 
-The yearly subscription may include a **3-day free trial** where Apple offers it and your Apple ID is eligible. The paywall shows **Free trial included** when you are eligible.
+1. Confirm that the device uses the Apple Account that made the purchase.
+2. Confirm that the device has an internet connection.
+3. Open the Pushanova Premium screen and tap **Restore**.
+4. Close and reopen Pushanova.
+5. Check that in-app purchases are allowed on the device.
 
-Apple’s rules apply: one intro offer per Apple ID in many cases. Unless you cancel at least 24 hours before the trial or period ends, Apple charges and renews for a year.
+If Premium remains locked, email [info@genebogdanovich.com](mailto:info@genebogdanovich.com). Include the device model, Pushanova version, purchase type, and a screenshot showing the purchase or error. Hide unrelated personal or payment information.
 
-Start the trial from the in-app paywall. Manage or cancel in Apple ID subscription settings.
+### How does the free trial work?
 
-Offer codes: iPhone Settings → **Redeem Offer**. Watch cannot redeem codes; redeem on iPhone.
+Eligible new subscribers may receive a three-day free trial with the yearly subscription. The Pushanova Premium screen shows whether the trial is available for your Apple Account.
 
-### How do I cancel my Pushanova subscription?
+The yearly subscription starts automatically after the trial unless you cancel at least 24 hours before the trial ends. Apple manages eligibility, billing, and renewal.
 
-Cancel in **Apple ID subscription settings** (Settings → [your name] → Subscriptions on iPhone), not inside a Pushanova account (there is none).
+The lifetime purchase does not include a free trial.
 
-Canceling stops the next charge. It usually does not refund the current period unless Apple says otherwise.
+### How do I manage or cancel my subscription?
 
-Saved workouts stay on the device. Premium features lock when the subscription ends unless you buy again, redeem a valid code, or own lifetime unlock.
+Open **Subscriptions** in your Apple Account settings and select Pushanova.
+
+Canceling stops the next renewal. It does not normally refund the current subscription period. Saved workouts remain available. Premium features lock when the paid period ends unless you purchase Premium again, redeem a valid offer, or own the lifetime purchase.
 
 ### How do I request a refund?
 
-Ask **Apple**. Purchases go through the App Store. The developer does not process card refunds.
+Apple processes all Pushanova purchases and refunds. Request a refund at [reportaproblem.apple.com](https://reportaproblem.apple.com) or through your Apple purchase history.
 
-Use [reportaproblem.apple.com](https://reportaproblem.apple.com) or the purchase in your Apple ID history.
-
-### What happens if I reinstall Pushanova?
-
-Tap **Restore** after reinstall to bring back Premium for that Apple ID.
-
-On-device workout history is removed with the app. Apple Health copies remain in Health if they were saved. Reinstalling does not create a Pushanova account.
+The Pushanova developer cannot issue an App Store refund.
 
 ### Can I use my purchase on another Apple device?
 
-Yes, on iPhone, iPad, and Apple Watch signed into the **same Apple ID**. Restore on the new device.
+Yes. Use the same Apple Account on the other device and tap **Restore** in Pushanova.
 
-Not via Family Sharing.
+Family Sharing is not enabled for Pushanova Premium.
+
+### What happens to Premium and my workouts after reinstalling?
+
+Tap **Restore** to restore Premium for the purchasing Apple Account.
+
+If iCloud synchronization was enabled, workout history stored in iCloud can synchronize after reinstalling. Without iCloud synchronization, uninstalling Pushanova removes the workout history stored only on that device.
+
+Apple Health copies remain in Apple Health until they are deleted there.
+
+### How do I redeem an offer code?
+
+Open Pushanova Settings on iPhone and tap **Redeem Offer**. Apple Watch cannot redeem an offer code.
+
+Apple determines whether a code is valid and which Apple Account can use it.
+
+---
+
+## Privacy and Data
+
+### Does automatic counting take photos or record video?
+
+No. Automatic counting does not take photos or record, save, or upload video. Pushanova does not use the camera to identify you.
+
+Post-workout photos are separate. Pushanova uses a photo only when you choose one for sharing.
+
+### What counting information is stored with a workout?
+
+Pushanova may save movement measurements that help it count push-ups. These measurements are not photos or video.
+
+The measurements are stored with the workout on your device. If iCloud synchronization is enabled, the same workout data may synchronize through your personal iCloud account. It is not sent automatically to a Pushanova server.
+
+If you choose **Report an Issue**, an email report may include numerical counting measurements and workout information. You choose whether to send that email.
+
+For complete details, read the [Privacy Policy](privacy.md).
+
+### How do I delete my Pushanova data?
+
+To delete workout data:
+
+- Delete individual workouts in **Workouts**. When iCloud synchronization is enabled, the deletion synchronizes through iCloud.
+- Remove Pushanova data from iCloud through your device's iCloud storage settings if you want to delete the cloud copy.
+- Delete Apple Health copies separately in Apple Health. Pushanova may also delete a matching Health workout when it has permission.
+
+Uninstalling Pushanova removes data stored only on that device. Data already stored in iCloud or Apple Health remains until you delete it there.
+
+If you sent a diagnostic report or photo submission by email, contact [info@genebogdanovich.com](mailto:info@genebogdanovich.com) to request deletion of the copy received by the developer.
+
+### Does Pushanova require an account?
+
+No. Pushanova does not require a sign-up, username, password, or social login.
+
+Pushanova Premium is connected to the Apple Account used for the App Store purchase. This is not a Pushanova account.
+
+### Does Pushanova use analytics or crash reporting?
+
+Pushanova uses standard product analytics and crash reporting. These services do not receive photos, video, camera-based counting measurements, or Apple Health information.
+
+Pushanova does not sell your data or use it for advertising.
+
+Read the [Privacy Policy](privacy.md) for details.
+
+---
+
+## Devices and Compatibility
+
+### Which operating system versions are supported?
+
+- iPhone: iOS 17.6 or later
+- iPad: iPadOS 17.6 or later
+- Apple Watch: watchOS 10.6 or later
+
+Any device that can run a supported version can install Pushanova. Available counting methods depend on the device and the permissions you allow.
+
+### Is Pushanova a full iPad app?
+
+Yes. Pushanova on iPad includes automatic counting, program workouts, training without preset targets, workout history, progress, analytics, and Apple Health.
+
+iPad does not support a paired Apple Watch workout. Use iPhone when you want Apple Watch and another screen to display the same active workout.
+
+If you do not use Camera access on iPad, enable **Tap to Count**.
+
+### Does Pushanova require an internet connection?
+
+No internet connection is required to start and save a workout on one device.
+
+An internet connection is required for iCloud synchronization, App Store purchases, restoring purchases, and sending a support email.
 
 ---
 
 ## Troubleshooting
 
-### Pushanova crashes or closes during a workout. What should I do?
-
-Reopen Pushanova. It tries to recover the session or salvage completed push-ups.
-
-Then:
-
-- Update iOS/watchOS and Pushanova
-- Restart the device
-- Leave a little free storage
-- Avoid force-quitting during **Complete Workout**
-
-If it keeps crashing, email support with device model, OS version, Pushanova version, and what you were doing. Crash reports may also go to Firebase Crashlytics automatically (not your camera or Health samples).
-
 ### Pushanova is not responding. What should I do?
 
-Force-quit and reopen. Restart the device. On Watch, unlock it and open Pushanova again.
+Close and reopen Pushanova. If it still does not respond, restart the device.
 
-If a Watch start from iPhone hangs, check Watch; the workout may already be running.
+On Apple Watch, unlock Watch and open Pushanova again. If a workout started from iPhone appears to stop, check whether the workout is already open on Watch.
 
-### The app is not detecting my device or sensor. What should I do?
+### Why is Pushanova not synchronizing between my devices?
 
-**iPhone / iPad**
-- Camera: Settings → Pushanova → Camera
-- Face ID models use the TrueDepth camera for distance; others use the proximity sensor
-- Keep the device on the floor as in the tutorial
-- The screen staying awake during a workout is expected (idle lock is disabled on purpose)
+For workout history:
 
-**Apple Watch**
-- Health allowed
-- Watch on the wrist, snug band
-- Not already in another workout
+- Confirm that the devices use the same Apple Account.
+- Confirm that iCloud is enabled for Pushanova.
+- Connect both devices to the internet.
+- Open Pushanova on each device and allow time for synchronization.
 
-Pushanova does not scan for third-party sensors in-app. Pair Bluetooth HR devices in Apple settings.
+Apple Health stores a separate workout copy. Apple Health is not the source of Pushanova workout-history synchronization.
 
-### Pushanova is not syncing between my devices?
+For Pushanova Premium, tap **Restore** on the device using the Apple Account that made the purchase.
 
-- **Premium:** same Apple ID + Restore
-- **Level / Tap to Count / sounds:** Watch paired and nearby
-- **Workouts:** saved on the device that recorded them; Health copies sync through Apple Health if you use Health
-- **No Pushanova account** and no sign-in to sync history through the developer
-
-### What information should I include when contacting support?
-
-Email [info@genebogdanovich.com](mailto:info@genebogdanovich.com) with:
-
-- Device model (iPhone, iPad, and/or Apple Watch)
-- iOS / iPadOS / watchOS version
-- Pushanova version
-- Whether you used iPhone on the floor, Watch, or both
-- Level vs Freestyle
-- What you expected vs what happened
-- Screenshots when useful
-
-For counting bugs, send **Report an Issue** from that workout if you can.
-
----
-
-## Privacy & Data
-
-### Does Pushanova record video?
-
-No. Counting does not record video. On Face ID devices, the TrueDepth camera measures **face-to-device distance** only. It does not save a face video, mesh, or biometric identity.
-
-You may optionally take a **post-workout photo** for sharing. That is separate from counting.
-
-### Does Pushanova take photos while counting push-ups?
-
-No. Counting does not take photos.
-
-Photos are only if you use post-workout sharing and capture or pick an image yourself.
-
-### Does Pushanova upload camera footage?
-
-No. Distance is processed on device. Nothing from the counting camera is uploaded automatically.
-
-If iCloud were used for your own workout records, that would be your iCloud, not a Pushanova server receiving camera video. Diagnostic email is only if **you** send a report, and reports **do not include photos or video**.
-
-### Can I send motion data to help diagnose a tracking problem?
-
-Yes. Open the workout → **Report an Issue**. You can adjust the counts you actually did, note floor vs bar, phone placement or Watch fit, and **Send via Email**.
-
-The report can include distance waveforms and/or Watch motion/gravity samples, counts, timestamps, app version, and locale. It does not include photos, video, or a recording of your face. It goes to info@genebogdanovich.com only because you send it.
-
-### How do I delete my Pushanova data?
-
-- Delete workouts in the Workouts tab (also deletes the Health workout when Pushanova can write Health)
-- Uninstall the app to remove on-device Pushanova data
-- Change or revoke Health, Camera, and notification access in iOS/watchOS Settings
-- If you emailed a diagnostic or featuring submission, write to info@genebogdanovich.com to ask that copy be deleted
-
-There is no Pushanova account to delete.
-
-### Does Pushanova require an account?
-
-No. No sign-up, username, or social login. Premium follows your Apple ID via the App Store.
-
----
-
-## Devices & Compatibility
-
-### Which iPhone models are supported?
-
-Any iPhone that runs **iOS 17.6 or later**.
-
-Automatic **front-camera / Face ID** counting needs TrueDepth (typically Face ID iPhones). iPhone SE and other models without Face ID use proximity tracking instead.
-
-### Which Apple Watch models are supported?
-
-Any Apple Watch that runs **watchOS 10.6 or later**, with the Pushanova Watch app installed.
-
-### Is Pushanova available on iPad?
-
-Yes. The iPhone app runs on iPad (portrait). Face ID iPad Pro can use camera distance tracking. Other iPads use proximity tracking; in that mode, tap the screen lightly with your nose at the bottom of each rep.
-
-### Which iOS versions are supported?
-
-**iOS 17.6 or later** (iPadOS 17.6 or later for iPad).
-
-On iOS 26 or later, iPhone can run a live Apple Health workout session when Health is allowed. On iOS 17 and 18, iPhone workouts still count push-ups; Health is written afterward when permission allows.
-
-### Which watchOS versions are supported?
-
-**watchOS 10.6 or later.**
-
-### Which Apple Watch features require an iPhone?
-
-You can **work out on Watch without iPhone nearby**.
-
-Use iPhone or iPad for:
-
-- Installing/managing the companion app (typical setup)
-- Starting a Watch workout from iPhone (**Use Apple Watch**)
-- Redeeming offer codes
-- Full workout list, calendar, Progress charts
-- Editing set counts and **Report an Issue**
-- Post-workout photos and sharing
-- Most Settings (notifications, Redeem Offer, App Store rating)
+For an active iPhone and Apple Watch workout, keep Watch unlocked and nearby and make sure **Use Apple Watch** is enabled in Pushanova Settings.
 
 ---
 
 ## Contact
 
-### Still need help?
+### Do you still need help?
 
-Can't find the answer? Email [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
+Email [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
 
-When possible, include your device model, OS version, Pushanova version, and a description of what happened. Screenshots or other relevant information can also help diagnose the problem.
+Include:
+
+- Device model
+- Operating system version
+- Pushanova version
+- Whether you trained on iPhone, iPad, Apple Watch, or two devices together
+- Whether you completed a program level or trained freely
+- What you expected
+- What happened
+- A screenshot, when useful
+
+For counting problems, send **Report an Issue** from the affected workout when possible. Screenshots can help when they do not contain information that you prefer not to share.
+
+- [Club Pushanova](homepage.md)
+- [Features](features.md)
+- [Privacy](privacy.md)
+- [Terms](terms.md)
