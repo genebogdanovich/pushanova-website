@@ -10,11 +10,11 @@ Follow the progressive program or train freely. You can do both in the same work
 
 [**Download on the App Store**](https://apps.apple.com/app/push-up-counter-pushanova/id6451240468)
 
-Free to start. No account. No membership. No ads.
+Free to start. No account. No ads.
 
 ## Start Where You Are
 
-The program has 50 levels. Each level is one structured workout with preset sets and repetition targets. Beginners can start with small sets in the early levels. Experienced users can start at any level or train freely. There is no placement test.
+The program has 50 levels. Each level is one structured workout with preset sets and repetition targets. Beginners can start with small sets in the early levels. Experienced users can start at any level or train freely.
 
 Follow the program when you want structure. Train freely when you want to decide how many push-ups and sets to perform. You can switch between them for each workout. After you complete a level, you can continue to train freely in the same workout.
 
@@ -26,7 +26,7 @@ You can use Pushanova for a complete push-up workout or for push-up sets during 
 
 ### Start
 
-Start a workout from the program or train freely without preset targets. Place your iPhone or iPad on the floor, or start on Apple Watch. No registration or internet connection is required for a workout.
+Place your iPhone or iPad on the floor, or start the workout on Apple Watch. A short countdown gives you time to get into position.
 
 ### Train
 
@@ -186,7 +186,7 @@ You can train freely for as long as you want. The first 10 levels and automatic 
 
 [**Download on the App Store**](https://apps.apple.com/app/push-up-counter-pushanova/id6451240468)
 
-No account. No membership. No ads.
+No account. No subscription required. No ads.
 
 - Terms
 - Privacy
