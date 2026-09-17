@@ -7,6 +7,14 @@
     "name": {
       "message": "English",
       "description": "Language name in this language. Used as the language switcher summary and list label."
+    },
+    "dir": {
+      "message": "ltr",
+      "description": "HTML dir attribute. Use ltr or rtl. Do not translate; use the correct value for the language."
+    },
+    "ogLocale": {
+      "message": "en_US",
+      "description": "Open Graph locale code such as en_US or ru_RU. Do not translate."
     }
   },
   "nav": {

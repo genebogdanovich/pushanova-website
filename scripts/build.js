@@ -6,7 +6,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const localesDir = path.join(root, "locales");
 const templatesDir = path.join(root, "src", "templates");
 const partialsDir = path.join(root, "src", "partials");
+const imagesDir = path.join(root, "src", "images");
 const siteDir = path.join(root, "site");
+const config = JSON.parse(fs.readFileSync(path.join(root, "site.config.json"), "utf8"));
+const siteUrl = String(config.siteUrl || "").replace(/\/$/, "");
 
 const EXTERNAL = {
   appStoreUrl: "https://apps.apple.com/app/push-up-counter-pushanova/id6451240468",
@@ -25,8 +28,7 @@ function isLeaf(value) {
     Boolean(value) &&
     typeof value === "object" &&
     !Array.isArray(value) &&
-    typeof value.message === "string" &&
-    typeof value.description === "string"
+    typeof value.message === "string"
   );
 }
 
@@ -73,25 +75,22 @@ function resolveMessages(node) {
   return node;
 }
 
-function assertDescriptions(node, path = "") {
+function assertEnglishDescriptions(node, path = "") {
   if (Array.isArray(node)) {
-    node.forEach((item, index) => assertDescriptions(item, `${path}[${index}]`));
+    node.forEach((item, index) => assertEnglishDescriptions(item, `${path}[${index}]`));
     return;
   }
   if (!node || typeof node !== "object") {
     return;
   }
   if (isLeaf(node)) {
-    if (!node.description.trim()) {
-      throw new Error(`Empty translator description at ${path || "root"}`);
+    if (typeof node.description !== "string" || !node.description.trim()) {
+      throw new Error(`English locale leaf at ${path || "root"} must have a translator description`);
     }
     return;
   }
-  if (typeof node.message === "string" || typeof node.description === "string") {
-    throw new Error(`Locale leaf at ${path || "root"} must have string message and description`);
-  }
   for (const [key, value] of Object.entries(node)) {
-    assertDescriptions(value, path ? `${path}.${key}` : key);
+    assertEnglishDescriptions(value, path ? `${path}.${key}` : key);
   }
 }
 
@@ -113,6 +112,28 @@ function outputFile(code, page) {
   }
 }
 
+function publicPath(code, page) {
+  const prefix = code === DEFAULT_LOCALE ? "" : `/${code}`;
+  switch (page) {
+    case "home":
+      return prefix ? `${prefix}/` : "/";
+    case "features":
+      return `${prefix}/features/`;
+    case "support":
+      return `${prefix}/support/`;
+    case "privacy":
+      return "/privacy/";
+    case "404":
+      return "/404.html";
+    default:
+      throw new Error(`Unknown page: ${page}`);
+  }
+}
+
+function absoluteUrl(pathname) {
+  return `${siteUrl}${pathname}`;
+}
+
 function posixHref(fromFile, toFile) {
   const fromDir = path.posix.dirname(fromFile);
   let rel = path.posix.relative(fromDir === "." ? "" : fromDir, toFile);
@@ -123,6 +144,15 @@ function posixHref(fromFile, toFile) {
 }
 
 function pageUrls(code, page) {
+  if (page === "404") {
+    return {
+      home: publicPath(code, "home"),
+      features: publicPath(code, "features"),
+      support: publicPath(code, "support"),
+      privacy: publicPath(DEFAULT_LOCALE, "privacy"),
+      notFound: publicPath(DEFAULT_LOCALE, "404"),
+    };
+  }
   const from = outputFile(code, page);
   return {
     home: posixHref(from, outputFile(code, "home")),
@@ -133,19 +163,98 @@ function pageUrls(code, page) {
   };
 }
 
+function orderedCodes(codes) {
+  const rest = codes.filter((code) => code !== DEFAULT_LOCALE).sort();
+  return codes.includes(DEFAULT_LOCALE) ? [DEFAULT_LOCALE, ...rest] : rest;
+}
+
 function languageEntries(codes, names, code, page) {
   const from = outputFile(code, page);
-  const targetPage = SHARED_PAGES.includes(page) ? page : page;
   return codes.map((other) => {
-    const toCode = SHARED_PAGES.includes(targetPage) ? DEFAULT_LOCALE : other;
-    const toPage = SHARED_PAGES.includes(targetPage) ? targetPage : page;
+    let toCode = other;
+    let toPage = page;
+    if (page === "privacy") {
+      toCode = DEFAULT_LOCALE;
+      toPage = "privacy";
+    } else if (page === "404") {
+      toCode = other;
+      toPage = "home";
+    }
     return {
       code: other,
       name: names[other],
-      url: posixHref(from, outputFile(toCode, toPage)),
+      url: page === "404" ? publicPath(toCode, toPage) : posixHref(from, outputFile(toCode, toPage)),
       current: other === code,
     };
   });
+}
+
+function hreflangsFor(page, codes) {
+  if (SHARED_PAGES.includes(page)) {
+    return [{ code: DEFAULT_LOCALE, href: absoluteUrl(publicPath(DEFAULT_LOCALE, page)) }];
+  }
+  return [
+    ...codes.map((code) => ({
+      code,
+      href: absoluteUrl(publicPath(code, page)),
+    })),
+    { code: "x-default", href: absoluteUrl(publicPath(DEFAULT_LOCALE, page)) },
+  ];
+}
+
+function pageSeo(code, page, codes, ogLocales) {
+  const canonicalCode = SHARED_PAGES.includes(page) ? DEFAULT_LOCALE : code;
+  const ogLocale = ogLocales[code] || ogLocales[DEFAULT_LOCALE] || "en_US";
+  const ogLocaleAlternates = SHARED_PAGES.includes(page)
+    ? []
+    : codes.filter((item) => item !== code).map((item) => ogLocales[item]).filter(Boolean);
+  return {
+    canonical: absoluteUrl(publicPath(canonicalCode, page)),
+    hreflangs: hreflangsFor(page, codes),
+    ogLocale,
+    ogLocaleAlternates,
+  };
+}
+
+function xmlEscape(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function sitemapXml(codes) {
+  const entries = [];
+  for (const page of LOCALIZED_PAGES) {
+    for (const code of codes) {
+      entries.push({
+        loc: absoluteUrl(publicPath(code, page)),
+        hreflangs: hreflangsFor(page, codes),
+      });
+    }
+  }
+  entries.push({
+    loc: absoluteUrl(publicPath(DEFAULT_LOCALE, "privacy")),
+    hreflangs: hreflangsFor("privacy", codes),
+  });
+  const body = entries
+    .map((entry) => {
+      const links = entry.hreflangs
+        .map(
+          (item) =>
+            `    <xhtml:link rel="alternate" hreflang="${xmlEscape(item.code)}" href="${xmlEscape(item.href)}"/>`
+        )
+        .join("\n");
+      return `  <url>\n    <loc>${xmlEscape(entry.loc)}</loc>\n${links}\n  </url>`;
+    })
+    .join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${body}
+</urlset>
+`;
 }
 
 function tokenize(template) {
@@ -312,6 +421,16 @@ function emptySiteDir() {
   fs.mkdirSync(siteDir, { recursive: true });
 }
 
+function copyImages() {
+  if (!fs.existsSync(imagesDir)) {
+    return;
+  }
+  fs.cpSync(imagesDir, path.join(siteDir, "images"), {
+    recursive: true,
+    filter: (source) => path.basename(source) !== ".gitkeep",
+  });
+}
+
 function writeSiteFile(relativePath, contents) {
   const fullPath = path.join(siteDir, relativePath);
   fs.mkdirSync(path.dirname(fullPath), { recursive: true });
@@ -327,19 +446,23 @@ function loadLocales() {
   for (const file of files) {
     const code = path.basename(file, ".json");
     const data = readJson(path.join(localesDir, file));
-    assertDescriptions(data);
+    if (code === DEFAULT_LOCALE) {
+      assertEnglishDescriptions(data);
+    }
     raw[code] = data;
   }
   const english = raw[DEFAULT_LOCALE];
   const resolved = {};
   const names = {};
+  const ogLocales = {};
   for (const code of Object.keys(raw)) {
     const merged = code === DEFAULT_LOCALE ? english : deepMerge(english, raw[code]);
     const messages = resolveMessages(merged);
     resolved[code] = messages;
     names[code] = messages.meta.name;
+    ogLocales[code] = messages.meta.ogLocale || (code === DEFAULT_LOCALE ? "en_US" : "");
   }
-  return { codes: Object.keys(raw), resolved, names };
+  return { codes: orderedCodes(Object.keys(raw)), resolved, names, ogLocales };
 }
 
 function pageFlags(page) {
@@ -352,7 +475,7 @@ function pageFlags(page) {
   };
 }
 
-function renderPage({ page, code, templates, partials, resolved, codes, names }) {
+function renderPage({ page, code, templates, partials, resolved, codes, names, ogLocales }) {
   const locale = resolved[code];
   const urls = pageUrls(code, page);
   const data = {
@@ -360,16 +483,21 @@ function renderPage({ page, code, templates, partials, resolved, codes, names })
     ...pageFlags(page),
     urls,
     languages: languageEntries(codes, names, code, page),
+    seo: pageSeo(code, page, codes, ogLocales),
   };
   const html = renderTemplate(templates[page], [data], partials);
   return applyPlaceholders(html, urls);
 }
 
 function main() {
-  const { codes, resolved, names } = loadLocales();
+  if (!siteUrl) {
+    throw new Error("site.config.json must set siteUrl");
+  }
+  const { codes, resolved, names, ogLocales } = loadLocales();
   const partials = {
     header: fs.readFileSync(path.join(partialsDir, "header.html"), "utf8"),
     footer: fs.readFileSync(path.join(partialsDir, "footer.html"), "utf8"),
+    seo: fs.readFileSync(path.join(partialsDir, "seo.html"), "utf8"),
   };
   const templates = {
     home: fs.readFileSync(path.join(templatesDir, "home.html"), "utf8"),
@@ -378,42 +506,25 @@ function main() {
     privacy: fs.readFileSync(path.join(templatesDir, "privacy.html"), "utf8"),
     404: fs.readFileSync(path.join(templatesDir, "404.html"), "utf8"),
   };
+  const pageArgs = { templates, partials, resolved, codes, names, ogLocales };
 
   emptySiteDir();
+  copyImages();
 
   for (const code of codes) {
     for (const page of LOCALIZED_PAGES) {
-      writeSiteFile(
-        outputFile(code, page),
-        renderPage({ page, code, templates, partials, resolved, codes, names })
-      );
+      writeSiteFile(outputFile(code, page), renderPage({ page, code, ...pageArgs }));
     }
   }
 
+  writeSiteFile(outputFile(DEFAULT_LOCALE, "privacy"), renderPage({ page: "privacy", code: DEFAULT_LOCALE, ...pageArgs }));
+  writeSiteFile(outputFile(DEFAULT_LOCALE, "404"), renderPage({ page: "404", code: DEFAULT_LOCALE, ...pageArgs }));
+  writeSiteFile("sitemap.xml", sitemapXml(codes));
   writeSiteFile(
-    outputFile(DEFAULT_LOCALE, "privacy"),
-    renderPage({
-      page: "privacy",
-      code: DEFAULT_LOCALE,
-      templates,
-      partials,
-      resolved,
-      codes,
-      names,
-    })
+    "robots.txt",
+    `User-agent: *\nAllow: /\nSitemap: ${absoluteUrl("/sitemap.xml")}\n`
   );
-  writeSiteFile(
-    outputFile(DEFAULT_LOCALE, "404"),
-    renderPage({
-      page: "404",
-      code: DEFAULT_LOCALE,
-      templates,
-      partials,
-      resolved,
-      codes,
-      names,
-    })
-  );
+  writeSiteFile("CNAME", `${new URL(siteUrl).hostname}\n`);
   console.log("Built site/");
 }
 
