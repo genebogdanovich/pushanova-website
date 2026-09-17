@@ -114,11 +114,11 @@
     },
     "download": {
       "message": "Download on the App Store",
-      "description": "App Store button label. Keep App Store as a proper name."
+      "description": "Accessible name and alt text for the official App Store badge. Keep App Store as a proper name."
     },
     "offer": {
       "message": "Free to start. No account. No ads.",
-      "description": "Short offer line under the App Store button."
+      "description": "Short offer line under the App Store badge."
     },
     "start": {
       "h2": {
@@ -620,11 +620,11 @@
     },
     "download": {
       "message": "Download on the App Store",
-      "description": "App Store button label. Keep App Store as a proper name."
+      "description": "Accessible name and alt text for the official App Store badge. Keep App Store as a proper name."
     },
     "offer": {
       "message": "Free to start. No account. No ads.",
-      "description": "Short offer line under the App Store button."
+      "description": "Short offer line under the App Store badge."
     },
     "program": {
       "h2": {
