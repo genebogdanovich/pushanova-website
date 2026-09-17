@@ -38,6 +38,21 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 - **Start Where You Are.** The tone should be welcoming. Do not write copy that sounds like an aggressive bootcamp drill sergeant. 
 - **Native Dark Mode.** Support dark mode strictly through the CSS `@media (prefers-color-scheme: dark)` query. Do not build JavaScript theme toggles or buttons. Rely entirely on the user's OS preference.
 
+## Styling
+
+- **Mobile-first, full-size on desktop.** Base styles for a phone. At larger viewports, type, spacing, and the reading column grow. Do not keep a phone-width layout on desktop.
+- **System sans, Apple first.** `font-family: system-ui, -apple-system, sans-serif;`. No webfonts for marketing copy. Let the OS pick the face for each `lang` (Latin, Indic, CJK, Arabic, and the rest).
+- **Tokens** as CSS custom properties. Follow `prefers-color-scheme`.
+
+  Light: page `#FFFFFF`, text `#1D1D1F`, accent `#045DE9` (app blue).
+  Dark: page `#000000`, text `#F5F5F7`, accent `#4C8DF6` (same hue, lightened for contrast).
+
+  Use accent for links and emphasis only. Solid fills with white text keep `#045DE9` in both schemes — the dark-mode accent is too light for that. Do not invert `#045DE9` for dark mode; it fails contrast on black.
+- **Logical properties** for spacing and alignment. RTL is a first-class layout.
+- **Line-height** stays open enough for Indic and other complex scripts (~1.4–1.6). Fluid type with `clamp()` so desktop is not 14px body text. Main column max-width in `ch` or `rem`, not a fixed pixel page.
+- **Touch-first:** no hover-only actions; visible focus; wrap, don’t truncate, translated UI. `overflow-wrap` for long words and URLs.
+- **Do not** use letter-spacing on copy, `text-transform: uppercase` on translated UI, or `text-align: justify`.
+
 ## Do not
 
 - Do not add accounts, ads, leaderboards, streaks-as-punishment, or social features to the site story.
