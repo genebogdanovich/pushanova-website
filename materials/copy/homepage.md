@@ -178,7 +178,7 @@ Pushanova Premium is available as a yearly subscription or a lifetime purchase.
 
 ### Does Pushanova offer a free trial?
 
-Eligible new subscribers can try the yearly subscription free for seven days. The yearly subscription begins automatically after the trial unless it is canceled before the trial ends. The lifetime purchase does not include a free trial. The App Store shows the price and renewal terms before purchase.
+Eligible new subscribers can try the yearly subscription free for three days. The yearly subscription begins automatically after the trial unless it is canceled before the trial ends. The lifetime purchase does not include a free trial. The App Store shows the price and renewal terms before purchase.
 
 ## Ready for Your First Workout?
 

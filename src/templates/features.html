@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{meta.code}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{features.meta.title}}</title>
+  <meta name="description" content="{{features.meta.description}}">
+</head>
+<body>
+  {{> header}}
+  <main>
+    <header>
+      <h1>{{features.h1}}</h1>
+      <p>{{features.lead}}</p>
+      <p><a href="{appStoreUrl}">{{features.download}}</a></p>
+      <p>{{features.offer}}</p>
+    </header>
+
+    <section>
+      <h2>{{features.program.h2}}</h2>
+      {{#each features.program.paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{features.counting.h2}}</h2>
+      {{#each features.counting.paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{features.watch.h2}}</h2>
+      {{#each features.watch.sections}}
+      <h3>{{heading}}</h3>
+      {{#each paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{features.live.h2}}</h2>
+      <p>{{features.live.intro}}</p>
+      <ul>
+        {{#each features.live.items}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      {{#each features.live.paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{features.progress.h2}}</h2>
+      {{#each features.progress.sections}}
+      <h3>{{heading}}</h3>
+      {{#each paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{features.devices.h2}}</h2>
+      {{#each features.devices.paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{features.privacy.h2}}</h2>
+      {{#each features.privacy.paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{features.pricing.h2}}</h2>
+      <h3>{{features.pricing.free.h3}}</h3>
+      <ul>
+        {{#each features.pricing.free.items}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <h3>{{features.pricing.premium.h3}}</h3>
+      <ul>
+        {{#each features.pricing.premium.items}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{features.pricing.premium.note}}</p>
+    </section>
+
+    <section>
+      <h2>{{features.closing.h2}}</h2>
+      <p>{{features.closing.lead}}</p>
+      <p><a href="{appStoreUrl}">{{features.download}}</a></p>
+      <p>{{features.closing.offer}}</p>
+    </section>
+  </main>
+  {{> footer}}
+</body>
+</html>
