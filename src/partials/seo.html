@@ -1,0 +1,8 @@
+<link rel="canonical" href="{{seo.canonical}}">
+{{#each seo.hreflangs}}
+<link rel="alternate" hreflang="{{code}}" href="{{href}}">
+{{/each}}
+<meta property="og:locale" content="{{seo.ogLocale}}">
+{{#each seo.ogLocaleAlternates}}
+<meta property="og:locale:alternate" content="{{this}}">
+{{/each}}
