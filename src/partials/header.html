@@ -1,0 +1,41 @@
+<header>
+  <nav>
+    <ul>
+      <li>
+        {{#if isHome}}
+        <a href="{{urls.home}}" aria-current="page">{{nav.home}}</a>
+        {{else}}
+        <a href="{{urls.home}}">{{nav.home}}</a>
+        {{/if}}
+      </li>
+      <li>
+        {{#if isFeatures}}
+        <a href="{{urls.features}}" aria-current="page">{{nav.features}}</a>
+        {{else}}
+        <a href="{{urls.features}}">{{nav.features}}</a>
+        {{/if}}
+      </li>
+      {{#if isSupport}}
+      <li>
+        <a href="{{urls.support}}" aria-current="page">{{nav.support}}</a>
+      </li>
+      {{/if}}
+      <li>
+        <details>
+          <summary>{{meta.name}}</summary>
+          <ul>
+            {{#each languages}}
+            <li>
+              {{#if current}}
+              <a href="{{url}}" hreflang="{{code}}" lang="{{code}}" aria-current="page">{{name}}</a>
+              {{else}}
+              <a href="{{url}}" hreflang="{{code}}" lang="{{code}}">{{name}}</a>
+              {{/if}}
+            </li>
+            {{/each}}
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+</header>

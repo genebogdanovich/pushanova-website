@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{meta.code}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{support.meta.title}}</title>
+  <meta name="description" content="{{support.meta.description}}">
+</head>
+<body>
+  {{> header}}
+  <main>
+    <header>
+      <h1>{{support.h1}}</h1>
+      <p>{{support.lead}}</p>
+      <p>{{support.contactLead}}</p>
+    </header>
+
+    <nav aria-labelledby="support-topics">
+      <h2 id="support-topics">{{support.topics.h2}}</h2>
+      <ul>
+        {{#each support.topics.items}}
+        <li><a href="{{href}}">{{label}}</a></li>
+        {{/each}}
+      </ul>
+    </nav>
+
+    {{#each support.sections}}
+    <section id="{{id}}">
+      <h2>{{heading}}</h2>
+      {{#each items}}
+      <article>
+        <h3>{{question}}</h3>
+        {{answer}}
+      </article>
+      {{/each}}
+    </section>
+    {{/each}}
+  </main>
+  {{> footer}}
+</body>
+</html>

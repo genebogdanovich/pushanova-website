@@ -1,0 +1,19 @@
+<footer>
+  {{#if isSupport}}
+  <ul>
+    <li><a href="{{urls.home}}">{{footer.home}}</a></li>
+    <li><a href="{{urls.features}}">{{footer.features}}</a></li>
+    <li><a href="{{urls.privacy}}">{{footer.privacy}}</a></li>
+    <li><a href="{termsUrl}">{{footer.terms}}</a></li>
+  </ul>
+  {{else}}
+  <ul>
+    <li><a href="{termsUrl}">{{footer.terms}}</a></li>
+    <li><a href="{{urls.privacy}}">{{footer.privacy}}</a></li>
+    <li><a href="{{urls.support}}">{{footer.support}}</a></li>
+    <li>{{footer.pressKit}}</li>
+    <li>{{footer.instagram}}</li>
+    <li>{{footer.about}}</li>
+  </ul>
+  {{/if}}
+</footer>

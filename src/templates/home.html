@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{meta.code}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{home.meta.title}}</title>
+  <meta name="description" content="{{home.meta.description}}">
+</head>
+<body>
+  {{> header}}
+  <main>
+    <header>
+      <p>{{home.eyebrow}}</p>
+      <h1>{{home.h1}}</h1>
+      <p>{{home.lead}}</p>
+      <p><a href="{appStoreUrl}">{{home.download}}</a></p>
+      <p>{{home.offer}}</p>
+    </header>
+
+    <section>
+      <h2>{{home.start.h2}}</h2>
+      {{#each home.start.paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{home.how.h2}}</h2>
+      {{#each home.how.steps}}
+      <h3>{{heading}}</h3>
+      {{#each paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+      {{/each}}
+      <p><a href="{{urls.features}}">{{home.how.featuresLink}}</a></p>
+    </section>
+
+    <section>
+      <h2>{{home.reviews.h2}}</h2>
+      {{#each home.reviews.items}}
+      <article>
+        <h3>{{title}}</h3>
+        <blockquote>
+          <p>{{quote}}</p>
+          <footer>{{attribution}}</footer>
+        </blockquote>
+      </article>
+      {{/each}}
+      <p><small>{{home.reviews.note}}</small></p>
+    </section>
+
+    <section>
+      <h2>{{home.privacy.h2}}</h2>
+      {{#each home.privacy.paragraphs}}
+      <p>{{this}}</p>
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{home.qna.h2}}</h2>
+      {{#each home.qna.items}}
+      <article>
+        <h3>{{question}}</h3>
+        {{#each paragraphs}}
+        <p>{{this}}</p>
+        {{/each}}
+      </article>
+      {{/each}}
+    </section>
+
+    <section>
+      <h2>{{home.closing.h2}}</h2>
+      <p>{{home.closing.lead}}</p>
+      <p><a href="{appStoreUrl}">{{home.download}}</a></p>
+      <p>{{home.closing.offer}}</p>
+    </section>
+  </main>
+  {{> footer}}
+</body>
+</html>

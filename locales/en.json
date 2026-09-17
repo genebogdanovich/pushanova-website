@@ -1,0 +1,1702 @@
+{
+  "meta": {
+    "code": {
+      "message": "en",
+      "description": "BCP 47 language code. Do not translate."
+    },
+    "name": {
+      "message": "English",
+      "description": "Language name in this language. Used as the language switcher summary and list label."
+    }
+  },
+  "nav": {
+    "home": {
+      "message": "Club Pushanova",
+      "description": "Header link to the homepage. Brand name. Do not translate Pushanova."
+    },
+    "features": {
+      "message": "Features",
+      "description": "Header link to the features page. Keep short."
+    },
+    "support": {
+      "message": "Support",
+      "description": "Header link to the support page. Shown on the support page. Keep short."
+    }
+  },
+  "footer": {
+    "home": {
+      "message": "Club Pushanova",
+      "description": "Footer link to the homepage on the support page. Do not translate Pushanova."
+    },
+    "features": {
+      "message": "Features",
+      "description": "Footer link to the features page on the support page. Keep short."
+    },
+    "terms": {
+      "message": "Terms",
+      "description": "Footer link to the Apple Licensed Application End User License Agreement. Keep short."
+    },
+    "privacy": {
+      "message": "Privacy",
+      "description": "Footer link to the privacy policy. Keep short."
+    },
+    "support": {
+      "message": "Support",
+      "description": "Footer link to the support page. Keep short."
+    },
+    "pressKit": {
+      "message": "Press Kit",
+      "description": "Footer label. No URL yet. Keep as a proper name if the product uses this name."
+    },
+    "instagram": {
+      "message": "Instagram",
+      "description": "Footer label. Service name. Do not translate."
+    },
+    "about": {
+      "message": "About the Developer",
+      "description": "Footer label. No URL yet."
+    }
+  },
+  "notFound": {
+    "meta": {
+      "title": {
+        "message": "Page not found · Pushanova",
+        "description": "Browser tab title for the 404 page. Do not translate Pushanova."
+      },
+      "description": {
+        "message": "This page is not available.",
+        "description": "Meta description for the 404 page. One short sentence."
+      }
+    },
+    "h1": {
+      "message": "Page not found",
+      "description": "404 page H1."
+    },
+    "lead": {
+      "message": "This page is not available.",
+      "description": "404 page body. One short sentence."
+    },
+    "homeLink": {
+      "message": "Club Pushanova",
+      "description": "404 page link back to the homepage. Do not translate Pushanova."
+    }
+  },
+  "home": {
+    "meta": {
+      "title": {
+        "message": "Build Up to 100 Push-Ups at Your Own Pace · Pushanova",
+        "description": "Homepage browser tab title. Do not translate Pushanova."
+      },
+      "description": {
+        "message": "Follow the progressive program or train freely. Pushanova automatically counts your push-ups on iPhone, iPad, and Apple Watch.",
+        "description": "Homepage meta description. Do not translate Pushanova."
+      }
+    },
+    "eyebrow": {
+      "message": "Push-up training for iPhone, iPad, and Apple Watch",
+      "description": "Homepage line above the H1. Device names stay in English."
+    },
+    "h1": {
+      "message": "Build Up to 100 Push-Ups at Your Own Pace",
+      "description": "Homepage H1. Hero headline. Keep to one sentence."
+    },
+    "lead": {
+      "message": "Follow the progressive program or train freely. You can do both in the same workout. Pushanova automatically counts your push-ups and tracks your progress on iPhone, iPad, and Apple Watch.",
+      "description": "Homepage hero paragraph. Do not translate Pushanova."
+    },
+    "download": {
+      "message": "Download on the App Store",
+      "description": "App Store button label. Keep App Store as a proper name."
+    },
+    "offer": {
+      "message": "Free to start. No account. No ads.",
+      "description": "Short offer line under the App Store button."
+    },
+    "start": {
+      "h2": {
+        "message": "Start Where You Are",
+        "description": "Homepage H2."
+      },
+      "paragraphs": [
+        {
+          "message": "The program has 50 levels. Each level is one structured workout with preset sets and repetition targets. Beginners can start with small sets in the early levels. Experienced users can start at any level or train freely.",
+          "description": "Homepage paragraph under Start Where You Are."
+        },
+        {
+          "message": "Follow the program when you want structure. Train freely when you want to decide how many push-ups and sets to perform. You can switch between them for each workout. After you complete a level, you can continue to train freely in the same workout.",
+          "description": "Homepage paragraph under Start Where You Are."
+        },
+        {
+          "message": "Pushanova does not require a daily or weekly schedule. You can repeat a level, take rest days, and rest as long as you need between sets. There are no leaderboards and no penalties for taking a break.",
+          "description": "Homepage paragraph under Start Where You Are. Do not translate Pushanova."
+        },
+        {
+          "message": "You can use Pushanova for a complete push-up workout or for push-up sets during HIIT or strength training.",
+          "description": "Homepage paragraph under Start Where You Are. HIIT is a common training acronym and may stay as HIIT."
+        }
+      ]
+    },
+    "how": {
+      "h2": {
+        "message": "How Pushanova Works",
+        "description": "Homepage H2. Do not translate Pushanova."
+      },
+      "steps": [
+        {
+          "heading": {
+            "message": "Start",
+            "description": "Homepage H3 under How Pushanova Works."
+          },
+          "paragraphs": [
+            {
+              "message": "Place your iPhone or iPad on the floor, or start the workout on Apple Watch. A short countdown gives you time to get into position.",
+              "description": "Homepage paragraph. Keep iPhone, iPad, and Apple Watch as proper names."
+            }
+          ]
+        },
+        {
+          "heading": {
+            "message": "Train",
+            "description": "Homepage H3 under How Pushanova Works."
+          },
+          "paragraphs": [
+            {
+              "message": "Pushanova counts your push-ups automatically and records your sets, pace, workout time, and active calories. Heart rate is included when available. On iPhone and iPad, automatic counting does not take photos or record video.",
+              "description": "Homepage paragraph. Do not translate Pushanova. Keep iPhone and iPad as proper names."
+            },
+            {
+              "message": "You control how long you rest. During a program workout, Pushanova suggests 90 seconds of rest between planned sets. You can continue earlier or rest longer.",
+              "description": "Homepage paragraph. Keep 90 as a number. Do not translate Pushanova."
+            }
+          ]
+        },
+        {
+          "heading": {
+            "message": "Train on Apple Watch Without Your iPhone Nearby",
+            "description": "Homepage H3. Keep Apple Watch and iPhone as proper names."
+          },
+          "paragraphs": [
+            {
+              "message": "You can start and complete a workout on Apple Watch without your iPhone nearby. When you use Apple Watch and iPhone together, Apple Watch tracks your push-ups while iPhone displays the synchronized workout.",
+              "description": "Homepage paragraph. Keep Apple Watch and iPhone as proper names."
+            }
+          ]
+        },
+        {
+          "heading": {
+            "message": "Review Your Workout",
+            "description": "Homepage H3 under How Pushanova Works."
+          },
+          "paragraphs": [
+            {
+              "message": "Pushanova saves every completed workout. Review your sets, pace, duration, calories, and heart rate when available. Your workout history and progress show how your training changes over time. With your permission, Pushanova can also save completed workouts to Apple Health.",
+              "description": "Homepage paragraph. Do not translate Pushanova. Keep Apple Health as a proper name."
+            }
+          ]
+        }
+      ],
+      "featuresLink": {
+        "message": "See all features",
+        "description": "Homepage link to the features page."
+      }
+    },
+    "reviews": {
+      "h2": {
+        "message": "What Users Are Saying",
+        "description": "Homepage H2 above App Store reviews."
+      },
+      "items": [
+        {
+          "title": {
+            "message": "Amazing app",
+            "description": "App Store review title."
+          },
+          "quote": {
+            "message": "“I really like this app. Its simplicity is what makes it the best!”",
+            "description": "App Store review body. Keep the quotation marks."
+          },
+          "attribution": {
+            "message": "Hellfire7777 · India · April 2, 2026",
+            "description": "Review attribution. Do not translate the username. Country name may be translated. Keep the date readable."
+          }
+        },
+        {
+          "title": {
+            "message": "Good",
+            "description": "App Store review title."
+          },
+          "quote": {
+            "message": "“It is great. It helps me do more push-ups, and it motivates me to keep improving.”",
+            "description": "App Store review body. Keep the quotation marks."
+          },
+          "attribution": {
+            "message": "Rikstarrr124 · Australia · June 19, 2024",
+            "description": "Review attribution. Do not translate the username. Country name may be translated."
+          }
+        },
+        {
+          "title": {
+            "message": "Awesome",
+            "description": "App Store review title."
+          },
+          "quote": {
+            "message": "“I can do so many push-ups now! Written by our 13-year-old son, who has been very motivated by this app.”",
+            "description": "App Store review body. Keep the quotation marks."
+          },
+          "attribution": {
+            "message": "AnonymousfromME · United States · January 12, 2025",
+            "description": "Review attribution. Do not translate the username. Country name may be translated."
+          }
+        },
+        {
+          "title": {
+            "message": "Great Push-Up App",
+            "description": "App Store review title."
+          },
+          "quote": {
+            "message": "“I love this app. I recently decided to see how fast I could get to 100 push-ups. I could not find an app that made this easy at an affordable price until I found this one. I love how clean the app is. The developer is also very responsive to feedback.”",
+            "description": "App Store review body. Keep the quotation marks."
+          },
+          "attribution": {
+            "message": "c15co · Australia · May 15, 2025",
+            "description": "Review attribution. Do not translate the username. Country name may be translated."
+          }
+        }
+      ],
+      "note": {
+        "message": "App Store reviews have been lightly edited for length and clarity.",
+        "description": "Small print under reviews. Keep App Store as a proper name."
+      }
+    },
+    "privacy": {
+      "h2": {
+        "message": "Privacy and Reliability",
+        "description": "Homepage H2."
+      },
+      "paragraphs": [
+        {
+          "message": "Push-up tracking on iPhone and iPad does not take photos or record, save, or upload video. Pushanova does not use the camera to identify you.",
+          "description": "Homepage privacy paragraph. Do not translate Pushanova. Keep iPhone and iPad as proper names."
+        },
+        {
+          "message": "Pushanova does not require an account or membership. Workout data stays on your devices and in your personal iCloud account when iCloud synchronization is enabled. With your permission, Pushanova can save completed workouts and supported health data to Apple Health. Pushanova does not sell your data and does not contain ads.",
+          "description": "Homepage privacy paragraph. Do not translate Pushanova. Keep iCloud and Apple Health as proper names."
+        },
+        {
+          "message": "An active workout can be restored if Pushanova closes or is interrupted.",
+          "description": "Homepage privacy paragraph. Do not translate Pushanova."
+        }
+      ]
+    },
+    "qna": {
+      "h2": {
+        "message": "Questions and Answers",
+        "description": "Homepage H2 for the FAQ."
+      },
+      "items": [
+        {
+          "question": {
+            "message": "Do I need an Apple Watch to use Pushanova?",
+            "description": "Homepage FAQ H3. Keep Apple Watch. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "No. Pushanova can track push-ups with an iPhone or iPad. Apple Watch adds wrist-based tracking and supports elevated push-ups on benches and horizontal bars.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova. Keep device names."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Can I train on Apple Watch without my iPhone nearby?",
+            "description": "Homepage FAQ H3. Keep Apple Watch and iPhone."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. You can start and complete a workout on Apple Watch while your iPhone is not nearby. The Watch app focuses on workouts. Workout history and analytics are available on iPhone and iPad.",
+              "description": "Homepage FAQ answer. Keep Watch, iPhone, and iPad as proper names."
+            },
+            {
+              "message": "When you use Apple Watch and iPhone together, Apple Watch can track your push-ups while iPhone displays the synchronized workout.",
+              "description": "Homepage FAQ answer. Keep Apple Watch and iPhone."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "How does Pushanova count push-ups?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "On iPhone and iPad, the front camera measures changes in the distance between your face and the device. On Apple Watch, Pushanova analyzes the movement of your wrist. You can also enable a setting that counts one push-up each time you tap the screen.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova. Keep device names."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Can I use Pushanova without allowing camera access?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. On iPhone, Pushanova can use another on-device sensor when camera access is unavailable. On both iPhone and iPad, you can enable counting by tapping the screen. Apple Watch does not use a camera.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova. Keep device names."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Does Pushanova record or upload photos or video while counting push-ups?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "No. Automatic counting never takes photos or records video. It does not save or upload photos or video. The camera is used only to measure changes in distance. Pushanova does not use the camera to identify you.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "What kinds of push-ups are supported?",
+            "description": "Homepage FAQ H3."
+          },
+          "paragraphs": [
+            {
+              "message": "iPhone and iPad support standard floor push-ups and push-ups from your knees. Apple Watch also supports elevated push-ups on a bench or horizontal bar.",
+              "description": "Homepage FAQ answer. Keep device names."
+            },
+            {
+              "message": "Push-ups on parallel handles with your palms facing each other are not supported. Knuckle push-ups may work, but counting can be less accurate.",
+              "description": "Homepage FAQ answer."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Will Pushanova count every push-up correctly?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "No automatic tracking method can count every movement correctly. Device position, form, and speed can affect the result. After a workout, you can correct the number of push-ups in each existing set.",
+              "description": "Homepage FAQ answer."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "What if I cannot do one full push-up yet?",
+            "description": "Homepage FAQ H3."
+          },
+          "paragraphs": [
+            {
+              "message": "You can begin with the early levels, which contain small sets. Push-ups from your knees are supported. You can repeat a level and progress at your own pace.",
+              "description": "Homepage FAQ answer."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Can experienced athletes use Pushanova with other training?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. You can start at any level or train freely. Pushanova can record push-up sets between HIIT rounds or strength-training exercises.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova. HIIT may stay as HIIT."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "What is the Pushanova 100 push-up program?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "The program has 50 levels in three stages. Each level is a structured workout with preset sets and push-up targets. The final level is one set of 100 push-ups.",
+              "description": "Homepage FAQ answer."
+            },
+            {
+              "message": "You can start at any level, repeat a level, or skip to another level. The first 10 levels are free. Pushanova Premium unlocks levels 11–50.",
+              "description": "Homepage FAQ answer. Keep Pushanova Premium as a product name. Keep 11–50 as numbers."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Can I complete levels and also train freely?",
+            "description": "Homepage FAQ H3."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. You can complete a level in one workout and train freely in another. You can also continue training freely after you complete a level in the same workout.",
+              "description": "Homepage FAQ answer."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Can I train at my own pace and take rest days?",
+            "description": "Homepage FAQ H3."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. Pushanova does not require a daily or weekly schedule. You can repeat levels, take rest days, and return to the program when you are ready.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova."
+            },
+            {
+              "message": "During a level workout, Pushanova suggests 90 seconds of rest between planned sets. You can continue earlier or rest longer. When you train freely, there is no fixed rest target.",
+              "description": "Homepage FAQ answer. Keep 90 as a number. Do not translate Pushanova."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Can I create a custom workout?",
+            "description": "Homepage FAQ H3."
+          },
+          "paragraphs": [
+            {
+              "message": "You cannot build and save a preset sequence of sets before a workout. When you train freely, you decide how many push-ups and sets to perform while you train, and Pushanova records the workout.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Does Pushanova work with Apple Health?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova. Keep Apple Health."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. With your permission, Pushanova saves completed strength-training workouts to Apple Health, including duration, active calories, and heart rate when available. Push-up and set counts are not saved to Apple Health.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova. Keep Apple Health."
+            },
+            {
+              "message": "Apple Health permission is required for workouts on Apple Watch. It is optional on iPhone and iPad.",
+              "description": "Homepage FAQ answer. Keep Apple Health, Apple Watch, iPhone, and iPad."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Does Pushanova track heart rate and calories?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. Pushanova estimates active calories even when no heart-rate device is available. Heart rate can come from Apple Watch, compatible heart-rate earbuds, or a Bluetooth heart-rate monitor.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova. Keep Apple Watch and Bluetooth."
+            },
+            {
+              "message": "Heart-rate sensing with compatible earbuds requires iOS 26 or later on iPhone, or iPadOS 26 or later on iPad.",
+              "description": "Homepage FAQ answer. Keep iOS, iPadOS, iPhone, iPad, and version numbers."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Is Pushanova available on iPad?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova. Keep iPad."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. Pushanova is a full iPad app with automatic counting, the 100 push-up program, the option to train freely, workout history, progress, analytics, and Apple Health.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova. Keep iPad and Apple Health."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Does Pushanova work without an internet connection?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. You can start and save a workout without an internet connection. iCloud synchronization resumes when your device is online again. App Store purchases require an internet connection.",
+              "description": "Homepage FAQ answer. Keep iCloud and App Store as proper names."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Do I need an account or membership?",
+            "description": "Homepage FAQ H3."
+          },
+          "paragraphs": [
+            {
+              "message": "No. Pushanova does not require an account or membership. You can use the app without providing an email address or creating a password. Pushanova Premium is optional and is purchased through the App Store.",
+              "description": "Homepage FAQ answer. Keep Pushanova Premium and App Store as proper names."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Can I use Pushanova for free?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "Yes. You can train freely as often and as long as you want. The first 10 levels and automatic counting are free on iPhone, iPad, and Apple Watch. Manual workout entry and workout history are also free on iPhone and iPad. Pushanova does not contain ads.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova. Keep device names."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "What does Pushanova Premium include?",
+            "description": "Homepage FAQ H3. Keep Pushanova Premium as a product name."
+          },
+          "paragraphs": [
+            {
+              "message": "Pushanova Premium unlocks levels 11–50 and more ways to review your progress. These include a workout calendar, weekly comparisons, detailed progress charts, and additional pace, cadence, and heart-rate details for each workout.",
+              "description": "Homepage FAQ answer. Keep Pushanova Premium. Keep 11–50 as numbers."
+            },
+            {
+              "message": "Pushanova Premium is available as a yearly subscription or a lifetime purchase.",
+              "description": "Homepage FAQ answer. Keep Pushanova Premium."
+            }
+          ]
+        },
+        {
+          "question": {
+            "message": "Does Pushanova offer a free trial?",
+            "description": "Homepage FAQ H3. Do not translate Pushanova."
+          },
+          "paragraphs": [
+            {
+              "message": "Eligible new subscribers can try the yearly subscription free for three days. The yearly subscription begins automatically after the trial unless it is canceled before the trial ends. The lifetime purchase does not include a free trial. The App Store shows the price and renewal terms before purchase.",
+              "description": "Homepage FAQ answer. Keep three days. Keep App Store as a proper name."
+            }
+          ]
+        }
+      ]
+    },
+    "closing": {
+      "h2": {
+        "message": "Ready for Your First Workout?",
+        "description": "Homepage closing H2."
+      },
+      "lead": {
+        "message": "You can train freely for as long as you want. The first 10 levels and automatic counting are also free. Start a workout on iPhone, iPad, or Apple Watch.",
+        "description": "Homepage closing paragraph. Keep device names."
+      },
+      "offer": {
+        "message": "No account. No subscription required. No ads.",
+        "description": "Homepage closing offer line."
+      }
+    }
+  },
+  "features": {
+    "meta": {
+      "title": {
+        "message": "Pushanova Features",
+        "description": "Features page browser tab title. Do not translate Pushanova."
+      },
+      "description": {
+        "message": "Follow a progressive program toward 100 push-ups, train freely, or combine both. Pushanova counts your push-ups on iPhone, iPad, and Apple Watch.",
+        "description": "Features page meta description. Do not translate Pushanova."
+      }
+    },
+    "h1": {
+      "message": "Pushanova Features",
+      "description": "Features page H1. Do not translate Pushanova."
+    },
+    "lead": {
+      "message": "Follow a progressive program toward 100 push-ups, train freely without preset targets, or combine both in the same workout. Pushanova counts your push-ups and records your workouts on iPhone, iPad, and Apple Watch.",
+      "description": "Features page intro. Do not translate Pushanova. Keep device names."
+    },
+    "download": {
+      "message": "Download on the App Store",
+      "description": "App Store button label. Keep App Store as a proper name."
+    },
+    "offer": {
+      "message": "Free to start. No account. No ads.",
+      "description": "Short offer line under the App Store button."
+    },
+    "program": {
+      "h2": {
+        "message": "Follow the Program and Train Freely",
+        "description": "Features H2."
+      },
+      "paragraphs": [
+        {
+          "message": "The progressive program has 50 levels in three stages. Each level is one structured workout with preset sets and push-up targets. Start at any level and move through the program at your own pace. The final level is one set of 100 push-ups.",
+          "description": "Features paragraph under Follow the Program and Train Freely."
+        },
+        {
+          "message": "Train freely whenever you do not want preset targets. You decide how many push-ups and sets to perform while Pushanova records the workout. You can return to the program for your next workout.",
+          "description": "Features paragraph. Do not translate Pushanova."
+        },
+        {
+          "message": "Completing a level does not end the workout. You can continue to train freely in the same session. Additional push-ups and sets are saved as part of that workout.",
+          "description": "Features paragraph."
+        },
+        {
+          "message": "Pushanova does not require a daily or weekly schedule. You can repeat a level, take rest days, and continue when you are ready.",
+          "description": "Features paragraph. Do not translate Pushanova."
+        },
+        {
+          "message": "The first 10 levels are free. Pushanova Premium unlocks levels 11–50.",
+          "description": "Features paragraph. Keep Pushanova Premium. Keep 11–50 as numbers."
+        }
+      ]
+    },
+    "counting": {
+      "h2": {
+        "message": "Automatic Push-Up Counting",
+        "description": "Features H2."
+      },
+      "paragraphs": [
+        {
+          "message": "On iPhone and iPad, place the device on the floor and do push-ups toward the front camera. Pushanova counts your push-ups as you move. Automatic counting does not take photos or record video.",
+          "description": "Features paragraph. Do not translate Pushanova. Keep iPhone and iPad."
+        },
+        {
+          "message": "On Apple Watch, Pushanova counts push-ups from the movement of your wrist. This supports floor push-ups and elevated push-ups on benches and horizontal bars.",
+          "description": "Features paragraph. Do not translate Pushanova. Keep Apple Watch."
+        },
+        {
+          "message": "You can also count one push-up each time you tap the screen. If you complete a workout without Pushanova, you can enter the sets and push-up counts by hand on iPhone or iPad.",
+          "description": "Features paragraph. Do not translate Pushanova. Keep iPhone and iPad."
+        }
+      ]
+    },
+    "watch": {
+      "h2": {
+        "message": "Train on Apple Watch With or Without Your iPhone",
+        "description": "Features H2. Keep Apple Watch and iPhone as proper names."
+      },
+      "sections": [
+        {
+          "heading": {
+            "message": "Complete a Workout on Apple Watch",
+            "description": "Features H3. Keep Apple Watch."
+          },
+          "paragraphs": [
+            {
+              "message": "Start and complete a workout on Apple Watch without your iPhone nearby. The Watch app counts your push-ups and shows the current workout phase, push-up count, set, timer, pace, heart rate, and active calories.",
+              "description": "Features paragraph. Keep Apple Watch, iPhone, and Watch."
+            },
+            {
+              "message": "Haptic feedback confirms push-ups and completed sets, so you do not need to look at the screen after every movement.",
+              "description": "Features paragraph."
+            },
+            {
+              "message": "You can listen to music or podcasts and control media from Apple Watch during a workout.",
+              "description": "Features paragraph. Keep Apple Watch."
+            }
+          ]
+        },
+        {
+          "heading": {
+            "message": "Use Apple Watch and iPhone Together",
+            "description": "Features H3. Keep Apple Watch and iPhone."
+          },
+          "paragraphs": [
+            {
+              "message": "Start the workout on either device. Apple Watch can count your push-ups while iPhone displays the same workout. The push-up count, sets, pace, rest, and other workout information stay synchronized.",
+              "description": "Features paragraph. Keep Apple Watch and iPhone."
+            }
+          ]
+        }
+      ]
+    },
+    "live": {
+      "h2": {
+        "message": "See Workout Information While You Train",
+        "description": "Features H2."
+      },
+      "intro": {
+        "message": "Pushanova shows the information you need during each part of a workout:",
+        "description": "Features intro before the live-metrics list. Do not translate Pushanova. Keep the colon."
+      },
+      "items": [
+        {
+          "message": "Current phase: preparation, push-ups, or rest",
+          "description": "Features list item. Live workout metric."
+        },
+        {
+          "message": "Push-up count and current set",
+          "description": "Features list item. Live workout metric."
+        },
+        {
+          "message": "Workout timer",
+          "description": "Features list item. Live workout metric."
+        },
+        {
+          "message": "Current and average pace",
+          "description": "Features list item. Live workout metric."
+        },
+        {
+          "message": "Heart rate, when available",
+          "description": "Features list item. Live workout metric."
+        },
+        {
+          "message": "Active calories",
+          "description": "Features list item. Live workout metric."
+        },
+        {
+          "message": "Your highest number of push-ups in one set",
+          "description": "Features list item. Live workout metric."
+        }
+      ],
+      "paragraphs": [
+        {
+          "message": "A short countdown gives you time to get into position before the first push-up. During a program workout, Pushanova suggests 90 seconds of rest after a planned set. You can continue earlier or rest longer. When you train freely, rest time counts upward without a fixed target.",
+          "description": "Features paragraph. Keep 90 as a number. Do not translate Pushanova."
+        },
+        {
+          "message": "On iPhone, the current phase, timer, push-up count, and set remain visible on the Lock Screen and in Dynamic Island.",
+          "description": "Features paragraph. Keep iPhone, Lock Screen, and Dynamic Island as proper names."
+        },
+        {
+          "message": "Pushanova also recognizes when you approach or pass your highest number of push-ups in one set. This is a personal record and is not compared with other users.",
+          "description": "Features paragraph. Do not translate Pushanova."
+        }
+      ]
+    },
+    "progress": {
+      "h2": {
+        "message": "Review Your Workouts and Progress",
+        "description": "Features H2."
+      },
+      "sections": [
+        {
+          "heading": {
+            "message": "Workout History",
+            "description": "Features H3."
+          },
+          "paragraphs": [
+            {
+              "message": "Every completed workout is saved. Review the sets, duration, active calories, notes, and how the workout felt. Heart rate, pace, and cadence are included when available. You can also create a share card or add workout information to a photo.",
+              "description": "Features paragraph under Workout History."
+            },
+            {
+              "message": "Workout history is free. Pushanova Premium adds more detailed pace, cadence, and heart-rate views for each workout.",
+              "description": "Features paragraph. Keep Pushanova Premium."
+            }
+          ]
+        },
+        {
+          "heading": {
+            "message": "Progress Over Time",
+            "description": "Features H3."
+          },
+          "paragraphs": [
+            {
+              "message": "Review push-ups, sets, pace, cadence, workout duration, heart rate, and active calories over recent weeks. A calendar shows the days when you trained. Weekly comparisons show how the current week compares with the previous week.",
+              "description": "Features paragraph under Progress Over Time."
+            },
+            {
+              "message": "The calendar, weekly comparisons, and detailed progress charts require Pushanova Premium.",
+              "description": "Features paragraph. Keep Pushanova Premium."
+            }
+          ]
+        },
+        {
+          "heading": {
+            "message": "Recent Training Consistency",
+            "description": "Features H3."
+          },
+          "paragraphs": [
+            {
+              "message": "A gauge shows how consistently you have trained recently. Recent training days fill the gauge, and older days gradually have less effect. Missing one day does not reset it.",
+              "description": "Features paragraph under Recent Training Consistency."
+            },
+            {
+              "message": "The same view is available in Home Screen, Lock Screen, and Apple Watch widgets. Lifetime totals and your highest number of push-ups in one set appear with it. These features are free.",
+              "description": "Features paragraph. Keep Home Screen, Lock Screen, and Apple Watch as proper names."
+            },
+            {
+              "message": "Optional reminders can be scheduled for selected weekdays or at a repeating interval.",
+              "description": "Features paragraph."
+            }
+          ]
+        }
+      ]
+    },
+    "devices": {
+      "h2": {
+        "message": "Use Pushanova Across Apple Devices",
+        "description": "Features H2. Do not translate Pushanova. Keep Apple."
+      },
+      "paragraphs": [
+        {
+          "message": "Pushanova is a full app on iPad, with automatic counting, program workouts, training without preset targets, workout history, progress, analytics, and Apple Health.",
+          "description": "Features paragraph. Do not translate Pushanova. Keep iPad and Apple Health."
+        },
+        {
+          "message": "Your workout history can synchronize between your Apple devices through your personal iCloud account. Pushanova does not require its own account.",
+          "description": "Features paragraph. Keep Apple and iCloud. Do not translate Pushanova."
+        },
+        {
+          "message": "With your permission, Pushanova saves completed strength-training workouts to Apple Health. Heart rate and active calories are included when available.",
+          "description": "Features paragraph. Do not translate Pushanova. Keep Apple Health."
+        },
+        {
+          "message": "You can start and save a workout without an internet connection. iCloud synchronization resumes when your device is online again.",
+          "description": "Features paragraph. Keep iCloud."
+        }
+      ]
+    },
+    "privacy": {
+      "h2": {
+        "message": "Privacy and Reliability",
+        "description": "Features H2."
+      },
+      "paragraphs": [
+        {
+          "message": "Pushanova does not contain ads and does not sell your data. Push-up counting does not take photos or record, save, or upload video.",
+          "description": "Features paragraph. Do not translate Pushanova."
+        },
+        {
+          "message": "If Pushanova closes or a workout is interrupted, the active workout can be restored when you open the app again.",
+          "description": "Features paragraph. Do not translate Pushanova."
+        }
+      ]
+    },
+    "pricing": {
+      "h2": {
+        "message": "Free and Premium Features",
+        "description": "Features H2."
+      },
+      "free": {
+        "h3": {
+          "message": "Included Free",
+          "description": "Features H3 above the free-features list."
+        },
+        "items": [
+          {
+            "message": "The first 10 program levels",
+            "description": "Free feature list item."
+          },
+          {
+            "message": "Training without preset targets",
+            "description": "Free feature list item."
+          },
+          {
+            "message": "Automatic counting on iPhone, iPad, and Apple Watch",
+            "description": "Free feature list item. Keep device names."
+          },
+          {
+            "message": "Counting by tapping the screen",
+            "description": "Free feature list item."
+          },
+          {
+            "message": "Manual workout entry on iPhone and iPad",
+            "description": "Free feature list item. Keep iPhone and iPad."
+          },
+          {
+            "message": "Workout history, notes, and sharing",
+            "description": "Free feature list item."
+          },
+          {
+            "message": "Recent training consistency, lifetime totals, and your highest number of push-ups in one set",
+            "description": "Free feature list item."
+          },
+          {
+            "message": "Live workout information on the Lock Screen and in Dynamic Island",
+            "description": "Free feature list item. Keep Lock Screen and Dynamic Island."
+          },
+          {
+            "message": "Recent training consistency widgets",
+            "description": "Free feature list item."
+          },
+          {
+            "message": "Training reminders",
+            "description": "Free feature list item."
+          },
+          {
+            "message": "Apple Health and iCloud synchronization",
+            "description": "Free feature list item. Keep Apple Health and iCloud."
+          }
+        ]
+      },
+      "premium": {
+        "h3": {
+          "message": "Pushanova Premium",
+          "description": "Features H3. Keep as the product name."
+        },
+        "items": [
+          {
+            "message": "Program levels 11–50 and the complete path toward 100 push-ups",
+            "description": "Premium feature list item. Keep 11–50 as numbers."
+          },
+          {
+            "message": "Workout calendar",
+            "description": "Premium feature list item."
+          },
+          {
+            "message": "Weekly comparisons and the Home Screen widget",
+            "description": "Premium feature list item. Keep Home Screen."
+          },
+          {
+            "message": "Detailed progress charts",
+            "description": "Premium feature list item."
+          },
+          {
+            "message": "Additional pace, cadence, and heart-rate details for each workout",
+            "description": "Premium feature list item."
+          }
+        ],
+        "note": {
+          "message": "Pushanova Premium is available as a yearly subscription or a lifetime purchase.",
+          "description": "Features paragraph under the Premium list. Keep Pushanova Premium."
+        }
+      }
+    },
+    "closing": {
+      "h2": {
+        "message": "Start Your First Workout",
+        "description": "Features closing H2."
+      },
+      "lead": {
+        "message": "Train freely for as long as you want or begin with one of the first 10 program levels. Automatic counting is free on iPhone, iPad, and Apple Watch.",
+        "description": "Features closing paragraph. Keep device names."
+      },
+      "offer": {
+        "message": "No account. No ads.",
+        "description": "Features closing offer line."
+      }
+    }
+  },
+  "support": {
+    "meta": {
+      "title": {
+        "message": "Pushanova Support",
+        "description": "Support page browser tab title. Do not translate Pushanova."
+      },
+      "description": {
+        "message": "Find answers about workouts, push-up counting, Apple Watch, Apple Health, purchases, and privacy.",
+        "description": "Support page meta description. Keep Apple Watch and Apple Health as proper names."
+      }
+    },
+    "h1": {
+      "message": "Pushanova Support",
+      "description": "Support page H1. Do not translate Pushanova."
+    },
+    "lead": {
+      "message": "Find answers about workouts, push-up counting, Apple Watch, Apple Health, purchases, and privacy.",
+      "description": "Support page intro. Keep Apple Watch and Apple Health as proper names."
+    },
+    "contactLead": {
+      "message": "If you still need help, email <a href=\"{mailto}\">{email}</a>.",
+      "description": "Support intro contact line. Do not translate {mailto}, {email}, or HTML tags."
+    },
+    "topics": {
+      "h2": {
+        "message": "Support Topics",
+        "description": "Support H2 above the table of contents."
+      },
+      "items": [
+        {
+          "href": {
+            "message": "#getting-started",
+            "description": "Table of contents fragment. Do not translate."
+          },
+          "label": {
+            "message": "Getting Started",
+            "description": "Support table of contents link. Keep short."
+          }
+        },
+        {
+          "href": {
+            "message": "#push-up-counting",
+            "description": "Table of contents fragment. Do not translate."
+          },
+          "label": {
+            "message": "Push-Up Counting",
+            "description": "Support table of contents link. Keep short."
+          }
+        },
+        {
+          "href": {
+            "message": "#apple-watch",
+            "description": "Table of contents fragment. Do not translate."
+          },
+          "label": {
+            "message": "Apple Watch",
+            "description": "Support table of contents link. Keep Apple Watch as a proper name."
+          }
+        },
+        {
+          "href": {
+            "message": "#apple-health-heart-rate-and-calories",
+            "description": "Table of contents fragment. Do not translate."
+          },
+          "label": {
+            "message": "Apple Health, Heart Rate, and Calories",
+            "description": "Support table of contents link. Keep Apple Health as a proper name."
+          }
+        },
+        {
+          "href": {
+            "message": "#workouts-and-progress",
+            "description": "Table of contents fragment. Do not translate."
+          },
+          "label": {
+            "message": "Workouts and Progress",
+            "description": "Support table of contents link."
+          }
+        },
+        {
+          "href": {
+            "message": "#premium-and-purchases",
+            "description": "Table of contents fragment. Do not translate."
+          },
+          "label": {
+            "message": "Premium and Purchases",
+            "description": "Support table of contents link."
+          }
+        },
+        {
+          "href": {
+            "message": "#privacy-and-data",
+            "description": "Table of contents fragment. Do not translate."
+          },
+          "label": {
+            "message": "Privacy and Data",
+            "description": "Support table of contents link."
+          }
+        },
+        {
+          "href": {
+            "message": "#devices-and-compatibility",
+            "description": "Table of contents fragment. Do not translate."
+          },
+          "label": {
+            "message": "Devices and Compatibility",
+            "description": "Support table of contents link."
+          }
+        },
+        {
+          "href": {
+            "message": "#troubleshooting",
+            "description": "Table of contents fragment. Do not translate."
+          },
+          "label": {
+            "message": "Troubleshooting",
+            "description": "Support table of contents link."
+          }
+        }
+      ]
+    },
+    "sections": [
+      {
+        "id": {
+          "message": "getting-started",
+          "description": "Section id. Do not translate. Must match the table of contents href without #."
+        },
+        "heading": {
+          "message": "Getting Started",
+          "description": "Support H2."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "How do I start a workout?",
+              "description": "Support H3. Getting Started."
+            },
+            "answer": {
+              "message": "<p>On iPhone or iPad, open the <strong>Training</strong> tab. The title at the top is <strong>Push-Ups</strong>.</p><ul><li>Tap <strong>Level</strong> to complete a structured workout from the program.</li><li>Tap <strong>Freestyle</strong> to train without preset sets or push-up targets.</li></ul><p>A short countdown gives you time to get into position. Your first push-up begins the first set.</p><p>On Apple Watch, open Pushanova and tap <strong>Level</strong> or <strong>Freestyle</strong>.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I choose a level?",
+              "description": "Support H3. Getting Started."
+            },
+            "answer": {
+              "message": "<p>On iPhone or iPad, open <strong>Training</strong> and tap <strong>Choose Level</strong>. On Apple Watch, tap <strong>Choose</strong> next to Level.</p><p>The program has 50 levels in three stages. You can start at any level available to you. Completing the required push-ups advances the program to the next level.</p><p>Levels 1–10 are free. Levels 11–50 require Pushanova Premium.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I train without the program?",
+              "description": "Support H3. Getting Started."
+            },
+            "answer": {
+              "message": "<p>Start <strong>Freestyle</strong> on iPhone, iPad, or Apple Watch. You decide how many push-ups and sets to perform.</p><p>When Pushanova detects a rest, it finishes the current set. Your next push-up begins a new set. Tap <strong>Complete Workout</strong> when you are finished.</p><p>You can train freely between program workouts. You can also continue to train freely after completing a level in the same workout.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "What do the set boxes mean?",
+              "description": "Support H3. Getting Started."
+            },
+            "answer": {
+              "message": "<p>On iPhone and iPad, the <strong>Sets</strong> row shows the sets in the current workout. Each box represents one set.</p><p>During a program workout:</p><ul><li>Upcoming boxes show the planned push-up targets.</li><li>The highlighted box shows the current set.</li><li>The large number shows how many push-ups remain in the current planned set.</li><li>A completed box shows how many push-ups you performed.</li><li>Additional sets appear after you continue beyond the program target.</li></ul><p>When you train freely, each box appears after Pushanova finishes a set. The large number shows the push-up count for the current set.</p><p>You can scroll the row when it contains many sets. Apple Watch shows text such as <strong>Set 2 of 5</strong> instead of boxes.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How should I position my iPhone or iPad?",
+              "description": "Support H3. Getting Started. Keep iPhone and iPad."
+            },
+            "answer": {
+              "message": "<p>For automatic camera counting, place the device flat on the floor with the screen facing up. Keep the front camera under your face, use good light, and keep your face in view.</p><p>If Camera access is unavailable on iPhone, place the top edge of the phone near your face. The screen may briefly turn black when your face is close. This is expected.</p><p>If you do not use Camera access on iPad, turn on <strong>Tap to Count</strong> and tap the screen for each push-up.</p><p>You do not need to touch the screen during automatic camera counting. Do not prop the device at an angle.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      },
+      {
+        "id": {
+          "message": "push-up-counting",
+          "description": "Section id. Do not translate."
+        },
+        "heading": {
+          "message": "Push-Up Counting",
+          "description": "Support H2."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "Which kinds of push-ups are supported?",
+              "description": "Support H3. Push-Up Counting."
+            },
+            "answer": {
+              "message": "<p>iPhone and iPad support standard floor push-ups and push-ups from your knees.</p><p>Apple Watch supports floor push-ups and elevated push-ups on a bench or horizontal bar.</p><p>Push-ups on parallel handles with your palms facing each other are not supported. Knuckle push-ups may work, but counting can be less accurate.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "What should I do if Pushanova misses or adds push-ups?",
+              "description": "Support H3. Push-Up Counting. Do not translate Pushanova."
+            },
+            "answer": {
+              "message": "<p>Automatic counting can miss or add push-ups. Device position, lighting, movement, form, and speed can affect the result.</p><p>On iPhone or iPad:</p><ul><li>Place the device flat on the floor.</li><li>Keep your face visible to the front camera.</li><li>Use good light.</li><li>Complete a clear downward and upward movement.</li><li>Keep other movement away from the camera.</li></ul><p>On Apple Watch:</p><ul><li>Wear the band firmly and comfortably.</li><li>Complete a clear downward and upward movement.</li><li>Avoid moving the Watch arm separately from the push-up.</li></ul><p>You can use <strong>Tap to Count</strong> when automatic counting is not suitable. After the workout, you can correct the counts for completed sets.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "What should I do if automatic counting does not work at all?",
+              "description": "Support H3. Push-Up Counting."
+            },
+            "answer": {
+              "message": "<ol><li>Confirm that the device is in the correct position.</li><li>On iPhone or iPad, check Camera access for Pushanova.</li><li>On Apple Watch, check Apple Health access and wear Watch firmly on your wrist.</li><li>Close and reopen Pushanova.</li><li>Start a short test workout.</li><li>If counting still does not work, use <strong>Report an Issue</strong> from the completed workout.</li></ol><p>On iPad without Camera access, use <strong>Tap to Count</strong>.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Why does my iPhone screen briefly turn black?",
+              "description": "Support H3. Push-Up Counting. Keep iPhone."
+            },
+            "answer": {
+              "message": "<p>When Camera access is unavailable, iPhone can use another built-in counting method. The screen may briefly turn black when your face is close to the top of the phone.</p><p>This is expected and does not mean that Pushanova is taking a photo or recording video.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I count push-ups by tapping the screen?",
+              "description": "Support H3. Push-Up Counting."
+            },
+            "answer": {
+              "message": "<p>Open Settings in Pushanova and turn on <strong>Tap to Count</strong>. During a workout, each tap on the workout screen counts one push-up.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Can I correct or add push-ups after a workout?",
+              "description": "Support H3. Push-Up Counting."
+            },
+            "answer": {
+              "message": "<p>You can correct the number of push-ups in sets that already exist. Open the workout, tap <strong>Edit</strong> on the push-up chart, change the set counts, and tap <strong>Save</strong>.</p><p>Editing does not add another set to the workout. To record additional work as a separate session, open <strong>Workouts</strong>, tap <strong>Add Workout</strong>, and enter the sets by hand.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "What is included in a counting issue report?",
+              "description": "Support H3. Push-Up Counting."
+            },
+            "answer": {
+              "message": "<p>Open a completed workout and select <strong>Report an Issue</strong>. You can describe the problem and provide the push-up counts that you expected.</p><p>The report may include movement measurements, push-up counts, timing information, device information, app version, and language. It does not include photos or video.</p><p>The report is sent by email only when you choose to send it.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      },
+      {
+        "id": {
+          "message": "apple-watch",
+          "description": "Section id. Do not translate."
+        },
+        "heading": {
+          "message": "Apple Watch",
+          "description": "Support H2. Keep Apple Watch as a proper name."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "Can I use Pushanova on Apple Watch without my iPhone?",
+              "description": "Support H3. Apple Watch. Do not translate Pushanova. Keep Apple Watch and iPhone."
+            },
+            "answer": {
+              "message": "<p>Yes. You can start and complete a workout on Apple Watch without your iPhone nearby. Open Pushanova on Watch and tap <strong>Level</strong> or <strong>Freestyle</strong>.</p><p>Apple Health access is required for Watch workouts.</p><p>The Watch app is focused on active workouts and the summary shown immediately afterward. Use Pushanova on iPhone or iPad for full workout history, calendar, progress, editing, issue reports, and sharing.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I use Apple Watch and iPhone together?",
+              "description": "Support H3. Apple Watch. Keep Apple Watch and iPhone."
+            },
+            "answer": {
+              "message": "<p>On iPhone, open Pushanova Settings and turn on <strong>Use Apple Watch</strong>. Make sure Pushanova is installed on Watch and that Watch is unlocked and nearby. Then start the workout on iPhone or Apple Watch.</p><p>Apple Watch counts your push-ups while iPhone displays the same workout. Push-up counts, sets, pace, and rest remain synchronized.</p><p>Paired Apple Watch workouts are available with iPhone, not iPad.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Why will a workout not start on Apple Watch?",
+              "description": "Support H3. Apple Watch. Keep Apple Watch."
+            },
+            "answer": {
+              "message": "<p>Check the following:</p><ul><li>Apple Health access is allowed for Pushanova on Watch.</li><li>Another workout is not already running on Watch.</li><li>Watch is unlocked.</li><li>Pushanova is installed on Watch.</li></ul><p>If you started from iPhone and see <strong>Apple Watch Not Responding</strong>, check whether the workout is already open on Watch. Otherwise, open Pushanova on Watch and try again.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Why is my Apple Watch workout missing on iPhone or iPad?",
+              "description": "Support H3. Apple Watch. Keep device names."
+            },
+            "answer": {
+              "message": "<p>Pushanova saves its workout record separately from Apple Health. When iCloud synchronization is enabled, Pushanova workout records synchronize through your personal iCloud account. The Apple Health copy is a separate strength-training workout.</p><p>Confirm that:</p><ul><li>The workout contained at least one counted push-up.</li><li>The workout reached its summary.</li><li>Your devices use the same Apple Account.</li><li>iCloud is enabled for Pushanova.</li><li>Both devices have an internet connection.</li></ul><p>Open Pushanova on iPhone or iPad and allow time for synchronization. If the workout appears in Apple Health but not in Pushanova, include that information when you contact support.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      },
+      {
+        "id": {
+          "message": "apple-health-heart-rate-and-calories",
+          "description": "Section id. Do not translate."
+        },
+        "heading": {
+          "message": "Apple Health, Heart Rate, and Calories",
+          "description": "Support H2. Keep Apple Health as a proper name."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "Is Apple Health required?",
+              "description": "Support H3. Apple Health. Keep Apple Health."
+            },
+            "answer": {
+              "message": "<p>Apple Health is optional on iPhone and iPad. Without Apple Health, Pushanova still counts push-ups, saves workouts in the app, and estimates active calories.</p><p>Apple Health access is required to start a workout on Apple Watch.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I give Pushanova access to Apple Health?",
+              "description": "Support H3. Apple Health. Do not translate Pushanova. Keep Apple Health."
+            },
+            "answer": {
+              "message": "<p>Open the Health access settings for Pushanova in the Health app or system Settings. Review the categories that Pushanova can read and write.</p><p>Pushanova requests only the categories needed for workouts, heart rate, active calories, and calorie estimates. You can change access later in Apple Health or system Settings.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "What does Pushanova save to Apple Health?",
+              "description": "Support H3. Apple Health. Do not translate Pushanova. Keep Apple Health."
+            },
+            "answer": {
+              "message": "<p>With your permission, Pushanova saves a completed strength-training workout and active calories to Apple Health. Duration and heart rate are included when available.</p><p>Push-up counts and set counts remain in Pushanova. Apple Health does not store those counts.</p><p>Pushanova can read supported Health information, such as heart rate, active calories, and body mass, when you allow it. This information is used for workouts and calorie estimates.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Why is my workout missing from Apple Health?",
+              "description": "Support H3. Apple Health. Keep Apple Health."
+            },
+            "answer": {
+              "message": "<p>Check the following:</p><ul><li>Apple Health access allows Pushanova to save workouts.</li><li>The workout contained at least one counted push-up.</li><li>You completed the workout and reached the summary.</li><li>No save error appeared on the summary.</li></ul><p>On Apple Watch, Health access must remain enabled during the workout.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Which devices can provide heart rate?",
+              "description": "Support H3. Apple Health."
+            },
+            "answer": {
+              "message": "<p>Heart rate can come from:</p><ul><li>Apple Watch during a Pushanova Watch workout</li><li>Compatible heart-rate earbuds</li><li>A Bluetooth heart-rate monitor connected through Apple Watch, iPhone, or iPad</li></ul><p>Pushanova does not pair heart-rate devices directly. Connect supported devices through Apple settings.</p><p>Heart-rate sensing with compatible earbuds requires iOS 26 or later on iPhone, or iPadOS 26 or later on iPad.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Why is heart rate missing?",
+              "description": "Support H3. Apple Health."
+            },
+            "answer": {
+              "message": "<p>Confirm that:</p><ul><li>Pushanova can read heart rate in Apple Health.</li><li>Apple Watch is worn firmly and comfortably.</li><li>A compatible heart-rate device is connected and active during the workout.</li></ul><p>Allow a short time for heart-rate information to appear after the workout starts. An iPhone or iPad workout may not show heart rate when no compatible source provides it.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How are active calories calculated?",
+              "description": "Support H3. Apple Health."
+            },
+            "answer": {
+              "message": "<p>Pushanova uses active calories from Apple Health when they are available. Otherwise, Pushanova estimates active calories from available workout information.</p><p>An estimate does not require heart-rate information. Allowing Pushanova to read your weight from Apple Health can improve the estimate.</p><p>Detailed heart-rate, pace, and cadence charts require Pushanova Premium. The workout and basic summary are still saved without Premium.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      },
+      {
+        "id": {
+          "message": "workouts-and-progress",
+          "description": "Section id. Do not translate."
+        },
+        "heading": {
+          "message": "Workouts and Progress",
+          "description": "Support H2."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "Why did my workout not save or appear in history?",
+              "description": "Support H3. Workouts and Progress."
+            },
+            "answer": {
+              "message": "<p>Pushanova does not save a workout with zero counted push-ups. A canceled or discarded workout is also not saved.</p><p>Other possible causes include insufficient device storage or closing the app while the workout is being saved. If a save fails, the summary explains that the workout will not appear in history.</p><p>If iCloud synchronization is enabled, allow time for a completed workout to appear on your other devices. Apple Health stores a separate copy and is not the source of Pushanova workout synchronization.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Pushanova closed during a workout. Can I recover it?",
+              "description": "Support H3. Workouts and Progress. Do not translate Pushanova."
+            },
+            "answer": {
+              "message": "<p>Often, yes. Reopen Pushanova and follow the recovery message. The app attempts to restore the active workout or save the completed part.</p><p>On Apple Watch, <strong>Workout Interrupted</strong> may appear. Dismissing this message saves the completed part of the workout when possible.</p><p>Recovery may not be possible when the stored workout is damaged, too old, or the device does not have enough free storage.</p><p>If the problem continues:</p><ul><li>Update Pushanova and the device operating system.</li><li>Restart the device.</li><li>Confirm that the device has free storage.</li><li>Do not close Pushanova while <strong>Complete Workout</strong> is saving.</li></ul>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I add a workout manually?",
+              "description": "Support H3. Workouts and Progress."
+            },
+            "answer": {
+              "message": "<p>On iPhone or iPad, open <strong>Workouts</strong>, tap <strong>Add Workout</strong>, and enter the sets and push-up counts.</p><p>Use manual entry for a push-up workout completed without automatic counting.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I view previous workouts and progress?",
+              "description": "Support H3. Workouts and Progress."
+            },
+            "answer": {
+              "message": "<p>On iPhone or iPad:</p><ul><li>Open <strong>Workouts</strong> to view individual workouts, sets, duration, calories, notes, and available details.</li><li>Open <strong>Progress</strong> to view lifetime totals, recent consistency, your highest set, and available charts.</li><li>Open <strong>Calendar</strong> to view workouts by date. Calendar requires Pushanova Premium.</li></ul><p>Pushanova Premium also includes weekly comparisons, detailed progress charts, and additional pace, cadence, and heart-rate details.</p><p>Apple Watch shows a summary immediately after a workout. Full history and progress are available on iPhone and iPad.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I change or skip a program level?",
+              "description": "Support H3. Workouts and Progress."
+            },
+            "answer": {
+              "message": "<p>Open <strong>Choose Level</strong> on iPhone, iPad, or Apple Watch. Select any available level.</p><p>Completing the required push-ups advances the program to the next level. You can also repeat a level or skip to another level. Levels 11–50 require Pushanova Premium.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I reset my progress?",
+              "description": "Support H3. Workouts and Progress."
+            },
+            "answer": {
+              "message": "<p>There is no single control that resets all progress.</p><ul><li>Change the current program level with <strong>Choose Level</strong>.</li><li>Delete workouts individually from <strong>Workouts</strong>.</li><li>Manage Pushanova data stored in iCloud through your device settings.</li></ul><p>Apple Health copies and diagnostic reports sent by email are stored separately. Uninstalling Pushanova does not remove those copies.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      },
+      {
+        "id": {
+          "message": "premium-and-purchases",
+          "description": "Section id. Do not translate."
+        },
+        "heading": {
+          "message": "Premium and Purchases",
+          "description": "Support H2."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "Which features are free?",
+              "description": "Support H3. Premium and Purchases."
+            },
+            "answer": {
+              "message": "<p>The following features are free:</p><ul><li>Program levels 1–10</li><li>Training without preset targets</li><li>Automatic counting and Tap to Count</li><li>Manual workout entry</li><li>Workout history, notes, and sharing</li><li>Recent training consistency, lifetime totals, and your highest set</li><li>Live workout information on the Lock Screen and in Dynamic Island</li><li>Training reminders</li><li>Apple Health and iCloud synchronization</li></ul><p>Pushanova Premium unlocks program levels 11–50, the workout calendar, weekly comparisons, detailed progress charts, and additional workout details.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I restore Pushanova Premium?",
+              "description": "Support H3. Premium and Purchases. Keep Pushanova Premium."
+            },
+            "answer": {
+              "message": "<p>Open the Pushanova Premium screen and tap <strong>Restore</strong>. Use the same Apple Account that purchased the yearly subscription or lifetime purchase.</p><p>Purchases are processed by Apple. Pushanova does not use its own account for purchases.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "I paid for Premium, but it is still locked. What should I do?",
+              "description": "Support H3. Premium and Purchases."
+            },
+            "answer": {
+              "message": "<ol><li>Confirm that the device uses the Apple Account that made the purchase.</li><li>Confirm that the device has an internet connection.</li><li>Open the Pushanova Premium screen and tap <strong>Restore</strong>.</li><li>Close and reopen Pushanova.</li><li>Check that in-app purchases are allowed on the device.</li></ol><p>If Premium remains locked, email <a href=\"{mailto}\">{email}</a>. Include the device model, Pushanova version, purchase type, and a screenshot showing the purchase or error. Hide unrelated personal or payment information.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How does the free trial work?",
+              "description": "Support H3. Premium and Purchases."
+            },
+            "answer": {
+              "message": "<p>Eligible new subscribers may receive a three-day free trial with the yearly subscription. The Pushanova Premium screen shows whether the trial is available for your Apple Account.</p><p>The yearly subscription starts automatically after the trial unless you cancel at least 24 hours before the trial ends. Apple manages eligibility, billing, and renewal.</p><p>The lifetime purchase does not include a free trial.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I manage or cancel my subscription?",
+              "description": "Support H3. Premium and Purchases."
+            },
+            "answer": {
+              "message": "<p>Open <strong>Subscriptions</strong> in your Apple Account settings and select Pushanova.</p><p>Canceling stops the next renewal. It does not normally refund the current subscription period. Saved workouts remain available. Premium features lock when the paid period ends unless you purchase Premium again, redeem a valid offer, or own the lifetime purchase.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I request a refund?",
+              "description": "Support H3. Premium and Purchases."
+            },
+            "answer": {
+              "message": "<p>Apple processes all Pushanova purchases and refunds. Request a refund at <a href=\"{refundUrl}\">reportaproblem.apple.com</a> or through your Apple purchase history.</p><p>The Pushanova developer cannot issue an App Store refund.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Can I use my purchase on another Apple device?",
+              "description": "Support H3. Premium and Purchases. Keep Apple."
+            },
+            "answer": {
+              "message": "<p>Yes. Use the same Apple Account on the other device and tap <strong>Restore</strong> in Pushanova.</p><p>Family Sharing is not enabled for Pushanova Premium.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "What happens to Premium and my workouts after reinstalling?",
+              "description": "Support H3. Premium and Purchases."
+            },
+            "answer": {
+              "message": "<p>Tap <strong>Restore</strong> to restore Premium for the purchasing Apple Account.</p><p>If iCloud synchronization was enabled, workout history stored in iCloud can synchronize after reinstalling. Without iCloud synchronization, uninstalling Pushanova removes the workout history stored only on that device.</p><p>Apple Health copies remain in Apple Health until they are deleted there.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I redeem an offer code?",
+              "description": "Support H3. Premium and Purchases."
+            },
+            "answer": {
+              "message": "<p>Open Pushanova Settings on iPhone and tap <strong>Redeem Offer</strong>. Apple Watch cannot redeem an offer code.</p><p>Apple determines whether a code is valid and which Apple Account can use it.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      },
+      {
+        "id": {
+          "message": "privacy-and-data",
+          "description": "Section id. Do not translate."
+        },
+        "heading": {
+          "message": "Privacy and Data",
+          "description": "Support H2."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "Does automatic counting take photos or record video?",
+              "description": "Support H3. Privacy and Data."
+            },
+            "answer": {
+              "message": "<p>No. Automatic counting does not take photos or record, save, or upload video. Pushanova does not use the camera to identify you.</p><p>Post-workout photos are separate. Pushanova uses a photo only when you choose one for sharing.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "What counting information is stored with a workout?",
+              "description": "Support H3. Privacy and Data."
+            },
+            "answer": {
+              "message": "<p>Pushanova may save movement measurements that help it count push-ups. These measurements are not photos or video.</p><p>The measurements are stored with the workout on your device. If iCloud synchronization is enabled, the same workout data may synchronize through your personal iCloud account. It is not sent automatically to a Pushanova server.</p><p>If you choose <strong>Report an Issue</strong>, an email report may include numerical counting measurements and workout information. You choose whether to send that email.</p><p>For complete details, read the <a href=\"{privacyUrl}\">Privacy Policy</a>.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "How do I delete my Pushanova data?",
+              "description": "Support H3. Privacy and Data. Do not translate Pushanova."
+            },
+            "answer": {
+              "message": "<p>To delete workout data:</p><ul><li>Delete individual workouts in <strong>Workouts</strong>. When iCloud synchronization is enabled, the deletion synchronizes through iCloud.</li><li>Remove Pushanova data from iCloud through your device's iCloud storage settings if you want to delete the cloud copy.</li><li>Delete Apple Health copies separately in Apple Health. Pushanova may also delete a matching Health workout when it has permission.</li></ul><p>Uninstalling Pushanova removes data stored only on that device. Data already stored in iCloud or Apple Health remains until you delete it there.</p><p>If you sent a diagnostic report or photo submission by email, contact <a href=\"{mailto}\">{email}</a> to request deletion of the copy received by the developer.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Does Pushanova require an account?",
+              "description": "Support H3. Privacy and Data. Do not translate Pushanova."
+            },
+            "answer": {
+              "message": "<p>No. Pushanova does not require a sign-up, username, password, or social login.</p><p>Pushanova Premium is connected to the Apple Account used for the App Store purchase. This is not a Pushanova account.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Does Pushanova use analytics or crash reporting?",
+              "description": "Support H3. Privacy and Data. Do not translate Pushanova."
+            },
+            "answer": {
+              "message": "<p>Pushanova uses standard product analytics and crash reporting. These services do not receive photos, video, camera-based counting measurements, or Apple Health information.</p><p>Pushanova does not sell your data or use it for advertising.</p><p>Read the <a href=\"{privacyUrl}\">Privacy Policy</a> for details.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      },
+      {
+        "id": {
+          "message": "devices-and-compatibility",
+          "description": "Section id. Do not translate."
+        },
+        "heading": {
+          "message": "Devices and Compatibility",
+          "description": "Support H2."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "Which operating system versions are supported?",
+              "description": "Support H3. Devices and Compatibility."
+            },
+            "answer": {
+              "message": "<ul><li>iPhone: iOS 17.6 or later</li><li>iPad: iPadOS 17.6 or later</li><li>Apple Watch: watchOS 10.6 or later</li></ul><p>Any device that can run a supported version can install Pushanova. Available counting methods depend on the device and the permissions you allow.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Is Pushanova a full iPad app?",
+              "description": "Support H3. Devices and Compatibility. Do not translate Pushanova. Keep iPad."
+            },
+            "answer": {
+              "message": "<p>Yes. Pushanova on iPad includes automatic counting, program workouts, training without preset targets, workout history, progress, analytics, and Apple Health.</p><p>iPad does not support a paired Apple Watch workout. Use iPhone when you want Apple Watch and another screen to display the same active workout.</p><p>If you do not use Camera access on iPad, enable <strong>Tap to Count</strong>.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Does Pushanova require an internet connection?",
+              "description": "Support H3. Devices and Compatibility. Do not translate Pushanova."
+            },
+            "answer": {
+              "message": "<p>No internet connection is required to start and save a workout on one device.</p><p>An internet connection is required for iCloud synchronization, App Store purchases, restoring purchases, and sending a support email.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      },
+      {
+        "id": {
+          "message": "troubleshooting",
+          "description": "Section id. Do not translate."
+        },
+        "heading": {
+          "message": "Troubleshooting",
+          "description": "Support H2."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "Pushanova is not responding. What should I do?",
+              "description": "Support H3. Troubleshooting. Do not translate Pushanova."
+            },
+            "answer": {
+              "message": "<p>Close and reopen Pushanova. If it still does not respond, restart the device.</p><p>On Apple Watch, unlock Watch and open Pushanova again. If a workout started from iPhone appears to stop, check whether the workout is already open on Watch.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          },
+          {
+            "question": {
+              "message": "Why is Pushanova not synchronizing between my devices?",
+              "description": "Support H3. Troubleshooting. Do not translate Pushanova."
+            },
+            "answer": {
+              "message": "<p>For workout history:</p><ul><li>Confirm that the devices use the same Apple Account.</li><li>Confirm that iCloud is enabled for Pushanova.</li><li>Connect both devices to the internet.</li><li>Open Pushanova on each device and allow time for synchronization.</li></ul><p>Apple Health stores a separate workout copy. Apple Health is not the source of Pushanova workout-history synchronization.</p><p>For Pushanova Premium, tap <strong>Restore</strong> on the device using the Apple Account that made the purchase.</p><p>For an active iPhone and Apple Watch workout, keep Watch unlocked and nearby and make sure <strong>Use Apple Watch</strong> is enabled in Pushanova Settings.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      },
+      {
+        "id": {
+          "message": "contact",
+          "description": "Section id. Do not translate."
+        },
+        "heading": {
+          "message": "Contact",
+          "description": "Support H2."
+        },
+        "items": [
+          {
+            "question": {
+              "message": "Do you still need help?",
+              "description": "Support H3. Contact."
+            },
+            "answer": {
+              "message": "<p>Email <a href=\"{mailto}\">{email}</a>.</p><p>Include:</p><ul><li>Device model</li><li>Operating system version</li><li>Pushanova version</li><li>Whether you trained on iPhone, iPad, Apple Watch, or two devices together</li><li>Whether you completed a program level or trained freely</li><li>What you expected</li><li>What happened</li><li>A screenshot, when useful</li></ul><p>For counting problems, send <strong>Report an Issue</strong> from the affected workout when possible. Screenshots can help when they do not contain information that you prefer not to share.</p>",
+              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
