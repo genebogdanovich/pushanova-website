@@ -10,6 +10,11 @@ const imagesDir = path.join(root, "src", "images");
 const siteDir = path.join(root, "site");
 const config = JSON.parse(fs.readFileSync(path.join(root, "site.config.json"), "utf8"));
 const siteUrl = String(config.siteUrl || "").replace(/\/$/, "");
+const APP_STORE_BADGE_DIR = "Download-on-the-App-Store";
+const APP_STORE_BADGE_FILES = {
+  en: "Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg",
+  ru: "Download_on_the_App_Store_Badge_RU_RGB_blk_100317.svg",
+};
 
 const EXTERNAL = {
   appStoreUrl: "https://apps.apple.com/app/push-up-counter-pushanova/id6451240468",
@@ -141,6 +146,42 @@ function posixHref(fromFile, toFile) {
     rel = path.posix.basename(toFile);
   }
   return rel.split(path.sep).join("/");
+}
+
+function svgSize(filePath) {
+  const svg = fs.readFileSync(filePath, "utf8");
+  const tag = svg.match(/<svg\b[^>]*>/)?.[0] || "";
+  const width = tag.match(/\bwidth="([\d.]+)"/)?.[1];
+  const height = tag.match(/\bheight="([\d.]+)"/)?.[1];
+  return {
+    width: String(Math.round(Number(width || 120))),
+    height: String(Math.round(Number(height || 40))),
+  };
+}
+
+function loadAppStoreBadge(code) {
+  const fileName = APP_STORE_BADGE_FILES[code] || APP_STORE_BADGE_FILES[DEFAULT_LOCALE];
+  const filePath = path.join(imagesDir, APP_STORE_BADGE_DIR, fileName);
+  if (!fs.existsSync(filePath)) {
+    if (code === DEFAULT_LOCALE) {
+      throw new Error(`Missing App Store badge: ${fileName}`);
+    }
+    return loadAppStoreBadge(DEFAULT_LOCALE);
+  }
+  return {
+    sitePath: `images/${APP_STORE_BADGE_DIR}/${fileName}`,
+    ...svgSize(filePath),
+  };
+}
+
+function appStoreBadgeAlt(locale, page) {
+  if (page === "features" && locale.features?.download) {
+    return locale.features.download;
+  }
+  if (locale.home?.download) {
+    return locale.home.download;
+  }
+  throw new Error("Missing App Store badge alt text");
 }
 
 function pageUrls(code, page) {
@@ -478,12 +519,19 @@ function pageFlags(page) {
 function renderPage({ page, code, templates, partials, resolved, codes, names, ogLocales }) {
   const locale = resolved[code];
   const urls = pageUrls(code, page);
+  const badge = loadAppStoreBadge(code);
   const data = {
     ...locale,
     ...pageFlags(page),
     urls,
     languages: languageEntries(codes, names, code, page),
     seo: pageSeo(code, page, codes, ogLocales),
+    appStoreBadge: {
+      src: posixHref(outputFile(code, page), badge.sitePath),
+      alt: appStoreBadgeAlt(locale, page),
+      width: badge.width,
+      height: badge.height,
+    },
   };
   const html = renderTemplate(templates[page], [data], partials);
   return applyPlaceholders(html, urls);
@@ -498,6 +546,7 @@ function main() {
     header: fs.readFileSync(path.join(partialsDir, "header.html"), "utf8"),
     footer: fs.readFileSync(path.join(partialsDir, "footer.html"), "utf8"),
     seo: fs.readFileSync(path.join(partialsDir, "seo.html"), "utf8"),
+    "app-store": fs.readFileSync(path.join(partialsDir, "app-store.html"), "utf8"),
   };
   const templates = {
     home: fs.readFileSync(path.join(templatesDir, "home.html"), "utf8"),
