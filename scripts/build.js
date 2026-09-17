@@ -7,6 +7,8 @@ const localesDir = path.join(root, "locales");
 const templatesDir = path.join(root, "src", "templates");
 const partialsDir = path.join(root, "src", "partials");
 const imagesDir = path.join(root, "src", "images");
+const stylesDir = path.join(root, "src", "styles");
+const staticDir = path.join(root, "src", "static");
 const siteDir = path.join(root, "site");
 const config = JSON.parse(fs.readFileSync(path.join(root, "site.config.json"), "utf8"));
 const siteUrl = String(config.siteUrl || "").replace(/\/$/, "");
@@ -472,6 +474,25 @@ function copyImages() {
   });
 }
 
+function copyStyles() {
+  if (!fs.existsSync(stylesDir)) {
+    throw new Error("Missing src/styles");
+  }
+  fs.cpSync(stylesDir, path.join(siteDir, "styles"), { recursive: true });
+}
+
+function copyStatic() {
+  if (!fs.existsSync(staticDir)) {
+    return;
+  }
+  for (const name of fs.readdirSync(staticDir)) {
+    if (name.startsWith(".")) {
+      continue;
+    }
+    fs.cpSync(path.join(staticDir, name), path.join(siteDir, name), { recursive: true });
+  }
+}
+
 function writeSiteFile(relativePath, contents) {
   const fullPath = path.join(siteDir, relativePath);
   fs.mkdirSync(path.dirname(fullPath), { recursive: true });
@@ -526,6 +547,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
     urls,
     languages: languageEntries(codes, names, code, page),
     seo: pageSeo(code, page, codes, ogLocales),
+    stylesheet: posixHref(outputFile(code, page), "styles/site.css"),
     appStoreBadge: {
       src: posixHref(outputFile(code, page), badge.sitePath),
       alt: appStoreBadgeAlt(locale, page),
@@ -546,6 +568,7 @@ function main() {
     header: fs.readFileSync(path.join(partialsDir, "header.html"), "utf8"),
     footer: fs.readFileSync(path.join(partialsDir, "footer.html"), "utf8"),
     seo: fs.readFileSync(path.join(partialsDir, "seo.html"), "utf8"),
+    styles: fs.readFileSync(path.join(partialsDir, "styles.html"), "utf8"),
     "app-store": fs.readFileSync(path.join(partialsDir, "app-store.html"), "utf8"),
   };
   const templates = {
@@ -559,6 +582,8 @@ function main() {
 
   emptySiteDir();
   copyImages();
+  copyStyles();
+  copyStatic();
 
   for (const code of codes) {
     for (const page of LOCALIZED_PAGES) {
