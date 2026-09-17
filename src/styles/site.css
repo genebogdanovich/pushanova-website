@@ -118,6 +118,53 @@ main > nav > h2:first-child {
   margin-block-start: 0;
 }
 
+main details {
+  border-block-end: 1px solid var(--color-line);
+}
+
+main details:first-of-type {
+  border-block-start: 1px solid var(--color-line);
+}
+
+main summary {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  inline-size: 100%;
+  min-block-size: var(--tap);
+  padding-block: var(--space-s);
+  font-size: var(--h3);
+  font-weight: 650;
+  line-height: 1.25;
+  list-style: none;
+  cursor: pointer;
+}
+
+main summary::marker,
+main summary::-webkit-details-marker {
+  content: none;
+  display: none;
+}
+
+main summary::after {
+  content: "";
+  flex: none;
+  margin-inline-start: auto;
+  border: 0.35em solid transparent;
+  border-block-start-color: currentColor;
+  translate: 0 0.15em;
+}
+
+main details[open] > summary::after {
+  border-block-start-color: transparent;
+  border-block-end-color: currentColor;
+  translate: 0 -0.15em;
+}
+
+main details[open] > p:last-child {
+  margin-block-end: var(--space-l);
+}
+
 blockquote {
   margin: 0 0 var(--space-m);
   padding-inline-start: var(--space-m);
@@ -241,13 +288,17 @@ body > footer {
 body > footer > ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: var(--space-s) var(--space-l);
   list-style: none;
-  max-inline-size: var(--measure);
-  margin: 0 auto;
+  margin: 0;
   padding-inline: var(--space-page);
   font-size: 0.875em;
+}
+
+body > footer > ul > li {
+  white-space: nowrap;
 }
 
 body > footer > ul > li:not(:has(a)) {

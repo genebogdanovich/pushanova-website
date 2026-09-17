@@ -61,12 +61,12 @@
     <section>
       <h2>{{home.qna.h2}}</h2>
       {{#each home.qna.items}}
-      <article>
-        <h3>{{question}}</h3>
+      <details>
+        <summary>{{question}}</summary>
         {{#each paragraphs}}
         <p>{{this}}</p>
         {{/each}}
-      </article>
+      </details>
       {{/each}}
     </section>
 
