@@ -11,6 +11,8 @@
   --color-fill: #045de9;
   --color-line: color-mix(in srgb, var(--color-text) 12%, transparent);
   --color-muted: color-mix(in srgb, var(--color-text) 64%, var(--color-page));
+  --color-card: color-mix(in srgb, var(--color-text) 5.5%, var(--color-page));
+  --color-star: #ffcc00;
   --font: system-ui, -apple-system, sans-serif;
   --text: clamp(1rem, 0.92rem + 0.35vw, 1.125rem);
   --h1: clamp(1.75rem, 1.2rem + 2vw, 2.75rem);
@@ -25,6 +27,7 @@
   --space-2xl: 4rem;
   --space-page: clamp(1rem, 4vw, 1.5rem);
   --measure: 90ch;
+  --wide: 72rem;
   --phone: 16rem;
   --tap: 2.75rem;
 }
@@ -34,6 +37,7 @@
     --color-page: #000000;
     --color-text: #f5f5f7;
     --color-accent: #4c8df6;
+    --color-card: color-mix(in srgb, var(--color-text) 12%, var(--color-page));
   }
 }
 
@@ -158,10 +162,15 @@ a {
 }
 
 main {
-  max-inline-size: var(--measure);
+  max-inline-size: var(--wide);
   margin-inline: auto;
   padding-inline: var(--space-page);
   padding-block: var(--space-xl) var(--space-2xl);
+}
+
+main > :is(header, section, nav):not(:has(> article > blockquote)) {
+  max-inline-size: var(--measure);
+  margin-inline: auto;
 }
 
 main > header {
@@ -239,6 +248,69 @@ blockquote footer {
 
 small {
   color: var(--color-muted);
+}
+
+main > section:has(> article > blockquote) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+}
+
+main > section:has(> article > blockquote) > :not(article) {
+  flex: 1 1 100%;
+  max-inline-size: var(--measure);
+  margin-inline: auto;
+}
+
+main > section:has(> article > blockquote) > h2 {
+  margin-block-end: 0;
+}
+
+main > section:has(> article > blockquote) > article {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 16rem;
+  margin: 0;
+  padding: var(--space-l);
+  border-radius: 0.75rem;
+  background-color: var(--color-card);
+}
+
+main > section:has(> article > blockquote) > article > p:first-child {
+  margin-block: 0 var(--space-s);
+  color: var(--color-star);
+}
+
+main > section:has(> article > blockquote) > article > h3 {
+  margin-block: 0 var(--space-s);
+}
+
+main > section:has(> article > blockquote) > article > blockquote {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+main > section:has(> article > blockquote) > article > blockquote > p {
+  margin-block: 0 var(--space-m);
+}
+
+main > section:has(> article > blockquote) > article > blockquote > footer {
+  margin-block-start: auto;
+}
+
+main > section:has(> article > blockquote) > p:last-child {
+  margin-block: var(--space-s) 0;
+  font-size: 0.75em;
+  color: color-mix(in srgb, var(--color-text) 42%, var(--color-page));
+}
+
+main > section:has(> article > blockquote) > p:last-child small {
+  font-size: inherit;
+  color: inherit;
 }
 
 body > header {
