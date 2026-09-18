@@ -12,11 +12,18 @@
   {{> header}}
   <main>
     <header>
-      <p>{{home.eyebrow}}</p>
-      <h1>{{home.h1}}</h1>
-      <p>{{home.lead}}</p>
-      <p>{{> app-store}}</p>
-      <p>{{home.offer}}</p>
+      <div>
+        <p>{{home.eyebrow}}</p>
+        <h1>{{home.h1}}</h1>
+        <p>{{home.lead}}</p>
+        <p>{{> app-store}}</p>
+        <p>{{home.offer}}</p>
+      </div>
+      {{#if home.hero}}
+      <figure>
+        <img src="{{home.hero.src}}" alt="{{home.hero.alt}}" width="{{home.hero.width}}" height="{{home.hero.height}}">
+      </figure>
+      {{/if}}
     </header>
 
     <section>

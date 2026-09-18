@@ -108,6 +108,12 @@
       "message": "Build Up to 100 Push-Ups at Your Own Pace",
       "description": "Homepage H1. Hero headline. Keep to one sentence."
     },
+    "hero": {
+      "alt": {
+        "message": "iPhone showing the Pushanova app",
+        "description": "Alt text for the homepage hero iPhone screenshot. Do not translate Pushanova."
+      }
+    },
     "lead": {
       "message": "Follow the progressive program or train freely. You can do both in the same workout. Pushanova automatically counts your push-ups and tracks your progress on iPhone, iPad, and Apple Watch.",
       "description": "Homepage hero paragraph. Do not translate Pushanova."

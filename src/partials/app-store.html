@@ -1,3 +1,6 @@
 <a href="{appStoreUrl}">
-  <img src="{{appStoreBadge.src}}" alt="{{appStoreBadge.alt}}" width="{{appStoreBadge.width}}" height="{{appStoreBadge.height}}">
+  <picture>
+    <source srcset="{{appStoreBadge.darkSrc}}" media="(prefers-color-scheme: dark)" type="image/svg+xml">
+    <img src="{{appStoreBadge.src}}" alt="{{appStoreBadge.alt}}" width="{{appStoreBadge.width}}" height="{{appStoreBadge.height}}">
+  </picture>
 </a>
