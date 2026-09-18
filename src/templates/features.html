@@ -12,10 +12,17 @@
   {{> header}}
   <main>
     <header>
-      <h1>{{features.h1}}</h1>
-      <p>{{features.lead}}</p>
-      <p>{{> app-store}}</p>
-      <p><small>{{features.offer}}</small></p>
+      <div>
+        <h1>{{features.h1}}</h1>
+        <p>{{features.lead}}</p>
+        <p>{{> app-store}}</p>
+        <p><small>{{features.offer}}</small></p>
+      </div>
+      {{#if features.hero}}
+      <figure style="--shot-scale: {{features.hero.scale}}">
+        <img src="{{features.hero.src}}" alt="{{features.hero.alt}}" width="{{features.hero.width}}" height="{{features.hero.height}}">
+      </figure>
+      {{/if}}
     </header>
 
     <section>
@@ -33,13 +40,20 @@
     </section>
 
     <section>
-      <h2>{{features.counting.h2}}</h2>
-      {{#each features.counting.paragraphs}}
-      <p>{{this}}</p>
-      {{/each}}
+      <div>
+        <h2>{{features.counting.h2}}</h2>
+        {{#each features.counting.paragraphs}}
+        <p>{{this}}</p>
+        {{/each}}
+      </div>
+      {{#if features.counting.image}}
+      <figure style="--shot-scale: {{features.counting.image.scale}}">
+        <img src="{{features.counting.image.src}}" alt="{{features.counting.image.alt}}" width="{{features.counting.image.width}}" height="{{features.counting.image.height}}">
+      </figure>
+      {{/if}}
     </section>
 
-    <section>
+    <section class="image-leading">
       <div>
         <h2>{{features.watch.h2}}</h2>
         {{#each features.watch.sections}}
@@ -76,7 +90,7 @@
       {{/if}}
     </section>
 
-    <section>
+    <section class="image-leading">
       <div>
         <h2>{{features.progress.h2}}</h2>
         {{#each features.progress.sections}}
@@ -109,26 +123,37 @@
 
     <section>
       <h2>{{features.pricing.h2}}</h2>
-      <h3>{{features.pricing.free.h3}}</h3>
-      <ul>
-        {{#each features.pricing.free.items}}
-        <li>{{this}}</li>
-        {{/each}}
-      </ul>
-      <h3>{{features.pricing.premium.h3}}</h3>
-      <ul>
-        {{#each features.pricing.premium.items}}
-        <li>{{this}}</li>
-        {{/each}}
-      </ul>
+      <article>
+        <h3>{{features.pricing.free.h3}}</h3>
+        <ul>
+          {{#each features.pricing.free.items}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </article>
+      <article>
+        <h3>{{features.pricing.premium.h3}}</h3>
+        <ul>
+          {{#each features.pricing.premium.items}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </article>
       <p>{{features.pricing.premium.note}}</p>
     </section>
 
     <section>
-      <h2>{{features.closing.h2}}</h2>
-      <p>{{features.closing.lead}}</p>
-      <p>{{> app-store}}</p>
-      <p><small>{{features.closing.offer}}</small></p>
+      <div>
+        <h2>{{features.closing.h2}}</h2>
+        <p>{{features.closing.lead}}</p>
+        <p>{{> app-store}}</p>
+        <p><small>{{features.closing.offer}}</small></p>
+      </div>
+      {{#if features.closing.image}}
+      <figure style="--shot-scale: {{features.closing.image.scale}}">
+        <img src="{{features.closing.image.src}}" alt="{{features.closing.image.alt}}" width="{{features.closing.image.width}}" height="{{features.closing.image.height}}">
+      </figure>
+      {{/if}}
     </section>
   </main>
   {{> footer}}

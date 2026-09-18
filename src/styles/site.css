@@ -104,12 +104,12 @@ main > :is(header, section) figure img {
   inline-size: 100%;
 }
 
-main > header + section:has(> figure) {
+main > :is(header + section, .image-leading):has(> figure) {
   container-type: inline-size;
 }
 
 @container (min-width: 40.5rem) {
-  main > header + section:has(> figure) > figure {
+  main > :is(header + section, .image-leading):has(> figure) > figure {
     order: -1;
   }
 }
@@ -259,23 +259,26 @@ small {
   color: var(--color-muted);
 }
 
-main > section:has(> article > blockquote) {
+main > section:has(> article > :is(blockquote, ul)) {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-m);
 }
 
-main > section:has(> article > blockquote) > :not(article) {
+main > section:has(> article > :is(blockquote, ul)) > :not(article) {
   flex: 1 1 100%;
+}
+
+main > section:has(> article > blockquote) > :not(article) {
   max-inline-size: var(--measure);
   margin-inline: auto;
 }
 
-main > section:has(> article > blockquote) > h2 {
+main > section:has(> article > :is(blockquote, ul)) > h2 {
   margin-block-end: 0;
 }
 
-main > section:has(> article > blockquote) > article {
+main > section:has(> article > :is(blockquote, ul)) > article {
   display: flex;
   flex-direction: column;
   flex: 1 1 16rem;
@@ -290,8 +293,27 @@ main > section:has(> article > blockquote) > article > p:first-child {
   color: var(--color-star);
 }
 
-main > section:has(> article > blockquote) > article > h3 {
+main > section:has(> article > :is(blockquote, ul)) > article > h3 {
   margin-block: 0 var(--space-s);
+}
+
+main > section:has(> article > ul) > article > ul {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  list-style: none;
+  margin-block: 0;
+  padding-inline-start: 0;
+}
+
+main > section:has(> article > ul) > article > ul > li {
+  list-style: none;
+}
+
+main > section:has(> article > ul) > article > ul > li + li {
+  margin-block-start: var(--space-s);
+  padding-block-start: var(--space-s);
+  border-block-start: 1px solid var(--color-line);
 }
 
 main > section:has(> article > blockquote) > article > blockquote {
