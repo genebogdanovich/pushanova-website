@@ -795,6 +795,10 @@
         "message": "Review Your Workouts and Progress",
         "description": "Features H2."
       },
+      "alt": {
+        "message": "iPhone showing the Pushanova Progress screen",
+        "description": "Alt text for the features Review Your Workouts and Progress iPhone screenshot. Progress is the in-app screen name. Do not translate Pushanova."
+      },
       "sections": [
         {
           "heading": {

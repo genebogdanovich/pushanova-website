@@ -29,6 +29,7 @@ const HOME_HERO_FILE = "homepage-hero.webp";
 const HOME_START_FILE = "homepage-start.webp";
 const HOME_READY_FILE = "homepage-ready.webp";
 const IPHONE_WATCH_FILE = "iphone-watch.webp";
+const FEATURES_PROGRESS_FILE = "features-progress.webp";
 const SCREENSHOT_PHONE_WIDTH = 800;
 
 const EXTERNAL = {
@@ -711,6 +712,10 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
       watch: {
         ...locale.features.watch,
         image: pageShot(code, page, IPHONE_WATCH_FILE, locale.features?.watch?.alt),
+      },
+      progress: {
+        ...locale.features.progress,
+        image: pageShot(code, page, FEATURES_PROGRESS_FILE, locale.features?.progress?.alt),
       },
     };
   }
