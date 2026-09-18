@@ -24,7 +24,7 @@
   --space-xl: 2.5rem;
   --space-2xl: 4rem;
   --space-page: clamp(1rem, 4vw, 1.5rem);
-  --measure: 65ch;
+  --measure: 90ch;
   --tap: 2.75rem;
 }
 
@@ -33,12 +33,11 @@
     --color-page: #000000;
     --color-text: #f5f5f7;
     --color-accent: #4c8df6;
-    color-scheme: dark;
   }
 }
 
 html {
-  color-scheme: light;
+  color-scheme: light dark;
   -webkit-text-size-adjust: 100%;
   background-color: var(--color-page);
 }
@@ -57,6 +56,38 @@ body {
 img {
   max-inline-size: 100%;
   block-size: auto;
+}
+
+a picture {
+  display: inline-block;
+}
+
+main > header:has(> figure) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+main > header:has(> figure) > :not(figure) {
+  flex: 1 1 22rem;
+  min-inline-size: min(100%, 22rem);
+}
+
+main > header:has(> figure) > :not(figure) > :last-child {
+  margin-block-end: 0;
+}
+
+main > header figure {
+  flex: none;
+  margin-inline: auto;
+  margin-block: 0;
+  inline-size: min(100%, 16rem);
+}
+
+main > header figure img {
+  display: block;
+  inline-size: 100%;
 }
 
 h1,

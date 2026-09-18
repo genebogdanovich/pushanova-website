@@ -14,9 +14,17 @@ const config = JSON.parse(fs.readFileSync(path.join(root, "site.config.json"), "
 const siteUrl = String(config.siteUrl || "").replace(/\/$/, "");
 const APP_STORE_BADGE_DIR = "Download-on-the-App-Store";
 const APP_STORE_BADGE_FILES = {
-  en: "Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg",
-  ru: "Download_on_the_App_Store_Badge_RU_RGB_blk_100317.svg",
+  en: {
+    light: "Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg",
+    dark: "Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg",
+  },
+  ru: {
+    light: "Download_on_the_App_Store_Badge_RU_RGB_blk_100317.svg",
+    dark: "Download_on_the_App_Store_Badge_RU_RGB_wht_100317.svg",
+  },
 };
+const SCREENSHOTS_DIR = "screenshots";
+const HOME_HERO_FILE = "homepage-hero.webp";
 
 const EXTERNAL = {
   appStoreUrl: "https://apps.apple.com/app/push-up-counter-pushanova/id6451240468",
@@ -161,18 +169,119 @@ function svgSize(filePath) {
   };
 }
 
-function loadAppStoreBadge(code) {
-  const fileName = APP_STORE_BADGE_FILES[code] || APP_STORE_BADGE_FILES[DEFAULT_LOCALE];
+function readU24LE(buffer, offset) {
+  return buffer[offset] | (buffer[offset + 1] << 8) | (buffer[offset + 2] << 16);
+}
+
+function webpSize(buffer) {
+  if (buffer.toString("ascii", 0, 4) !== "RIFF" || buffer.toString("ascii", 8, 12) !== "WEBP") {
+    return null;
+  }
+  let offset = 12;
+  while (offset + 8 <= buffer.length) {
+    const fourcc = buffer.toString("ascii", offset, offset + 4);
+    const chunkSize = buffer.readUInt32LE(offset + 4);
+    const data = offset + 8;
+    if (fourcc === "VP8X" && data + 10 <= buffer.length) {
+      return {
+        width: readU24LE(buffer, data + 4) + 1,
+        height: readU24LE(buffer, data + 7) + 1,
+      };
+    }
+    if (fourcc === "VP8L" && data + 5 <= buffer.length && buffer[data] === 0x2f) {
+      const bits =
+        buffer[data + 1] | (buffer[data + 2] << 8) | (buffer[data + 3] << 16) | (buffer[data + 4] << 24);
+      return {
+        width: (bits & 0x3fff) + 1,
+        height: ((bits >> 14) & 0x3fff) + 1,
+      };
+    }
+    if (fourcc === "VP8 " && data + 10 <= buffer.length) {
+      const sig = data + 3;
+      if (buffer[sig] === 0x9d && buffer[sig + 1] === 0x01 && buffer[sig + 2] === 0x2a) {
+        return {
+          width: buffer.readUInt16LE(sig + 3) & 0x3fff,
+          height: buffer.readUInt16LE(sig + 5) & 0x3fff,
+        };
+      }
+    }
+    offset = data + chunkSize + (chunkSize % 2);
+  }
+  return null;
+}
+
+function pngSize(buffer) {
+  if (buffer.length < 24 || buffer.toString("ascii", 1, 4) !== "PNG") {
+    return null;
+  }
+  return {
+    width: buffer.readUInt32BE(16),
+    height: buffer.readUInt32BE(20),
+  };
+}
+
+function rasterSize(filePath) {
+  const buffer = fs.readFileSync(filePath);
+  const size = webpSize(buffer) || pngSize(buffer);
+  if (!size) {
+    throw new Error(`Could not read image size: ${filePath}`);
+  }
+  return {
+    width: String(size.width),
+    height: String(size.height),
+  };
+}
+
+function loadAppStoreBadgeAsset(code, scheme) {
+  const names = APP_STORE_BADGE_FILES[code] || APP_STORE_BADGE_FILES[DEFAULT_LOCALE];
+  const fileName = names[scheme] || APP_STORE_BADGE_FILES[DEFAULT_LOCALE][scheme];
   const filePath = path.join(imagesDir, APP_STORE_BADGE_DIR, fileName);
   if (!fs.existsSync(filePath)) {
     if (code === DEFAULT_LOCALE) {
       throw new Error(`Missing App Store badge: ${fileName}`);
     }
-    return loadAppStoreBadge(DEFAULT_LOCALE);
+    return loadAppStoreBadgeAsset(DEFAULT_LOCALE, scheme);
   }
   return {
     sitePath: `images/${APP_STORE_BADGE_DIR}/${fileName}`,
     ...svgSize(filePath),
+  };
+}
+
+function loadAppStoreBadge(code) {
+  const light = loadAppStoreBadgeAsset(code, "light");
+  const dark = loadAppStoreBadgeAsset(code, "dark");
+  return { light, dark };
+}
+
+function loadScreenshot(code, fileName) {
+  const localizedPath = path.join(imagesDir, SCREENSHOTS_DIR, code, fileName);
+  const fallbackPath = path.join(imagesDir, SCREENSHOTS_DIR, DEFAULT_LOCALE, fileName);
+  const filePath = fs.existsSync(localizedPath) ? localizedPath : fallbackPath;
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+  const used = fs.existsSync(localizedPath) ? code : DEFAULT_LOCALE;
+  return {
+    sitePath: `images/${SCREENSHOTS_DIR}/${used}/${fileName}`,
+    ...rasterSize(filePath),
+  };
+}
+
+function homeHero(code, page, locale) {
+  const shot = loadScreenshot(code, HOME_HERO_FILE);
+  if (!shot) {
+    return undefined;
+  }
+  const alt = locale.home?.hero?.alt;
+  if (!alt) {
+    throw new Error("Missing home.hero.alt");
+  }
+  return {
+    src: posixHref(outputFile(code, page), shot.sitePath),
+    alt,
+    width: shot.width,
+    height: shot.height,
   };
 }
 
@@ -549,12 +658,19 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
     seo: pageSeo(code, page, codes, ogLocales),
     stylesheet: posixHref(outputFile(code, page), "styles/site.css"),
     appStoreBadge: {
-      src: posixHref(outputFile(code, page), badge.sitePath),
+      src: posixHref(outputFile(code, page), badge.light.sitePath),
+      darkSrc: posixHref(outputFile(code, page), badge.dark.sitePath),
       alt: appStoreBadgeAlt(locale, page),
-      width: badge.width,
-      height: badge.height,
+      width: badge.light.width,
+      height: badge.light.height,
     },
   };
+  if (page === "home") {
+    data.home = {
+      ...locale.home,
+      hero: homeHero(code, page, locale),
+    };
+  }
   const html = renderTemplate(templates[page], [data], partials);
   return applyPlaceholders(html, urls);
 }
