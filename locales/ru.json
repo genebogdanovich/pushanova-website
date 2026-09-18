@@ -640,6 +640,9 @@
       "h2": {
         "message": "Просматривайте тренировки и прогресс"
       },
+      "alt": {
+        "message": "iPhone с экраном прогресса Pushanova"
+      },
       "sections": [
         {
           "heading": {
