@@ -1,12 +1,12 @@
 {
   "meta": {
     "code": {
-      "message": "en",
-      "description": "BCP 47 language code. Do not translate."
+      "message": "en-US",
+      "description": "BCP 47 language tag for the HTML lang attribute. This file is American English, the site default. The locale file and URLs stay en. British English will be en-GB. Do not translate."
     },
     "name": {
-      "message": "English",
-      "description": "Language name in this language. Used as the language switcher summary and list label."
+      "message": "English (US)",
+      "description": "Language name in this language. Used as the language switcher summary and list label. This locale is American English. Use English (UK) when adding en-GB."
     },
     "dir": {
       "message": "ltr",
