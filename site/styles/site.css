@@ -197,15 +197,15 @@ main > nav > h2:first-child {
   margin-block-start: 0;
 }
 
-main details {
+main > section > details {
   border-block-end: 1px solid var(--color-line);
 }
 
-main details:first-of-type {
+main > section > details:first-of-type {
   border-block-start: 1px solid var(--color-line);
 }
 
-main summary {
+main > section > details > summary {
   display: flex;
   align-items: center;
   gap: var(--space-s);
@@ -219,13 +219,13 @@ main summary {
   cursor: pointer;
 }
 
-main summary::marker,
-main summary::-webkit-details-marker {
+main > section > details > summary::marker,
+main > section > details > summary::-webkit-details-marker {
   content: none;
   display: none;
 }
 
-main summary::after {
+main > section > details > summary::after {
   content: "";
   flex: none;
   margin-inline-start: auto;
@@ -234,13 +234,13 @@ main summary::after {
   translate: 0 0.15em;
 }
 
-main details[open] > summary::after {
+main > section > details[open] > summary::after {
   border-block-start-color: transparent;
   border-block-end-color: currentColor;
   translate: 0 -0.15em;
 }
 
-main details[open] > p:last-child {
+main > section > details[open] > :last-child {
   margin-block-end: var(--space-l);
 }
 
