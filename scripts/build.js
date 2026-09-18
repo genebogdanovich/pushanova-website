@@ -26,11 +26,13 @@ const APP_STORE_BADGE_FILES = {
 const SCREENSHOTS_DIR = "screenshots";
 const LOGO_FILE = "logo.svg";
 const HOME_HERO_FILE = "homepage-hero.webp";
-const HOME_READY_FILE = "homepage-ready.webp";
 const IPHONE_WATCH_FILE = "iphone-watch.webp";
 const PROGRAM_LEVELS_FILE = "program-levels.webp";
+const START_SCREEN_FILE = "start-screen.webp";
 const FEATURES_PROGRESS_FILE = "features-progress.webp";
 const FEATURES_STATS_FILE = "features-stats.webp";
+const FEATURES_COUNTING_FILE = "features-counting.webp";
+const FEATURES_HERO_FILE = "features-hero.webp";
 const SCREENSHOT_PHONE_WIDTH = 800;
 
 const EXTERNAL = {
@@ -703,13 +705,14 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
       },
       closing: {
         ...locale.home.closing,
-        image: pageShot(code, page, HOME_READY_FILE, locale.home?.closing?.alt),
+        image: pageShot(code, page, START_SCREEN_FILE, locale.home?.closing?.alt),
       },
     };
   }
   if (page === "features") {
     data.features = {
       ...locale.features,
+      hero: pageShot(code, page, FEATURES_HERO_FILE, locale.features?.hero?.alt),
       watch: {
         ...locale.features.watch,
         image: pageShot(code, page, IPHONE_WATCH_FILE, locale.features?.watch?.alt),
@@ -725,6 +728,14 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
       live: {
         ...locale.features.live,
         image: pageShot(code, page, FEATURES_STATS_FILE, locale.features?.live?.alt),
+      },
+      counting: {
+        ...locale.features.counting,
+        image: pageShot(code, page, FEATURES_COUNTING_FILE, locale.features?.counting?.alt),
+      },
+      closing: {
+        ...locale.features.closing,
+        image: pageShot(code, page, START_SCREEN_FILE, locale.features?.closing?.alt),
       },
     };
   }
