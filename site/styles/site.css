@@ -202,7 +202,7 @@ main summary {
   gap: var(--space-s);
   inline-size: 100%;
   min-block-size: var(--tap);
-  padding-block: var(--space-s);
+  padding-block: var(--space-m);
   font-size: var(--h3);
   font-weight: 650;
   line-height: 1.25;
