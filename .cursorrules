@@ -28,10 +28,10 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 
 ## Localization & Translation
 
-- **English as the Base & Default:** English (`en.json`) is the absolute source language, base template, and default fallback for the entire project. All translations must originate directly from the English source file. If a localized string or asset is missing, the system must fall back to the English equivalent.
+- **American English is the Base & Default:** `locales/en.json` is American English (US): the source language, base template, and default fallback. File name, URLs, and `hreflang` stay `en`. HTML `lang` is `en-US`. Switcher label is `English (US)`. Do not add `en-US.json` or rename this locale. British English is `en-GB` (press-ups). All translations originate from this file. Missing strings or assets fall back to it.
 - **One Language Per File:** Architecture must be scalable and token-efficient. Do not merge languages into a single giant JSON.
-- **Add a language:** Read only `locales/en.json`. Create `locales/{bcp47}.json` with the same tree. Translate `message` values only; omit `description`. Set `meta.code` and `meta.name` (the name in that language). Do not translate placeholders, HTML tags, **Pushanova**, Apple product names, or in-app UI labels inside `<strong>`. Do not open other `locales/*.json` files. Do not edit templates. Run `npm run build`.
-- **Context is Required:** The English source file (`en.json`) must include descriptive comments for each key. Translators and AI need to know where the string appears, its character limits, and its context. Other locale files may ship `{ "message": "…" }` leaves only.
+- **Add a language:** Read only `locales/en.json`. Create `locales/{bcp47}.json` with the same tree. Translate `message` values only; omit `description`. Set `meta.code` (HTML `lang`, e.g. `en-US`) and `meta.name` (e.g. `English (US)`). Do not translate placeholders, HTML tags, **Pushanova**, Apple product names, or in-app UI labels inside `<strong>`. Do not open other `locales/*.json` files. Do not edit templates. Run `npm run build`.
+- **Context is Required:** The American English source file (`en.json`) must include descriptive comments for each key. Translators and AI need to know where the string appears, its character limits, and its context. Other locale files may ship `{ "message": "…" }` leaves only.
 - **Protect Placeholders:** Never translate variables, placeholders, or HTML tags (e.g., `{rating}`, `{email}`, `<sup>`). They must remain exactly as written in the source.
 - **Whole Sentences Only:** Never concatenate text fragments in the code (e.g., never do `"Translated from " + language`). Always translate full strings so grammar structures can shift naturally per language.
 - **Write for Translation:** Use simple, direct, and universally understood English. Avoid slang, idioms, abstract terms, or complex sentence structure. 
@@ -41,7 +41,7 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 - **Modern AEO & SEO:** Prioritize Answer Engine Optimization (AEO) and traditional SEO. Use strict, perfect semantic HTML document outlines (H1, H2, H3), clean meta tags, and descriptive `alt` attributes. AI bots and search crawlers must be able to parse the core value proposition instantly.
 - **GitHub Pages Routing:** To support clean URLs without a web server (e.g., `/da/` instead of `/da.html`), the build script must generate subfolders with `index.html` files (e.g., `/da/index.html`). Asset paths (CSS, images) must resolve correctly in a static environment.
 - **Copy is the product.** Focus on the emotional relief of the features (e.g., "Leave your phone on the desk" rather than "Uses Core Motion APIs").
-- **Privacy policy is English-only.** Do not localize or translate `materials/copy/privacy.md`. The privacy policy remains in original English.
+- **Privacy policy is American English only.** Do not localize or translate `materials/copy/privacy.md`. The privacy policy remains in the original US English.
 - **Start Where You Are.** The tone should be welcoming. Do not write copy that sounds like an aggressive bootcamp drill sergeant. 
 - **Native Dark Mode.** Support dark mode strictly through the CSS `@media (prefers-color-scheme: dark)` query. Do not build JavaScript theme toggles or buttons. Rely entirely on the user's OS preference.
 
@@ -65,4 +65,4 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 - Do not add accounts, ads, leaderboards, streaks-as-punishment, or social features to the site story.
 - Do not invent new features or hardware requirements. 
 - Do not generate complex CSS grids, "Bento Boxes," or heavy UI mockups unless explicitly instructed. Stick to plain, semantic HTML tags.
-- Do not hardcode English marketing text into the final HTML files (all text routes through the isolated language JSON files).
+- Do not hardcode American English marketing text into the final HTML files (all text routes through the isolated language JSON files).
