@@ -27,8 +27,8 @@ const SCREENSHOTS_DIR = "screenshots";
 const LOGO_FILE = "logo.svg";
 const HOME_HERO_FILE = "homepage-hero.webp";
 const HOME_START_FILE = "homepage-start.webp";
-const HOME_HOW_FILE = "homepage-how_it_works.webp";
 const HOME_READY_FILE = "homepage-ready.webp";
+const IPHONE_WATCH_FILE = "iphone-watch.webp";
 const SCREENSHOT_PHONE_WIDTH = 800;
 
 const EXTERNAL = {
@@ -285,7 +285,7 @@ function loadScreenshot(code, fileName) {
   };
 }
 
-function homeShot(code, page, fileName, alt) {
+function pageShot(code, page, fileName, alt) {
   const shot = loadScreenshot(code, fileName);
   if (!shot) {
     return undefined;
@@ -303,7 +303,7 @@ function homeShot(code, page, fileName, alt) {
 }
 
 function homeHero(code, page, locale) {
-  return homeShot(code, page, HOME_HERO_FILE, locale.home?.hero?.alt);
+  return pageShot(code, page, HOME_HERO_FILE, locale.home?.hero?.alt);
 }
 
 function appStoreBadgeAlt(locale, page) {
@@ -693,15 +693,24 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
       hero: homeHero(code, page, locale),
       start: {
         ...locale.home.start,
-        image: homeShot(code, page, HOME_START_FILE, locale.home?.start?.alt),
+        image: pageShot(code, page, HOME_START_FILE, locale.home?.start?.alt),
       },
       how: {
         ...locale.home.how,
-        image: homeShot(code, page, HOME_HOW_FILE, locale.home?.how?.alt),
+        image: pageShot(code, page, IPHONE_WATCH_FILE, locale.home?.how?.alt),
       },
       closing: {
         ...locale.home.closing,
-        image: homeShot(code, page, HOME_READY_FILE, locale.home?.closing?.alt),
+        image: pageShot(code, page, HOME_READY_FILE, locale.home?.closing?.alt),
+      },
+    };
+  }
+  if (page === "features") {
+    data.features = {
+      ...locale.features,
+      watch: {
+        ...locale.features.watch,
+        image: pageShot(code, page, IPHONE_WATCH_FILE, locale.features?.watch?.alt),
       },
     };
   }

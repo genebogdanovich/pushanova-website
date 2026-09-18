@@ -33,13 +33,20 @@
     </section>
 
     <section>
-      <h2>{{features.watch.h2}}</h2>
-      {{#each features.watch.sections}}
-      <h3>{{heading}}</h3>
-      {{#each paragraphs}}
-      <p>{{this}}</p>
-      {{/each}}
-      {{/each}}
+      <div>
+        <h2>{{features.watch.h2}}</h2>
+        {{#each features.watch.sections}}
+        <h3>{{heading}}</h3>
+        {{#each paragraphs}}
+        <p>{{this}}</p>
+        {{/each}}
+        {{/each}}
+      </div>
+      {{#if features.watch.image}}
+      <figure style="--shot-scale: {{features.watch.image.scale}}">
+        <img src="{{features.watch.image.src}}" alt="{{features.watch.image.alt}}" width="{{features.watch.image.width}}" height="{{features.watch.image.height}}">
+      </figure>
+      {{/if}}
     </section>
 
     <section>
