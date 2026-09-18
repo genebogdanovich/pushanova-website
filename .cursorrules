@@ -50,7 +50,7 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 ## Styling
 
 - **Mobile-first, full-size on desktop.** Base styles for a phone. At larger viewports, type, spacing, and the reading column grow. Do not keep a phone-width layout on desktop.
-- **System sans, Apple first.** `font-family: system-ui, -apple-system, sans-serif;`. No webfonts for marketing copy. Let the OS pick the face for each `lang` (Latin, Indic, CJK, Arabic, and the rest).
+- **System sans, Apple first.** `font-family: system-ui, -apple-system, sans-serif;`. No webfonts for marketing copy. Let the OS pick the face for each `lang` (Latin, Indic, CJK, Arabic, and the rest). Exception: the verbatim **Club Pushanova** header wordmark uses self-hosted Inter Tight SemiBold Italic.
 - **Tokens** as CSS custom properties. Follow `prefers-color-scheme`.
 
   Light: page `#FFFFFF`, text `#1D1D1F`, accent `#045DE9` (app blue).

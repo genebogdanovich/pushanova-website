@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Inter Tight";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/InterTight-Italic_SemiBold-Italic.woff2") format("woff2");
+}
+
 :root {
   --color-page: #ffffff;
   --color-text: #1d1d1f;
@@ -14,6 +22,7 @@
   --color-card: color-mix(in srgb, var(--color-text) 5.5%, var(--color-page));
   --color-star: #ffcc00;
   --font: system-ui, -apple-system, sans-serif;
+  --font-brand: "Inter Tight", var(--font);
   --text: clamp(1rem, 0.92rem + 0.35vw, 1.125rem);
   --h1: clamp(1.75rem, 1.2rem + 2vw, 2.75rem);
   --h2: clamp(1.35rem, 1.1rem + 1vw, 1.85rem);
@@ -348,6 +357,12 @@ body > header > nav > ul > li > a {
   align-items: center;
   gap: var(--space-s);
   min-block-size: var(--tap);
+}
+
+body > header > nav > ul > li:first-child > a > span {
+  font-family: var(--font-brand);
+  font-style: italic;
+  font-weight: 600;
 }
 
 body > header > nav img {
