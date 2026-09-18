@@ -19,10 +19,17 @@
     </header>
 
     <section>
-      <h2>{{features.program.h2}}</h2>
-      {{#each features.program.paragraphs}}
-      <p>{{this}}</p>
-      {{/each}}
+      <div>
+        <h2>{{features.program.h2}}</h2>
+        {{#each features.program.paragraphs}}
+        <p>{{this}}</p>
+        {{/each}}
+      </div>
+      {{#if features.program.image}}
+      <figure style="--shot-scale: {{features.program.image.scale}}">
+        <img src="{{features.program.image.src}}" alt="{{features.program.image.alt}}" width="{{features.program.image.width}}" height="{{features.program.image.height}}">
+      </figure>
+      {{/if}}
     </section>
 
     <section>
@@ -50,16 +57,23 @@
     </section>
 
     <section>
-      <h2>{{features.live.h2}}</h2>
-      <p>{{features.live.intro}}</p>
-      <ul>
-        {{#each features.live.items}}
-        <li>{{this}}</li>
+      <div>
+        <h2>{{features.live.h2}}</h2>
+        <p>{{features.live.intro}}</p>
+        <ul>
+          {{#each features.live.items}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        {{#each features.live.paragraphs}}
+        <p>{{this}}</p>
         {{/each}}
-      </ul>
-      {{#each features.live.paragraphs}}
-      <p>{{this}}</p>
-      {{/each}}
+      </div>
+      {{#if features.live.image}}
+      <figure style="--shot-scale: {{features.live.image.scale}}">
+        <img src="{{features.live.image.src}}" alt="{{features.live.image.alt}}" width="{{features.live.image.width}}" height="{{features.live.image.height}}">
+      </figure>
+      {{/if}}
     </section>
 
     <section>

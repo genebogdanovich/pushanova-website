@@ -133,7 +133,7 @@
       },
       "alt": {
         "message": "iPhone showing the Pushanova program levels",
-        "description": "Alt text for the homepage Start Where You Are iPhone screenshot. Do not translate Pushanova."
+        "description": "Alt text for the shared program-levels screenshot on Start Where You Are. Same image as features.program.alt. Do not translate Pushanova."
       },
       "paragraphs": [
         {
@@ -649,6 +649,10 @@
         "message": "Follow the Program and Train Freely",
         "description": "Features H2."
       },
+      "alt": {
+        "message": "iPhone showing the Pushanova program levels",
+        "description": "Alt text for the shared program-levels screenshot on Follow the Program and Train Freely. Same image as home.start.alt. Do not translate Pushanova."
+      },
       "paragraphs": [
         {
           "message": "The progressive program has 50 levels in three stages. Each level is one structured workout with preset sets and push-up targets. Start at any level and move through the program at your own pace. The final level is one set of 100 push-ups.",
@@ -740,6 +744,10 @@
       "h2": {
         "message": "See Workout Information While You Train",
         "description": "Features H2."
+      },
+      "alt": {
+        "message": "Apple Watch showing Pushanova heart rate, calories, and pace",
+        "description": "Alt text for the features live-metrics Apple Watch screenshot. Do not translate Pushanova. Keep Apple Watch as a proper name."
       },
       "intro": {
         "message": "Pushanova shows the information you need during each part of a workout:",
