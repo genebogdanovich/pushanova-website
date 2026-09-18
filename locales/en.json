@@ -161,7 +161,7 @@
       },
       "alt": {
         "message": "iPhone and Apple Watch showing a Pushanova workout",
-        "description": "Alt text for the homepage How Pushanova Works screenshot. Do not translate Pushanova. Keep iPhone and Apple Watch as proper names."
+        "description": "Alt text for the shared iPhone and Apple Watch workout screenshot on How Pushanova Works. Same image as features.watch.alt. Do not translate Pushanova. Keep iPhone and Apple Watch as proper names."
       },
       "steps": [
         {
@@ -696,6 +696,10 @@
       "h2": {
         "message": "Train on Apple Watch With or Without Your iPhone",
         "description": "Features H2. Keep Apple Watch and iPhone as proper names."
+      },
+      "alt": {
+        "message": "iPhone and Apple Watch showing a Pushanova workout",
+        "description": "Alt text for the shared iPhone and Apple Watch workout screenshot on the features Watch section. Same image as home.how.alt. Do not translate Pushanova. Keep iPhone and Apple Watch as proper names."
       },
       "sections": [
         {

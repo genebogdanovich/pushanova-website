@@ -562,6 +562,9 @@
       "h2": {
         "message": "Тренируйтесь на Apple Watch с iPhone или без него"
       },
+      "alt": {
+        "message": "iPhone и Apple Watch с открытой тренировкой Pushanova"
+      },
       "sections": [
         {
           "heading": {
