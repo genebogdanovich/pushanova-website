@@ -244,7 +244,15 @@ body > footer a {
 body > header > nav > ul > li > a {
   display: inline-flex;
   align-items: center;
+  gap: var(--space-s);
   min-block-size: var(--tap);
+}
+
+body > header > nav img {
+  flex: none;
+  inline-size: 1.5em;
+  block-size: auto;
+  border-radius: 0.25em;
 }
 
 body > header [aria-current="page"] {

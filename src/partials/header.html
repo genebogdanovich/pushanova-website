@@ -2,11 +2,10 @@
   <nav>
     <ul>
       <li>
-        {{#if isHome}}
-        <a href="{{urls.home}}" aria-current="page">{{nav.home}}</a>
-        {{else}}
-        <a href="{{urls.home}}">{{nav.home}}</a>
-        {{/if}}
+        <a href="{{urls.home}}"{{#if isHome}} aria-current="page"{{/if}}>
+          <img src="{{logo.src}}" alt="" width="{{logo.width}}" height="{{logo.height}}">
+          {{nav.home}}
+        </a>
       </li>
       <li>
         {{#if isFeatures}}

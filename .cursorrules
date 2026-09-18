@@ -23,6 +23,7 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 
 - Apple App Store badges stay in `src/images/Download-on-the-App-Store/` with Apple’s filenames. Do not rename or split that folder. Pair Apple’s black (`blk`) badge for light mode with the white (`wht`) badge for dark mode via `<picture>` and `prefers-color-scheme`.
 - Product screenshots go in `src/images/screenshots/{locale}/{slot}.webp` (e.g. `en/homepage-hero.webp`, `ru/homepage-hero.webp`). Same filename in every language folder. Missing locales fall back to `en`.
+- Site mark is `src/images/logo.svg`. Not locale-specific. Favicons stay in `src/static/`.
 - Lossless WebP, about 800px wide, tight transparent crop. One file per language. No `@2x` or `en_US` in names.
 
 ## Localization & Translation
