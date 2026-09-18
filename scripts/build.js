@@ -28,6 +28,7 @@ const LOGO_FILE = "logo.svg";
 const HOME_HERO_FILE = "homepage-hero.webp";
 const HOME_START_FILE = "homepage-start.webp";
 const HOME_HOW_FILE = "homepage-how_it_works.webp";
+const HOME_READY_FILE = "homepage-ready.webp";
 const SCREENSHOT_PHONE_WIDTH = 800;
 
 const EXTERNAL = {
@@ -697,6 +698,10 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
       how: {
         ...locale.home.how,
         image: homeShot(code, page, HOME_HOW_FILE, locale.home?.how?.alt),
+      },
+      closing: {
+        ...locale.home.closing,
+        image: homeShot(code, page, HOME_READY_FILE, locale.home?.closing?.alt),
       },
     };
   }

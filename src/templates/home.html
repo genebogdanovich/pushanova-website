@@ -20,7 +20,7 @@
         </h1>
         <p>{{home.lead}}</p>
         <p>{{> app-store}}</p>
-        <p>{{home.offer}}</p>
+        <p><small>{{home.offer}}</small></p>
       </div>
       {{#if home.hero}}
       <figure style="--shot-scale: {{home.hero.scale}}">
@@ -96,10 +96,17 @@
     </section>
 
     <section>
-      <h2>{{home.closing.h2}}</h2>
-      <p>{{home.closing.lead}}</p>
-      <p>{{> app-store}}</p>
-      <p>{{home.closing.offer}}</p>
+      <div>
+        <h2>{{home.closing.h2}}</h2>
+        <p>{{home.closing.lead}}</p>
+        <p>{{> app-store}}</p>
+        <p><small>{{home.closing.offer}}</small></p>
+      </div>
+      {{#if home.closing.image}}
+      <figure style="--shot-scale: {{home.closing.image.scale}}">
+        <img src="{{home.closing.image.src}}" alt="{{home.closing.image.alt}}" width="{{home.closing.image.width}}" height="{{home.closing.image.height}}">
+      </figure>
+      {{/if}}
     </section>
   </main>
   {{> footer}}
