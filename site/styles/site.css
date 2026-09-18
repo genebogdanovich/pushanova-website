@@ -25,6 +25,7 @@
   --space-2xl: 4rem;
   --space-page: clamp(1rem, 4vw, 1.5rem);
   --measure: 90ch;
+  --phone: 16rem;
   --tap: 2.75rem;
 }
 
@@ -62,32 +63,42 @@ a picture {
   display: inline-block;
 }
 
-main > header:has(> figure) {
+main > :is(header, section):has(> figure) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-xl);
 }
 
-main > header:has(> figure) > :not(figure) {
+main > :is(header, section):has(> figure) > :not(figure) {
   flex: 1 1 22rem;
   min-inline-size: min(100%, 22rem);
 }
 
-main > header:has(> figure) > :not(figure) > :last-child {
+main > :is(header, section):has(> figure) > :not(figure) > :last-child {
   margin-block-end: 0;
 }
 
-main > header figure {
+main > :is(header, section) figure {
   flex: none;
   margin-inline: auto;
   margin-block: 0;
-  inline-size: min(100%, 16rem);
+  inline-size: min(100%, calc(var(--phone) * var(--shot-scale, 1)));
 }
 
-main > header figure img {
+main > :is(header, section) figure img {
   display: block;
   inline-size: 100%;
+}
+
+main > header + section:has(> figure) {
+  container-type: inline-size;
+}
+
+@container (min-width: 40.5rem) {
+  main > header + section:has(> figure) > figure {
+    order: -1;
+  }
 }
 
 h1,
@@ -163,6 +174,7 @@ main > nav {
 }
 
 main > section > h2:first-child,
+main > section > :not(figure) > h2:first-child,
 main > nav > h2:first-child {
   margin-block-start: 0;
 }

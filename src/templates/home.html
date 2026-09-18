@@ -23,28 +23,42 @@
         <p>{{home.offer}}</p>
       </div>
       {{#if home.hero}}
-      <figure>
+      <figure style="--shot-scale: {{home.hero.scale}}">
         <img src="{{home.hero.src}}" alt="{{home.hero.alt}}" width="{{home.hero.width}}" height="{{home.hero.height}}">
       </figure>
       {{/if}}
     </header>
 
     <section>
-      <h2>{{home.start.h2}}</h2>
-      {{#each home.start.paragraphs}}
-      <p>{{this}}</p>
-      {{/each}}
+      <div>
+        <h2>{{home.start.h2}}</h2>
+        {{#each home.start.paragraphs}}
+        <p>{{this}}</p>
+        {{/each}}
+      </div>
+      {{#if home.start.image}}
+      <figure style="--shot-scale: {{home.start.image.scale}}">
+        <img src="{{home.start.image.src}}" alt="{{home.start.image.alt}}" width="{{home.start.image.width}}" height="{{home.start.image.height}}">
+      </figure>
+      {{/if}}
     </section>
 
     <section>
-      <h2>{{home.how.h2}}</h2>
-      {{#each home.how.steps}}
-      <h3>{{heading}}</h3>
-      {{#each paragraphs}}
-      <p>{{this}}</p>
-      {{/each}}
-      {{/each}}
-      <p><a href="{{urls.features}}">{{home.how.featuresLink}}</a></p>
+      <div>
+        <h2>{{home.how.h2}}</h2>
+        {{#each home.how.steps}}
+        <h3>{{heading}}</h3>
+        {{#each paragraphs}}
+        <p>{{this}}</p>
+        {{/each}}
+        {{/each}}
+        <p><a href="{{urls.features}}">{{home.how.featuresLink}}</a></p>
+      </div>
+      {{#if home.how.image}}
+      <figure style="--shot-scale: {{home.how.image.scale}}">
+        <img src="{{home.how.image.src}}" alt="{{home.how.image.alt}}" width="{{home.how.image.width}}" height="{{home.how.image.height}}">
+      </figure>
+      {{/if}}
     </section>
 
     <section>

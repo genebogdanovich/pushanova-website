@@ -26,6 +26,9 @@ const APP_STORE_BADGE_FILES = {
 const SCREENSHOTS_DIR = "screenshots";
 const LOGO_FILE = "logo.svg";
 const HOME_HERO_FILE = "homepage-hero.webp";
+const HOME_START_FILE = "homepage-start.webp";
+const HOME_HOW_FILE = "homepage-how_it_works.webp";
+const SCREENSHOT_PHONE_WIDTH = 800;
 
 const EXTERNAL = {
   appStoreUrl: "https://apps.apple.com/app/push-up-counter-pushanova/id6451240468",
@@ -281,21 +284,25 @@ function loadScreenshot(code, fileName) {
   };
 }
 
-function homeHero(code, page, locale) {
-  const shot = loadScreenshot(code, HOME_HERO_FILE);
+function homeShot(code, page, fileName, alt) {
+  const shot = loadScreenshot(code, fileName);
   if (!shot) {
     return undefined;
   }
-  const alt = locale.home?.hero?.alt;
   if (!alt) {
-    throw new Error("Missing home.hero.alt");
+    throw new Error(`Missing alt for ${fileName}`);
   }
   return {
     src: posixHref(outputFile(code, page), shot.sitePath),
     alt,
     width: shot.width,
     height: shot.height,
+    scale: String(Number(shot.width) / SCREENSHOT_PHONE_WIDTH),
   };
+}
+
+function homeHero(code, page, locale) {
+  return homeShot(code, page, HOME_HERO_FILE, locale.home?.hero?.alt);
 }
 
 function appStoreBadgeAlt(locale, page) {
@@ -683,6 +690,14 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
     data.home = {
       ...locale.home,
       hero: homeHero(code, page, locale),
+      start: {
+        ...locale.home.start,
+        image: homeShot(code, page, HOME_START_FILE, locale.home?.start?.alt),
+      },
+      how: {
+        ...locale.home.how,
+        image: homeShot(code, page, HOME_HOW_FILE, locale.home?.how?.alt),
+      },
     };
   }
   const html = renderTemplate(templates[page], [data], partials);
