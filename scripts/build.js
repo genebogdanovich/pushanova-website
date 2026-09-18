@@ -24,6 +24,7 @@ const APP_STORE_BADGE_FILES = {
   },
 };
 const SCREENSHOTS_DIR = "screenshots";
+const LOGO_FILE = "logo.svg";
 const HOME_HERO_FILE = "homepage-hero.webp";
 
 const EXTERNAL = {
@@ -161,11 +162,12 @@ function posixHref(fromFile, toFile) {
 function svgSize(filePath) {
   const svg = fs.readFileSync(filePath, "utf8");
   const tag = svg.match(/<svg\b[^>]*>/)?.[0] || "";
-  const width = tag.match(/\bwidth="([\d.]+)"/)?.[1];
-  const height = tag.match(/\bheight="([\d.]+)"/)?.[1];
+  const width = tag.match(/\bwidth="([\d.]+)(?:px)?"/)?.[1];
+  const height = tag.match(/\bheight="([\d.]+)(?:px)?"/)?.[1];
+  const box = tag.match(/\bviewBox="([\d.]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)"/);
   return {
-    width: String(Math.round(Number(width || 120))),
-    height: String(Math.round(Number(height || 40))),
+    width: String(Math.round(Number(width || box?.[3] || 120))),
+    height: String(Math.round(Number(height || box?.[4] || 40))),
   };
 }
 
@@ -252,6 +254,17 @@ function loadAppStoreBadge(code) {
   const light = loadAppStoreBadgeAsset(code, "light");
   const dark = loadAppStoreBadgeAsset(code, "dark");
   return { light, dark };
+}
+
+function loadLogo(fromFile) {
+  const filePath = path.join(imagesDir, LOGO_FILE);
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Missing src/images/${LOGO_FILE}`);
+  }
+  return {
+    src: posixHref(fromFile, `images/${LOGO_FILE}`),
+    ...svgSize(filePath),
+  };
 }
 
 function loadScreenshot(code, fileName) {
@@ -657,6 +670,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
     languages: languageEntries(codes, names, code, page),
     seo: pageSeo(code, page, codes, ogLocales),
     stylesheet: posixHref(outputFile(code, page), "styles/site.css"),
+    logo: loadLogo(outputFile(code, page)),
     appStoreBadge: {
       src: posixHref(outputFile(code, page), badge.light.sitePath),
       darkSrc: posixHref(outputFile(code, page), badge.dark.sitePath),
