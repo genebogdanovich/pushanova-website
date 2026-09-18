@@ -131,6 +131,10 @@
         "message": "Start Where You Are",
         "description": "Homepage H2."
       },
+      "alt": {
+        "message": "iPhone showing the Pushanova program levels",
+        "description": "Alt text for the homepage Start Where You Are iPhone screenshot. Do not translate Pushanova."
+      },
       "paragraphs": [
         {
           "message": "The program has 50 levels. Each level is one structured workout with preset sets and repetition targets. Beginners can start with small sets in the early levels. Experienced users can start at any level or train freely.",
@@ -154,6 +158,10 @@
       "h2": {
         "message": "How Pushanova Works",
         "description": "Homepage H2. Do not translate Pushanova."
+      },
+      "alt": {
+        "message": "iPhone and Apple Watch showing a Pushanova workout",
+        "description": "Alt text for the homepage How Pushanova Works screenshot. Do not translate Pushanova. Keep iPhone and Apple Watch as proper names."
       },
       "steps": [
         {
