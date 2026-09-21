@@ -231,19 +231,27 @@
         "message": "What Users Are Saying",
         "description": "Homepage H2 above App Store reviews."
       },
+      "rating": {
+        "message": "★★★★★",
+        "description": "Five star characters on every homepage review card. Decorative. Keep the five stars. Do not translate."
+      },
       "items": [
         {
           "title": {
             "message": "Amazing app",
             "description": "App Store review title."
           },
+          "byline": {
+            "message": "April 2, 2026 — Hellfire7777",
+            "description": "Review date and username under the title. Do not translate the username. Keep the em dash. Date may be localized."
+          },
+          "place": {
+            "message": "India",
+            "description": "Review country under the byline. May be translated."
+          },
           "quote": {
             "message": "“I really like this app. Its simplicity is what makes it the best!”",
             "description": "App Store review body. Keep the quotation marks."
-          },
-          "attribution": {
-            "message": "Hellfire7777 · India · April 2, 2026",
-            "description": "Review attribution. Do not translate the username. Country name may be translated. Keep the date readable."
           }
         },
         {
@@ -251,13 +259,17 @@
             "message": "Good",
             "description": "App Store review title."
           },
+          "byline": {
+            "message": "June 19, 2024 — Rikstarrr124",
+            "description": "Review date and username under the title. Do not translate the username. Keep the em dash. Date may be localized."
+          },
+          "place": {
+            "message": "Australia",
+            "description": "Review country under the byline. May be translated."
+          },
           "quote": {
             "message": "“It is great. It helps me do more push-ups, and it motivates me to keep improving.”",
             "description": "App Store review body. Keep the quotation marks."
-          },
-          "attribution": {
-            "message": "Rikstarrr124 · Australia · June 19, 2024",
-            "description": "Review attribution. Do not translate the username. Country name may be translated."
           }
         },
         {
@@ -265,13 +277,17 @@
             "message": "Awesome",
             "description": "App Store review title."
           },
+          "byline": {
+            "message": "January 12, 2025 — AnonymousfromME",
+            "description": "Review date and username under the title. Do not translate the username. Keep the em dash. Date may be localized."
+          },
+          "place": {
+            "message": "United States",
+            "description": "Review country under the byline. May be translated."
+          },
           "quote": {
             "message": "“I can do so many push-ups now! Written by our 13-year-old son, who has been very motivated by this app.”",
             "description": "App Store review body. Keep the quotation marks."
-          },
-          "attribution": {
-            "message": "AnonymousfromME · United States · January 12, 2025",
-            "description": "Review attribution. Do not translate the username. Country name may be translated."
           }
         },
         {
@@ -279,13 +295,17 @@
             "message": "Great Push-Up App",
             "description": "App Store review title."
           },
+          "byline": {
+            "message": "May 15, 2025 — c15co",
+            "description": "Review date and username under the title. Do not translate the username. Keep the em dash. Date may be localized."
+          },
+          "place": {
+            "message": "Australia",
+            "description": "Review country under the byline. May be translated."
+          },
           "quote": {
             "message": "“I love this app. I recently decided to see how fast I could get to 100 push-ups. I could not find an app that made this easy at an affordable price until I found this one. I love how clean the app is. The developer is also very responsive to feedback.”",
             "description": "App Store review body. Keep the quotation marks."
-          },
-          "attribution": {
-            "message": "c15co · Australia · May 15, 2025",
-            "description": "Review attribution. Do not translate the username. Country name may be translated."
           }
         }
       ],
@@ -763,41 +783,11 @@
         "message": "Apple Watch showing Pushanova heart rate, calories, and pace",
         "description": "Alt text for the features live-metrics Apple Watch screenshot. Do not translate Pushanova. Keep Apple Watch as a proper name."
       },
-      "intro": {
-        "message": "Pushanova shows the information you need during each part of a workout:",
-        "description": "Features intro before the live-metrics list. Do not translate Pushanova. Keep the colon."
-      },
-      "items": [
-        {
-          "message": "Current phase: preparation, push-ups, or rest",
-          "description": "Features list item. Live workout metric."
-        },
-        {
-          "message": "Push-up count and current set",
-          "description": "Features list item. Live workout metric."
-        },
-        {
-          "message": "Workout timer",
-          "description": "Features list item. Live workout metric."
-        },
-        {
-          "message": "Current and average pace",
-          "description": "Features list item. Live workout metric."
-        },
-        {
-          "message": "Heart rate<sup>1</sup>, when available",
-          "description": "Features list item. Keep the <sup>1</sup> footnote marker. Live workout metric."
-        },
-        {
-          "message": "Active calories",
-          "description": "Features list item. Live workout metric."
-        },
-        {
-          "message": "Your highest number of push-ups in one set",
-          "description": "Features list item. Live workout metric."
-        }
-      ],
       "paragraphs": [
+        {
+          "message": "During a workout, Pushanova shows the current phase: preparation, push-ups, or rest. It also shows your push-up count and set, a timer, current and average pace, active calories, and heart rate<sup>1</sup> when available.",
+          "description": "Features paragraph. Live workout metrics in prose. Keep the colon after phase. Keep the <sup>1</sup> footnote marker. Do not translate Pushanova."
+        },
         {
           "message": "A short countdown gives you time to get into position before the first push-up. During a program workout, Pushanova suggests 90 seconds of rest after a planned set. You can continue earlier or rest longer. When you train freely, rest time counts upward without a fixed target.",
           "description": "Features paragraph. Keep 90 as a number. Do not translate Pushanova."
@@ -897,22 +887,6 @@
         {
           "message": "You can start and save a workout without an internet connection. iCloud synchronization resumes when your device is online again.",
           "description": "Features paragraph. Keep iCloud."
-        }
-      ]
-    },
-    "privacy": {
-      "h2": {
-        "message": "Privacy and Reliability",
-        "description": "Features H2."
-      },
-      "paragraphs": [
-        {
-          "message": "Pushanova does not contain ads and does not sell your data. Push-up counting does not take photos or record, save, or upload video.",
-          "description": "Features paragraph. Do not translate Pushanova."
-        },
-        {
-          "message": "If Pushanova closes or a workout is interrupted, the active workout can be restored when you open the app again.",
-          "description": "Features paragraph. Do not translate Pushanova."
         }
       ]
     },

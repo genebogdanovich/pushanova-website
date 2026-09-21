@@ -65,11 +65,14 @@
       <h2>{{home.reviews.h2}}</h2>
       {{#each home.reviews.items}}
       <article>
-        <p aria-hidden="true">★★★★★</p>
+        <p aria-hidden="true">{{home.reviews.rating}}</p>
         <h3>{{title}}</h3>
+        <footer>
+          <p>{{byline}}</p>
+          <p>{{place}}</p>
+        </footer>
         <blockquote>
           <p>{{quote}}</p>
-          <footer>{{attribution}}</footer>
         </blockquote>
       </article>
       {{/each}}

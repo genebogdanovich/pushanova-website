@@ -53,10 +53,10 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 - **System sans, Apple first.** `font-family: system-ui, -apple-system, sans-serif;`. No webfonts for marketing copy. Let the OS pick the face for each `lang` (Latin, Indic, CJK, Arabic, and the rest). Exception: the verbatim **Club Pushanova** header wordmark uses self-hosted Inter Tight SemiBold.
 - **Tokens** as CSS custom properties. Follow `prefers-color-scheme`.
 
-  Light: page `#FFFFFF`, band `#F5F5F7`, text `#1D1D1F`, accent `#1F6BB5` (steel blue).
-  Dark: page `#000000`, band `#1D1D1F`, text `#F5F5F7`, accent `#7EABD8` (same hue, lightened and softened).
+  Light: page `#FFFFFF`, band `#F5F5F7`, text `#1D1D1F`, accent `#1F6BB5` (steel blue), fill `#0091FF`.
+  Dark: page `#000000`, band `#1D1D1F`, text `#F5F5F7`, accent `#7EABD8` (same hue, lightened and softened). Fill is `#0091FF` mixed toward black so white label text still holds.
 
-  Use accent for links and emphasis only. Solid fills with white text keep `#1F6BB5` in both schemes — the dark-mode accent is too light for that. Do not invert `#1F6BB5` for dark mode; it fails contrast on black.
+  Use accent for links and emphasis only. Do not use the dark-mode accent as a solid fill. Do not put white text on raw `#0091FF` in dark mode; darken the fill instead.
 - **Logical properties** for spacing and alignment. RTL is a first-class layout.
 - **Line-height** stays open enough for Indic and other complex scripts (~1.4–1.6). Fluid type with `clamp()` so desktop is not 14px body text. Main column max-width in `ch` or `rem`, not a fixed pixel page.
 - **Touch-first:** no hover-only actions; visible focus; wrap, don’t truncate, translated UI. `overflow-wrap` for long words and URLs.
