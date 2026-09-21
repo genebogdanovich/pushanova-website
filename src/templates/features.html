@@ -11,7 +11,7 @@
 <body>
   {{> header}}
   <main>
-    <header class="spotlight">
+    <header>
       <div>
         <h1>{{features.h1}}</h1>
         <p>{{features.lead}}</p>
@@ -73,12 +73,6 @@
     <section>
       <div>
         <h2>{{features.live.h2}}</h2>
-        <p>{{features.live.intro}}</p>
-        <ul>
-          {{#each features.live.items}}
-          <li>{{this}}</li>
-          {{/each}}
-        </ul>
         {{#each features.live.paragraphs}}
         <p>{{this}}</p>
         {{/each}}
@@ -110,13 +104,6 @@
     <section>
       <h2>{{features.devices.h2}}</h2>
       {{#each features.devices.paragraphs}}
-      <p>{{this}}</p>
-      {{/each}}
-    </section>
-
-    <section>
-      <h2>{{features.privacy.h2}}</h2>
-      {{#each features.privacy.paragraphs}}
       <p>{{this}}</p>
       {{/each}}
     </section>
