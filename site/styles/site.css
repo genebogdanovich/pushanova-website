@@ -24,8 +24,8 @@
   --color-page: #ffffff;
   --color-band: #f5f5f7;
   --color-text: #1d1d1f;
-  --color-accent: #045de9;
-  --color-fill: #045de9;
+  --color-accent: #1f6bb5;
+  --color-fill: #1f6bb5;
   --color-on-fill: #ffffff;
   --color-line: color-mix(in srgb, var(--color-text) 12%, transparent);
   --color-muted: color-mix(in srgb, var(--color-text) 64%, var(--color-page));
@@ -58,7 +58,7 @@
     --color-page: #000000;
     --color-band: #1d1d1f;
     --color-text: #f5f5f7;
-    --color-accent: #4c8df6;
+    --color-accent: #7eabd8;
     --color-card: color-mix(in srgb, var(--color-text) 12%, var(--color-page));
     --color-card-on-band: color-mix(in srgb, var(--color-text) 12%, var(--color-band));
   }
@@ -317,7 +317,7 @@ blockquote {
 
 blockquote footer {
   color: var(--color-muted);
-  font-size: 0.875em;
+  font-size: 0.75em;
 }
 
 small {
@@ -415,7 +415,7 @@ body > header {
 
 body > header > nav {
   padding-block: var(--space-s);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 
 body > header > nav > ul {
