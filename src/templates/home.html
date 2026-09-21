@@ -15,7 +15,7 @@
       <div>
         <p>{{home.eyebrow}}</p>
         <h1>
-          <img src="{{logo.src}}" alt="" width="{{logo.width}}" height="{{logo.height}}">
+          <img src="{{heroIcon.src}}" alt="" width="{{heroIcon.width}}" height="{{heroIcon.height}}">
           <span>{{home.h1}}</span>
         </h1>
         <p>{{home.lead}}</p>
@@ -29,7 +29,7 @@
       {{/if}}
     </header>
 
-    <section>
+    <section class="surface-muted">
       <div>
         <h2>{{home.start.h2}}</h2>
         {{#each home.start.paragraphs}}
@@ -61,7 +61,7 @@
       {{/if}}
     </section>
 
-    <section>
+    <section class="wide surface-muted">
       <h2>{{home.reviews.h2}}</h2>
       {{#each home.reviews.items}}
       <article>
@@ -83,7 +83,7 @@
       {{/each}}
     </section>
 
-    <section>
+    <section class="surface-muted">
       <h2>{{home.qna.h2}}</h2>
       {{#each home.qna.items}}
       <details>
@@ -95,7 +95,7 @@
       {{/each}}
     </section>
 
-    <section>
+    <section class="spotlight">
       <div>
         <h2>{{home.closing.h2}}</h2>
         <p>{{home.closing.lead}}</p>

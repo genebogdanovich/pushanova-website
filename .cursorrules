@@ -25,7 +25,7 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 - Product screenshots go in `src/images/screenshots/{locale}/{slot}.webp`. Same filename in every language folder. Missing locales fall back to `en`.
 - Page-only shots: `{page}-{section}.webp` (e.g. `homepage-hero.webp`).
 - Shared shots: `{subject}.webp` with no page prefix (e.g. `iphone-watch.webp`, `program-levels.webp`, `start-screen.webp`).
-- Site mark is `src/images/logo.svg`. Not locale-specific. Favicons stay in `src/static/`.
+- Site mark is `src/images/icon-64.webp` in the header and `src/images/icon-256.webp` in the home H1. Not locale-specific. Favicons stay in `src/static/`.
 - Lossless WebP, tight transparent crop. iPhone shots are 800px wide. A composition (Watch + iPhone) is wider; keep the iPhone at 800px so CSS can match sizes. Watch-only shots are about 500px wide and display at the same 16rem column as iPhone shots. One file per language. No `@2x` or `en_US` in names.
 
 ## Localization & Translation
@@ -50,11 +50,11 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 ## Styling
 
 - **Mobile-first, full-size on desktop.** Base styles for a phone. At larger viewports, type, spacing, and the reading column grow. Do not keep a phone-width layout on desktop.
-- **System sans, Apple first.** `font-family: system-ui, -apple-system, sans-serif;`. No webfonts for marketing copy. Let the OS pick the face for each `lang` (Latin, Indic, CJK, Arabic, and the rest). Exception: the verbatim **Club Pushanova** header wordmark uses self-hosted Inter Tight SemiBold Italic.
+- **System sans, Apple first.** `font-family: system-ui, -apple-system, sans-serif;`. No webfonts for marketing copy. Let the OS pick the face for each `lang` (Latin, Indic, CJK, Arabic, and the rest). Exception: the verbatim **Club Pushanova** header wordmark uses self-hosted Inter Tight SemiBold.
 - **Tokens** as CSS custom properties. Follow `prefers-color-scheme`.
 
-  Light: page `#FFFFFF`, text `#1D1D1F`, accent `#045DE9` (app blue).
-  Dark: page `#000000`, text `#F5F5F7`, accent `#4C8DF6` (same hue, lightened for contrast).
+  Light: page `#FFFFFF`, band `#F5F5F7`, text `#1D1D1F`, accent `#045DE9` (app blue).
+  Dark: page `#000000`, band `#1D1D1F`, text `#F5F5F7`, accent `#4C8DF6` (same hue, lightened for contrast).
 
   Use accent for links and emphasis only. Solid fills with white text keep `#045DE9` in both schemes — the dark-mode accent is too light for that. Do not invert `#045DE9` for dark mode; it fails contrast on black.
 - **Logical properties** for spacing and alignment. RTL is a first-class layout.

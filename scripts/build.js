@@ -24,7 +24,8 @@ const APP_STORE_BADGE_FILES = {
   },
 };
 const SCREENSHOTS_DIR = "screenshots";
-const LOGO_FILE = "logo.svg";
+const ICON_NAV_FILE = "icon-64.webp";
+const ICON_HERO_FILE = "icon-256.webp";
 const HOME_HERO_FILE = "homepage-hero.webp";
 const IPHONE_WATCH_FILE = "iphone-watch.webp";
 const PROGRAM_LEVELS_FILE = "program-levels.webp";
@@ -38,6 +39,8 @@ const SCREENSHOT_PHONE_WIDTH = 800;
 const EXTERNAL = {
   appStoreUrl: "https://apps.apple.com/app/push-up-counter-pushanova/id6451240468",
   termsUrl: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  instagramUrl: "https://www.instagram.com/pushanova.app",
+  aboutUrl: "https://genebogdanovich.com/",
   email: "info@genebogdanovich.com",
   mailto: "mailto:info@genebogdanovich.com",
   refundUrl: "https://reportaproblem.apple.com",
@@ -167,6 +170,13 @@ function posixHref(fromFile, toFile) {
   return rel.split(path.sep).join("/");
 }
 
+function assetHref(code, page, toFile) {
+  if (page === "404") {
+    return `/${toFile}`;
+  }
+  return posixHref(outputFile(code, page), toFile);
+}
+
 function svgSize(filePath) {
   const svg = fs.readFileSync(filePath, "utf8");
   const tag = svg.match(/<svg\b[^>]*>/)?.[0] || "";
@@ -264,14 +274,14 @@ function loadAppStoreBadge(code) {
   return { light, dark };
 }
 
-function loadLogo(fromFile) {
-  const filePath = path.join(imagesDir, LOGO_FILE);
+function loadIcon(code, page, fileName) {
+  const filePath = path.join(imagesDir, fileName);
   if (!fs.existsSync(filePath)) {
-    throw new Error(`Missing src/images/${LOGO_FILE}`);
+    throw new Error(`Missing src/images/${fileName}`);
   }
   return {
-    src: posixHref(fromFile, `images/${LOGO_FILE}`),
-    ...svgSize(filePath),
+    src: assetHref(code, page, `images/${fileName}`),
+    ...rasterSize(filePath),
   };
 }
 
@@ -668,6 +678,7 @@ function pageFlags(page) {
     isSupport: page === "support",
     isPrivacy: page === "privacy",
     isNotFound: page === "404",
+    hasHeartRateNote: page === "home" || page === "features",
   };
 }
 
@@ -681,8 +692,9 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
     urls,
     languages: languageEntries(codes, names, code, page),
     seo: pageSeo(code, page, codes, ogLocales),
-    stylesheet: posixHref(outputFile(code, page), "styles/site.css"),
-    logo: loadLogo(outputFile(code, page)),
+    stylesheet: assetHref(code, page, "styles/site.css"),
+    icon: loadIcon(code, page, ICON_NAV_FILE),
+    heroIcon: loadIcon(code, page, ICON_HERO_FILE),
     appStoreBadge: {
       src: posixHref(outputFile(code, page), badge.light.sitePath),
       darkSrc: posixHref(outputFile(code, page), badge.dark.sitePath),

@@ -58,15 +58,15 @@
     },
     "instagram": {
       "message": "Instagram",
-      "description": "Footer label. Service name. Do not translate."
+      "description": "Footer link to the Pushanova Instagram profile. Service name. Do not translate."
     },
     "about": {
       "message": "About the Developer",
-      "description": "Footer label. No URL yet."
+      "description": "Footer link to the developer’s website. Keep as a full phrase so grammar can change per language."
     },
     "heartRateNote": {
       "message": "1. Heart-rate sensing with AirPods Pro 3 or Powerbeats Pro 2 is available in Pushanova on iPhone with iOS 26 or later, and on iPad with iPadOS 26 or later. Heart rate is also available from a Bluetooth heart-rate monitor connected to iPhone or iPad.",
-      "description": "Site footer legal note. Keep the footnote number 1. Do not translate Pushanova, AirPods Pro 3, Powerbeats Pro 2, iPhone, iPad, iOS, iPadOS, or Bluetooth. Keep version numbers."
+      "description": "Homepage and features site-footer legal note for the heart rate<sup>1</sup> marker. Keep the footnote number 1. Do not translate Pushanova, AirPods Pro 3, Powerbeats Pro 2, iPhone, iPad, iOS, iPadOS, or Bluetooth. Keep version numbers."
     }
   },
   "notFound": {
@@ -785,8 +785,8 @@
           "description": "Features list item. Live workout metric."
         },
         {
-          "message": "Heart rate, when available",
-          "description": "Features list item. Live workout metric."
+          "message": "Heart rate<sup>1</sup>, when available",
+          "description": "Features list item. Keep the <sup>1</sup> footnote marker. Live workout metric."
         },
         {
           "message": "Active calories",
