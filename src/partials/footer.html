@@ -1,5 +1,7 @@
-<footer>
+<footer class="surface-muted">
+  {{#if hasHeartRateNote}}
   <p class="footnote" id="heart-rate-note"><small>{{footer.heartRateNote}}</small></p>
+  {{/if}}
   {{#if isSupport}}
   <ul>
     <li><a href="{{urls.home}}">{{footer.home}}</a></li>
@@ -13,8 +15,8 @@
     <li><a href="{{urls.privacy}}">{{footer.privacy}}</a></li>
     <li><a href="{{urls.support}}">{{footer.support}}</a></li>
     <li>{{footer.pressKit}}</li>
-    <li>{{footer.instagram}}</li>
-    <li>{{footer.about}}</li>
+    <li><a href="{instagramUrl}">{{footer.instagram}}</a></li>
+    <li><a href="{aboutUrl}">{{footer.about}}</a></li>
   </ul>
   {{/if}}
 </footer>
