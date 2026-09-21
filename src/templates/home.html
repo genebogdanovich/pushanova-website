@@ -89,8 +89,8 @@
     <section class="surface-muted">
       <h2>{{home.qna.h2}}</h2>
       {{#each home.qna.items}}
-      <details>
-        <summary>{{question}}</summary>
+      <details id="{{id}}">
+        <summary><h3>{{question}}</h3></summary>
         {{#each paragraphs}}
         <p>{{this}}</p>
         {{/each}}
