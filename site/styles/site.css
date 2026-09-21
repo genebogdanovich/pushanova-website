@@ -43,8 +43,8 @@
   --space-s: 0.5rem;
   --space-m: 1rem;
   --space-l: 1.5rem;
-  --space-xl: 2.5rem;
-  --space-2xl: 4rem;
+  --space-xl: clamp(2.5rem, 2rem + 2vw, 4rem);
+  --space-2xl: clamp(4rem, 3rem + 3vw, 6rem);
   --space-page: clamp(1rem, 4vw, 1.5rem);
   --measure: 96ch;
   --wide: 76rem;
@@ -525,7 +525,7 @@ body > header details > ul a {
 }
 
 body > footer {
-  padding-block: var(--space-xl);
+  padding-block: 2.5rem;
   font-size: 0.8125rem;
 }
 
