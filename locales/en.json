@@ -15,6 +15,10 @@
     "ogLocale": {
       "message": "en_US",
       "description": "Open Graph locale code such as en_US or ru_RU. Do not translate."
+    },
+    "ogImageAlt": {
+      "message": "Pushanova logo",
+      "description": "Alt text for the Open Graph share image used in iMessage and social previews. Do not translate Pushanova."
     }
   },
   "nav": {
@@ -102,6 +106,14 @@
       "description": {
         "message": "Follow the progressive program or train freely. Pushanova automatically counts your push-ups on iPhone, iPad, and Apple Watch.",
         "description": "Homepage meta description. Do not translate Pushanova."
+      },
+      "ogTitle": {
+        "message": "Pushanova",
+        "description": "Open Graph title for the homepage share card (iMessage, social previews). Brand name. Do not translate Pushanova. Keep short."
+      },
+      "ogDescription": {
+        "message": "Build up to 100 push-ups at your own pace. Automatic counting on iPhone, iPad, and Apple Watch.",
+        "description": "Open Graph description for the homepage share card. One or two short sentences. Do not translate Pushanova. Keep iPhone, iPad, and Apple Watch as proper names."
       }
     },
     "eyebrow": {

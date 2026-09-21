@@ -26,6 +26,10 @@ const APP_STORE_BADGE_FILES = {
 const SCREENSHOTS_DIR = "screenshots";
 const ICON_NAV_FILE = "icon-64.webp";
 const ICON_HERO_FILE = "icon-256.webp";
+const OG_IMAGE_FILE = "og.png";
+const PRIVACY_TITLE = "Privacy Policy for Pushanova";
+const PRIVACY_DESCRIPTION =
+  "How Pushanova handles information on iPhone, iPad, and Apple Watch. Pushanova does not require an account.";
 const HOME_HERO_FILE = "homepage-hero.webp";
 const IPHONE_WATCH_FILE = "iphone-watch.webp";
 const PROGRAM_LEVELS_FILE = "program-levels.webp";
@@ -389,7 +393,52 @@ function hreflangsFor(page, codes) {
   ];
 }
 
-function pageSeo(code, page, codes, ogLocales) {
+function loadOgImage() {
+  const filePath = path.join(staticDir, OG_IMAGE_FILE);
+  if (!fs.existsSync(filePath)) {
+    throw new Error("Missing src/static/og.png");
+  }
+  return {
+    url: absoluteUrl(`/${OG_IMAGE_FILE}`),
+    ...rasterSize(filePath),
+  };
+}
+
+function ogTitleFor(page, locale) {
+  switch (page) {
+    case "home":
+      return locale.home.meta.ogTitle;
+    case "features":
+      return locale.features.meta.title;
+    case "support":
+      return locale.support.meta.title;
+    case "privacy":
+      return PRIVACY_TITLE;
+    case "404":
+      return locale.notFound.meta.title;
+    default:
+      throw new Error(`Unknown page: ${page}`);
+  }
+}
+
+function ogDescriptionFor(page, locale) {
+  switch (page) {
+    case "home":
+      return locale.home.meta.ogDescription;
+    case "features":
+      return locale.features.meta.description;
+    case "support":
+      return locale.support.meta.description;
+    case "privacy":
+      return PRIVACY_DESCRIPTION;
+    case "404":
+      return locale.notFound.meta.description;
+    default:
+      throw new Error(`Unknown page: ${page}`);
+  }
+}
+
+function pageSeo(code, page, codes, ogLocales, locale, ogImage) {
   const canonicalCode = SHARED_PAGES.includes(page) ? DEFAULT_LOCALE : code;
   const ogLocale = ogLocales[code] || ogLocales[DEFAULT_LOCALE] || "en_US";
   const ogLocaleAlternates = SHARED_PAGES.includes(page)
@@ -400,6 +449,12 @@ function pageSeo(code, page, codes, ogLocales) {
     hreflangs: hreflangsFor(page, codes),
     ogLocale,
     ogLocaleAlternates,
+    ogTitle: ogTitleFor(page, locale),
+    ogDescription: ogDescriptionFor(page, locale),
+    ogImage: ogImage.url,
+    ogImageWidth: ogImage.width,
+    ogImageHeight: ogImage.height,
+    ogImageAlt: locale.meta.ogImageAlt,
   };
 }
 
@@ -682,7 +737,7 @@ function pageFlags(page) {
   };
 }
 
-function renderPage({ page, code, templates, partials, resolved, codes, names, ogLocales }) {
+function renderPage({ page, code, templates, partials, resolved, codes, names, ogLocales, ogImage }) {
   const locale = resolved[code];
   const urls = pageUrls(code, page);
   const badge = loadAppStoreBadge(code);
@@ -691,7 +746,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
     ...pageFlags(page),
     urls,
     languages: languageEntries(codes, names, code, page),
-    seo: pageSeo(code, page, codes, ogLocales),
+    seo: pageSeo(code, page, codes, ogLocales, locale, ogImage),
     stylesheet: assetHref(code, page, "styles/site.css"),
     icon: loadIcon(code, page, ICON_NAV_FILE),
     heroIcon: loadIcon(code, page, ICON_HERO_FILE),
@@ -760,6 +815,7 @@ function main() {
     throw new Error("site.config.json must set siteUrl");
   }
   const { codes, resolved, names, ogLocales } = loadLocales();
+  const ogImage = loadOgImage();
   const partials = {
     header: fs.readFileSync(path.join(partialsDir, "header.html"), "utf8"),
     footer: fs.readFileSync(path.join(partialsDir, "footer.html"), "utf8"),
@@ -774,7 +830,7 @@ function main() {
     privacy: fs.readFileSync(path.join(templatesDir, "privacy.html"), "utf8"),
     404: fs.readFileSync(path.join(templatesDir, "404.html"), "utf8"),
   };
-  const pageArgs = { templates, partials, resolved, codes, names, ogLocales };
+  const pageArgs = { templates, partials, resolved, codes, names, ogLocales, ogImage };
 
   emptySiteDir();
   copyImages();

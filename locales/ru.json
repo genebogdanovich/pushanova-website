@@ -11,6 +11,9 @@
     },
     "ogLocale": {
       "message": "ru_RU"
+    },
+    "ogImageAlt": {
+      "message": "Логотип Pushanova"
     }
   },
   "nav": {
@@ -79,6 +82,12 @@
       },
       "description": {
         "message": "Следуйте прогрессивной программе или тренируйтесь свободно. Pushanova автоматически считает ваши отжимания на iPhone, iPad и Apple Watch."
+      },
+      "ogTitle": {
+        "message": "Pushanova"
+      },
+      "ogDescription": {
+        "message": "Дойдите до 100 отжиманий в своем темпе. Автоматический подсчет на iPhone, iPad и Apple Watch."
       }
     },
     "eyebrow": {
