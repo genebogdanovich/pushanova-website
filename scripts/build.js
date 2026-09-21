@@ -438,6 +438,67 @@ function ogDescriptionFor(page, locale) {
   }
 }
 
+function slugifyFaqId(text) {
+  const slug = String(text)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/['’]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return slug || "question";
+}
+
+function uniqueFaqId(used, slug) {
+  let id = slug;
+  let n = 2;
+  while (used.has(id)) {
+    id = `${slug}-${n}`;
+    n += 1;
+  }
+  used.add(id);
+  return id;
+}
+
+function withFaqIds(items, englishItems, prefix, used) {
+  return items.map((item, index) => {
+    const englishQuestion = englishItems[index]?.question ?? item.question;
+    const slug = slugifyFaqId(englishQuestion);
+    const id = uniqueFaqId(used, prefix ? `${prefix}-${slug}` : slug);
+    return { ...item, id };
+  });
+}
+
+function withSupportFaqIds(sections, englishSections) {
+  const used = new Set();
+  return sections.map((section, index) => {
+    const englishSection = englishSections[index] || {};
+    const prefix = englishSection.id || section.id;
+    return {
+      ...section,
+      items: withFaqIds(section.items, englishSection.items || [], prefix, used),
+    };
+  });
+}
+
+function faqJsonLd(inLanguage, canonical, items) {
+  const payload = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage,
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      url: `${canonical}#${item.id}`,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.text,
+      },
+    })),
+  };
+  return JSON.stringify(payload).replaceAll("<", "\\u003c");
+}
+
 function pageSeo(code, page, codes, ogLocales, locale, ogImage) {
   const canonicalCode = SHARED_PAGES.includes(page) ? DEFAULT_LOCALE : code;
   const ogLocale = ogLocales[code] || ogLocales[DEFAULT_LOCALE] || "en_US";
@@ -739,6 +800,7 @@ function pageFlags(page) {
 
 function renderPage({ page, code, templates, partials, resolved, codes, names, ogLocales, ogImage }) {
   const locale = resolved[code];
+  const english = resolved[DEFAULT_LOCALE];
   const urls = pageUrls(code, page);
   const badge = loadAppStoreBadge(code);
   const data = {
@@ -759,6 +821,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
     },
   };
   if (page === "home") {
+    const qnaItems = withFaqIds(locale.home.qna.items, english.home.qna.items, "", new Set());
     data.home = {
       ...locale.home,
       hero: homeHero(code, page, locale),
@@ -774,7 +837,38 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
         ...locale.home.closing,
         image: pageShot(code, page, START_SCREEN_FILE, locale.home?.closing?.alt),
       },
+      qna: {
+        ...locale.home.qna,
+        items: qnaItems,
+      },
     };
+    data.seo.faqJsonLd = faqJsonLd(
+      locale.meta.code,
+      data.seo.canonical,
+      qnaItems.map((item) => ({
+        question: item.question,
+        id: item.id,
+        text: item.paragraphs.join("\n\n"),
+      }))
+    );
+  }
+  if (page === "support") {
+    const sections = withSupportFaqIds(locale.support.sections, english.support.sections);
+    data.support = {
+      ...locale.support,
+      sections,
+    };
+    data.seo.faqJsonLd = faqJsonLd(
+      locale.meta.code,
+      data.seo.canonical,
+      sections.flatMap((section) =>
+        section.items.map((item) => ({
+          question: item.question,
+          id: item.id,
+          text: item.answer,
+        }))
+      )
+    );
   }
   if (page === "features") {
     data.features = {
