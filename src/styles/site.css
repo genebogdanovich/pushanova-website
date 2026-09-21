@@ -17,6 +17,7 @@
   --color-text: #1d1d1f;
   --color-accent: #045de9;
   --color-fill: #045de9;
+  --color-on-fill: #ffffff;
   --color-line: color-mix(in srgb, var(--color-text) 12%, transparent);
   --color-muted: color-mix(in srgb, var(--color-text) 64%, var(--color-page));
   --color-card: color-mix(in srgb, var(--color-text) 5.5%, var(--color-page));
@@ -163,6 +164,29 @@ ol {
 
 a {
   color: var(--color-accent);
+}
+
+a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-inline-size: 100%;
+  min-block-size: var(--tap);
+  padding-block: var(--space-s);
+  padding-inline: var(--space-l);
+  border-radius: 999px;
+  background-color: var(--color-fill);
+  color: var(--color-on-fill);
+  font-weight: 650;
+  text-align: center;
+  text-decoration: none;
+  text-wrap: balance;
+}
+
+sup {
+  font-size: 0.75em;
+  font-weight: 650;
+  color: var(--color-muted);
 }
 
 :focus-visible {
@@ -463,6 +487,24 @@ body > footer {
   padding-block: var(--space-l);
 }
 
+body > footer > .footnote,
+body > footer > ul {
+  max-inline-size: var(--wide);
+  margin-inline: auto;
+  padding-inline: var(--space-page);
+}
+
+body > footer > .footnote {
+  margin-block: 0 var(--space-m);
+  font-size: 0.75em;
+  color: var(--color-muted);
+}
+
+body > footer > .footnote small {
+  font-size: inherit;
+  color: inherit;
+}
+
 body > footer > ul {
   display: flex;
   flex-wrap: wrap;
@@ -470,8 +512,7 @@ body > footer > ul {
   align-items: center;
   gap: var(--space-s) var(--space-l);
   list-style: none;
-  margin: 0;
-  padding-inline: var(--space-page);
+  margin-block: 0;
   font-size: 0.875em;
 }
 
