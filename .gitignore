@@ -14,3 +14,4 @@ yarn-error.log*
 .env
 .env.*
 !.env.example
+.cursor/mcp.json
