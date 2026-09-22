@@ -40,12 +40,19 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 
 ## Conventions
 
-- **Modern AEO & SEO:** Prioritize Answer Engine Optimization (AEO) and traditional SEO. Use strict, perfect semantic HTML document outlines (H1, H2, H3), clean meta tags, and descriptive `alt` attributes. AI bots and search crawlers must be able to parse the core value proposition instantly.
-- **GitHub Pages Routing:** To support clean URLs without a web server (e.g., `/da/` instead of `/da.html`), the build script must generate subfolders with `index.html` files (e.g., `/da/index.html`). Asset paths (CSS, images) must resolve correctly in a static environment.
-- **Copy is the product.** Focus on the emotional relief of the features (e.g., "Leave your phone on the desk" rather than "Uses Core Motion APIs").
-- **Privacy policy is American English only.** Do not localize or translate `materials/copy/privacy.md`. The privacy policy remains in the original US English.
-- **Start Where You Are.** The tone should be welcoming. Do not write copy that sounds like an aggressive bootcamp drill sergeant. 
-- **Native Dark Mode.** Support dark mode strictly through the CSS `@media (prefers-color-scheme: dark)` query. Do not build JavaScript theme toggles or buttons. Rely entirely on the user's OS preference.
+- **Copy.** Short paragraphs, 1–3 sentences. Say what the feature removes, not how the sensors work. Marketing sections stay paragraphs; support and FAQ stay real questions and answers.
+- **Tone.** Welcoming. The product paper wins when a louder search phrase fights the product.
+- **Privacy policy is American English only.** Do not localize or translate `materials/copy/privacy.md`.
+- **GitHub Pages routing.** Clean URLs are folders with `index.html` (for example `/da/index.html`). Asset paths must work as static files.
+- **Dark mode.** `@media (prefers-color-scheme: dark)` only. No JavaScript theme toggle.
+- **AEO.** Semantic outline (H1, H2, H3), descriptive `alt`, and one direct sentence an answer engine can quote.
+- **Search phrases.** One locale per pass. Do not start the next language in the same session. Spend what that locale needs. Batch calls. Skip backlinks and domain analytics.
+  1. Google is the source, via DataForSEO. Seeds: counter, app, tracker, program, challenge. Expand with `keywords_for_keywords` for that location and language. Do not invent a long translation list. Then `POST /v3/keywords_data/google_ads/search_volume/live` with `location_code` and `language_code`, and check the shortlist with `POST /v3/serp/google/organic/live/regular` so a high-volume exercise or challenge query is not treated as an app query.
+  2. On the Runet, Yandex Wordstat is the source: Russia and other Russian-speaking markets where Yandex is a real search engine. Use `top_requests` on the phrase. Read queries that contain it. Ignore the similar-phrase list. Wordstat has no bid, so intent comes from those child queries.
+  3. If DataForSEO rejects the location or the shortlist has no measurable volume, check the same phrases on Wordstat before giving up. A small Google volume is still data. Do not replace it with a handful of Yandex searches in a Google country. If both sources are empty, log that and translate the page normally.
+  4. Pick the strongest phrase a person ready to install would search, and that this site can realistically rank for. On Google, use the bid when two volumes are close. A blank volume does not drop a true product fact such as iPhone or Apple Watch.
+  5. Log the winner, why it won, the rejected high-volume phrases, and the tool in `materials/specs/product/search-phrases.md`, with country, language, and month.
+  6. Put that phrase in the page `<title>` and meta description. The H1 stays a sentence a person wants to read. Do not add a body sentence just to include a keyword. The homepage can be found for the install phrase and still promise 100 push-ups.
 
 ## Styling
 
