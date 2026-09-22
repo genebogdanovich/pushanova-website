@@ -100,11 +100,11 @@
   "home": {
     "meta": {
       "title": {
-        "message": "Build Up to 100 Push-Ups at Your Own Pace · Pushanova",
+        "message": "Push-Up Counter for iPhone, iPad, and Apple Watch · Pushanova",
         "description": "Homepage browser tab title. Do not translate Pushanova."
       },
       "description": {
-        "message": "Follow the progressive program or train freely. Pushanova automatically counts your push-ups on iPhone, iPad, and Apple Watch.",
+        "message": "A push-up counter for iPhone, iPad, and Apple Watch. Build toward 100 push-ups, or train freely.",
         "description": "Homepage meta description. Do not translate Pushanova."
       },
       "ogTitle": {
@@ -112,7 +112,7 @@
         "description": "Open Graph title for the homepage share card (iMessage, social previews). Brand name. Do not translate Pushanova. Keep short."
       },
       "ogDescription": {
-        "message": "Build up to 100 push-ups at your own pace. Automatic counting on iPhone, iPad, and Apple Watch.",
+        "message": "A push-up counter that builds toward 100 push-ups. Automatic counting on iPhone, iPad, and Apple Watch.",
         "description": "Open Graph description for the homepage share card. One or two short sentences. Do not translate Pushanova. Keep iPhone, iPad, and Apple Watch as proper names."
       }
     },
@@ -131,7 +131,7 @@
       }
     },
     "lead": {
-      "message": "Follow the progressive program or train freely. You can do both in the same workout. Pushanova automatically counts your push-ups and tracks your progress on iPhone, iPad, and Apple Watch.",
+      "message": "Follow the program or train freely. Pushanova counts your push-ups on iPhone, iPad, and Apple Watch.",
       "description": "Homepage hero paragraph. Do not translate Pushanova."
     },
     "download": {
@@ -153,20 +153,12 @@
       },
       "paragraphs": [
         {
-          "message": "The program has 50 levels. Each level is one structured workout with preset sets and repetition targets. Beginners can start with small sets in the early levels. Experienced users can start at any level or train freely.",
-          "description": "Homepage paragraph under Start Where You Are."
+          "message": "The program has 50 levels. Start at any level, or train freely and choose your own sets. You can also record push-up sets during HIIT or strength training.",
+          "description": "Homepage paragraph under Start Where You Are. HIIT is a common training acronym and may stay as HIIT. Do not translate Pushanova."
         },
         {
-          "message": "Follow the program when you want structure. Train freely when you want to decide how many push-ups and sets to perform. You can switch between them for each workout. After you complete a level, you can continue to train freely in the same workout.",
-          "description": "Homepage paragraph under Start Where You Are."
-        },
-        {
-          "message": "Pushanova does not require a daily or weekly schedule. You can repeat a level, take rest days, and rest as long as you need between sets. There are no leaderboards and no penalties for taking a break.",
+          "message": "Pushanova does not require a daily or weekly schedule. You can repeat a level and take rest days, with no penalty for a break.",
           "description": "Homepage paragraph under Start Where You Are. Do not translate Pushanova."
-        },
-        {
-          "message": "You can use Pushanova for a complete push-up workout or for push-up sets during HIIT or strength training.",
-          "description": "Homepage paragraph under Start Where You Are. HIIT is a common training acronym and may stay as HIIT."
         }
       ]
     },
@@ -227,7 +219,7 @@
           },
           "paragraphs": [
             {
-              "message": "Pushanova saves every completed workout. Review your sets, pace, duration, calories, and heart rate<sup>1</sup> when available. Your workout history and progress show how your training changes over time. With your permission, Pushanova can also save completed workouts to Apple Health.",
+              "message": "Pushanova saves every completed workout, including sets, pace, duration, calories, and heart rate<sup>1</sup> when available. Your history shows how training changes over time. With your permission, completed workouts can also be saved to Apple Health.",
               "description": "Homepage paragraph. Keep the <sup>1</sup> footnote marker. Do not translate Pushanova. Keep Apple Health as a proper name."
             }
           ]
@@ -337,7 +329,7 @@
           "description": "Homepage privacy paragraph. Do not translate Pushanova. Keep iPhone and iPad as proper names."
         },
         {
-          "message": "Pushanova does not require an account or membership. Workout data stays on your devices and in your personal iCloud account when iCloud synchronization is enabled. With your permission, Pushanova can save completed workouts and supported health data to Apple Health. Pushanova does not sell your data and does not contain ads.",
+          "message": "Pushanova does not require an account, does not sell your data, and does not contain ads. Workout data stays on your devices and in your personal iCloud account when synchronization is on. With your permission, completed workouts can be saved to Apple Health.",
           "description": "Homepage privacy paragraph. Do not translate Pushanova. Keep iCloud and Apple Health as proper names."
         },
         {
@@ -411,7 +403,7 @@
           },
           "paragraphs": [
             {
-              "message": "No. Automatic counting never takes photos or records video. It does not save or upload photos or video. The camera is used only to measure changes in distance. Pushanova does not use the camera to identify you.",
+              "message": "No. Automatic counting does not take photos or record, save, or upload video. The camera only measures distance, and Pushanova does not use it to identify you.",
               "description": "Homepage FAQ answer. Do not translate Pushanova."
             }
           ]
@@ -599,7 +591,7 @@
           },
           "paragraphs": [
             {
-              "message": "Yes. You can train freely as often and as long as you want. The first 10 levels and automatic counting are free on iPhone, iPad, and Apple Watch. Manual workout entry and workout history are also free on iPhone and iPad. Pushanova does not contain ads.",
+              "message": "Yes. Free training includes unlimited workouts without preset targets, the first 10 levels, and automatic counting on iPhone, iPad, and Apple Watch. Pushanova does not contain ads.",
               "description": "Homepage FAQ answer. Do not translate Pushanova. Keep device names."
             }
           ]
@@ -627,7 +619,7 @@
           },
           "paragraphs": [
             {
-              "message": "Eligible new subscribers can try the yearly subscription free for three days. The yearly subscription begins automatically after the trial unless it is canceled before the trial ends. The lifetime purchase does not include a free trial. The App Store shows the price and renewal terms before purchase.",
+              "message": "Eligible new subscribers can try the yearly subscription free for three days. It begins automatically unless you cancel before the trial ends. The lifetime purchase has no trial, and the App Store shows the price before you buy.",
               "description": "Homepage FAQ answer. Keep three days. Keep App Store as a proper name."
             }
           ]
@@ -656,20 +648,20 @@
   "features": {
     "meta": {
       "title": {
-        "message": "Pushanova Features",
+        "message": "100 Push-Up Program and Automatic Counting · Pushanova",
         "description": "Features page browser tab title. Do not translate Pushanova."
       },
       "description": {
-        "message": "Follow a progressive program toward 100 push-ups, train freely, or combine both. Pushanova counts your push-ups on iPhone, iPad, and Apple Watch.",
+        "message": "A 100 push-up program with 50 levels, plus training without preset targets. Pushanova counts your push-ups on iPhone, iPad, and Apple Watch.",
         "description": "Features page meta description. Do not translate Pushanova."
       }
     },
     "h1": {
-      "message": "Pushanova Features",
-      "description": "Features page H1. Do not translate Pushanova."
+      "message": "Follow a Program to 100 Push-Ups, or Train Freely",
+      "description": "Features page H1. One sentence. Do not translate Pushanova."
     },
     "lead": {
-      "message": "Follow a progressive program toward 100 push-ups, train freely without preset targets, or combine both in the same workout. Pushanova counts your push-ups and records your workouts on iPhone, iPad, and Apple Watch.",
+      "message": "The program ends at one set of 100 push-ups. You can also train freely, and Pushanova counts the workout on iPhone, iPad, and Apple Watch.",
       "description": "Features page intro. Do not translate Pushanova. Keep device names."
     },
     "download": {
@@ -697,19 +689,11 @@
       },
       "paragraphs": [
         {
-          "message": "The progressive program has 50 levels in three stages. Each level is one structured workout with preset sets and push-up targets. Start at any level and move through the program at your own pace. The final level is one set of 100 push-ups.",
+          "message": "The program has 50 levels in three stages. Start at any level. The final level is one set of 100 push-ups.",
           "description": "Features paragraph under Follow the Program and Train Freely."
         },
         {
-          "message": "Train freely whenever you do not want preset targets. You decide how many push-ups and sets to perform while Pushanova records the workout. You can return to the program for your next workout.",
-          "description": "Features paragraph. Do not translate Pushanova."
-        },
-        {
-          "message": "Completing a level does not end the workout. You can continue to train freely in the same session. Additional push-ups and sets are saved as part of that workout.",
-          "description": "Features paragraph."
-        },
-        {
-          "message": "Pushanova does not require a daily or weekly schedule. You can repeat a level, take rest days, and continue when you are ready.",
+          "message": "Train freely when you do not want preset targets. You choose the push-ups and sets, and you can return to the program for the next workout.",
           "description": "Features paragraph. Do not translate Pushanova."
         },
         {
@@ -801,7 +785,7 @@
           "description": "Features paragraph. Live workout metrics in prose. Keep the colon after phase. Keep the <sup>1</sup> footnote marker. Do not translate Pushanova."
         },
         {
-          "message": "A short countdown gives you time to get into position before the first push-up. During a program workout, Pushanova suggests 90 seconds of rest after a planned set. You can continue earlier or rest longer. When you train freely, rest time counts upward without a fixed target.",
+          "message": "A short countdown gives you time to get into position. During a program workout, Pushanova suggests 90 seconds of rest after a planned set, and you can continue earlier or rest longer. When you train freely, rest has no fixed target.",
           "description": "Features paragraph. Keep 90 as a number. Do not translate Pushanova."
         },
         {
@@ -831,7 +815,7 @@
           },
           "paragraphs": [
             {
-              "message": "Every completed workout is saved. Review the sets, duration, active calories, notes, and how the workout felt. Heart rate, pace, and cadence are included when available. You can also create a share card or add workout information to a photo.",
+              "message": "Every completed workout is saved, including sets, duration, calories, notes, and how it felt. Heart rate, pace, and cadence are included when available. You can create a share card or add the workout to a photo.",
               "description": "Features paragraph under Workout History."
             },
             {
@@ -1169,7 +1153,7 @@
               "description": "Support H3. Getting Started."
             },
             "answer": {
-              "message": "<p>Start <strong>Freestyle</strong> on iPhone, iPad, or Apple Watch. You decide how many push-ups and sets to perform.</p><p>When Pushanova detects a rest, it finishes the current set. Your next push-up begins a new set. Tap <strong>Complete Workout</strong> when you are finished.</p><p>You can train freely between program workouts. You can also continue to train freely after completing a level in the same workout.</p>",
+              "message": "<p>Start <strong>Freestyle</strong> on iPhone, iPad, or Apple Watch. You decide how many push-ups and sets to perform.</p><p>When Pushanova detects a rest, it finishes the current set. Your next push-up begins a new set. Tap <strong>Complete Workout</strong> when you are finished. You can also continue freely after you finish a level in the same workout.</p>",
               "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
             }
           },
@@ -1189,7 +1173,7 @@
               "description": "Support H3. Getting Started. Keep iPhone and iPad."
             },
             "answer": {
-              "message": "<p>For automatic camera counting, place the device flat on the floor with the screen facing up. Keep the front camera under your face, use good light, and keep your face in view.</p><p>If Camera access is unavailable on iPhone, place the top edge of the phone near your face. The screen may briefly turn black when your face is close. This is expected.</p><p>If you do not use Camera access on iPad, turn on <strong>Tap to Count</strong> and tap the screen for each push-up.</p><p>You do not need to touch the screen during automatic camera counting. Do not prop the device at an angle.</p>",
+              "message": "<p>For automatic camera counting, place the device flat on the floor with the screen facing up. Keep the front camera under your face, use good light, and keep your face in view. Do not prop the device at an angle.</p><p>If Camera access is unavailable on iPhone, place the top edge of the phone near your face. The screen may briefly turn black when your face is close. This is expected.</p><p>If you do not use Camera access on iPad, turn on <strong>Tap to Count</strong> and tap the screen for each push-up.</p>",
               "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
             }
           }
@@ -1437,7 +1421,7 @@
               "description": "Support H3. Workouts and Progress. Do not translate Pushanova."
             },
             "answer": {
-              "message": "<p>Often, yes. Reopen Pushanova and follow the recovery message. The app attempts to restore the active workout or save the completed part.</p><p>On Apple Watch, <strong>Workout Interrupted</strong> may appear. Dismissing this message saves the completed part of the workout when possible.</p><p>Recovery may not be possible when the stored workout is damaged, too old, or the device does not have enough free storage.</p><p>If the problem continues:</p><ul><li>Update Pushanova and the device operating system.</li><li>Restart the device.</li><li>Confirm that the device has free storage.</li><li>Do not close Pushanova while <strong>Complete Workout</strong> is saving.</li></ul>",
+              "message": "<p>Often, yes. Reopen Pushanova and follow the recovery message. On Apple Watch, <strong>Workout Interrupted</strong> may appear, and dismissing it saves the completed part when possible.</p><p>Recovery may not be possible when the stored workout is damaged, too old, or the device does not have enough free storage. If the problem continues:</p><ul><li>Update Pushanova and the device operating system.</li><li>Restart the device.</li><li>Confirm that the device has free storage.</li><li>Do not close Pushanova while <strong>Complete Workout</strong> is saving.</li></ul>",
               "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
             }
           },
@@ -1611,7 +1595,7 @@
               "description": "Support H3. Privacy and Data."
             },
             "answer": {
-              "message": "<p>Pushanova may save movement measurements that help it count push-ups. These measurements are not photos or video.</p><p>The measurements are stored with the workout on your device. If iCloud synchronization is enabled, the same workout data may synchronize through your personal iCloud account. It is not sent automatically to a Pushanova server.</p><p>If you choose <strong>Report an Issue</strong>, an email report may include numerical counting measurements and workout information. You choose whether to send that email.</p><p>For complete details, read the <a href=\"{privacyUrl}\">Privacy Policy</a>.</p>",
+              "message": "<p>Pushanova may save movement measurements that help it count push-ups. These measurements are not photos or video.</p><p>They stay with the workout on your device. If iCloud synchronization is on, they can synchronize through your personal iCloud account. They are not sent to a Pushanova server unless you choose <strong>Report an Issue</strong> and send the email.</p><p>For complete details, read the <a href=\"{privacyUrl}\">Privacy Policy</a>.</p>",
               "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
             }
           },
