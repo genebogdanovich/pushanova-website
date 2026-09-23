@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { APP_STORE_BADGES, SUPERSEDED_APP_STORE_BADGES } from "./app-store-badges.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const localesDir = path.join(root, "locales");
@@ -13,16 +14,6 @@ const siteDir = path.join(root, "site");
 const config = JSON.parse(fs.readFileSync(path.join(root, "site.config.json"), "utf8"));
 const siteUrl = String(config.siteUrl || "").replace(/\/$/, "");
 const APP_STORE_BADGE_DIR = "Download-on-the-App-Store";
-const APP_STORE_BADGE_FILES = {
-  en: {
-    light: "Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg",
-    dark: "Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg",
-  },
-  ru: {
-    light: "Download_on_the_App_Store_Badge_RU_RGB_blk_100317.svg",
-    dark: "Download_on_the_App_Store_Badge_RU_RGB_wht_100317.svg",
-  },
-};
 const SCREENSHOTS_DIR = "screenshots";
 const ICON_NAV_FILE = "icon-64.webp";
 const ICON_HERO_FILE = "icon-256.webp";
@@ -104,6 +95,90 @@ function resolveMessages(node) {
     return out;
   }
   return node;
+}
+
+function tokens(text, pattern) {
+  return text.match(pattern) || [];
+}
+
+function sameTokens(left, right) {
+  return left.length === right.length && left.every((token, index) => token === right[index]);
+}
+
+function assertLocaleParity(english, locale, code) {
+  const errors = [];
+
+  function visit(base, other, path) {
+    if (errors.length >= 15) {
+      return;
+    }
+    const here = path || code;
+    if (Array.isArray(base)) {
+      if (!Array.isArray(other)) {
+        errors.push(`${code}: ${here} must be an array`);
+        return;
+      }
+      if (other.length !== base.length) {
+        errors.push(`${code}: ${here} has ${other.length} items; English has ${base.length}`);
+        return;
+      }
+      base.forEach((item, index) => visit(item, other[index], `${here}[${index}]`));
+      return;
+    }
+    if (isLeaf(base)) {
+      if (!isLeaf(other)) {
+        errors.push(`${code}: ${here} must be a message`);
+        return;
+      }
+      const extra = Object.keys(other).filter((key) => key !== "message" && key !== "description");
+      if (extra.length) {
+        errors.push(`${code}: ${here} has unexpected keys: ${extra.join(", ")}`);
+      }
+      const basePlaceholders = tokens(base.message, /\{[^{}]+\}/g);
+      const otherPlaceholders = tokens(other.message, /\{[^{}]+\}/g);
+      if (!sameTokens(basePlaceholders, otherPlaceholders)) {
+        errors.push(
+          `${code}: ${here} placeholders are ${JSON.stringify(otherPlaceholders)}; English has ${JSON.stringify(basePlaceholders)}`
+        );
+      }
+      const baseTags = tokens(base.message, /<\/?[a-zA-Z][^>]*>/g);
+      const otherTags = tokens(other.message, /<\/?[a-zA-Z][^>]*>/g);
+      if (!sameTokens(baseTags, otherTags)) {
+        errors.push(`${code}: ${here} HTML tags do not match English`);
+      }
+      return;
+    }
+    if (!base || typeof base !== "object") {
+      return;
+    }
+    if (!other || typeof other !== "object" || Array.isArray(other)) {
+      errors.push(`${code}: ${here} must be an object`);
+      return;
+    }
+    const baseKeys = Object.keys(base);
+    const otherKeys = Object.keys(other);
+    const missing = baseKeys.filter((key) => !otherKeys.includes(key));
+    const unexpected = otherKeys.filter((key) => !baseKeys.includes(key));
+    if (missing.length || unexpected.length) {
+      const parts = [];
+      if (missing.length) {
+        parts.push(`missing ${missing.join(", ")}`);
+      }
+      if (unexpected.length) {
+        parts.push(`unexpected ${unexpected.join(", ")}`);
+      }
+      errors.push(`${code}: ${here} ${parts.join("; ")}`);
+      return;
+    }
+    for (const key of baseKeys) {
+      visit(base[key], other[key], path ? `${path}.${key}` : key);
+    }
+  }
+
+  visit(english, locale, "");
+  if (errors.length) {
+    throw new Error(errors.join("\n"));
+  }
 }
 
 function assertEnglishDescriptions(node, path = "") {
@@ -256,15 +331,34 @@ function rasterSize(filePath) {
   };
 }
 
+function assertBadgeCatalog() {
+  const dir = path.join(imagesDir, APP_STORE_BADGE_DIR);
+  const onDisk = new Set(fs.readdirSync(dir).filter((name) => name.endsWith(".svg")));
+  const used = new Set(SUPERSEDED_APP_STORE_BADGES);
+  for (const [code, pair] of Object.entries(APP_STORE_BADGES)) {
+    for (const scheme of ["light", "dark"]) {
+      const fileName = pair[scheme];
+      if (!onDisk.has(fileName)) {
+        throw new Error(`Badge map for ${code} points at a missing file: ${fileName}`);
+      }
+      used.add(fileName);
+    }
+  }
+  const unused = [...onDisk].filter((name) => !used.has(name)).sort();
+  if (unused.length) {
+    throw new Error(`App Store badges are not mapped:\n${unused.join("\n")}`);
+  }
+}
+
 function loadAppStoreBadgeAsset(code, scheme) {
-  const names = APP_STORE_BADGE_FILES[code] || APP_STORE_BADGE_FILES[DEFAULT_LOCALE];
-  const fileName = names[scheme] || APP_STORE_BADGE_FILES[DEFAULT_LOCALE][scheme];
+  const pair = APP_STORE_BADGES[code];
+  if (!pair) {
+    throw new Error(`No App Store badge for locale ${code}`);
+  }
+  const fileName = pair[scheme];
   const filePath = path.join(imagesDir, APP_STORE_BADGE_DIR, fileName);
   if (!fs.existsSync(filePath)) {
-    if (code === DEFAULT_LOCALE) {
-      throw new Error(`Missing App Store badge: ${fileName}`);
-    }
-    return loadAppStoreBadgeAsset(DEFAULT_LOCALE, scheme);
+    throw new Error(`Missing App Store badge for ${code}: ${fileName}`);
   }
   return {
     sitePath: `images/${APP_STORE_BADGE_DIR}/${fileName}`,
@@ -767,13 +861,15 @@ function loadLocales() {
   const raw = {};
   for (const file of files) {
     const code = path.basename(file, ".json");
-    const data = readJson(path.join(localesDir, file));
-    if (code === DEFAULT_LOCALE) {
-      assertEnglishDescriptions(data);
-    }
-    raw[code] = data;
+    raw[code] = readJson(path.join(localesDir, file));
   }
   const english = raw[DEFAULT_LOCALE];
+  assertEnglishDescriptions(english);
+  for (const code of Object.keys(raw)) {
+    if (code !== DEFAULT_LOCALE) {
+      assertLocaleParity(english, raw[code], code);
+    }
+  }
   const resolved = {};
   const names = {};
   const ogLocales = {};
@@ -908,6 +1004,7 @@ function main() {
   if (!siteUrl) {
     throw new Error("site.config.json must set siteUrl");
   }
+  assertBadgeCatalog();
   const { codes, resolved, names, ogLocales } = loadLocales();
   const ogImage = loadOgImage();
   const partials = {
