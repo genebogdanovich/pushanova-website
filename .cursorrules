@@ -30,9 +30,14 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 
 ## Localization & Translation
 
-- **American English is the Base & Default:** `locales/en.json` is American English (US): the source language, base template, and default fallback. File name, URLs, and `hreflang` stay `en`. HTML `lang` is `en-US`. Switcher label is `English (US)`. Do not add `en-US.json` or rename this locale. British English is `en-GB` (press-ups). All translations originate from this file. Missing strings or assets fall back to it.
+- **American English is the Base & Default:** `locales/en.json` is American English (US): the source language, base template, and default fallback. File name, URLs, and `hreflang` stay `en`. HTML `lang` is `en-US`. Switcher label is `English (US)`. Do not add `en-US.json` or rename this locale. British English is `en-GB` (press-ups). All translations originate from this file. Missing screenshots fall back to `en`. A locale file must match this key tree; the build does not fill missing strings.
 - **One Language Per File:** Architecture must be scalable and token-efficient. Do not merge languages into a single giant JSON.
-- **Add a language:** Read only `locales/en.json`. Create `locales/{bcp47}.json` with the same tree. Translate `message` values only; omit `description`. Set `meta.code` (HTML `lang`, e.g. `en-US`) and `meta.name` (e.g. `English (US)`). Do not translate placeholders, HTML tags, **Pushanova**, Apple product names, or in-app UI labels inside `<strong>`. Do not open other `locales/*.json` files. Do not edit templates. Run `npm run build`.
+- **Add a language:** One locale per pass. Do not open other `locales/*.json` files. Do not edit templates.
+  1. Run the search-phrase pass for that locale only, as in **Search phrases** below. Log the winner in `materials/specs/product/search-phrases.md`.
+  2. Read only `locales/en.json`. Create `locales/{bcp47}.json` with the same tree. Translate `message` values only; omit `description`. Set `meta.code` (HTML `lang`, e.g. `en-US`) and `meta.name` (e.g. `English (US)`).
+  3. Write the page `<title>` and meta description from the logged phrase. Do not translate the English title word for word.
+  4. Do not translate placeholders, HTML tags, **Pushanova**, Apple product names, or in-app UI labels inside `<strong>`.
+  5. Run `npm run build`. The build fails if the key tree, placeholders, or HTML tags do not match English, or if that locale has no App Store badge.
 - **Context is Required:** The American English source file (`en.json`) must include descriptive comments for each key. Translators and AI need to know where the string appears, its character limits, and its context. Other locale files may ship `{ "message": "…" }` leaves only.
 - **Protect Placeholders:** Never translate variables, placeholders, or HTML tags (e.g., `{rating}`, `{email}`, `<sup>`). They must remain exactly as written in the source.
 - **Whole Sentences Only:** Never concatenate text fragments in the code (e.g., never do `"Translated from " + language`). Always translate full strings so grammar structures can shift naturally per language.
