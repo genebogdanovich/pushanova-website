@@ -21,14 +21,14 @@ const OG_IMAGE_FILE = "og.png";
 const PRIVACY_TITLE = "Privacy Policy for Pushanova";
 const PRIVACY_DESCRIPTION =
   "How Pushanova handles information on iPhone, iPad, and Apple Watch. Pushanova does not require an account.";
-const HOME_HERO_FILE = "homepage-hero.webp";
+const IPHONE_HOME_FILE = "iphone-home.webp";
 const IPHONE_WATCH_FILE = "iphone-watch.webp";
-const PROGRAM_LEVELS_FILE = "program-levels.webp";
-const START_SCREEN_FILE = "start-screen.webp";
-const FEATURES_PROGRESS_FILE = "features-progress.webp";
-const FEATURES_STATS_FILE = "features-stats.webp";
-const FEATURES_COUNTING_FILE = "features-counting.webp";
-const FEATURES_HERO_FILE = "features-hero.webp";
+const IPHONE_LEVELS_FILE = "iphone-levels.webp";
+const IPHONE_START_FILE = "iphone-start.webp";
+const IPHONE_PROGRESS_FILE = "iphone-progress.webp";
+const WATCH_STATS_FILE = "watch-stats.webp";
+const IPHONE_COUNTING_FILE = "iphone-counting.webp";
+const WATCH_COUNTING_FILE = "watch-counting.webp";
 const SCREENSHOT_PHONE_WIDTH = 800;
 
 const EXTERNAL = {
@@ -415,7 +415,7 @@ function pageShot(code, page, fileName, alt) {
 }
 
 function homeHero(code, page, locale) {
-  return pageShot(code, page, HOME_HERO_FILE, locale.home?.hero?.alt);
+  return pageShot(code, page, IPHONE_HOME_FILE, locale.home?.hero?.alt);
 }
 
 function appStoreBadgeAlt(locale, page) {
@@ -923,7 +923,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
       hero: homeHero(code, page, locale),
       start: {
         ...locale.home.start,
-        image: pageShot(code, page, PROGRAM_LEVELS_FILE, locale.home?.start?.alt),
+        image: pageShot(code, page, IPHONE_LEVELS_FILE, locale.home?.start?.alt),
       },
       how: {
         ...locale.home.how,
@@ -931,7 +931,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
       },
       closing: {
         ...locale.home.closing,
-        image: pageShot(code, page, START_SCREEN_FILE, locale.home?.closing?.alt),
+        image: pageShot(code, page, IPHONE_START_FILE, locale.home?.closing?.alt),
       },
       qna: {
         ...locale.home.qna,
@@ -969,30 +969,30 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
   if (page === "features") {
     data.features = {
       ...locale.features,
-      hero: pageShot(code, page, FEATURES_HERO_FILE, locale.features?.hero?.alt),
+      hero: pageShot(code, page, WATCH_COUNTING_FILE, locale.features?.hero?.alt),
       watch: {
         ...locale.features.watch,
         image: pageShot(code, page, IPHONE_WATCH_FILE, locale.features?.watch?.alt),
       },
       program: {
         ...locale.features.program,
-        image: pageShot(code, page, PROGRAM_LEVELS_FILE, locale.features?.program?.alt),
+        image: pageShot(code, page, IPHONE_LEVELS_FILE, locale.features?.program?.alt),
       },
       progress: {
         ...locale.features.progress,
-        image: pageShot(code, page, FEATURES_PROGRESS_FILE, locale.features?.progress?.alt),
+        image: pageShot(code, page, IPHONE_PROGRESS_FILE, locale.features?.progress?.alt),
       },
       live: {
         ...locale.features.live,
-        image: pageShot(code, page, FEATURES_STATS_FILE, locale.features?.live?.alt),
+        image: pageShot(code, page, WATCH_STATS_FILE, locale.features?.live?.alt),
       },
       counting: {
         ...locale.features.counting,
-        image: pageShot(code, page, FEATURES_COUNTING_FILE, locale.features?.counting?.alt),
+        image: pageShot(code, page, IPHONE_COUNTING_FILE, locale.features?.counting?.alt),
       },
       closing: {
         ...locale.features.closing,
-        image: pageShot(code, page, START_SCREEN_FILE, locale.features?.closing?.alt),
+        image: pageShot(code, page, IPHONE_START_FILE, locale.features?.closing?.alt),
       },
     };
   }
