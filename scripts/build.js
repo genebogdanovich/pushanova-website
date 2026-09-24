@@ -600,6 +600,7 @@ function pageSeo(code, page, codes, ogLocales, locale, ogImage) {
     ? []
     : codes.filter((item) => item !== code).map((item) => ogLocales[item]).filter(Boolean);
   return {
+    noindex: page === "404",
     canonical: absoluteUrl(publicPath(canonicalCode, page)),
     hreflangs: hreflangsFor(page, codes),
     ogLocale,
