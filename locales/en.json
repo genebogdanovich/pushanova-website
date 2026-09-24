@@ -1712,20 +1712,12 @@
         },
         "heading": {
           "message": "Contact",
-          "description": "Support H2."
+          "description": "Support H2. Closing section, shown in full."
         },
-        "items": [
-          {
-            "question": {
-              "message": "Do you still need help?",
-              "description": "Support H3. Contact."
-            },
-            "answer": {
-              "message": "<p>Email <a href=\"{mailto}\">{email}</a>.</p><p>Include:</p><ul><li>Device model</li><li>Operating system version</li><li>Pushanova version</li><li>Whether you trained on iPhone, iPad, Apple Watch, or two devices together</li><li>Whether you completed a program level or trained freely</li><li>What you expected</li><li>What happened</li><li>A screenshot, when useful</li></ul><p>For counting problems, send <strong>Report an Issue</strong> from the affected workout when possible. Screenshots can help when they do not contain information that you prefer not to share.</p>",
-              "description": "HTML answer. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto}, {email}, {privacyUrl}, or {refundUrl}."
-            }
-          }
-        ]
+        "body": {
+          "message": "<p>Email <a href=\"{mailto}\">{email}</a>.</p><p>Include:</p><ul><li>Device model</li><li>Operating system version</li><li>Pushanova version</li><li>Whether you trained on iPhone, iPad, Apple Watch, or two devices together</li><li>Whether you completed a program level or trained freely</li><li>What you expected</li><li>What happened</li><li>A screenshot, when useful</li></ul><p>For counting problems, send <strong>Report an Issue</strong> from the affected workout when possible. Screenshots can help when they do not contain information that you prefer not to share.</p>",
+          "description": "Closing section HTML. Do not translate or move HTML tags. Keep <strong> around in-app UI labels. Do not translate placeholders such as {mailto} or {email}."
+        }
       }
     ]
   }

@@ -7,7 +7,7 @@
 
 Find answers about workouts, push-up counting, Apple Watch, Apple Health, purchases, and privacy.
 
-If you still need help, email [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
+If you still need help, email [help@pushanova.com](mailto:help@pushanova.com).
 
 ## Support Topics
 
@@ -350,7 +350,7 @@ Purchases are processed by Apple. Pushanova does not use its own account for pur
 4. Close and reopen Pushanova.
 5. Check that in-app purchases are allowed on the device.
 
-If Premium remains locked, email [info@genebogdanovich.com](mailto:info@genebogdanovich.com). Include the device model, Pushanova version, purchase type, and a screenshot showing the purchase or error. Hide unrelated personal or payment information.
+If Premium remains locked, email [help@pushanova.com](mailto:help@pushanova.com). Include the device model, Pushanova version, purchase type, and a screenshot showing the purchase or error. Hide unrelated personal or payment information.
 
 ### How does the free trial work?
 
@@ -422,7 +422,7 @@ To delete workout data:
 
 Uninstalling Pushanova removes data stored only on that device. Data already stored in iCloud or Apple Health remains until you delete it there.
 
-If you sent a diagnostic report or photo submission by email, contact [info@genebogdanovich.com](mailto:info@genebogdanovich.com) to request deletion of the copy received by the developer.
+If you sent a diagnostic report or photo submission by email, contact [help@pushanova.com](mailto:help@pushanova.com) to request deletion of the copy received by the developer.
 
 ### Does Pushanova require an account?
 
@@ -493,9 +493,7 @@ For an active iPhone and Apple Watch workout, keep Watch unlocked and nearby and
 
 ## Contact
 
-### Do you still need help?
-
-Email [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
+Email [help@pushanova.com](mailto:help@pushanova.com).
 
 Include:
 

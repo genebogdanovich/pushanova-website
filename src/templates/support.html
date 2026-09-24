@@ -29,12 +29,17 @@
     {{#each support.sections}}
     <section id="{{id}}">
       <h2>{{heading}}</h2>
+      {{#if items}}
       {{#each items}}
       <details id="{{id}}">
         <summary><h3>{{question}}</h3></summary>
         {{answer}}
       </details>
       {{/each}}
+      {{/if}}
+      {{#if body}}
+      {{body}}
+      {{/if}}
     </section>
     {{/each}}
   </main>

@@ -6,7 +6,7 @@ Canonical version: https://pushanova.com/privacy/
 
 This Privacy Policy describes how **Yauhen Bahdanovich**, a self-employed individual based in the **Republic of Belarus** (“I,” “me,” or the “Developer”), processes personal data in connection with the **Pushanova** app for iPhone, iPad, and Apple Watch (the “App”).
 
-Where I determine the purposes and means of processing, I am the data controller or operator under applicable data-protection law. Questions and requests may be sent to [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
+Where I determine the purposes and means of processing, I am the data controller or operator under applicable data-protection law. Questions and requests may be sent to [help@pushanova.com](mailto:help@pushanova.com).
 
 This Privacy Policy is a notice. It does not replace separate consent where applicable law requires consent.
 
@@ -62,7 +62,7 @@ If iCloud is enabled for Pushanova in the user’s device settings, the workout 
 Face-distance data may leave the device only in the following circumstances:
 
 1. **Apple services.** Apple may process the data to provide iCloud / CloudKit synchronization or device backups selected by the user.
-2. **A user-initiated diagnostic email.** A user may choose to email a diagnostic attachment containing the face-distance waveform and related mathematical or motion readings. The user can review the complete email and attachment before sending it. The message is processed by the user’s email provider and by Postale.io, which hosts [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
+2. **A user-initiated diagnostic email.** A user may choose to email a diagnostic attachment containing the face-distance waveform and related mathematical or motion readings. The user can review the complete email and attachment before sending it. The message is processed by the user’s email provider and by Postale.io, which hosts [help@pushanova.com](mailto:help@pushanova.com).
 3. **Legal disclosure.** I may disclose information when required by applicable law or valid legal process.
 
 Face-distance data is not disclosed to advertisers, data brokers, Firebase, or social-media platforms.
@@ -73,7 +73,7 @@ The face-distance waveform remains on the device and, where enabled, in iCloud f
 
 Uninstalling the App removes its active on-device data. Synced data or backup copies may remain until the user deletes them or Apple removes them under its retention rules.
 
-If a diagnostic email contains a face-distance waveform, I delete the email and attachment six months after the support conversation is resolved, as described in Section 6. A user may request earlier deletion by emailing [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
+If a diagnostic email contains a face-distance waveform, I delete the email and attachment six months after the support conversation is resolved, as described in Section 6. A user may request earlier deletion by emailing [help@pushanova.com](mailto:help@pushanova.com).
 
 ## 3. Workout and Motion Data
 
@@ -130,7 +130,7 @@ I may, at my discretion, publish an accepted submission on Instagram or another 
 
 The submission email and its attachments are deleted one year after receipt. If a submission has been published, the social-media post may remain after the source email is deleted and will remain until the sender requests removal or I remove it for another reason.
 
-The sender may withdraw consent to future use and request removal from accounts I control by emailing [info@genebogdanovich.com](mailto:info@genebogdanovich.com). Removal cannot recover copies already made by other people or immediately remove a platform’s backup or cached copies.
+The sender may withdraw consent to future use and request removal from accounts I control by emailing [help@pushanova.com](mailto:help@pushanova.com). Removal cannot recover copies already made by other people or immediately remove a platform’s backup or cached copies.
 
 ## 6. Support and Diagnostic Communications
 
@@ -257,7 +257,7 @@ Most workout, motion, photo, and HealthKit data is controlled directly by the us
 
 Because Pushanova has no account, Firebase identifiers are not linked to an email address or identity known to me. I may be unable to locate a particular Firebase record from an email request. Uninstalling the App stops future collection from that installation but does not immediately delete information already sent to Google.
 
-Requests concerning data I control may be sent to [info@genebogdanovich.com](mailto:info@genebogdanovich.com). I may request information reasonably necessary to verify the requester and locate the relevant records, and I will respond within the period required by applicable law.
+Requests concerning data I control may be sent to [help@pushanova.com](mailto:help@pushanova.com). I may request information reasonably necessary to verify the requester and locate the relevant records, and I will respond within the period required by applicable law.
 
 Residents of Belarus may complain to the [National Personal Data Protection Centre of the Republic of Belarus](https://cpd.by/en/). Individuals in the EEA or United Kingdom may complain to the supervisory authority where they live or work.
 
@@ -267,7 +267,7 @@ Pushanova does not make decisions that produce legal or similarly significant ef
 
 Pushanova is a general-audience fitness app with an App Store age rating of 4+. It is not directed to children under 13.
 
-The App does not request a date of birth, and Firebase does not provide me with the user’s age. People under 13 must not send support messages, diagnostic reports, or featuring submissions. A parent or guardian who believes a child has sent personal information to me may request deletion at [info@genebogdanovich.com](mailto:info@genebogdanovich.com).
+The App does not request a date of birth, and Firebase does not provide me with the user’s age. People under 13 must not send support messages, diagnostic reports, or featuring submissions. A parent or guardian who believes a child has sent personal information to me may request deletion at [help@pushanova.com](mailto:help@pushanova.com).
 
 Featuring submissions are permitted only from persons aged 16 or older. No featuring submission may depict a minor or any person other than the sender.
 
@@ -288,4 +288,4 @@ The current version is published at https://pushanova.com/privacy/ and in the Ap
 **Yauhen Bahdanovich**<br>
 Self-employed developer of Pushanova<br>
 Republic of Belarus<br>
-Email: [info@genebogdanovich.com](mailto:info@genebogdanovich.com)
+Email: [help@pushanova.com](mailto:help@pushanova.com)

@@ -36,8 +36,8 @@ const EXTERNAL = {
   termsUrl: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
   instagramUrl: "https://www.instagram.com/pushanova.app",
   aboutUrl: "https://genebogdanovich.com/",
-  email: "info@genebogdanovich.com",
-  mailto: "mailto:info@genebogdanovich.com",
+  email: "help@pushanova.com",
+  mailto: "mailto:help@pushanova.com",
   refundUrl: "https://reportaproblem.apple.com",
 };
 
@@ -557,6 +557,9 @@ function withSupportFaqIds(sections, englishSections) {
   return sections.map((section, index) => {
     const englishSection = englishSections[index] || {};
     const prefix = englishSection.id || section.id;
+    if (!Array.isArray(section.items)) {
+      return section;
+    }
     return {
       ...section,
       items: withFaqIds(section.items, englishSection.items || [], prefix, used),
@@ -948,7 +951,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
       locale.meta.code,
       data.seo.canonical,
       sections.flatMap((section) =>
-        section.items.map((item) => ({
+        (section.items || []).map((item) => ({
           question: item.question,
           id: item.id,
           text: item.answer,
