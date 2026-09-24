@@ -428,23 +428,13 @@ function appStoreBadgeAlt(locale, page) {
   throw new Error("Missing App Store badge alt text");
 }
 
-function pageUrls(code, page) {
-  if (page === "404") {
-    return {
-      home: publicPath(code, "home"),
-      features: publicPath(code, "features"),
-      support: publicPath(code, "support"),
-      privacy: publicPath(DEFAULT_LOCALE, "privacy"),
-      notFound: publicPath(DEFAULT_LOCALE, "404"),
-    };
-  }
-  const from = outputFile(code, page);
+function pageUrls(code) {
   return {
-    home: posixHref(from, outputFile(code, "home")),
-    features: posixHref(from, outputFile(code, "features")),
-    support: posixHref(from, outputFile(code, "support")),
-    privacy: posixHref(from, outputFile(DEFAULT_LOCALE, "privacy")),
-    notFound: posixHref(from, outputFile(DEFAULT_LOCALE, "404")),
+    home: publicPath(code, "home"),
+    features: publicPath(code, "features"),
+    support: publicPath(code, "support"),
+    privacy: publicPath(DEFAULT_LOCALE, "privacy"),
+    notFound: publicPath(DEFAULT_LOCALE, "404"),
   };
 }
 
@@ -454,7 +444,6 @@ function orderedCodes(codes) {
 }
 
 function languageEntries(codes, names, code, page) {
-  const from = outputFile(code, page);
   return codes.map((other) => {
     let toCode = other;
     let toPage = page;
@@ -468,7 +457,7 @@ function languageEntries(codes, names, code, page) {
     return {
       code: other,
       name: names[other],
-      url: page === "404" ? publicPath(toCode, toPage) : posixHref(from, outputFile(toCode, toPage)),
+      url: publicPath(toCode, toPage),
       current: other === code,
     };
   });
@@ -898,7 +887,7 @@ function pageFlags(page) {
 function renderPage({ page, code, templates, partials, resolved, codes, names, ogLocales, ogImage }) {
   const locale = resolved[code];
   const english = resolved[DEFAULT_LOCALE];
-  const urls = pageUrls(code, page);
+  const urls = pageUrls(code);
   const badge = loadAppStoreBadge(code);
   const data = {
     ...locale,
