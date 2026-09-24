@@ -238,6 +238,18 @@ main > :is(header, section, nav):not(.surface-muted) + :is(header, section, nav)
   padding-block-start: 0;
 }
 
+main.legal {
+  padding-block: var(--space-xl) var(--space-2xl);
+}
+
+main.legal > :is(header, section) {
+  padding-block: 0;
+}
+
+main.legal > :is(header, section) + section {
+  margin-block-start: var(--space-l);
+}
+
 .spotlight {
   --lane: var(--spotlight);
 }
