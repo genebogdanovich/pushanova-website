@@ -2,7 +2,7 @@
 
 **Last updated: September 24, 2026**
 
-Canonical version: https://genebogdanovich.com/pushanova/privacy-policy/
+Canonical version: https://pushanova.com/privacy/
 
 This Privacy Policy describes how **Yauhen Bahdanovich**, a self-employed individual based in the **Republic of Belarus** (“I,” “me,” or the “Developer”), processes personal data in connection with the **Pushanova** app for iPhone, iPad, and Apple Watch (the “App”).
 
@@ -281,7 +281,7 @@ No method of storage or transmission is completely secure. Ordinary email is not
 
 I may amend this Privacy Policy to reflect changes in the App, service providers, or applicable law. The “Last updated” date identifies the current version. If a change materially expands processing that requires consent, I will request new consent where required.
 
-The current version is published at https://genebogdanovich.com/pushanova/privacy-policy/ and in the App.
+The current version is published at https://pushanova.com/privacy/ and in the App.
 
 ## 17. Contact
 
