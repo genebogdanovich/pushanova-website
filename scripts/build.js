@@ -31,8 +31,22 @@ const IPHONE_COUNTING_FILE = "iphone-counting.webp";
 const WATCH_COUNTING_FILE = "watch-counting.webp";
 const SCREENSHOT_PHONE_WIDTH = 800;
 
+const APP_STORE_CAMPAIGN = {
+  id: "6451240468",
+  pt: "124125728",
+  mt: "8",
+};
+
+function appStoreCampaignUrl(code) {
+  const params = new URLSearchParams({
+    pt: APP_STORE_CAMPAIGN.pt,
+    ct: `website-${code}`,
+    mt: APP_STORE_CAMPAIGN.mt,
+  });
+  return `https://apps.apple.com/app/apple-store/id${APP_STORE_CAMPAIGN.id}?${params}`;
+}
+
 const EXTERNAL = {
-  appStoreUrl: "https://apps.apple.com/app/push-up-counter-pushanova/id6451240468",
   termsUrl: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
   instagramUrl: "https://www.instagram.com/pushanova.app",
   aboutUrl: "https://genebogdanovich.com/",
@@ -790,9 +804,10 @@ function renderTemplate(template, contexts, partials) {
   return renderTree(nest(tokenize(template)), contexts, partials);
 }
 
-function applyPlaceholders(html, urls) {
+function applyPlaceholders(html, urls, code) {
   const values = {
     ...EXTERNAL,
+    appStoreUrl: appStoreCampaignUrl(code),
     homeUrl: urls.home,
     featuresUrl: urls.features,
     supportUrl: urls.support,
@@ -990,7 +1005,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
     };
   }
   const html = renderTemplate(templates[page], [data], partials);
-  return applyPlaceholders(html, urls);
+  return applyPlaceholders(html, urls, code);
 }
 
 function main() {
