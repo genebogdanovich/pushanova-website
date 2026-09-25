@@ -179,7 +179,7 @@
           },
           "paragraphs": [
             {
-              "message": "Place your iPhone or iPad on the floor, or start the workout on Apple Watch. A short countdown gives you time to get into position.",
+              "message": "Place your iPhone or iPad on the floor, or start on Apple Watch. A short countdown gives you time to get into position.",
               "description": "Homepage paragraph. Keep iPhone, iPad, and Apple Watch as proper names."
             }
           ]
@@ -191,36 +191,32 @@
           },
           "paragraphs": [
             {
-              "message": "Pushanova counts your push-ups automatically and records your sets, pace, workout time, and active calories. Heart rate is included when available. On iPhone and iPad, automatic counting does not take photos or record video.",
-              "description": "Homepage paragraph. Do not translate Pushanova. Keep iPhone and iPad as proper names."
-            },
-            {
-              "message": "You control how long you rest. During a program workout, Pushanova suggests 90 seconds of rest between planned sets. You can continue earlier or rest longer.",
-              "description": "Homepage paragraph. Keep 90 as a number. Do not translate Pushanova."
+              "message": "Pushanova counts your push-ups automatically and records sets, pace, time, and calories. You choose how long to rest: continue earlier or rest longer.",
+              "description": "Homepage paragraph. Do not translate Pushanova. Do not name a rest duration; the suggested rest can change."
             }
           ]
         },
         {
           "heading": {
-            "message": "Train on Apple Watch Without Your iPhone Nearby",
-            "description": "Homepage H3. Keep Apple Watch and iPhone as proper names."
+            "message": "Train on Apple Watch",
+            "description": "Homepage H3. Keep Apple Watch as a proper name."
           },
           "paragraphs": [
             {
-              "message": "You can start and complete a workout on Apple Watch without your iPhone nearby. When you use Apple Watch and iPhone together, Apple Watch tracks your push-ups while iPhone displays the synchronized workout.",
+              "message": "Start and finish a workout on Apple Watch with no iPhone nearby. Together, Apple Watch counts while iPhone shows the same workout.",
               "description": "Homepage paragraph. Keep Apple Watch and iPhone as proper names."
             }
           ]
         },
         {
           "heading": {
-            "message": "Review Your Workout",
+            "message": "Review",
             "description": "Homepage H3 under How Pushanova Works."
           },
           "paragraphs": [
             {
-              "message": "Pushanova saves every completed workout, including sets, pace, duration, calories, and heart rate<sup>1</sup> when available. Your history shows how training changes over time. With your permission, completed workouts can also be saved to Apple Health.",
-              "description": "Homepage paragraph. Keep the <sup>1</sup> footnote marker. Do not translate Pushanova. Keep Apple Health as a proper name."
+              "message": "Pushanova saves every completed workout. Your history shows how training changes over time.",
+              "description": "Homepage paragraph. Do not translate Pushanova. Apple Health and heart rate are covered in the homepage FAQ."
             }
           ]
         }
