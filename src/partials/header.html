@@ -14,11 +14,13 @@
         <a href="{{urls.features}}">{{nav.features}}</a>
         {{/if}}
       </li>
-      {{#if isSupport}}
       <li>
+        {{#if isSupport}}
         <a href="{{urls.support}}" aria-current="page">{{nav.support}}</a>
+        {{else}}
+        <a href="{{urls.support}}">{{nav.support}}</a>
+        {{/if}}
       </li>
-      {{/if}}
       <li>
         <details>
           <summary>{{meta.name}}</summary>
