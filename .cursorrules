@@ -22,7 +22,9 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 ## Analytics
 
 - Cloudflare Web Analytics, default setup only. The site stays on GitHub Pages and is not a Cloudflare zone, so there is no automatic injection. The beacon snippet Cloudflare provides lives in `src/partials/footer.html` and is included on every built page before `</body>`.
-- Do not add another analytics tool, custom events, click tracking, or a DNS move onto Cloudflare. Leave badge clicks and install tracking alone until asked.
+- Do not add another analytics tool, custom events, click tracking, or a DNS move onto Cloudflare.
+- App Store badges use one campaign link. Provider token `pt=124125728`, `mt=8`, and `ct=website-{locale}`, where `{locale}` is the website locale code (`en`, `ru`, `en-GB`). Apple’s generated form is `https://apps.apple.com/app/apple-store/id6451240468?pt=124125728&ct=website-en&mt=8`. Both badges on a page share that `ct`. Do not create a campaign per language in App Store Connect; swap `ct` only.
+- `ct` follows the website locale, not an App Store listing language. American English is `website-en`. British English is `website-en-GB`. There is no `en-US`, `en-AU`, or `en-CA` token. Spain is `website-es`. Norwegian is `website-nb`.
 
 ## Images
 
@@ -40,7 +42,8 @@ The core value proposition is removing friction: no tripods, no accounts, and no
   2. Read only `locales/en.json`. Create `locales/{bcp47}.json` with the same tree. Translate `message` values only; omit `description`. Set `meta.code` (HTML `lang`, e.g. `en-US`) and `meta.name` (e.g. `English (US)`).
   3. Write the page `<title>` and meta description from the logged phrase. Do not translate the English title word for word.
   4. Do not translate placeholders, HTML tags, **Pushanova**, Apple product names, or in-app UI labels inside `<strong>`.
-  5. Run `npm run build`. The build fails if the key tree, placeholders, or HTML tags do not match English, or if that locale has no App Store badge.
+  5. The locale's App Store badges use `ct=website-{bcp47}` from **Analytics**. Both badges on its pages share that `ct`. Do not create a campaign in App Store Connect, and do not add a separate URL for the locale. The build derives `ct` from the locale code. Use the file name: `en`, `en-GB`, `es`, `es-MX`, `nb`. Do not invent `en-US`, `en-AU`, `en-CA`, or `es-ES`.
+  6. Run `npm run build`. The build fails if the key tree, placeholders, or HTML tags do not match English, or if that locale has no App Store badge.
 - **Context is Required:** The American English source file (`en.json`) must include descriptive comments for each key. Translators and AI need to know where the string appears, its character limits, and its context. Other locale files may ship `{ "message": "…" }` leaves only.
 - **Protect Placeholders:** Never translate variables, placeholders, or HTML tags (e.g., `{rating}`, `{email}`, `<sup>`). They must remain exactly as written in the source.
 - **Whole Sentences Only:** Never concatenate text fragments in the code (e.g., never do `"Translated from " + language`). Always translate full strings so grammar structures can shift naturally per language.
