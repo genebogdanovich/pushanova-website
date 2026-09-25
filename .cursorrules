@@ -19,6 +19,11 @@ The core value proposition is removing friction: no tripods, no accounts, and no
 - Hosting: GitHub Pages via GitHub Actions. The workflow builds and uploads `site/` as the Pages artifact; that folder is the site root. Do not publish the repository root. Do not add `.nojekyll`; Actions does not run Jekyll. The build writes `site/CNAME`. The output must stay 100% static.
 - NO React, NO Next.js, NO Tailwind, NO complex frameworks.
 
+## Analytics
+
+- Cloudflare Web Analytics, default setup only. The site stays on GitHub Pages and is not a Cloudflare zone, so there is no automatic injection. The beacon snippet Cloudflare provides lives in `src/partials/footer.html` and is included on every built page before `</body>`.
+- Do not add another analytics tool, custom events, click tracking, or a DNS move onto Cloudflare. Leave badge clicks and install tracking alone until asked.
+
 ## Images
 
 - Apple App Store badges stay in `src/images/Download-on-the-App-Store/` with Apple’s filenames. Do not rename or split that folder. Pair Apple’s black (`blk`) badge for light mode with the white (`wht`) badge for dark mode via `<picture>` and `prefers-color-scheme`.
