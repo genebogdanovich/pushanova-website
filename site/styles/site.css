@@ -193,8 +193,8 @@ main > header.hero > figure {
 main > header.hero > figure img {
   border-start-start-radius: 1.75rem;
   border-start-end-radius: 1.75rem;
-  /* The file has a transparent strip under the screen. Shift it down and clip it at the hero edge. */
-  transform: translateY(1.67%);
+  /* Hide the transparent tail and the iPhone home-indicator bar so the label sits on the hero edge. */
+  transform: translateY(5%);
 }
 
 main > :is(header + section, .image-leading):has(> figure) {
