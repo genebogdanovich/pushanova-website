@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{meta.code}}" dir="{{meta.dir}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{languages.meta.title}}</title>
+  <meta name="description" content="{{languages.meta.description}}">
+  {{> seo}}
+  {{> styles}}
+</head>
+<body>
+  {{> header}}
+  <main class="languages">
+    <header>
+      <h1 id="choose-language">{{languages.h1}}</h1>
+      <p>{{languages.lead}}</p>
+    </header>
+    <nav aria-labelledby="choose-language">
+      <ul>
+        {{#each languages.choices}}
+        <li>
+          {{#if current}}
+          <a href="{{url}}" lang="{{htmlLang}}" hreflang="{{code}}" aria-current="true">{{name}}</a>
+          {{else}}
+          <a href="{{url}}" lang="{{htmlLang}}" hreflang="{{code}}">{{name}}</a>
+          {{/if}}
+        </li>
+        {{/each}}
+      </ul>
+    </nav>
+  </main>
+  {{> footer}}
+</body>
+</html>

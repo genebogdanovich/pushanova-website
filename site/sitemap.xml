@@ -38,6 +38,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/support/"/>
   </url>
   <url>
+    <loc>https://pushanova.com/languages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/languages/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/languages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/languages/"/>
+  </url>
+  <url>
+    <loc>https://pushanova.com/ru/languages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/languages/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/languages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/languages/"/>
+  </url>
+  <url>
     <loc>https://pushanova.com/privacy/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/privacy/"/>
   </url>

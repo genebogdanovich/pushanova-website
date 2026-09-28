@@ -19,5 +19,13 @@
     <li><a href="{aboutUrl}">{{footer.about}}</a></li>
   </ul>
   {{/if}}
+  <p class="legal">
+    <small>{{footer.copyright}}</small>
+    {{#if isLanguages}}
+    <a href="{{urls.languages}}" aria-current="page">{{meta.name}}</a>
+    {{else}}
+    <a href="{{urls.languages}}">{{meta.name}}</a>
+    {{/if}}
+  </p>
 </footer>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4fd2b6b6e6ae4d9e8af1504dd78929a8"}'></script><!-- End Cloudflare Web Analytics -->

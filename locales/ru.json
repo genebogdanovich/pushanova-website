@@ -54,6 +54,9 @@
     },
     "heartRateNote": {
       "message": "1. Измерение пульса с AirPods Pro 3 или Powerbeats Pro 2 доступно в Pushanova на iPhone с iOS 26 или новее и на iPad с iPadOS 26 или новее. Пульс также доступен с Bluetooth-монитора сердечного ритма, подключенного к iPhone или iPad."
+    },
+    "copyright": {
+      "message": "© 2026 Yauhen Bahdanovich. Все права защищены."
     }
   },
   "notFound": {
@@ -73,6 +76,22 @@
     },
     "homeLink": {
       "message": "Club Pushanova"
+    }
+  },
+  "languages": {
+    "meta": {
+      "title": {
+        "message": "Выберите язык · Pushanova"
+      },
+      "description": {
+        "message": "Выберите язык для сайта Pushanova."
+      }
+    },
+    "h1": {
+      "message": "Выберите язык"
+    },
+    "lead": {
+      "message": "Каждая ссылка открывает главную страницу на этом языке."
     }
   },
   "home": {

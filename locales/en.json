@@ -6,7 +6,7 @@
     },
     "name": {
       "message": "English (US)",
-      "description": "Language name in this language. Used as the language switcher summary and list label. This locale is American English. Use English (UK) when adding en-GB."
+      "description": "Language name in this language. Footer language link and chooser list label. This locale is American English. Use English (UK) when adding en-GB."
     },
     "dir": {
       "message": "ltr",
@@ -71,6 +71,10 @@
     "heartRateNote": {
       "message": "1. Heart-rate sensing with AirPods Pro 3 or Powerbeats Pro 2 is available in Pushanova on iPhone with iOS 26 or later, and on iPad with iPadOS 26 or later. Heart rate is also available from a Bluetooth heart-rate monitor connected to iPhone or iPad.",
       "description": "Homepage and features site-footer legal note for the heart rate<sup>1</sup> marker. Keep the footnote number 1. Do not translate Pushanova, AirPods Pro 3, Powerbeats Pro 2, iPhone, iPad, iOS, iPadOS, or Bluetooth. Keep version numbers."
+    },
+    "copyright": {
+      "message": "Copyright © 2026 Yauhen Bahdanovich. All rights reserved.",
+      "description": "Footer legal line under the link list, on every page. Do not translate Yauhen Bahdanovich or 2026. Translate the rest as a full sentence."
     }
   },
   "notFound": {
@@ -95,6 +99,26 @@
     "homeLink": {
       "message": "Club Pushanova",
       "description": "404 page link back to the homepage. Do not translate Pushanova."
+    }
+  },
+  "languages": {
+    "meta": {
+      "title": {
+        "message": "Choose your language · Pushanova",
+        "description": "Browser tab title for the language chooser. Utility page, not an install query. Do not translate Pushanova."
+      },
+      "description": {
+        "message": "Choose a language for the Pushanova website.",
+        "description": "Meta description for the language chooser. One short sentence. Do not translate Pushanova."
+      }
+    },
+    "h1": {
+      "message": "Choose your language",
+      "description": "Language chooser H1."
+    },
+    "lead": {
+      "message": "Each link opens the homepage in that language.",
+      "description": "Language chooser lead under the H1. One short sentence."
     }
   },
   "home": {

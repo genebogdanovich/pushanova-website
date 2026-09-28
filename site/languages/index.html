@@ -3,25 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page not found · Pushanova</title>
-  <meta name="description" content="This page is not available.">
+  <title>Choose your language · Pushanova</title>
+  <meta name="description" content="Choose a language for the Pushanova website.">
   <meta name="apple-itunes-app" content="app-id=6451240468">
-
-<meta name="robots" content="noindex">
 
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
-<link rel="canonical" href="https://pushanova.com/404.html">
+<link rel="canonical" href="https://pushanova.com/languages/">
 
-<link rel="alternate" hreflang="en" href="https://pushanova.com/404.html">
+<link rel="alternate" hreflang="en" href="https://pushanova.com/languages/">
+
+<link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/languages/">
+
+<link rel="alternate" hreflang="x-default" href="https://pushanova.com/languages/">
 
 <meta property="og:locale" content="en_US">
 
+<meta property="og:locale:alternate" content="ru_RU">
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pushanova">
-<meta property="og:url" content="https://pushanova.com/404.html">
-<meta property="og:title" content="Page not found · Pushanova">
-<meta property="og:description" content="This page is not available.">
+<meta property="og:url" content="https://pushanova.com/languages/">
+<meta property="og:title" content="Choose your language · Pushanova">
+<meta property="og:description" content="Choose a language for the Pushanova website.">
 <meta property="og:image" content="https://pushanova.com/og.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
@@ -35,7 +39,7 @@
 <link rel="manifest" href="/site.webmanifest">
 
 
-  <link rel="stylesheet" href="/styles/site.css">
+  <link rel="stylesheet" href="../styles/site.css">
 
 </head>
 <body>
@@ -44,7 +48,7 @@
     <ul>
       <li>
         <a href="/">
-          <img src="/images/icon-64.webp" alt="" width="64" height="64">
+          <img src="../images/icon-64.webp" alt="" width="64" height="64">
           <span>Club Pushanova</span>
         </a>
       </li>
@@ -62,12 +66,28 @@
   </nav>
 </header>
 
-  <main>
+  <main class="languages">
     <header>
-      <h1>Page not found</h1>
-      <p>This page is not available.</p>
-      <p><a href="/">Club Pushanova</a></p>
+      <h1 id="choose-language">Choose your language</h1>
+      <p>Each link opens the homepage in that language.</p>
     </header>
+    <nav aria-labelledby="choose-language">
+      <ul>
+        
+        <li>
+          
+          <a href="/" lang="en-US" hreflang="en" aria-current="true">English (US)</a>
+          
+        </li>
+        
+        <li>
+          
+          <a href="/ru/" lang="ru" hreflang="ru">Русский</a>
+          
+        </li>
+        
+      </ul>
+    </nav>
   </main>
   <footer class="surface-muted">
   
@@ -84,7 +104,7 @@
   <p class="legal">
     <small>Copyright © 2026 Yauhen Bahdanovich. All rights reserved.</small>
     
-    <a href="/languages/">English (US)</a>
+    <a href="/languages/" aria-current="page">English (US)</a>
     
   </p>
 </footer>

@@ -491,10 +491,6 @@ body > header > nav > ul {
   padding: 0;
 }
 
-body > header > nav > ul > li:last-child {
-  margin-inline-start: auto;
-}
-
 body > header a,
 body > footer a {
   color: var(--color-muted);
@@ -528,63 +524,21 @@ body > header [aria-current="page"] {
   font-weight: 650;
 }
 
-body > header details {
-  position: relative;
-}
-
-body > header summary {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-s);
-  min-block-size: var(--tap);
-  padding-block: var(--space-xs);
-  padding-inline: var(--space-s) var(--space-m);
-  border: 1px solid var(--color-line);
-  border-radius: 0.375rem;
-  background-color: var(--color-page);
-  color: var(--color-muted);
-  cursor: pointer;
-}
-
-body > header summary::marker,
-body > header summary::-webkit-details-marker {
-  content: none;
-  display: none;
-}
-
-body > header summary::after {
-  content: "";
-  border: 0.35em solid transparent;
-  border-block-start-color: currentColor;
-  translate: 0 0.15em;
-}
-
-body > header details[open] summary::after {
-  border-block-start-color: transparent;
-  border-block-end-color: currentColor;
-  translate: 0 -0.15em;
-}
-
-body > header details > ul {
-  position: absolute;
-  z-index: 1;
-  inset-inline-end: 0;
-  inset-block-start: calc(100% + var(--space-xs));
-  min-inline-size: max(100%, 12rem);
-  max-block-size: min(70vh, 24rem);
-  overflow: auto;
+main.languages > nav ul {
   list-style: none;
   margin: 0;
-  padding: var(--space-xs);
-  border: 1px solid var(--color-line);
-  border-radius: 0.375rem;
-  background-color: var(--color-page);
+  padding: 0;
 }
 
-body > header details > ul a {
-  display: block;
-  padding-block: var(--space-s);
-  padding-inline: var(--space-m);
+main.languages > nav a {
+  display: flex;
+  align-items: center;
+  min-block-size: var(--tap);
+}
+
+main.languages > nav a[aria-current="true"] {
+  color: var(--color-text);
+  font-weight: 650;
 }
 
 body > footer {
@@ -625,4 +579,24 @@ body > footer > ul > li {
 
 body > footer > ul > li:not(:has(a)) {
   color: var(--color-muted);
+}
+
+body > footer > .legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-s) var(--space-l);
+  margin-block: var(--space-m) 0;
+  padding-block-start: var(--space-m);
+  border-block-start: 1px solid var(--color-line);
+}
+
+body > footer > .legal small {
+  font-size: inherit;
+  color: var(--color-muted);
+}
+
+body > footer > .legal a {
+  margin-inline-start: auto;
 }

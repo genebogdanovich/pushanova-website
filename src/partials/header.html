@@ -21,22 +21,6 @@
         <a href="{{urls.support}}">{{nav.support}}</a>
         {{/if}}
       </li>
-      <li>
-        <details>
-          <summary>{{meta.name}}</summary>
-          <ul>
-            {{#each languages}}
-            <li>
-              {{#if current}}
-              <a href="{{url}}" hreflang="{{code}}" lang="{{code}}" aria-current="page">{{name}}</a>
-              {{else}}
-              <a href="{{url}}" hreflang="{{code}}" lang="{{code}}">{{name}}</a>
-              {{/if}}
-            </li>
-            {{/each}}
-          </ul>
-        </details>
-      </li>
     </ul>
   </nav>
 </header>

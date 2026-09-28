@@ -56,7 +56,7 @@ const EXTERNAL = {
 };
 
 const DEFAULT_LOCALE = "en";
-const LOCALIZED_PAGES = ["home", "features", "support"];
+const LOCALIZED_PAGES = ["home", "features", "support", "languages"];
 const SHARED_PAGES = ["privacy", "404"];
 
 function isLeaf(value) {
@@ -223,6 +223,8 @@ function outputFile(code, page) {
       return `${prefix}features/index.html`;
     case "support":
       return `${prefix}support/index.html`;
+    case "languages":
+      return `${prefix}languages/index.html`;
     case "privacy":
       return "privacy/index.html";
     case "404":
@@ -241,6 +243,8 @@ function publicPath(code, page) {
       return `${prefix}/features/`;
     case "support":
       return `${prefix}/support/`;
+    case "languages":
+      return `${prefix}/languages/`;
     case "privacy":
       return "/privacy/";
     case "404":
@@ -447,6 +451,7 @@ function pageUrls(code) {
     home: publicPath(code, "home"),
     features: publicPath(code, "features"),
     support: publicPath(code, "support"),
+    languages: publicPath(code, "languages"),
     privacy: publicPath(DEFAULT_LOCALE, "privacy"),
     notFound: publicPath(DEFAULT_LOCALE, "404"),
   };
@@ -457,24 +462,14 @@ function orderedCodes(codes) {
   return codes.includes(DEFAULT_LOCALE) ? [DEFAULT_LOCALE, ...rest] : rest;
 }
 
-function languageEntries(codes, names, code, page) {
-  return codes.map((other) => {
-    let toCode = other;
-    let toPage = page;
-    if (page === "privacy") {
-      toCode = DEFAULT_LOCALE;
-      toPage = "privacy";
-    } else if (page === "404") {
-      toCode = other;
-      toPage = "home";
-    }
-    return {
-      code: other,
-      name: names[other],
-      url: publicPath(toCode, toPage),
-      current: other === code,
-    };
-  });
+function languageChoices(codes, names, htmlLangs, code) {
+  return codes.map((other) => ({
+    code: other,
+    htmlLang: htmlLangs[other],
+    name: names[other],
+    url: publicPath(other, "home"),
+    current: other === code,
+  }));
 }
 
 function hreflangsFor(page, codes) {
@@ -509,6 +504,8 @@ function ogTitleFor(page, locale) {
       return locale.features.meta.title;
     case "support":
       return locale.support.meta.title;
+    case "languages":
+      return locale.languages.meta.title;
     case "privacy":
       return PRIVACY_TITLE;
     case "404":
@@ -526,6 +523,8 @@ function ogDescriptionFor(page, locale) {
       return locale.features.meta.description;
     case "support":
       return locale.support.meta.description;
+    case "languages":
+      return locale.languages.meta.description;
     case "privacy":
       return PRIVACY_DESCRIPTION;
     case "404":
@@ -880,15 +879,17 @@ function loadLocales() {
   }
   const resolved = {};
   const names = {};
+  const htmlLangs = {};
   const ogLocales = {};
   for (const code of Object.keys(raw)) {
     const merged = code === DEFAULT_LOCALE ? english : deepMerge(english, raw[code]);
     const messages = resolveMessages(merged);
     resolved[code] = messages;
     names[code] = messages.meta.name;
+    htmlLangs[code] = messages.meta.code;
     ogLocales[code] = messages.meta.ogLocale || (code === DEFAULT_LOCALE ? "en_US" : "");
   }
-  return { codes: orderedCodes(Object.keys(raw)), resolved, names, ogLocales };
+  return { codes: orderedCodes(Object.keys(raw)), resolved, names, htmlLangs, ogLocales };
 }
 
 function pageFlags(page) {
@@ -896,13 +897,14 @@ function pageFlags(page) {
     isHome: page === "home",
     isFeatures: page === "features",
     isSupport: page === "support",
+    isLanguages: page === "languages",
     isPrivacy: page === "privacy",
     isNotFound: page === "404",
     hasHeartRateNote: page === "home" || page === "features",
   };
 }
 
-function renderPage({ page, code, templates, partials, resolved, codes, names, ogLocales, ogImage }) {
+function renderPage({ page, code, templates, partials, resolved, codes, names, htmlLangs, ogLocales, ogImage }) {
   const locale = resolved[code];
   const english = resolved[DEFAULT_LOCALE];
   const urls = pageUrls(code);
@@ -911,7 +913,6 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
     ...locale,
     ...pageFlags(page),
     urls,
-    languages: languageEntries(codes, names, code, page),
     seo: pageSeo(code, page, codes, ogLocales, locale, ogImage),
     stylesheet: assetHref(code, page, "styles/site.css"),
     icon: loadIcon(code, page, ICON_NAV_FILE),
@@ -974,6 +975,12 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, o
       )
     );
   }
+  if (page === "languages") {
+    data.languages = {
+      ...locale.languages,
+      choices: languageChoices(codes, names, htmlLangs, code),
+    };
+  }
   if (page === "features") {
     data.features = {
       ...locale.features,
@@ -1013,7 +1020,7 @@ function main() {
     throw new Error("site.config.json must set siteUrl");
   }
   assertBadgeCatalog();
-  const { codes, resolved, names, ogLocales } = loadLocales();
+  const { codes, resolved, names, htmlLangs, ogLocales } = loadLocales();
   const ogImage = loadOgImage();
   const partials = {
     header: fs.readFileSync(path.join(partialsDir, "header.html"), "utf8"),
@@ -1026,10 +1033,11 @@ function main() {
     home: fs.readFileSync(path.join(templatesDir, "home.html"), "utf8"),
     features: fs.readFileSync(path.join(templatesDir, "features.html"), "utf8"),
     support: fs.readFileSync(path.join(templatesDir, "support.html"), "utf8"),
+    languages: fs.readFileSync(path.join(templatesDir, "languages.html"), "utf8"),
     privacy: fs.readFileSync(path.join(templatesDir, "privacy.html"), "utf8"),
     404: fs.readFileSync(path.join(templatesDir, "404.html"), "utf8"),
   };
-  const pageArgs = { templates, partials, resolved, codes, names, ogLocales, ogImage };
+  const pageArgs = { templates, partials, resolved, codes, names, htmlLangs, ogLocales, ogImage };
 
   emptySiteDir();
   copyImages();
