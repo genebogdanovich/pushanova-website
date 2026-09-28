@@ -2,23 +2,23 @@
   <nav>
     <ul>
       <li>
-        <a href="{{urls.home}}"{{#if isHome}} aria-current="page"{{/if}}>
+        <a href="{{urls.home}}"{{#if isHome}} aria-current="page"{{/if}}{{#if isNotFound}} data-nf-href="home"{{/if}}>
           <img src="{{icon.src}}" alt="" width="{{icon.width}}" height="{{icon.height}}">
-          <span>{{nav.home}}</span>
+          <span{{#if isNotFound}} data-nf="nav.home"{{/if}}>{{nav.home}}</span>
         </a>
       </li>
       <li>
         {{#if isFeatures}}
-        <a href="{{urls.features}}" aria-current="page">{{nav.features}}</a>
+        <a href="{{urls.features}}" aria-current="page"{{#if isNotFound}} data-nf="nav.features" data-nf-href="features"{{/if}}>{{nav.features}}</a>
         {{else}}
-        <a href="{{urls.features}}">{{nav.features}}</a>
+        <a href="{{urls.features}}"{{#if isNotFound}} data-nf="nav.features" data-nf-href="features"{{/if}}>{{nav.features}}</a>
         {{/if}}
       </li>
       <li>
         {{#if isSupport}}
-        <a href="{{urls.support}}" aria-current="page">{{nav.support}}</a>
+        <a href="{{urls.support}}" aria-current="page"{{#if isNotFound}} data-nf="nav.support" data-nf-href="support"{{/if}}>{{nav.support}}</a>
         {{else}}
-        <a href="{{urls.support}}">{{nav.support}}</a>
+        <a href="{{urls.support}}"{{#if isNotFound}} data-nf="nav.support" data-nf-href="support"{{/if}}>{{nav.support}}</a>
         {{/if}}
       </li>
     </ul>

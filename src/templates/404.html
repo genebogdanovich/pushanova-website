@@ -12,11 +12,48 @@
   {{> header}}
   <main>
     <header>
-      <h1>{{notFound.h1}}</h1>
-      <p>{{notFound.lead}}</p>
-      <p><a href="{{urls.home}}">{{notFound.homeLink}}</a></p>
+      <h1 data-nf="h1">{{notFound.h1}}</h1>
+      <p data-nf="lead">{{notFound.lead}}</p>
+      <p><a href="{{urls.home}}" data-nf="homeLink" data-nf-href="home">{{notFound.homeLink}}</a></p>
     </header>
   </main>
   {{> footer}}
+  <script type="application/json" id="not-found-locales">{{notFoundCatalog}}</script>
+  <script>
+    (function () {
+      var segment = "";
+      try {
+        segment = decodeURIComponent(location.pathname.split("/")[1] || "");
+      } catch (error) {
+        return;
+      }
+      var source = document.getElementById("not-found-locales");
+      if (!source) return;
+      var pack = JSON.parse(source.textContent)[segment];
+      if (!pack) return;
+      document.documentElement.lang = pack.lang;
+      document.documentElement.dir = pack.dir;
+      document.title = pack.title;
+      var description = document.querySelector('meta[name="description"]');
+      if (description) description.setAttribute("content", pack.description);
+      var hooks = document.querySelectorAll("[data-nf], [data-nf-href]");
+      for (var i = 0; i < hooks.length; i++) {
+        var hook = hooks[i];
+        var key = hook.getAttribute("data-nf");
+        if (key) {
+          var text = pack;
+          var parts = key.split(".");
+          for (var p = 0; p < parts.length; p++) {
+            text = text == null ? undefined : text[parts[p]];
+          }
+          if (typeof text === "string") hook.textContent = text;
+        }
+        var hrefKey = hook.getAttribute("data-nf-href");
+        if (hrefKey && pack.urls && typeof pack.urls[hrefKey] === "string") {
+          hook.setAttribute("href", pack.urls[hrefKey]);
+        }
+      }
+    })();
+  </script>
 </body>
 </html>

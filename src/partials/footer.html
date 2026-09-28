@@ -11,20 +11,20 @@
   </ul>
   {{else}}
   <ul>
-    <li><a href="{termsUrl}">{{footer.terms}}</a></li>
-    <li><a href="{{urls.privacy}}">{{footer.privacy}}</a></li>
-    <li><a href="{{urls.support}}">{{footer.support}}</a></li>
-    <li>{{footer.pressKit}}</li>
-    <li><a href="{instagramUrl}">{{footer.instagram}}</a></li>
-    <li><a href="{aboutUrl}">{{footer.about}}</a></li>
+    <li><a href="{termsUrl}"{{#if isNotFound}} data-nf="footer.terms"{{/if}}>{{footer.terms}}</a></li>
+    <li><a href="{{urls.privacy}}"{{#if isNotFound}} data-nf="footer.privacy" data-nf-href="privacy"{{/if}}>{{footer.privacy}}</a></li>
+    <li><a href="{{urls.support}}"{{#if isNotFound}} data-nf="footer.support" data-nf-href="support"{{/if}}>{{footer.support}}</a></li>
+    <li{{#if isNotFound}} data-nf="footer.pressKit"{{/if}}>{{footer.pressKit}}</li>
+    <li><a href="{instagramUrl}"{{#if isNotFound}} data-nf="footer.instagram"{{/if}}>{{footer.instagram}}</a></li>
+    <li><a href="{aboutUrl}"{{#if isNotFound}} data-nf="footer.about"{{/if}}>{{footer.about}}</a></li>
   </ul>
   {{/if}}
   <p class="legal">
-    <small>{{footer.copyright}}</small>
+    <small{{#if isNotFound}} data-nf="footer.copyright"{{/if}}>{{footer.copyright}}</small>
     {{#if isLanguages}}
     <a href="{{urls.languages}}" aria-current="page">{{meta.name}}</a>
     {{else}}
-    <a href="{{urls.languages}}">{{meta.name}}</a>
+    <a href="{{urls.languages}}"{{#if isNotFound}} data-nf="languageName" data-nf-href="languages"{{/if}}>{{meta.name}}</a>
     {{/if}}
   </p>
 </footer>

@@ -43,19 +43,19 @@
   <nav>
     <ul>
       <li>
-        <a href="/">
+        <a href="/" data-nf-href="home">
           <img src="/images/icon-64.webp" alt="" width="64" height="64">
-          <span>Club Pushanova</span>
+          <span data-nf="nav.home">Club Pushanova</span>
         </a>
       </li>
       <li>
         
-        <a href="/features/">Features</a>
+        <a href="/features/" data-nf="nav.features" data-nf-href="features">Features</a>
         
       </li>
       <li>
         
-        <a href="/support/">Support</a>
+        <a href="/support/" data-nf="nav.support" data-nf-href="support">Support</a>
         
       </li>
     </ul>
@@ -64,31 +64,68 @@
 
   <main>
     <header>
-      <h1>Page not found</h1>
-      <p>This page is not available.</p>
-      <p><a href="/">Club Pushanova</a></p>
+      <h1 data-nf="h1">Page not found</h1>
+      <p data-nf="lead">This page is not available.</p>
+      <p><a href="/" data-nf="homeLink" data-nf-href="home">Club Pushanova</a></p>
     </header>
   </main>
   <footer class="surface-muted">
   
   
   <ul>
-    <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a></li>
-    <li><a href="/privacy/">Privacy</a></li>
-    <li><a href="/support/">Support</a></li>
-    <li>Press Kit</li>
-    <li><a href="https://www.instagram.com/pushanova.app">Instagram</a></li>
-    <li><a href="https://genebogdanovich.com/">About the Developer</a></li>
+    <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" data-nf="footer.terms">Terms</a></li>
+    <li><a href="/privacy/" data-nf="footer.privacy" data-nf-href="privacy">Privacy</a></li>
+    <li><a href="/support/" data-nf="footer.support" data-nf-href="support">Support</a></li>
+    <li data-nf="footer.pressKit">Press Kit</li>
+    <li><a href="https://www.instagram.com/pushanova.app" data-nf="footer.instagram">Instagram</a></li>
+    <li><a href="https://genebogdanovich.com/" data-nf="footer.about">About the Developer</a></li>
   </ul>
   
   <p class="legal">
-    <small>Copyright © 2026 Yauhen Bahdanovich. All rights reserved.</small>
+    <small data-nf="footer.copyright">Copyright © 2026 Yauhen Bahdanovich. All rights reserved.</small>
     
-    <a href="/languages/">English (US)</a>
+    <a href="/languages/" data-nf="languageName" data-nf-href="languages">English (US)</a>
     
   </p>
 </footer>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4fd2b6b6e6ae4d9e8af1504dd78929a8"}'></script><!-- End Cloudflare Web Analytics -->
 
+  <script type="application/json" id="not-found-locales">{"en":{"lang":"en-US","dir":"ltr","title":"Page not found · Pushanova","description":"This page is not available.","h1":"Page not found","lead":"This page is not available.","homeLink":"Club Pushanova","languageName":"English (US)","nav":{"home":"Club Pushanova","features":"Features","support":"Support"},"footer":{"terms":"Terms","privacy":"Privacy","support":"Support","pressKit":"Press Kit","instagram":"Instagram","about":"About the Developer","copyright":"Copyright © 2026 Yauhen Bahdanovich. All rights reserved."},"urls":{"home":"/","features":"/features/","support":"/support/","languages":"/languages/","privacy":"/privacy/"}},"ru":{"lang":"ru","dir":"ltr","title":"Страница не найдена · Pushanova","description":"Эта страница недоступна.","h1":"Страница не найдена","lead":"Эта страница недоступна.","homeLink":"Club Pushanova","languageName":"Русский","nav":{"home":"Club Pushanova","features":"Возможности","support":"Поддержка"},"footer":{"terms":"Условия","privacy":"Конфиденциальность","support":"Поддержка","pressKit":"Пресс-кит","instagram":"Instagram","about":"О разработчике","copyright":"© 2026 Yauhen Bahdanovich. Все права защищены."},"urls":{"home":"/ru/","features":"/ru/features/","support":"/ru/support/","languages":"/ru/languages/","privacy":"/privacy/"}}}</script>
+  <script>
+    (function () {
+      var segment = "";
+      try {
+        segment = decodeURIComponent(location.pathname.split("/")[1] || "");
+      } catch (error) {
+        return;
+      }
+      var source = document.getElementById("not-found-locales");
+      if (!source) return;
+      var pack = JSON.parse(source.textContent)[segment];
+      if (!pack) return;
+      document.documentElement.lang = pack.lang;
+      document.documentElement.dir = pack.dir;
+      document.title = pack.title;
+      var description = document.querySelector('meta[name="description"]');
+      if (description) description.setAttribute("content", pack.description);
+      var hooks = document.querySelectorAll("[data-nf], [data-nf-href]");
+      for (var i = 0; i < hooks.length; i++) {
+        var hook = hooks[i];
+        var key = hook.getAttribute("data-nf");
+        if (key) {
+          var text = pack;
+          var parts = key.split(".");
+          for (var p = 0; p < parts.length; p++) {
+            text = text == null ? undefined : text[parts[p]];
+          }
+          if (typeof text === "string") hook.textContent = text;
+        }
+        var hrefKey = hook.getAttribute("data-nf-href");
+        if (hrefKey && pack.urls && typeof pack.urls[hrefKey] === "string") {
+          hook.setAttribute("href", pack.urls[hrefKey]);
+        }
+      }
+    })();
+  </script>
 </body>
 </html>

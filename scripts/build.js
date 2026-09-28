@@ -477,6 +477,46 @@ function pageUrls(code) {
   };
 }
 
+function notFoundCatalog(codes, resolved) {
+  const catalog = {};
+  for (const code of codes) {
+    const locale = resolved[code];
+    const urls = pageUrls(code);
+    catalog[code] = {
+      lang: locale.meta.code,
+      dir: locale.meta.dir,
+      title: locale.notFound.meta.title,
+      description: locale.notFound.meta.description,
+      h1: locale.notFound.h1,
+      lead: locale.notFound.lead,
+      homeLink: locale.notFound.homeLink,
+      languageName: locale.meta.name,
+      nav: {
+        home: locale.nav.home,
+        features: locale.nav.features,
+        support: locale.nav.support,
+      },
+      footer: {
+        terms: locale.footer.terms,
+        privacy: locale.footer.privacy,
+        support: locale.footer.support,
+        pressKit: locale.footer.pressKit,
+        instagram: locale.footer.instagram,
+        about: locale.footer.about,
+        copyright: locale.footer.copyright,
+      },
+      urls: {
+        home: urls.home,
+        features: urls.features,
+        support: urls.support,
+        languages: urls.languages,
+        privacy: urls.privacy,
+      },
+    };
+  }
+  return JSON.stringify(catalog).replaceAll("<", "\\u003c");
+}
+
 function orderedCodes(codes) {
   const rest = codes.filter((code) => code !== DEFAULT_LOCALE).sort();
   return codes.includes(DEFAULT_LOCALE) ? [DEFAULT_LOCALE, ...rest] : rest;
@@ -722,7 +762,7 @@ function nest(tokens) {
     const current = stack[stack.length - 1];
     if (token.type === "open") {
       const node = { ...token, children: [], elseChildren: null, inElse: false };
-      current.children.push(node);
+      (current.inElse ? current.elseChildren : current.children).push(node);
       stack.push(node);
     } else if (token.type === "else") {
       if (current.kind !== "if") {
@@ -1001,6 +1041,9 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, h
       ...locale.languages,
       choices: languageChoices(codes, names, htmlLangs, code),
     };
+  }
+  if (page === "404") {
+    data.notFoundCatalog = notFoundCatalog(codes, resolved);
   }
   if (page === "features") {
     data.features = {
