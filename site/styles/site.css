@@ -577,15 +577,23 @@ body > header > nav > ul > li > a {
   align-items: center;
   gap: var(--space-s);
   min-block-size: var(--tap);
+  transition: color 160ms ease;
 }
 
-body > header > nav > ul > li:first-child > a {
-  color: var(--color-text);
+@media (hover: hover) {
+  body > header > nav a:hover {
+    color: var(--color-text);
+  }
 }
 
-body > header > nav > ul > li:first-child > a > span {
+@media (prefers-reduced-motion: reduce) {
+  body > header > nav > ul > li > a {
+    transition: none;
+  }
+}
+
+body > header > nav > ul > li:first-child > a[aria-current="page"] > span {
   font-family: var(--font-brand);
-  font-weight: 600;
 }
 
 body > header > nav img {
