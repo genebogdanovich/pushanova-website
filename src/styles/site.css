@@ -197,6 +197,20 @@ main > header.hero > figure img {
   transform: translateY(5%);
 }
 
+main > section.closing {
+  --lane: var(--wide);
+}
+
+main > section.spotlight.closing > div,
+main > section.closing > figure {
+  flex: 1 1 18rem;
+  max-inline-size: 36rem;
+}
+
+main > section.closing > figure {
+  inline-size: auto;
+}
+
 main > :is(header + section, .image-leading):has(> figure) {
   container-type: inline-size;
 }

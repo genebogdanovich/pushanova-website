@@ -18,6 +18,7 @@ const SCREENSHOTS_DIR = "screenshots";
 const ICON_NAV_FILE = "icon-64.webp";
 const ICON_HERO_FILE = "icon-256.webp";
 const HERO_PHOTO_FILE = "athlete-watch-wide.webp";
+const CLOSING_PHOTO_FILE = "athlete-watch.webp";
 const OG_IMAGE_FILE = "og.png";
 const PRIVACY_TITLE = "Privacy Policy for Pushanova";
 const PRIVACY_DESCRIPTION =
@@ -942,7 +943,10 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, h
       },
       closing: {
         ...locale.home.closing,
-        image: pageShot(code, page, IPHONE_START_FILE, locale.home?.closing?.alt),
+        image: {
+          ...loadIcon(code, page, CLOSING_PHOTO_FILE),
+          alt: locale.home.closing.alt,
+        },
       },
       qna: {
         ...locale.home.qna,
