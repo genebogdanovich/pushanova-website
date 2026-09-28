@@ -284,12 +284,25 @@ a.button {
   padding-block: var(--space-s);
   padding-inline: var(--space-l);
   border-radius: 999px;
-  background-color: var(--color-fill);
-  color: var(--color-on-fill);
+  background-color: var(--color-text);
+  color: var(--color-page);
   font-weight: 650;
   text-align: center;
   text-decoration: none;
   text-wrap: balance;
+  transition: background-color 160ms ease;
+}
+
+@media (hover: hover) {
+  a.button:hover {
+    background-color: color-mix(in srgb, var(--color-text) 86%, var(--color-page));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.button {
+    transition: none;
+  }
 }
 
 sup {
