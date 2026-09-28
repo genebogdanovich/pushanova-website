@@ -960,7 +960,7 @@ function pageFlags(page) {
     isLanguages: page === "languages",
     isPrivacy: page === "privacy",
     isNotFound: page === "404",
-    hasHeartRateNote: page === "home" || page === "features",
+    hasHeartRateNote: page === "features",
   };
 }
 

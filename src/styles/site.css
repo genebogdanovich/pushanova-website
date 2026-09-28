@@ -309,6 +309,8 @@ sup {
   font-size: 0.75em;
   font-weight: 650;
   color: var(--color-muted);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 :focus-visible {
