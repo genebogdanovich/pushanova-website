@@ -528,8 +528,14 @@ main > section:has(> article > blockquote) > p:last-child small {
   color: inherit;
 }
 
-body > header {
-  border-block-end: 1px solid var(--color-line);
+body:not(:has(main > header.hero)) > header {
+  background-color: color-mix(in srgb, var(--color-band) 60%, var(--color-page));
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(:has(main > header.hero)) > header {
+    background-color: color-mix(in srgb, var(--color-band) 78%, var(--color-page));
+  }
 }
 
 body > header > nav {

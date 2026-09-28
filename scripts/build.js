@@ -438,6 +438,24 @@ function homeHero(code, page, locale) {
   return pageShot(code, page, IPHONE_HOME_FILE, locale.home?.hero?.alt);
 }
 
+function closingPortrait(code, page, alt) {
+  const shot = loadScreenshot(code, CLOSING_PHOTO_FILE);
+  if (!shot) {
+    throw new Error(
+      `Missing src/images/${SCREENSHOTS_DIR}/${DEFAULT_LOCALE}/${CLOSING_PHOTO_FILE}`,
+    );
+  }
+  if (!alt) {
+    throw new Error(`Missing alt for ${CLOSING_PHOTO_FILE}`);
+  }
+  return {
+    src: posixHref(outputFile(code, page), shot.sitePath),
+    alt,
+    width: shot.width,
+    height: shot.height,
+  };
+}
+
 function appStoreBadgeAlt(locale, page) {
   if (page === "features" && locale.features?.download) {
     return locale.features.download;
@@ -943,10 +961,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, h
       },
       closing: {
         ...locale.home.closing,
-        image: {
-          ...loadIcon(code, page, CLOSING_PHOTO_FILE),
-          alt: locale.home.closing.alt,
-        },
+        image: closingPortrait(code, page, locale.home.closing.alt),
       },
       qna: {
         ...locale.home.qna,
