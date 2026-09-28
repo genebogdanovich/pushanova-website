@@ -372,6 +372,31 @@ main > section > details {
   border-block-end: 1px solid var(--color-line);
 }
 
+@supports (interpolate-size: allow-keywords) {
+  main > section > details {
+    interpolate-size: allow-keywords;
+  }
+
+  main > section > details::details-content {
+    /* Keyword sizes interpolate on height. block-size eases shut and snaps open. */
+    height: 0;
+    overflow: clip;
+    transition:
+      height 250ms ease,
+      content-visibility 250ms allow-discrete;
+  }
+
+  main > section > details[open]::details-content {
+    height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main > section > details::details-content {
+    transition: none;
+  }
+}
+
 main > section > details:first-of-type {
   border-block-start: 1px solid var(--color-line);
 }
@@ -580,14 +605,23 @@ body > header > nav > ul > li > a {
   transition: color 160ms ease;
 }
 
+body > footer > ul > li > a,
+body > footer > .legal a {
+  transition: color 160ms ease;
+}
+
 @media (hover: hover) {
-  body > header > nav a:hover {
+  body > header > nav a:hover,
+  body > footer > ul a:hover,
+  body > footer > .legal a:hover {
     color: var(--color-text);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body > header > nav > ul > li > a {
+  body > header > nav > ul > li > a,
+  body > footer > ul > li > a,
+  body > footer > .legal a {
     transition: none;
   }
 }
