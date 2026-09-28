@@ -17,6 +17,7 @@ const APP_STORE_BADGE_DIR = "Download-on-the-App-Store";
 const SCREENSHOTS_DIR = "screenshots";
 const ICON_NAV_FILE = "icon-64.webp";
 const ICON_HERO_FILE = "icon-256.webp";
+const HERO_PHOTO_FILE = "athlete-watch-wide.webp";
 const OG_IMAGE_FILE = "og.png";
 const PRIVACY_TITLE = "Privacy Policy for Pushanova";
 const PRIVACY_DESCRIPTION =
@@ -926,6 +927,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, h
     },
   };
   if (page === "home") {
+    loadIcon(code, page, HERO_PHOTO_FILE);
     const qnaItems = withFaqIds(locale.home.qna.items, english.home.qna.items, "", new Set());
     data.home = {
       ...locale.home,
