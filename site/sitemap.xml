@@ -4,48 +4,84 @@
   <url>
     <loc>https://pushanova.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/"/>
+  </url>
+  <url>
+    <loc>https://pushanova.com/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/"/>
   </url>
   <url>
     <loc>https://pushanova.com/ru/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/"/>
   </url>
   <url>
     <loc>https://pushanova.com/features/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/features/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/features/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/features/"/>
+  </url>
+  <url>
+    <loc>https://pushanova.com/ar/features/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/features/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/features/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/features/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/features/"/>
   </url>
   <url>
     <loc>https://pushanova.com/ru/features/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/features/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/features/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/features/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/features/"/>
   </url>
   <url>
     <loc>https://pushanova.com/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/support/"/>
+  </url>
+  <url>
+    <loc>https://pushanova.com/ar/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/support/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/support/"/>
   </url>
   <url>
     <loc>https://pushanova.com/ru/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/support/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/support/"/>
   </url>
   <url>
     <loc>https://pushanova.com/languages/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/languages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/languages/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/languages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/languages/"/>
+  </url>
+  <url>
+    <loc>https://pushanova.com/ar/languages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/languages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/languages/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/languages/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/languages/"/>
   </url>
   <url>
     <loc>https://pushanova.com/ru/languages/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pushanova.com/languages/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pushanova.com/ar/languages/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://pushanova.com/ru/languages/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pushanova.com/languages/"/>
   </url>
