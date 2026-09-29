@@ -500,7 +500,6 @@ function notFoundCatalog(codes, resolved) {
         terms: locale.footer.terms,
         privacy: locale.footer.privacy,
         support: locale.footer.support,
-        pressKit: locale.footer.pressKit,
         instagram: locale.footer.instagram,
         about: locale.footer.about,
         copyright: locale.footer.copyright,

@@ -58,7 +58,7 @@
     },
     "pressKit": {
       "message": "Press Kit",
-      "description": "Footer label. No URL yet. Keep as a proper name if the product uses this name."
+      "description": "Footer label. Hidden until a press kit URL exists. Keep as a proper name if the product uses this name."
     },
     "instagram": {
       "message": "Instagram",
