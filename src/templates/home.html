@@ -6,6 +6,7 @@
   <title>{{home.meta.title}}</title>
   <meta name="description" content="{{home.meta.description}}">
   {{> seo}}
+  <link rel="preload" href="{{heroPhoto.src}}" as="image" type="image/webp" fetchpriority="high">
   {{> styles}}
 </head>
 <body>
@@ -38,7 +39,7 @@
       </div>
       {{#if home.start.image}}
       <figure style="--shot-scale: {{home.start.image.scale}}">
-        <img src="{{home.start.image.src}}" alt="{{home.start.image.alt}}" width="{{home.start.image.width}}" height="{{home.start.image.height}}">
+        <img src="{{home.start.image.src}}" alt="{{home.start.image.alt}}" width="{{home.start.image.width}}" height="{{home.start.image.height}}" loading="lazy">
       </figure>
       {{/if}}
     </section>
@@ -56,7 +57,7 @@
       </div>
       {{#if home.how.image}}
       <figure style="--shot-scale: {{home.how.image.scale}}">
-        <img src="{{home.how.image.src}}" alt="{{home.how.image.alt}}" width="{{home.how.image.width}}" height="{{home.how.image.height}}">
+        <img src="{{home.how.image.src}}" alt="{{home.how.image.alt}}" width="{{home.how.image.width}}" height="{{home.how.image.height}}" loading="lazy">
       </figure>
       {{/if}}
     </section>
@@ -107,7 +108,7 @@
       </div>
       {{#if home.closing.image}}
       <figure>
-        <img src="{{home.closing.image.src}}" alt="{{home.closing.image.alt}}" width="{{home.closing.image.width}}" height="{{home.closing.image.height}}">
+        <img src="{{home.closing.image.src}}" alt="{{home.closing.image.alt}}" width="{{home.closing.image.width}}" height="{{home.closing.image.height}}" loading="lazy">
       </figure>
       {{/if}}
     </section>

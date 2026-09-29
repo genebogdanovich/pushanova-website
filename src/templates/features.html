@@ -20,7 +20,7 @@
       </div>
       {{#if features.hero}}
       <figure style="--shot-scale: {{features.hero.scale}}">
-        <img src="{{features.hero.src}}" alt="{{features.hero.alt}}" width="{{features.hero.width}}" height="{{features.hero.height}}">
+        <img src="{{features.hero.src}}" alt="{{features.hero.alt}}" width="{{features.hero.width}}" height="{{features.hero.height}}" fetchpriority="high">
       </figure>
       {{/if}}
     </header>
@@ -34,7 +34,7 @@
       </div>
       {{#if features.program.image}}
       <figure style="--shot-scale: {{features.program.image.scale}}">
-        <img src="{{features.program.image.src}}" alt="{{features.program.image.alt}}" width="{{features.program.image.width}}" height="{{features.program.image.height}}">
+        <img src="{{features.program.image.src}}" alt="{{features.program.image.alt}}" width="{{features.program.image.width}}" height="{{features.program.image.height}}" loading="lazy">
       </figure>
       {{/if}}
     </section>
@@ -48,7 +48,7 @@
       </div>
       {{#if features.counting.image}}
       <figure style="--shot-scale: {{features.counting.image.scale}}">
-        <img src="{{features.counting.image.src}}" alt="{{features.counting.image.alt}}" width="{{features.counting.image.width}}" height="{{features.counting.image.height}}">
+        <img src="{{features.counting.image.src}}" alt="{{features.counting.image.alt}}" width="{{features.counting.image.width}}" height="{{features.counting.image.height}}" loading="lazy">
       </figure>
       {{/if}}
     </section>
@@ -65,7 +65,7 @@
       </div>
       {{#if features.watch.image}}
       <figure style="--shot-scale: {{features.watch.image.scale}}">
-        <img src="{{features.watch.image.src}}" alt="{{features.watch.image.alt}}" width="{{features.watch.image.width}}" height="{{features.watch.image.height}}">
+        <img src="{{features.watch.image.src}}" alt="{{features.watch.image.alt}}" width="{{features.watch.image.width}}" height="{{features.watch.image.height}}" loading="lazy">
       </figure>
       {{/if}}
     </section>
@@ -79,7 +79,7 @@
       </div>
       {{#if features.live.image}}
       <figure style="--shot-scale: {{features.live.image.scale}}">
-        <img src="{{features.live.image.src}}" alt="{{features.live.image.alt}}" width="{{features.live.image.width}}" height="{{features.live.image.height}}">
+        <img src="{{features.live.image.src}}" alt="{{features.live.image.alt}}" width="{{features.live.image.width}}" height="{{features.live.image.height}}" loading="lazy">
       </figure>
       {{/if}}
     </section>
@@ -96,7 +96,7 @@
       </div>
       {{#if features.progress.image}}
       <figure style="--shot-scale: {{features.progress.image.scale}}">
-        <img src="{{features.progress.image.src}}" alt="{{features.progress.image.alt}}" width="{{features.progress.image.width}}" height="{{features.progress.image.height}}">
+        <img src="{{features.progress.image.src}}" alt="{{features.progress.image.alt}}" width="{{features.progress.image.width}}" height="{{features.progress.image.height}}" loading="lazy">
       </figure>
       {{/if}}
     </section>
@@ -138,7 +138,7 @@
       </div>
       {{#if features.closing.image}}
       <figure style="--shot-scale: {{features.closing.image.scale}}">
-        <img src="{{features.closing.image.src}}" alt="{{features.closing.image.alt}}" width="{{features.closing.image.width}}" height="{{features.closing.image.height}}">
+        <img src="{{features.closing.image.src}}" alt="{{features.closing.image.alt}}" width="{{features.closing.image.width}}" height="{{features.closing.image.height}}" loading="lazy">
       </figure>
       {{/if}}
     </section>

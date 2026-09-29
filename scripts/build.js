@@ -986,7 +986,7 @@ function renderPage({ page, code, templates, partials, resolved, codes, names, h
     },
   };
   if (page === "home") {
-    loadIcon(code, page, HERO_PHOTO_FILE);
+    data.heroPhoto = loadIcon(code, page, HERO_PHOTO_FILE);
     const qnaItems = withFaqIds(locale.home.qna.items, english.home.qna.items, "", new Set());
     data.home = {
       ...locale.home,

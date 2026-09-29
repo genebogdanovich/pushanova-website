@@ -568,7 +568,7 @@ main > section:has(> article > blockquote) > article > blockquote > p {
 main > section:has(> article > blockquote) > p:last-child {
   margin-block: var(--space-s) 0;
   font-size: 0.75em;
-  color: color-mix(in srgb, var(--color-text) 42%, var(--color-page));
+  color: var(--color-muted);
 }
 
 main > section:has(> article > blockquote) > p:last-child small {
