@@ -14,7 +14,7 @@ const siteDir = path.join(root, "site");
 const config = JSON.parse(fs.readFileSync(path.join(root, "site.config.json"), "utf8"));
 const siteUrl = String(config.siteUrl || "").replace(/\/$/, "");
 const APP_STORE_BADGE_DIR = "Download-on-the-App-Store";
-const SCREENSHOTS_DIR = "screenshots";
+const PICTURES_DIR = "pictures";
 const ICON_NAV_FILE = "icon-64.webp";
 const ICON_HERO_FILE = "icon-256.webp";
 const HERO_PHOTO_FILE = "athlete-watch-wide.webp";
@@ -403,22 +403,22 @@ function loadIcon(code, page, fileName) {
   };
 }
 
-function loadScreenshot(code, fileName) {
-  const localizedPath = path.join(imagesDir, SCREENSHOTS_DIR, code, fileName);
-  const fallbackPath = path.join(imagesDir, SCREENSHOTS_DIR, DEFAULT_LOCALE, fileName);
+function loadPicture(code, fileName) {
+  const localizedPath = path.join(imagesDir, PICTURES_DIR, code, fileName);
+  const fallbackPath = path.join(imagesDir, PICTURES_DIR, DEFAULT_LOCALE, fileName);
   const filePath = fs.existsSync(localizedPath) ? localizedPath : fallbackPath;
   if (!fs.existsSync(filePath)) {
     return null;
   }
   const used = fs.existsSync(localizedPath) ? code : DEFAULT_LOCALE;
   return {
-    sitePath: `images/${SCREENSHOTS_DIR}/${used}/${fileName}`,
+    sitePath: `images/${PICTURES_DIR}/${used}/${fileName}`,
     ...rasterSize(filePath),
   };
 }
 
 function pageShot(code, page, fileName, alt) {
-  const shot = loadScreenshot(code, fileName);
+  const shot = loadPicture(code, fileName);
   if (!shot) {
     return undefined;
   }
@@ -439,10 +439,10 @@ function homeHero(code, page, locale) {
 }
 
 function closingPortrait(code, page, alt) {
-  const shot = loadScreenshot(code, CLOSING_PHOTO_FILE);
+  const shot = loadPicture(code, CLOSING_PHOTO_FILE);
   if (!shot) {
     throw new Error(
-      `Missing src/images/${SCREENSHOTS_DIR}/${DEFAULT_LOCALE}/${CLOSING_PHOTO_FILE}`,
+      `Missing src/images/${PICTURES_DIR}/${DEFAULT_LOCALE}/${CLOSING_PHOTO_FILE}`,
     );
   }
   if (!alt) {
