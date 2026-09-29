@@ -114,11 +114,7 @@
     },
     "h1": {
       "message": "Choose your language",
-      "description": "Language chooser H1."
-    },
-    "lead": {
-      "message": "Each link opens the homepage in that language.",
-      "description": "Language chooser lead under the H1. One short sentence."
+      "description": "Language chooser heading above the list. Keep short."
     }
   },
   "home": {
