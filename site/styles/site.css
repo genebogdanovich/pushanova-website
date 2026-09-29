@@ -208,7 +208,9 @@ main > section.closing > figure {
 }
 
 main > section.closing > figure {
-  inline-size: auto;
+  flex: none;
+  /* 2:3 portrait. Cap the height to the section’s own viewport so a 14-inch laptop can show the whole photograph. */
+  inline-size: min(100%, 36rem, calc((100svh - 2 * var(--space-xl)) * 2 / 3));
 }
 
 main > :is(header + section, .image-leading):has(> figure) {
