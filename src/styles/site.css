@@ -226,13 +226,10 @@ main > :is(header + section, .image-leading):has(> figure) {
 h1,
 h2,
 h3 {
+  font-family: var(--font-brand);
   font-weight: 650;
   line-height: 1.25;
   text-wrap: balance;
-}
-
-main.marketing :is(h1, h2, h3) {
-  font-family: var(--font-brand);
 }
 
 h1 {
@@ -419,10 +416,6 @@ main > section > details > summary {
   line-height: 1.25;
   list-style: none;
   cursor: pointer;
-}
-
-main.marketing > section > details > summary {
-  font-family: var(--font-brand);
 }
 
 main > section > details > summary > h3 {
@@ -661,7 +654,6 @@ main.languages > header h1 {
   border-block-end: 1px solid var(--color-line);
   color: var(--color-muted);
   font-size: var(--h3);
-  font-weight: 400;
 }
 
 main.languages > nav ul {
