@@ -135,7 +135,7 @@
       },
       "paragraphs": [
         {
-          "message": "Das Programm hat 50 Level. Starte auf einem beliebigen Level, oder trainiere frei und wähle deine Sätze. Du kannst auch Liegestütz-Sätze während HIIT oder Krafttraining aufzeichnen."
+          "message": "Das Programm hat 50 Level. Starte auf einem beliebigen Level, oder trainiere frei und wähle deine Sätze. Du kannst auch Liegestütz-Sätze während Cardio oder Krafttraining aufzeichnen."
         },
         {
           "message": "Pushanova verlangt keinen Tages- oder Wochenplan. Du kannst ein Level wiederholen und Ruhetage nehmen, ohne Nachteil für eine Pause."
@@ -377,7 +377,7 @@
           },
           "paragraphs": [
             {
-              "message": "Ja. Du kannst auf einem beliebigen Level starten oder frei trainieren. Pushanova kann Liegestütz-Sätze zwischen HIIT-Runden oder Kraftübungen aufzeichnen."
+              "message": "Ja. Du kannst auf einem beliebigen Level starten oder frei trainieren. Pushanova kann Liegestütz-Sätze während Cardio oder Kraftübungen aufzeichnen."
             }
           ]
         },

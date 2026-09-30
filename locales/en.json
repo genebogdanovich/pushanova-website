@@ -173,8 +173,8 @@
       },
       "paragraphs": [
         {
-          "message": "The program has 50 levels. Start at any level, or train freely and choose your own sets. You can also record push-up sets during HIIT or strength training.",
-          "description": "Homepage paragraph under Start Where You Are. HIIT is a common training acronym and may stay as HIIT. Do not translate Pushanova."
+          "message": "The program has 50 levels. Start at any level, or train freely and choose your own sets. You can also record push-up sets during cardio or strength training.",
+          "description": "Homepage paragraph under Start Where You Are. Cardio means other aerobic exercise, not one named method. Do not use the acronym HIIT. Do not translate Pushanova."
         },
         {
           "message": "Pushanova does not require a daily or weekly schedule. You can repeat a level and take rest days, with no penalty for a break.",
@@ -471,8 +471,8 @@
           },
           "paragraphs": [
             {
-              "message": "Yes. You can start at any level or train freely. Pushanova can record push-up sets between HIIT rounds or strength-training exercises.",
-              "description": "Homepage FAQ answer. Do not translate Pushanova. HIIT may stay as HIIT."
+              "message": "Yes. You can start at any level or train freely. Pushanova can record push-up sets during cardio or strength-training exercises.",
+              "description": "Homepage FAQ answer. Do not translate Pushanova. Say cardio or other exercise. Do not use the acronym HIIT."
             }
           ]
         },
