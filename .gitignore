@@ -16,5 +16,8 @@ yarn-error.log*
 !.env.example
 .cursor/mcp.json
 
+# Editor rules, kept on disk only
+.cursorrules
+
 # Product source, kept on disk only
 materials/
