@@ -21,3 +21,6 @@ yarn-error.log*
 
 # Product source, kept on disk only
 materials/
+
+# Marketing source files, kept on disk only
+marketing-assets/
