@@ -645,7 +645,7 @@
           "message": "Während eines Trainings zeigt Pushanova die aktuelle Phase, deine Liegestütz-Zahl und den Satz, einen Timer, das Tempo, die aktiven Kalorien und die Herzfrequenz<sup>1</sup>, wenn sie verfügbar ist."
         },
         {
-          "message": "Auf dem iPhone bleiben Phase, Timer, Zahl und Satz auf dem Lock Screen und in der Dynamic Island. Dein bester Satz ist eine persönliche Bestleistung und wird nicht mit anderen Personen verglichen."
+          "message": "Auf dem iPhone bleiben Phase, Timer, Zahl und Satz auf dem Sperrbildschirm und in der Dynamic Island. Dein bester Satz ist eine persönliche Bestleistung und wird nicht mit anderen Personen verglichen."
         }
       ]
     },
@@ -654,7 +654,7 @@
         "message": "Sieh dir Trainings und Fortschritt an"
       },
       "alt": {
-        "message": "iPhone mit dem Progress-Bildschirm von Pushanova"
+        "message": "iPhone mit dem Fortschritt-Bildschirm von Pushanova"
       },
       "sections": [
         {
@@ -683,7 +683,7 @@
           },
           "paragraphs": [
             {
-              "message": "Eine Anzeige zeigt, wie regelmäßig du zuletzt trainiert hast. Neuere Tage zählen mehr, und ein fehlender Tag setzt sie nicht zurück. Dieselbe Ansicht gibt es als Widgets auf dem Home Screen, dem Lock Screen und der Apple Watch, mit Gesamtzahlen und deinem besten Satz."
+              "message": "Eine Anzeige zeigt, wie regelmäßig du zuletzt trainiert hast. Neuere Tage zählen mehr, und ein fehlender Tag setzt sie nicht zurück. Dieselbe Ansicht gibt es als Widgets auf dem Home-Bildschirm, dem Sperrbildschirm und der Apple Watch, mit Gesamtzahlen und deinem besten Satz."
             }
           ]
         }
@@ -739,7 +739,7 @@
             "message": "Aktuelle Trainingsregelmäßigkeit, Gesamtzahlen und deine höchste Zahl an Liegestützen in einem Satz"
           },
           {
-            "message": "Live-Trainingsangaben auf dem Lock Screen und in der Dynamic Island"
+            "message": "Live-Trainingsangaben auf dem Sperrbildschirm und in der Dynamic Island"
           },
           {
             "message": "Widgets zur aktuellen Trainingsregelmäßigkeit"
@@ -764,7 +764,7 @@
             "message": "Trainingskalender"
           },
           {
-            "message": "Wochenvergleiche und das Home-Screen-Widget"
+            "message": "Wochenvergleiche und das Widget auf dem Home-Bildschirm"
           },
           {
             "message": "Detaillierte Fortschrittsdiagramme"
@@ -904,7 +904,7 @@
               "message": "Wie starte ich ein Training?"
             },
             "answer": {
-              "message": "<p>Öffne auf dem iPhone oder iPad den Tab <strong>Training</strong>. Der Titel oben ist <strong>Push-Ups</strong>.</p><ul><li>Tippe auf <strong>Level</strong>, um ein festes Training aus dem Programm abzuschließen.</li><li>Tippe auf <strong>Freestyle</strong>, um ohne vorgegebene Sätze oder Liegestütz-Ziele zu trainieren.</li></ul><p>Ein kurzer Countdown gibt dir Zeit, in Position zu gehen. Dein erster Liegestütz beginnt den ersten Satz.</p><p>Öffne auf der Apple Watch Pushanova und tippe auf <strong>Level</strong> oder <strong>Freestyle</strong>.</p>"
+              "message": "<p>Öffne auf dem iPhone oder iPad den Tab <strong>Training</strong>. Der Titel oben ist <strong>Liegestütze</strong>.</p><ul><li>Tippe auf <strong>Level</strong>, um ein festes Training aus dem Programm abzuschließen.</li><li>Tippe auf <strong>Freestyle</strong>, um ohne vorgegebene Sätze oder Liegestütz-Ziele zu trainieren.</li></ul><p>Ein kurzer Countdown gibt dir Zeit, in Position zu gehen. Dein erster Liegestütz beginnt den ersten Satz.</p><p>Öffne auf der Apple Watch Pushanova und tippe auf <strong>Level</strong> oder <strong>Freestyle</strong>.</p>"
             }
           },
           {
@@ -912,7 +912,7 @@
               "message": "Wie wähle ich ein Level?"
             },
             "answer": {
-              "message": "<p>Öffne auf dem iPhone oder iPad <strong>Training</strong> und tippe auf <strong>Choose Level</strong>. Tippe auf der Apple Watch auf <strong>Choose</strong> neben Level.</p><p>Das Programm hat 50 Level in drei Phasen. Du kannst auf jedem Level starten, das dir zur Verfügung steht. Wenn du die erforderlichen Liegestütze schaffst, rückt das Programm zum nächsten Level vor.</p><p>Die Level 1–10 sind kostenlos. Die Level 11–50 erfordern Pushanova Premium.</p>"
+              "message": "<p>Öffne auf dem iPhone oder iPad <strong>Training</strong> und tippe auf <strong>Level wählen</strong>. Tippe auf der Apple Watch auf <strong>Auswählen</strong> neben Level.</p><p>Das Programm hat 50 Level in drei Phasen. Du kannst auf jedem Level starten, das dir zur Verfügung steht. Wenn du die erforderlichen Liegestütze schaffst, rückt das Programm zum nächsten Level vor.</p><p>Die Level 1–10 sind kostenlos. Die Level 11–50 erfordern Pushanova Premium.</p>"
             }
           },
           {
@@ -920,7 +920,7 @@
               "message": "Wie trainiere ich ohne das Programm?"
             },
             "answer": {
-              "message": "<p>Starte <strong>Freestyle</strong> auf iPhone, iPad oder Apple Watch. Du entscheidest, wie viele Liegestütze und Sätze du machst.</p><p>Wenn Pushanova eine Pause erkennt, beendet es den aktuellen Satz. Dein nächster Liegestütz beginnt einen neuen Satz. Tippe auf <strong>Complete Workout</strong>, wenn du fertig bist. Du kannst auch frei weitertrainieren, nachdem du ein Level im selben Training abgeschlossen hast.</p>"
+              "message": "<p>Starte <strong>Freestyle</strong> auf iPhone, iPad oder Apple Watch. Du entscheidest, wie viele Liegestütze und Sätze du machst.</p><p>Wenn Pushanova eine Pause erkennt, beendet es den aktuellen Satz. Dein nächster Liegestütz beginnt einen neuen Satz. Tippe auf <strong>Training beenden</strong>, wenn du fertig bist. Du kannst auch frei weitertrainieren, nachdem du ein Level im selben Training abgeschlossen hast.</p>"
             }
           },
           {
@@ -928,7 +928,7 @@
               "message": "Was bedeuten die Satz-Felder?"
             },
             "answer": {
-              "message": "<p>Auf iPhone und iPad zeigt die Zeile <strong>Sets</strong> die Sätze des aktuellen Trainings. Jedes Feld steht für einen Satz.</p><p>Während eines Programm-Trainings:</p><ul><li>Kommende Felder zeigen die geplanten Liegestütz-Ziele.</li><li>Das hervorgehobene Feld zeigt den aktuellen Satz.</li><li>Die große Zahl zeigt, wie viele Liegestütze im aktuellen geplanten Satz noch fehlen.</li><li>Ein abgeschlossenes Feld zeigt, wie viele Liegestütze du gemacht hast.</li><li>Weitere Sätze erscheinen, wenn du über das Programmziel hinaus weitertrainierst.</li></ul><p>Wenn du frei trainierst, erscheint jedes Feld, nachdem Pushanova einen Satz beendet hat. Die große Zahl zeigt die Liegestütz-Zahl des aktuellen Satzes.</p><p>Du kannst die Zeile scrollen, wenn sie viele Sätze enthält. Die Apple Watch zeigt Text wie <strong>Set 2 of 5</strong> statt Feldern.</p>"
+              "message": "<p>Auf iPhone und iPad zeigt die Zeile <strong>Sätze</strong> die Sätze des aktuellen Trainings. Jedes Feld steht für einen Satz.</p><p>Während eines Programm-Trainings:</p><ul><li>Kommende Felder zeigen die geplanten Liegestütz-Ziele.</li><li>Das hervorgehobene Feld zeigt den aktuellen Satz.</li><li>Die große Zahl zeigt, wie viele Liegestütze im aktuellen geplanten Satz noch fehlen.</li><li>Ein abgeschlossenes Feld zeigt, wie viele Liegestütze du gemacht hast.</li><li>Weitere Sätze erscheinen, wenn du über das Programmziel hinaus weitertrainierst.</li></ul><p>Wenn du frei trainierst, erscheint jedes Feld, nachdem Pushanova einen Satz beendet hat. Die große Zahl zeigt die Liegestütz-Zahl des aktuellen Satzes.</p><p>Du kannst die Zeile scrollen, wenn sie viele Sätze enthält. Die Apple Watch zeigt Text wie <strong>Satz 2 von 5</strong> statt Feldern.</p>"
             }
           },
           {
@@ -936,7 +936,7 @@
               "message": "Wie positioniere ich mein iPhone oder iPad?"
             },
             "answer": {
-              "message": "<p>Lege das Gerät für das automatische Zählen mit der Kamera flach auf den Boden, mit dem Bildschirm nach oben. Halte die Frontkamera unter deinem Gesicht, sorge für gutes Licht und halte dein Gesicht im Bild. Stelle das Gerät nicht schräg auf.</p><p>Wenn auf dem iPhone kein Kamerazugriff verfügbar ist, lege die Oberkante des Telefons nahe an dein Gesicht. Der Bildschirm kann kurz schwarz werden, wenn dein Gesicht nah ist. Das ist normal.</p><p>Wenn du auf dem iPad keinen Kamerazugriff nutzt, schalte <strong>Tap to Count</strong> ein und tippe für jeden Liegestütz auf den Bildschirm.</p>"
+              "message": "<p>Lege das Gerät für das automatische Zählen mit der Kamera flach auf den Boden, mit dem Bildschirm nach oben. Halte die Frontkamera unter deinem Gesicht, sorge für gutes Licht und halte dein Gesicht im Bild. Stelle das Gerät nicht schräg auf.</p><p>Wenn auf dem iPhone kein Kamerazugriff verfügbar ist, lege die Oberkante des Telefons nahe an dein Gesicht. Der Bildschirm kann kurz schwarz werden, wenn dein Gesicht nah ist. Das ist normal.</p><p>Wenn du auf dem iPad keinen Kamerazugriff nutzt, schalte <strong>Tippen zum Zählen</strong> ein und tippe für jeden Liegestütz auf den Bildschirm.</p>"
             }
           }
         ]
@@ -962,7 +962,7 @@
               "message": "Was soll ich tun, wenn Pushanova Liegestütze auslässt oder hinzufügt?"
             },
             "answer": {
-              "message": "<p>Das automatische Zählen kann Liegestütze auslassen oder hinzufügen. Position des Geräts, Licht, Bewegung, Ausführung und Tempo können das Ergebnis beeinflussen.</p><p>Auf iPhone oder iPad:</p><ul><li>Lege das Gerät flach auf den Boden.</li><li>Halte dein Gesicht für die Frontkamera sichtbar.</li><li>Sorge für gutes Licht.</li><li>Führe eine klare Bewegung nach unten und nach oben aus.</li><li>Halte andere Bewegungen von der Kamera fern.</li></ul><p>Auf der Apple Watch:</p><ul><li>Trage das Armband fest und bequem.</li><li>Führe eine klare Bewegung nach unten und nach oben aus.</li><li>Bewege den Watch-Arm nicht getrennt vom Liegestütz.</li></ul><p>Du kannst <strong>Tap to Count</strong> nutzen, wenn das automatische Zählen nicht passt. Nach dem Training kannst du die Zahlen abgeschlossener Sätze korrigieren.</p>"
+              "message": "<p>Das automatische Zählen kann Liegestütze auslassen oder hinzufügen. Position des Geräts, Licht, Bewegung, Ausführung und Tempo können das Ergebnis beeinflussen.</p><p>Auf iPhone oder iPad:</p><ul><li>Lege das Gerät flach auf den Boden.</li><li>Halte dein Gesicht für die Frontkamera sichtbar.</li><li>Sorge für gutes Licht.</li><li>Führe eine klare Bewegung nach unten und nach oben aus.</li><li>Halte andere Bewegungen von der Kamera fern.</li></ul><p>Auf der Apple Watch:</p><ul><li>Trage das Armband fest und bequem.</li><li>Führe eine klare Bewegung nach unten und nach oben aus.</li><li>Bewege den Watch-Arm nicht getrennt vom Liegestütz.</li></ul><p>Du kannst <strong>Tippen zum Zählen</strong> nutzen, wenn das automatische Zählen nicht passt. Nach dem Training kannst du die Zahlen abgeschlossener Sätze korrigieren.</p>"
             }
           },
           {
@@ -970,7 +970,7 @@
               "message": "Was soll ich tun, wenn das automatische Zählen gar nicht funktioniert?"
             },
             "answer": {
-              "message": "<ol><li>Prüfe, ob das Gerät richtig liegt.</li><li>Prüfe auf iPhone oder iPad den Kamerazugriff für Pushanova.</li><li>Prüfe auf der Apple Watch den Zugriff auf Apple Health und trage die Watch fest am Handgelenk.</li><li>Schließe Pushanova und öffne es erneut.</li><li>Starte ein kurzes Testtraining.</li><li>Wenn das Zählen immer noch nicht funktioniert, nutze <strong>Report an Issue</strong> aus dem abgeschlossenen Training.</li></ol><p>Nutze auf dem iPad ohne Kamerazugriff <strong>Tap to Count</strong>.</p>"
+              "message": "<ol><li>Prüfe, ob das Gerät richtig liegt.</li><li>Prüfe auf iPhone oder iPad den Kamerazugriff für Pushanova.</li><li>Prüfe auf der Apple Watch den Zugriff auf Apple Health und trage die Watch fest am Handgelenk.</li><li>Schließe Pushanova und öffne es erneut.</li><li>Starte ein kurzes Testtraining.</li><li>Wenn das Zählen immer noch nicht funktioniert, nutze <strong>Problem melden</strong> aus dem abgeschlossenen Training.</li></ol><p>Nutze auf dem iPad ohne Kamerazugriff <strong>Tippen zum Zählen</strong>.</p>"
             }
           },
           {
@@ -986,7 +986,7 @@
               "message": "Wie zähle ich Liegestütze durch Tippen auf den Bildschirm?"
             },
             "answer": {
-              "message": "<p>Öffne die Einstellungen in Pushanova und schalte <strong>Tap to Count</strong> ein. Während eines Trainings zählt jedes Tippen auf den Trainingsbildschirm einen Liegestütz.</p>"
+              "message": "<p>Öffne die Einstellungen in Pushanova und schalte <strong>Tippen zum Zählen</strong> ein. Während eines Trainings zählt jedes Tippen auf den Trainingsbildschirm einen Liegestütz.</p>"
             }
           },
           {
@@ -994,7 +994,7 @@
               "message": "Kann ich Liegestütze nach einem Training korrigieren oder hinzufügen?"
             },
             "answer": {
-              "message": "<p>Du kannst die Zahl der Liegestütze in Sätzen korrigieren, die bereits vorhanden sind. Öffne das Training, tippe im Liegestütz-Diagramm auf <strong>Edit</strong>, ändere die Satzzahlen und tippe auf <strong>Save</strong>.</p><p>Bearbeiten fügt dem Training keinen weiteren Satz hinzu. Um zusätzliche Arbeit als eigene Einheit aufzuzeichnen, öffne <strong>Workouts</strong>, tippe auf <strong>Add Workout</strong> und trage die Sätze von Hand ein.</p>"
+              "message": "<p>Du kannst die Zahl der Liegestütze in Sätzen korrigieren, die bereits vorhanden sind. Öffne das Training, tippe im Liegestütz-Diagramm auf <strong>Bearbeiten</strong>, ändere die Satzzahlen und tippe auf <strong>Sichern</strong>.</p><p>Bearbeiten fügt dem Training keinen weiteren Satz hinzu. Um zusätzliche Arbeit als eigene Einheit aufzuzeichnen, öffne <strong>Trainings</strong>, tippe auf <strong>Training hinzufügen</strong> und trage die Sätze von Hand ein.</p>"
             }
           },
           {
@@ -1002,7 +1002,7 @@
               "message": "Was enthält ein Bericht über ein Zählproblem?"
             },
             "answer": {
-              "message": "<p>Öffne ein abgeschlossenes Training und wähle <strong>Report an Issue</strong>. Du kannst das Problem beschreiben und die Liegestütz-Zahlen angeben, die du erwartet hast.</p><p>Der Bericht kann Bewegungsmessungen, Liegestütz-Zahlen, Zeitangaben, Geräteinformationen, die App-Version und die Sprache enthalten. Er enthält keine Fotos oder Videos.</p><p>Der Bericht wird nur dann per E-Mail gesendet, wenn du das Senden auswählst.</p>"
+              "message": "<p>Öffne ein abgeschlossenes Training und wähle <strong>Problem melden</strong>. Du kannst das Problem beschreiben und die Liegestütz-Zahlen angeben, die du erwartet hast.</p><p>Der Bericht kann Bewegungsmessungen, Liegestütz-Zahlen, Zeitangaben, Geräteinformationen, die App-Version und die Sprache enthalten. Er enthält keine Fotos oder Videos.</p><p>Der Bericht wird nur dann per E-Mail gesendet, wenn du das Senden auswählst.</p>"
             }
           }
         ]
@@ -1028,7 +1028,7 @@
               "message": "Wie nutze ich Apple Watch und iPhone zusammen?"
             },
             "answer": {
-              "message": "<p>Öffne auf dem iPhone die Pushanova-Einstellungen und schalte <strong>Use Apple Watch</strong> ein. Stelle sicher, dass Pushanova auf der Watch installiert ist und dass die Watch entsperrt und in der Nähe ist. Starte dann das Training auf dem iPhone oder der Apple Watch.</p><p>Die Apple Watch zählt deine Liegestütze, während das iPhone dasselbe Training anzeigt. Liegestütz-Zahlen, Sätze, Tempo und Pause bleiben synchron.</p><p>Gekoppelte Apple-Watch-Trainings gibt es mit dem iPhone, nicht mit dem iPad.</p>"
+              "message": "<p>Öffne auf dem iPhone die Pushanova-Einstellungen und schalte <strong>Apple Watch verwenden</strong> ein. Stelle sicher, dass Pushanova auf der Watch installiert ist und dass die Watch entsperrt und in der Nähe ist. Starte dann das Training auf dem iPhone oder der Apple Watch.</p><p>Die Apple Watch zählt deine Liegestütze, während das iPhone dasselbe Training anzeigt. Liegestütz-Zahlen, Sätze, Tempo und Pause bleiben synchron.</p><p>Gekoppelte Apple-Watch-Trainings gibt es mit dem iPhone, nicht mit dem iPad.</p>"
             }
           },
           {
@@ -1036,7 +1036,7 @@
               "message": "Warum startet ein Training auf der Apple Watch nicht?"
             },
             "answer": {
-              "message": "<p>Prüfe Folgendes:</p><ul><li>Der Zugriff auf Apple Health ist für Pushanova auf der Watch erlaubt.</li><li>Auf der Watch läuft nicht bereits ein anderes Training.</li><li>Die Watch ist entsperrt.</li><li>Pushanova ist auf der Watch installiert.</li></ul><p>Wenn du vom iPhone aus gestartet hast und <strong>Apple Watch Not Responding</strong> siehst, prüfe, ob das Training auf der Watch bereits geöffnet ist. Öffne andernfalls Pushanova auf der Watch und versuche es erneut.</p>"
+              "message": "<p>Prüfe Folgendes:</p><ul><li>Der Zugriff auf Apple Health ist für Pushanova auf der Watch erlaubt.</li><li>Auf der Watch läuft nicht bereits ein anderes Training.</li><li>Die Watch ist entsperrt.</li><li>Pushanova ist auf der Watch installiert.</li></ul><p>Wenn du vom iPhone aus gestartet hast und <strong>Apple Watch antwortet nicht</strong> siehst, prüfe, ob das Training auf der Watch bereits geöffnet ist. Öffne andernfalls Pushanova auf der Watch und versuche es erneut.</p>"
             }
           },
           {
@@ -1070,7 +1070,7 @@
               "message": "Wie gebe ich Pushanova Zugriff auf Apple Health?"
             },
             "answer": {
-              "message": "<p>Öffne die Health-Zugriffseinstellungen für Pushanova in der Health-App oder in den Systemeinstellungen. Sieh dir die Kategorien an, die Pushanova lesen und schreiben darf.</p><p>Pushanova fordert nur die Kategorien an, die für Trainings, Herzfrequenz, aktive Kalorien und Kalorienschätzungen nötig sind. Du kannst den Zugriff später in Apple Health oder in den Systemeinstellungen ändern.</p>"
+              "message": "<p>Öffne die Health-Zugriffseinstellungen für Pushanova in der Health-App oder in der App „Einstellungen“. Sieh dir die Kategorien an, die Pushanova lesen und schreiben darf.</p><p>Pushanova fordert nur die Kategorien an, die für Trainings, Herzfrequenz, aktive Kalorien und Kalorienschätzungen nötig sind. Du kannst den Zugriff später in Apple Health oder in der App „Einstellungen“ ändern.</p>"
             }
           },
           {
@@ -1136,7 +1136,7 @@
               "message": "Pushanova wurde während eines Trainings geschlossen. Kann ich es wiederherstellen?"
             },
             "answer": {
-              "message": "<p>Oft ja. Öffne Pushanova erneut und folge der Wiederherstellungsmeldung. Auf der Apple Watch kann <strong>Workout Interrupted</strong> erscheinen. Wenn du sie schließt, wird der abgeschlossene Teil gespeichert, soweit das möglich ist.</p><p>Eine Wiederherstellung ist möglicherweise nicht möglich, wenn das gespeicherte Training beschädigt oder zu alt ist oder das Gerät nicht genug freien Speicher hat. Wenn das Problem bleibt:</p><ul><li>Aktualisiere Pushanova und das Betriebssystem des Geräts.</li><li>Starte das Gerät neu.</li><li>Prüfe, ob das Gerät freien Speicher hat.</li><li>Schließe Pushanova nicht, während <strong>Complete Workout</strong> speichert.</li></ul>"
+              "message": "<p>Oft ja. Öffne Pushanova erneut und folge der Wiederherstellungsmeldung. Auf der Apple Watch kann <strong>Training unterbrochen</strong> erscheinen. Wenn du sie schließt, wird der abgeschlossene Teil gespeichert, soweit das möglich ist.</p><p>Eine Wiederherstellung ist möglicherweise nicht möglich, wenn das gespeicherte Training beschädigt oder zu alt ist oder das Gerät nicht genug freien Speicher hat. Wenn das Problem bleibt:</p><ul><li>Aktualisiere Pushanova und das Betriebssystem des Geräts.</li><li>Starte das Gerät neu.</li><li>Prüfe, ob das Gerät freien Speicher hat.</li><li>Schließe Pushanova nicht, während <strong>Training beenden</strong> speichert.</li></ul>"
             }
           },
           {
@@ -1144,7 +1144,7 @@
               "message": "Wie füge ich ein Training manuell hinzu?"
             },
             "answer": {
-              "message": "<p>Öffne auf dem iPhone oder iPad <strong>Workouts</strong>, tippe auf <strong>Add Workout</strong> und trage die Sätze und Liegestütz-Zahlen ein.</p><p>Nutze die manuelle Eingabe für ein Liegestütz-Training, das ohne automatisches Zählen abgeschlossen wurde.</p>"
+              "message": "<p>Öffne auf dem iPhone oder iPad <strong>Trainings</strong>, tippe auf <strong>Training hinzufügen</strong> und trage die Sätze und Liegestütz-Zahlen ein.</p><p>Nutze die manuelle Eingabe für ein Liegestütz-Training, das ohne automatisches Zählen abgeschlossen wurde.</p>"
             }
           },
           {
@@ -1152,7 +1152,7 @@
               "message": "Wie sehe ich frühere Trainings und den Fortschritt?"
             },
             "answer": {
-              "message": "<p>Auf iPhone oder iPad:</p><ul><li>Öffne <strong>Workouts</strong>, um einzelne Trainings, Sätze, Dauer, Kalorien, Notizen und verfügbare Details zu sehen.</li><li>Öffne <strong>Progress</strong>, um Gesamtzahlen, die aktuelle Regelmäßigkeit, deinen höchsten Satz und verfügbare Diagramme zu sehen.</li><li>Öffne <strong>Calendar</strong>, um Trainings nach Datum zu sehen. Calendar erfordert Pushanova Premium.</li></ul><p>Pushanova Premium umfasst auch Wochenvergleiche, detaillierte Fortschrittsdiagramme und zusätzliche Angaben zu Tempo, Kadenz und Herzfrequenz.</p><p>Die Apple Watch zeigt direkt nach einem Training eine Zusammenfassung. Der vollständige Verlauf und der Fortschritt sind auf iPhone und iPad verfügbar.</p>"
+              "message": "<p>Auf iPhone oder iPad:</p><ul><li>Öffne <strong>Trainings</strong>, um einzelne Trainings, Sätze, Dauer, Kalorien, Notizen und verfügbare Details zu sehen.</li><li>Öffne <strong>Fortschritt</strong>, um Gesamtzahlen, die aktuelle Regelmäßigkeit, deinen höchsten Satz und verfügbare Diagramme zu sehen.</li><li>Öffne <strong>Kalender</strong>, um Trainings nach Datum zu sehen. Kalender erfordert Pushanova Premium.</li></ul><p>Pushanova Premium umfasst auch Wochenvergleiche, detaillierte Fortschrittsdiagramme und zusätzliche Angaben zu Tempo, Kadenz und Herzfrequenz.</p><p>Die Apple Watch zeigt direkt nach einem Training eine Zusammenfassung. Der vollständige Verlauf und der Fortschritt sind auf iPhone und iPad verfügbar.</p>"
             }
           },
           {
@@ -1160,7 +1160,7 @@
               "message": "Wie ändere oder überspringe ich ein Programm-Level?"
             },
             "answer": {
-              "message": "<p>Öffne <strong>Choose Level</strong> auf iPhone, iPad oder Apple Watch. Wähle ein verfügbares Level.</p><p>Wenn du die erforderlichen Liegestütze schaffst, rückt das Programm zum nächsten Level vor. Du kannst ein Level auch wiederholen oder zu einem anderen wechseln. Die Level 11–50 erfordern Pushanova Premium.</p>"
+              "message": "<p>Öffne <strong>Level wählen</strong> auf iPhone, iPad oder Apple Watch. Wähle ein verfügbares Level.</p><p>Wenn du die erforderlichen Liegestütze schaffst, rückt das Programm zum nächsten Level vor. Du kannst ein Level auch wiederholen oder zu einem anderen wechseln. Die Level 11–50 erfordern Pushanova Premium.</p>"
             }
           },
           {
@@ -1168,7 +1168,7 @@
               "message": "Wie setze ich meinen Fortschritt zurück?"
             },
             "answer": {
-              "message": "<p>Es gibt kein einzelnes Steuerelement, das den gesamten Fortschritt zurücksetzt.</p><ul><li>Ändere das aktuelle Programm-Level mit <strong>Choose Level</strong>.</li><li>Lösche Trainings einzeln unter <strong>Workouts</strong>.</li><li>Verwalte in iCloud gespeicherte Pushanova-Daten über die Einstellungen deines Geräts.</li></ul><p>Kopien in Apple Health und Diagnoseberichte, die per E-Mail gesendet wurden, werden getrennt gespeichert. Wenn du Pushanova deinstallierst, werden diese Kopien nicht entfernt.</p>"
+              "message": "<p>Es gibt kein einzelnes Steuerelement, das den gesamten Fortschritt zurücksetzt.</p><ul><li>Ändere das aktuelle Programm-Level mit <strong>Level wählen</strong>.</li><li>Lösche Trainings einzeln unter <strong>Trainings</strong>.</li><li>Verwalte in iCloud gespeicherte Pushanova-Daten über die Einstellungen deines Geräts.</li></ul><p>Kopien in Apple Health und Diagnoseberichte, die per E-Mail gesendet wurden, werden getrennt gespeichert. Wenn du Pushanova deinstallierst, werden diese Kopien nicht entfernt.</p>"
             }
           }
         ]
@@ -1186,7 +1186,7 @@
               "message": "Welche Funktionen sind kostenlos?"
             },
             "answer": {
-              "message": "<p>Die folgenden Funktionen sind kostenlos:</p><ul><li>Programm-Level 1–10</li><li>Training ohne vorgegebene Ziele</li><li>Automatisches Zählen und Tap to Count</li><li>Manuelles Eintragen eines Trainings</li><li>Trainingsverlauf, Notizen und Teilen</li><li>Aktuelle Trainingsregelmäßigkeit, Gesamtzahlen und dein höchster Satz</li><li>Live-Trainingsangaben auf dem Lock Screen und in der Dynamic Island</li><li>Trainingserinnerungen</li><li>Synchronisierung mit Apple Health und iCloud</li></ul><p>Pushanova Premium schaltet die Programm-Level 11–50, den Trainingskalender, Wochenvergleiche, detaillierte Fortschrittsdiagramme und zusätzliche Trainingsdetails frei.</p>"
+              "message": "<p>Die folgenden Funktionen sind kostenlos:</p><ul><li>Programm-Level 1–10</li><li>Training ohne vorgegebene Ziele</li><li>Automatisches Zählen und Tippen zum Zählen</li><li>Manuelles Eintragen eines Trainings</li><li>Trainingsverlauf, Notizen und Teilen</li><li>Aktuelle Trainingsregelmäßigkeit, Gesamtzahlen und dein höchster Satz</li><li>Live-Trainingsangaben auf dem Sperrbildschirm und in der Dynamic Island</li><li>Trainingserinnerungen</li><li>Synchronisierung mit Apple Health und iCloud</li></ul><p>Pushanova Premium schaltet die Programm-Level 11–50, den Trainingskalender, Wochenvergleiche, detaillierte Fortschrittsdiagramme und zusätzliche Trainingsdetails frei.</p>"
             }
           },
           {
@@ -1194,7 +1194,7 @@
               "message": "Wie stelle ich Pushanova Premium wieder her?"
             },
             "answer": {
-              "message": "<p>Öffne den Bildschirm Pushanova Premium und tippe auf <strong>Restore</strong>. Nutze denselben Apple Account, mit dem das Jahresabo oder der Kauf auf Lebenszeit gekauft wurde.</p><p>Käufe werden von Apple abgewickelt. Pushanova nutzt für Käufe kein eigenes Konto.</p>"
+              "message": "<p>Öffne den Bildschirm Pushanova Premium und tippe auf <strong>Wiederherstellen</strong>. Nutze denselben Apple Account, mit dem das Jahresabo oder der Kauf auf Lebenszeit gekauft wurde.</p><p>Käufe werden von Apple abgewickelt. Pushanova nutzt für Käufe kein eigenes Konto.</p>"
             }
           },
           {
@@ -1202,7 +1202,7 @@
               "message": "Ich habe für Premium bezahlt, aber es ist noch gesperrt. Was soll ich tun?"
             },
             "answer": {
-              "message": "<ol><li>Prüfe, ob das Gerät den Apple Account nutzt, mit dem der Kauf getätigt wurde.</li><li>Prüfe, ob das Gerät eine Internetverbindung hat.</li><li>Öffne den Bildschirm Pushanova Premium und tippe auf <strong>Restore</strong>.</li><li>Schließe Pushanova und öffne es erneut.</li><li>Prüfe, ob In-App-Käufe auf dem Gerät erlaubt sind.</li></ol><p>Wenn Premium gesperrt bleibt, schreib an <a href=\"{mailto}\">{email}</a>. Nenne das Gerätemodell, die Pushanova-Version, die Kaufart und einen Screenshot, der den Kauf oder den Fehler zeigt. Blende persönliche oder Zahlungsdaten aus, die damit nichts zu tun haben.</p>"
+              "message": "<ol><li>Prüfe, ob das Gerät den Apple Account nutzt, mit dem der Kauf getätigt wurde.</li><li>Prüfe, ob das Gerät eine Internetverbindung hat.</li><li>Öffne den Bildschirm Pushanova Premium und tippe auf <strong>Wiederherstellen</strong>.</li><li>Schließe Pushanova und öffne es erneut.</li><li>Prüfe, ob In-App-Käufe auf dem Gerät erlaubt sind.</li></ol><p>Wenn Premium gesperrt bleibt, schreib an <a href=\"{mailto}\">{email}</a>. Nenne das Gerätemodell, die Pushanova-Version, die Kaufart und einen Screenshot, der den Kauf oder den Fehler zeigt. Blende persönliche oder Zahlungsdaten aus, die damit nichts zu tun haben.</p>"
             }
           },
           {
@@ -1218,7 +1218,7 @@
               "message": "Wie verwalte oder kündige ich mein Abo?"
             },
             "answer": {
-              "message": "<p>Öffne <strong>Subscriptions</strong> in den Einstellungen deines Apple Account und wähle Pushanova.</p><p>Eine Kündigung stoppt die nächste Verlängerung. Sie erstattet den aktuellen Abozeitraum normalerweise nicht. Gespeicherte Trainings bleiben verfügbar. Premium-Funktionen werden gesperrt, wenn der bezahlte Zeitraum endet, außer du kaufst Premium erneut, löst ein gültiges Angebot ein oder besitzt den Kauf auf Lebenszeit.</p>"
+              "message": "<p>Öffne <strong>Abonnements</strong> in den Einstellungen deines Apple Account und wähle Pushanova.</p><p>Eine Kündigung stoppt die nächste Verlängerung. Sie erstattet den aktuellen Abozeitraum normalerweise nicht. Gespeicherte Trainings bleiben verfügbar. Premium-Funktionen werden gesperrt, wenn der bezahlte Zeitraum endet, außer du kaufst Premium erneut, löst ein gültiges Angebot ein oder besitzt den Kauf auf Lebenszeit.</p>"
             }
           },
           {
@@ -1234,7 +1234,7 @@
               "message": "Kann ich meinen Kauf auf einem anderen Apple-Gerät nutzen?"
             },
             "answer": {
-              "message": "<p>Ja. Nutze auf dem anderen Gerät denselben Apple Account und tippe in Pushanova auf <strong>Restore</strong>.</p><p>Family Sharing ist für Pushanova Premium nicht aktiviert.</p>"
+              "message": "<p>Ja. Nutze auf dem anderen Gerät denselben Apple Account und tippe in Pushanova auf <strong>Wiederherstellen</strong>.</p><p>Familienfreigabe ist für Pushanova Premium nicht aktiviert.</p>"
             }
           },
           {
@@ -1242,7 +1242,7 @@
               "message": "Was passiert mit Premium und meinen Trainings nach einer Neuinstallation?"
             },
             "answer": {
-              "message": "<p>Tippe auf <strong>Restore</strong>, um Premium für den kaufenden Apple Account wiederherzustellen.</p><p>Wenn die iCloud-Synchronisierung aktiv war, kann der in iCloud gespeicherte Trainingsverlauf nach der Neuinstallation synchronisiert werden. Ohne iCloud-Synchronisierung entfernt die Deinstallation von Pushanova den Trainingsverlauf, der nur auf diesem Gerät gespeichert war.</p><p>Kopien in Apple Health bleiben in Apple Health, bis sie dort gelöscht werden.</p>"
+              "message": "<p>Tippe auf <strong>Wiederherstellen</strong>, um Premium für den kaufenden Apple Account wiederherzustellen.</p><p>Wenn die iCloud-Synchronisierung aktiv war, kann der in iCloud gespeicherte Trainingsverlauf nach der Neuinstallation synchronisiert werden. Ohne iCloud-Synchronisierung entfernt die Deinstallation von Pushanova den Trainingsverlauf, der nur auf diesem Gerät gespeichert war.</p><p>Kopien in Apple Health bleiben in Apple Health, bis sie dort gelöscht werden.</p>"
             }
           },
           {
@@ -1250,7 +1250,7 @@
               "message": "Wie löse ich einen Angebotscode ein?"
             },
             "answer": {
-              "message": "<p>Öffne die Pushanova-Einstellungen auf dem iPhone und tippe auf <strong>Redeem Offer</strong>. Die Apple Watch kann keinen Angebotscode einlösen.</p><p>Apple entscheidet, ob ein Code gültig ist und welcher Apple Account ihn nutzen kann.</p>"
+              "message": "<p>Öffne die Pushanova-Einstellungen auf dem iPhone und tippe auf <strong>Angebot einlösen</strong>. Die Apple Watch kann keinen Angebotscode einlösen.</p><p>Apple entscheidet, ob ein Code gültig ist und welcher Apple Account ihn nutzen kann.</p>"
             }
           }
         ]
@@ -1276,7 +1276,7 @@
               "message": "Welche Zählinformationen werden mit einem Training gespeichert?"
             },
             "answer": {
-              "message": "<p>Pushanova kann Bewegungsmessungen speichern, die beim Zählen der Liegestütze helfen. Diese Messungen sind keine Fotos oder Videos.</p><p>Sie bleiben beim Training auf deinem Gerät. Wenn die iCloud-Synchronisierung an ist, können sie über deinen persönlichen iCloud-Account synchronisiert werden. Sie werden nicht an einen Pushanova-Server gesendet, außer du wählst <strong>Report an Issue</strong> und sendest die E-Mail.</p><p>Alle Einzelheiten stehen in der <a href=\"{privacyUrl}\">Datenschutzerklärung</a>.</p>"
+              "message": "<p>Pushanova kann Bewegungsmessungen speichern, die beim Zählen der Liegestütze helfen. Diese Messungen sind keine Fotos oder Videos.</p><p>Sie bleiben beim Training auf deinem Gerät. Wenn die iCloud-Synchronisierung an ist, können sie über deinen persönlichen iCloud-Account synchronisiert werden. Sie werden nicht an einen Pushanova-Server gesendet, außer du wählst <strong>Problem melden</strong> und sendest die E-Mail.</p><p>Alle Einzelheiten stehen in der <a href=\"{privacyUrl}\">Datenschutzerklärung</a>.</p>"
             }
           },
           {
@@ -1284,7 +1284,7 @@
               "message": "Wie lösche ich meine Pushanova-Daten?"
             },
             "answer": {
-              "message": "<p>So löschst du Trainingsdaten:</p><ul><li>Lösche einzelne Trainings unter <strong>Workouts</strong>. Wenn die iCloud-Synchronisierung aktiv ist, wird das Löschen über iCloud synchronisiert.</li><li>Entferne Pushanova-Daten aus iCloud über die iCloud-Speichereinstellungen deines Geräts, wenn du die Cloud-Kopie löschen möchtest.</li><li>Lösche Kopien in Apple Health getrennt in Apple Health. Pushanova kann ein passendes Health-Training auch löschen, wenn es die Erlaubnis hat.</li></ul><p>Wenn du Pushanova deinstallierst, werden Daten entfernt, die nur auf diesem Gerät gespeichert sind. Daten, die bereits in iCloud oder Apple Health liegen, bleiben, bis du sie dort löschst.</p><p>Wenn du einen Diagnosebericht oder ein Foto per E-Mail gesendet hast, schreib an <a href=\"{mailto}\">{email}</a>, um die Löschung der Kopie zu verlangen, die der Entwickler erhalten hat.</p>"
+              "message": "<p>So löschst du Trainingsdaten:</p><ul><li>Lösche einzelne Trainings unter <strong>Trainings</strong>. Wenn die iCloud-Synchronisierung aktiv ist, wird das Löschen über iCloud synchronisiert.</li><li>Entferne Pushanova-Daten aus iCloud über die iCloud-Speichereinstellungen deines Geräts, wenn du die Cloud-Kopie löschen möchtest.</li><li>Lösche Kopien in Apple Health getrennt in Apple Health. Pushanova kann ein passendes Health-Training auch löschen, wenn es die Erlaubnis hat.</li></ul><p>Wenn du Pushanova deinstallierst, werden Daten entfernt, die nur auf diesem Gerät gespeichert sind. Daten, die bereits in iCloud oder Apple Health liegen, bleiben, bis du sie dort löschst.</p><p>Wenn du einen Diagnosebericht oder ein Foto per E-Mail gesendet hast, schreib an <a href=\"{mailto}\">{email}</a>, um die Löschung der Kopie zu verlangen, die der Entwickler erhalten hat.</p>"
             }
           },
           {
@@ -1326,7 +1326,7 @@
               "message": "Ist Pushanova eine vollständige iPad-App?"
             },
             "answer": {
-              "message": "<p>Ja. Pushanova auf dem iPad umfasst automatisches Zählen, Programm-Trainings, Training ohne vorgegebene Ziele, Trainingsverlauf, Fortschritt, Auswertungen und Apple Health.</p><p>Das iPad unterstützt kein gekoppeltes Apple-Watch-Training. Nutze das iPhone, wenn die Apple Watch und ein weiterer Bildschirm dasselbe laufende Training anzeigen sollen.</p><p>Wenn du auf dem iPad keinen Kamerazugriff nutzt, aktiviere <strong>Tap to Count</strong>.</p>"
+              "message": "<p>Ja. Pushanova auf dem iPad umfasst automatisches Zählen, Programm-Trainings, Training ohne vorgegebene Ziele, Trainingsverlauf, Fortschritt, Auswertungen und Apple Health.</p><p>Das iPad unterstützt kein gekoppeltes Apple-Watch-Training. Nutze das iPhone, wenn die Apple Watch und ein weiterer Bildschirm dasselbe laufende Training anzeigen sollen.</p><p>Wenn du auf dem iPad keinen Kamerazugriff nutzt, aktiviere <strong>Tippen zum Zählen</strong>.</p>"
             }
           },
           {
@@ -1360,7 +1360,7 @@
               "message": "Warum synchronisiert Pushanova nicht zwischen meinen Geräten?"
             },
             "answer": {
-              "message": "<p>Für den Trainingsverlauf:</p><ul><li>Prüfe, ob die Geräte denselben Apple Account nutzen.</li><li>Prüfe, ob iCloud für Pushanova aktiviert ist.</li><li>Verbinde beide Geräte mit dem Internet.</li><li>Öffne Pushanova auf jedem Gerät und gib der Synchronisierung Zeit.</li></ul><p>Apple Health speichert eine separate Trainingskopie. Apple Health ist nicht die Quelle der Synchronisierung des Pushanova-Trainingsverlaufs.</p><p>Tippe für Pushanova Premium auf dem Gerät auf <strong>Restore</strong>, das den Apple Account des Kaufs nutzt.</p><p>Halte für ein laufendes Training mit iPhone und Apple Watch die Watch entsperrt und in der Nähe, und stelle sicher, dass <strong>Use Apple Watch</strong> in den Pushanova-Einstellungen aktiviert ist.</p>"
+              "message": "<p>Für den Trainingsverlauf:</p><ul><li>Prüfe, ob die Geräte denselben Apple Account nutzen.</li><li>Prüfe, ob iCloud für Pushanova aktiviert ist.</li><li>Verbinde beide Geräte mit dem Internet.</li><li>Öffne Pushanova auf jedem Gerät und gib der Synchronisierung Zeit.</li></ul><p>Apple Health speichert eine separate Trainingskopie. Apple Health ist nicht die Quelle der Synchronisierung des Pushanova-Trainingsverlaufs.</p><p>Tippe für Pushanova Premium auf dem Gerät auf <strong>Wiederherstellen</strong>, das den Apple Account des Kaufs nutzt.</p><p>Halte für ein laufendes Training mit iPhone und Apple Watch die Watch entsperrt und in der Nähe, und stelle sicher, dass <strong>Apple Watch verwenden</strong> in den Pushanova-Einstellungen aktiviert ist.</p>"
             }
           }
         ]
@@ -1373,7 +1373,7 @@
           "message": "Kontakt"
         },
         "body": {
-          "message": "<p>Schreib an <a href=\"{mailto}\">{email}</a>.</p><p>Gib an:</p><ul><li>Gerätemodell</li><li>Betriebssystemversion</li><li>Pushanova-Version</li><li>Ob du auf iPhone, iPad, Apple Watch oder auf zwei Geräten zusammen trainiert hast</li><li>Ob du ein Programm-Level abgeschlossen oder frei trainiert hast</li><li>Was du erwartet hast</li><li>Was passiert ist</li><li>Einen Screenshot, wenn er hilft</li></ul><p>Sende bei Zählproblemen nach Möglichkeit <strong>Report an Issue</strong> aus dem betroffenen Training. Screenshots können helfen, wenn sie keine Informationen enthalten, die du lieber nicht teilen möchtest.</p>"
+          "message": "<p>Schreib an <a href=\"{mailto}\">{email}</a>.</p><p>Gib an:</p><ul><li>Gerätemodell</li><li>Betriebssystemversion</li><li>Pushanova-Version</li><li>Ob du auf iPhone, iPad, Apple Watch oder auf zwei Geräten zusammen trainiert hast</li><li>Ob du ein Programm-Level abgeschlossen oder frei trainiert hast</li><li>Was du erwartet hast</li><li>Was passiert ist</li><li>Einen Screenshot, wenn er hilft</li></ul><p>Sende bei Zählproblemen nach Möglichkeit <strong>Problem melden</strong> aus dem betroffenen Training. Screenshots können helfen, wenn sie keine Informationen enthalten, die du lieber nicht teilen möchtest.</p>"
         }
       }
     ]
