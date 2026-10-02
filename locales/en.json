@@ -24,41 +24,41 @@
   "nav": {
     "home": {
       "message": "Club Pushanova",
-      "description": "Header wordmark linking to the homepage. Club Pushanova is the website name. Leave both words untranslated. It is not the in-app premium headline, and it is not Pushanova Premium."
+      "description": "Header wordmark linking to the homepage. Club Pushanova is the fancier website name. Leave both words untranslated. It is not the purchase name."
     },
     "features": {
       "message": "Features",
-      "description": "Header link to the features page. Stay about as long as the English."
+      "description": "Header link to the features page."
     },
     "support": {
       "message": "Support",
-      "description": "Header link to the support page. Stay about as long as the English."
+      "description": "Header link to the support page."
     }
   },
   "footer": {
     "home": {
       "message": "Club Pushanova",
-      "description": "Support-page footer link back to the homepage. Club Pushanova is the website name. Leave both words untranslated."
+      "description": "Support-page footer link back to the homepage. Club Pushanova is the fancier website name. Leave both words untranslated. It is not the purchase name."
     },
     "features": {
       "message": "Features",
-      "description": "Support-page footer link to the features page. Stay about as long as the English."
+      "description": "Support-page footer link to the features page."
     },
     "terms": {
       "message": "Terms",
-      "description": "Footer link to Apple's Licensed Application End User License Agreement. Stay about as long as the English."
+      "description": "Footer link to Apple's Licensed Application End User License Agreement."
     },
     "privacy": {
       "message": "Privacy",
-      "description": "Footer link to the privacy policy. The policy page itself stays American English. Stay about as long as the English."
+      "description": "Footer link to the privacy policy. The policy page itself stays American English."
     },
     "support": {
       "message": "Support",
-      "description": "Footer link to the support page, on pages other than support. Stay about as long as the English."
+      "description": "Footer link to the support page, on pages other than support."
     },
     "pressKit": {
       "message": "Press Kit",
-      "description": "Footer label for a press kit. The site does not show it until a URL exists. Translate it as a normal label. Stay about as long as the English."
+      "description": "Footer label for a press kit. The site does not show it until a URL exists. Translate it as a normal label."
     },
     "instagram": {
       "message": "Instagram",
@@ -81,7 +81,7 @@
     "meta": {
       "title": {
         "message": "Page not found · Pushanova",
-        "description": "Browser tab title when the address does not match a page. Leave Pushanova untranslated. Stay about as long as the English."
+        "description": "Browser tab title when the address does not match a page. Leave Pushanova untranslated."
       },
       "description": {
         "message": "This page is not available.",
@@ -98,47 +98,47 @@
     },
     "homeLink": {
       "message": "Club Pushanova",
-      "description": "Link from the missing page back to the homepage. Club Pushanova is the website name. Leave both words untranslated."
+      "description": "Link from the missing page back to the homepage. Club Pushanova is the fancier website name. Leave both words untranslated. It is not the purchase name."
     }
   },
   "languages": {
     "meta": {
       "title": {
         "message": "Choose your language · Pushanova",
-        "description": "Browser tab title for the language chooser. This is a utility page, not a page someone searches in order to install the app. Leave Pushanova untranslated. Stay about as long as the English."
+        "description": "Browser tab title for the language chooser. This is a utility page, not a page someone searches in order to install the app. Leave Pushanova untranslated."
       },
       "description": {
         "message": "Choose a language for the Pushanova website.",
-        "description": "Meta description for the language chooser. One short sentence telling the reader to pick a language for the site. Leave Pushanova untranslated. Stay about as long as the English."
+        "description": "Meta description for the language chooser. One short sentence telling the reader to pick a language for the site. Leave Pushanova untranslated."
       }
     },
     "h1": {
       "message": "Choose your language",
-      "description": "Heading above the list of languages. Translate it as a short instruction to pick a language. Do not turn it into an install phrase. Stay about as long as the English."
+      "description": "Heading above the list of languages. Translate it as a short instruction to pick a language. Do not turn it into an install phrase."
     }
   },
   "home": {
     "meta": {
       "title": {
         "message": "Push-Up Counter for iPhone, iPad, and Apple Watch · Pushanova",
-        "description": "Homepage browser tab title, shown in search results. For another language, use that locale’s logged install phrase rather than a word-for-word translation of this English. Leave Pushanova, iPhone, iPad, and Apple Watch as written. Stay about as long as the English."
+        "description": "Homepage browser tab title, shown in search results. Read materials/specs/product/search-phrases/{bcp47}.md and use the logged homepage phrase. Do not write a new keyword in the translation pass. Leave Pushanova, iPhone, iPad, and Apple Watch as written."
       },
       "description": {
         "message": "A push-up counter for iPhone, iPad, and Apple Watch. Build toward 100 push-ups, or train freely.",
-        "description": "Homepage meta description, the sentence under the title in search results. For another language, use that locale’s logged install phrase rather than a word-for-word translation. Train freely describes Freestyle, the in-app workout with no preset sets or targets, and is not a button name. Leave iPhone, iPad, and Apple Watch as written. Stay about as long as the English."
+        "description": "Homepage meta description, the sentence under the title in search results. Use the logged homepage phrase from materials/specs/product/search-phrases/{bcp47}.md. Do not write a new keyword in the translation pass. Train freely describes Freestyle, the in-app workout with no preset sets or targets, and is not a button name. Leave iPhone, iPad, and Apple Watch as written."
       },
       "ogTitle": {
         "message": "Pushanova",
-        "description": "Title of the homepage share card in iMessage and social previews. Pushanova is the product name. Leave it untranslated. Stay about as short as the English."
+        "description": "Title of the homepage share card in iMessage and social previews. Pushanova is the product name. Leave it untranslated."
       },
       "ogDescription": {
         "message": "A push-up counter that builds toward 100 push-ups. Automatic counting on iPhone, iPad, and Apple Watch.",
-        "description": "Description on the homepage share card. One or two short sentences. Automatic counting is the product fact. Leave iPhone, iPad, and Apple Watch as written. Stay about as long as the English."
+        "description": "Description on the homepage share card. One or two short sentences. Automatic counting is the product fact. Leave iPhone, iPad, and Apple Watch as written."
       }
     },
     "eyebrow": {
       "message": "Push-up training for iPhone, iPad, and Apple Watch",
-      "description": "Line above the homepage heading. Leave iPhone, iPad, and Apple Watch as written. Stay about as long as the English."
+      "description": "Line above the homepage heading. Leave iPhone, iPad, and Apple Watch as written."
     },
     "h1": {
       "message": "Build Up to 100 Push-Ups at Your Own Pace",
@@ -156,11 +156,11 @@
     },
     "download": {
       "message": "Download on the App Store",
-      "description": "Accessible name for the official App Store badge. Leave App Store as written. Stay about as long as the English."
+      "description": "Accessible name for the official App Store badge. Use the words on Apple’s localized badge. Search the web for that wording."
     },
     "offer": {
       "message": "Free to start. No account. No ads.",
-      "description": "Short line under the App Store badge: free to start, no account, and no ads. Stay about as long as the English."
+      "description": "Short line under the App Store badge: free to start, no account, and no ads."
     },
     "start": {
       "h2": {
@@ -243,7 +243,7 @@
       ],
       "featuresLink": {
         "message": "See all features",
-        "description": "Homepage link to the features page. Stay about as long as the English."
+        "description": "Homepage link to the features page."
       }
     },
     "reviews": {
@@ -259,7 +259,7 @@
         {
           "title": {
             "message": "Amazing app",
-            "description": "Title of a lightly edited App Store review, in the reviewer’s own voice. Leave the tone plain. Do not turn it into a marketing headline."
+            "description": "Title of an App Store review. Translate what the reviewer meant, in their voice. Do not add praise or turn it into a slogan."
           },
           "byline": {
             "message": "April 2, 2026 — Hellfire7777",
@@ -271,13 +271,13 @@
           },
           "quote": {
             "message": "“I really like this app. Its simplicity is what makes it the best!”",
-            "description": "Body of a lightly edited App Store review, in the reviewer’s own voice. Keep the quotation marks. Do not turn it into marketing copy. If the quote says someone else wrote it, keep that note."
+            "description": "Body of an App Store review. Translate what the reviewer meant, in their voice. Keep the quotation marks. Do not add praise or turn the quote into a slogan. If the quote says someone else wrote it, keep that note."
           }
         },
         {
           "title": {
             "message": "Good",
-            "description": "Title of a lightly edited App Store review, in the reviewer’s own voice. Leave the tone plain. In the app, Good is a workout-feeling rating. This title is not that label."
+            "description": "Title of an App Store review. Translate what the reviewer meant, in their voice. Do not add praise or turn it into a slogan. In the app, Good is a workout-feeling rating. This title is not that label."
           },
           "byline": {
             "message": "June 19, 2024 — Rikstarrr124",
@@ -289,13 +289,13 @@
           },
           "quote": {
             "message": "“It is great. It helps me do more push-ups, and it motivates me to keep improving.”",
-            "description": "Body of a lightly edited App Store review, in the reviewer’s own voice. Keep the quotation marks. Do not turn it into marketing copy. If the quote says someone else wrote it, keep that note."
+            "description": "Body of an App Store review. Translate what the reviewer meant, in their voice. Keep the quotation marks. Do not add praise or turn the quote into a slogan. If the quote says someone else wrote it, keep that note."
           }
         },
         {
           "title": {
             "message": "Awesome",
-            "description": "Title of a lightly edited App Store review, in the reviewer’s own voice. Leave the tone plain. Do not turn it into a marketing headline."
+            "description": "Title of an App Store review. Translate what the reviewer meant, in their voice. Do not add praise or turn it into a slogan."
           },
           "byline": {
             "message": "January 12, 2025 — AnonymousfromME",
@@ -307,13 +307,13 @@
           },
           "quote": {
             "message": "“I can do so many push-ups now! Written by our 13-year-old son, who has been very motivated by this app.”",
-            "description": "Body of a lightly edited App Store review, in the reviewer’s own voice. Keep the quotation marks. Do not turn it into marketing copy. If the quote says someone else wrote it, keep that note."
+            "description": "Body of an App Store review. Translate what the reviewer meant, in their voice. Keep the quotation marks. Do not add praise or turn the quote into a slogan. If the quote says someone else wrote it, keep that note."
           }
         },
         {
           "title": {
             "message": "Great Push-Up App",
-            "description": "Title of a lightly edited App Store review, in the reviewer’s own voice. Leave the tone plain. Do not turn it into a marketing headline."
+            "description": "Title of an App Store review. Translate what the reviewer meant, in their voice. Do not add praise or turn it into a slogan."
           },
           "byline": {
             "message": "May 15, 2025 — c15co",
@@ -325,7 +325,7 @@
           },
           "quote": {
             "message": "“I love this app. I recently decided to see how fast I could get to 100 push-ups. I could not find an app that made this easy at an affordable price until I found this one. I love how clean the app is. The developer is also very responsive to feedback.”",
-            "description": "Body of a lightly edited App Store review, in the reviewer’s own voice. Keep the quotation marks. Do not turn it into marketing copy. If the quote says someone else wrote it, keep that note."
+            "description": "Body of an App Store review. Translate what the reviewer meant, in their voice. Keep the quotation marks. Do not add praise or turn the quote into a slogan. If the quote says someone else wrote it, keep that note."
           }
         }
       ],
@@ -488,7 +488,7 @@
             },
             {
               "message": "You can start at any level, repeat a level, or skip to another level. The first 10 levels are free. Pushanova Premium unlocks levels 11–50.",
-              "description": "Answer. The reader can start, repeat, or skip a level. Levels 1–10 are free. Pushanova Premium unlocks 11–50. Leave Pushanova Premium as the purchase name. It is not Club Pushanova. Keep 11–50 as numbers."
+              "description": "Answer. The reader can start, repeat, or skip a level. Levels 1–10 are free. Pushanova Premium unlocks 11–50. Keep Pushanova. Premium may be translated. Keep 11–50 as numbers."
             }
           ]
         },
@@ -596,7 +596,7 @@
           "paragraphs": [
             {
               "message": "No. Pushanova does not require an account or membership. You can use the app without providing an email address or creating a password. Pushanova Premium is optional and is purchased through the App Store.",
-              "description": "Answer. No account, email, or password. Pushanova Premium is optional and bought through the App Store. Leave Pushanova Premium and App Store as written. Premium is the purchase name, not Club Pushanova."
+              "description": "Answer. No account, email, or password. Pushanova Premium is optional and bought through the App Store. Keep Pushanova. Premium may be translated. Leave App Store as written."
             }
           ]
         },
@@ -615,16 +615,16 @@
         {
           "question": {
             "message": "What does Pushanova Premium include?",
-            "description": "Homepage question about the optional purchase. Leave Pushanova Premium as the purchase name. It is not Club Pushanova."
+            "description": "Homepage question about the optional purchase. Keep Pushanova. Premium may be translated."
           },
           "paragraphs": [
             {
               "message": "Pushanova Premium unlocks levels 11–50 and more ways to review your progress. These include a workout calendar, weekly comparisons, detailed progress charts, and additional pace, cadence, and heart-rate details for each workout.",
-              "description": "Answer. Premium unlocks levels 11–50, a workout calendar, weekly comparisons, detailed charts, and extra pace, cadence, and heart-rate detail. Pace is seconds per push-up. Cadence is push-ups per minute. Heart rate is beats per minute. Calendar in the app is the workout-calendar screen. Leave Pushanova Premium as written. Keep 11–50 as numbers."
+              "description": "Answer. Premium unlocks levels 11–50, a workout calendar, weekly comparisons, detailed charts, and extra pace, cadence, and heart-rate detail. Pace is seconds per push-up. Cadence is push-ups per minute. Heart rate is beats per minute. Calendar in the app is the workout-calendar screen. Keep Pushanova. Premium may be translated. Keep 11–50 as numbers."
             },
             {
               "message": "Pushanova Premium is available as a yearly subscription or a lifetime purchase.",
-              "description": "Answer. Premium is a yearly subscription or a lifetime purchase. Leave Pushanova Premium as written."
+              "description": "Answer. Premium is a yearly subscription or a lifetime purchase. Keep Pushanova. Premium may be translated."
             }
           ]
         },
@@ -657,7 +657,7 @@
       },
       "offer": {
         "message": "No account. No subscription required. No ads.",
-        "description": "Closing line under the badge. No account, no subscription required, and no ads. Stay about as long as the English."
+        "description": "Closing line under the badge. No account, no subscription required, and no ads."
       }
     }
   },
@@ -665,11 +665,11 @@
     "meta": {
       "title": {
         "message": "100 Push-Up Program and Automatic Counting · Pushanova",
-        "description": "Features-page browser tab title. It names the program and automatic counting. Leave Pushanova untranslated. Stay about as long as the English."
+        "description": "Features-page browser tab title. If materials/specs/product/search-phrases/{bcp47}.md logs a features phrase, use it. If it does not, translate this sentence. Leave Pushanova untranslated."
       },
       "description": {
         "message": "A 100 push-up program with 50 levels, plus training without preset targets. Pushanova counts your push-ups on iPhone, iPad, and Apple Watch.",
-        "description": "Features-page meta description. The program has 50 levels and ends at 100 push-ups. Training without preset targets describes Freestyle and is not a button name. Leave Pushanova, iPhone, iPad, and Apple Watch as written. Stay about as long as the English."
+        "description": "Features-page meta description. If materials/specs/product/search-phrases/{bcp47}.md logs a features phrase, use it. If it does not, translate this sentence. Training without preset targets describes Freestyle and is not a button name. Leave Pushanova, iPhone, iPad, and Apple Watch as written."
       }
     },
     "h1": {
@@ -682,11 +682,11 @@
     },
     "download": {
       "message": "Download on the App Store",
-      "description": "Accessible name for the official App Store badge. Leave App Store as written. Stay about as long as the English."
+      "description": "Accessible name for the official App Store badge. Use the words on Apple’s localized badge. Search the web for that wording."
     },
     "offer": {
       "message": "Free to start. No account. No ads.",
-      "description": "Short line under the App Store badge: free to start, no account, and no ads. Stay about as long as the English."
+      "description": "Short line under the App Store badge: free to start, no account, and no ads."
     },
     "hero": {
       "alt": {
@@ -714,7 +714,7 @@
         },
         {
           "message": "The first 10 levels are free. Pushanova Premium unlocks levels 11–50.",
-          "description": "Paragraph in the program section. Levels 1–10 are free. Pushanova Premium unlocks 11–50. Leave Pushanova Premium as the purchase name. It is not Club Pushanova. Keep 11–50 as numbers."
+          "description": "Paragraph in the program section. Levels 1–10 are free. Pushanova Premium unlocks 11–50. Keep Pushanova. Premium may be translated. Keep 11–50 as numbers."
         }
       ]
     },
@@ -802,7 +802,7 @@
         },
         {
           "message": "On iPhone, the phase, timer, count, and set stay on the Lock Screen and in Dynamic Island. Your best set is a personal record and is not compared with other people.",
-          "description": "Live-metrics paragraph. On iPhone those figures stay on the Lock Screen and in Dynamic Island. The best set is the reader’s own record and is not compared with other people. Leave iPhone, Lock Screen, and Dynamic Island as written."
+          "description": "Live-metrics paragraph. On iPhone those figures stay on the Lock Screen and in Dynamic Island. The best set is the reader’s own record and is not compared with other people. Lock Screen uses Apple’s published name for that language. Search the web for it. Leave iPhone and Dynamic Island as written."
         }
       ]
     },
@@ -848,7 +848,7 @@
           "paragraphs": [
             {
               "message": "A gauge shows how consistently you have trained recently. Recent days count more, and missing one day does not reset it. The same view is on Home Screen, Lock Screen, and Apple Watch widgets, with lifetime totals and your best set.",
-              "description": "Consistency paragraph. Recent days count more, and missing one day does not reset the gauge. The same view is on Home Screen, Lock Screen, and Apple Watch widgets, with lifetime totals and the best set. Leave Home Screen, Lock Screen, and Apple Watch as written. Do not mention reminders in this paragraph."
+              "description": "Consistency paragraph. Recent days count more, and missing one day does not reset the gauge. The same view is on Home Screen, Lock Screen, and Apple Watch widgets, with lifetime totals and the best set. Home Screen and Lock Screen use Apple’s published names for that language. Search the web for them. Leave Apple Watch as written. Do not mention reminders in this paragraph."
             }
           ]
         }
@@ -881,90 +881,90 @@
     "pricing": {
       "h2": {
         "message": "Free and Premium Features",
-        "description": "Features section heading above the free list and the Pushanova Premium list. Premium is the purchase name, not Club Pushanova."
+        "description": "Features section heading above the free list and the Pushanova Premium list. Keep Pushanova. Premium may be translated."
       },
       "free": {
         "h3": {
           "message": "Included Free",
-          "description": "Heading above the list of features that do not require Pushanova Premium. Stay about as long as the English."
+          "description": "Heading above the list of features that do not require Pushanova Premium."
         },
         "items": [
           {
             "message": "The first 10 program levels",
-            "description": "Free-list item. The first 10 steps of the program. Level here is a program step, not the Level button. Stay about as long as the English."
+            "description": "Free-list item. The first 10 steps of the program. Level here is a program step, not the Level button."
           },
           {
             "message": "Training without preset targets",
-            "description": "Free-list item. A workout with no preset sets or targets. This describes Freestyle and is not the button name. Stay about as long as the English."
+            "description": "Free-list item. A workout with no preset sets or targets. This describes Freestyle and is not the button name."
           },
           {
             "message": "Automatic counting on iPhone, iPad, and Apple Watch",
-            "description": "Free-list item. Automatic counting on all three devices. Leave iPhone, iPad, and Apple Watch as written. Stay about as long as the English."
+            "description": "Free-list item. Automatic counting on all three devices. Leave iPhone, iPad, and Apple Watch as written."
           },
           {
             "message": "Counting by tapping the screen",
-            "description": "Free-list item. One tap counts one push-up. In the app the setting is Tap to Count. Do not rewrite this item as that name. Stay about as long as the English."
+            "description": "Free-list item. One tap counts one push-up. In the app the setting is Tap to Count. Do not rewrite this item as that name."
           },
           {
             "message": "Manual workout entry on iPhone and iPad",
-            "description": "Free-list item. The reader can enter a finished workout by hand on iPhone or iPad. In the app the control is Add Workout. Do not insert that name. Leave iPhone and iPad as written. Stay about as long as the English."
+            "description": "Free-list item. The reader can enter a finished workout by hand on iPhone or iPad. In the app the control is Add Workout. Do not insert that name. Leave iPhone and iPad as written."
           },
           {
             "message": "Workout history, notes, and sharing",
-            "description": "Free-list item. Saved workouts, notes, and sharing. In the app the history screen is Workouts. This item describes the feature, so do not rewrite it as that tab name. Stay about as long as the English."
+            "description": "Free-list item. Saved workouts, notes, and sharing. In the app the history screen is Workouts. This item describes the feature, so do not rewrite it as that tab name."
           },
           {
             "message": "Recent training consistency, lifetime totals, and your highest number of push-ups in one set",
-            "description": "Free-list item. The consistency gauge, lifetime totals, and the reader’s best set. The best set is a personal record. Stay about as long as the English."
+            "description": "Free-list item. The consistency gauge, lifetime totals, and the reader’s best set. The best set is a personal record."
           },
           {
             "message": "Live workout information on the Lock Screen and in Dynamic Island",
-            "description": "Free-list item. Live workout figures on the Lock Screen and in Dynamic Island. Leave Lock Screen and Dynamic Island as written. Stay about as long as the English."
+            "description": "Free-list item. Live workout figures on the Lock Screen and in Dynamic Island. Lock Screen uses Apple’s published name for that language. Search the web for it. Leave Dynamic Island as written."
           },
           {
             "message": "Recent training consistency widgets",
-            "description": "Free-list item. Widgets that show the consistency gauge. Stay about as long as the English."
+            "description": "Free-list item. Widgets that show the consistency gauge."
           },
           {
             "message": "Training reminders",
-            "description": "Free-list item. Optional reminders to train. Stay about as long as the English."
+            "description": "Free-list item. Optional reminders to train."
           },
           {
             "message": "Apple Health and iCloud synchronization",
-            "description": "Free-list item. Apple Health saving and iCloud sync. Leave Apple Health and iCloud as written. Stay about as long as the English."
+            "description": "Free-list item. Apple Health saving and iCloud sync. Leave Apple Health and iCloud as written."
           }
         ]
       },
       "premium": {
         "h3": {
           "message": "Pushanova Premium",
-          "description": "Heading above the paid-feature list. Pushanova Premium is the purchase name. Leave it untranslated. It is not Club Pushanova."
+          "description": "Heading above the paid-feature list. Keep Pushanova. Premium may be translated."
         },
         "items": [
           {
             "message": "Program levels 11–50 and the complete path toward 100 push-ups",
-            "description": "Premium-list item. Levels 11–50, through the last set of 100. Keep 11–50 as numbers. Stay about as long as the English."
+            "description": "Premium-list item. Levels 11–50, through the last set of 100. Keep 11–50 as numbers."
           },
           {
             "message": "Workout calendar",
-            "description": "Premium-list item. A calendar of workouts by date. In the app this screen is Calendar. This item describes the feature, so do not rewrite it as only that tab name. Stay about as long as the English."
+            "description": "Premium-list item. A calendar of workouts by date. In the app this screen is Calendar. This item describes the feature, so do not rewrite it as only that tab name."
           },
           {
             "message": "Weekly comparisons and the Home Screen widget",
-            "description": "Premium-list item. This week against the last, and the Home Screen widget for that comparison. Leave Home Screen as written. Stay about as long as the English."
+            "description": "Premium-list item. This week against the last, and the Home Screen widget for that comparison. Home Screen uses Apple’s published name for that language. Search the web for it."
           },
           {
             "message": "Detailed progress charts",
-            "description": "Premium-list item. The longer charts on the Progress screen. Progress is that screen’s name when you name the screen. This item can stay ordinary language. Stay about as long as the English."
+            "description": "Premium-list item. The longer charts on the Progress screen. Progress is that screen’s name when you name the screen. This item can stay ordinary language."
           },
           {
             "message": "Additional pace, cadence, and heart-rate details for each workout",
-            "description": "Premium-list item. Extra detail for each workout. Pace is seconds per push-up. Cadence is push-ups per minute. Heart rate is beats per minute. Stay about as long as the English."
+            "description": "Premium-list item. Extra detail for each workout. Pace is seconds per push-up. Cadence is push-ups per minute. Heart rate is beats per minute."
           }
         ],
         "note": {
           "message": "Pushanova Premium is available as a yearly subscription or a lifetime purchase.",
-          "description": "Line under the Premium list. Premium is a yearly subscription or a lifetime purchase. Leave Pushanova Premium as written."
+          "description": "Line under the Premium list. Premium is a yearly subscription or a lifetime purchase. Keep Pushanova. Premium may be translated."
         }
       }
     },
@@ -983,7 +983,7 @@
       },
       "offer": {
         "message": "No account. No ads.",
-        "description": "Closing line on the features page. No account and no ads. Stay about as long as the English."
+        "description": "Closing line on the features page. No account and no ads."
       }
     }
   },
@@ -991,11 +991,11 @@
     "meta": {
       "title": {
         "message": "Pushanova Support",
-        "description": "Support-page browser tab title. Leave Pushanova untranslated. Stay about as long as the English."
+        "description": "Support-page browser tab title. Leave Pushanova untranslated."
       },
       "description": {
         "message": "Find answers about workouts, push-up counting, Apple Watch, Apple Health, purchases, and privacy.",
-        "description": "Support-page meta description. Names the kinds of answers on the page. Leave Apple Watch and Apple Health as written. Stay about as long as the English."
+        "description": "Support-page meta description. Names the kinds of answers on the page. Leave Apple Watch and Apple Health as written."
       }
     },
     "h1": {
@@ -1023,7 +1023,7 @@
           },
           "label": {
             "message": "Getting Started",
-            "description": "Table-of-contents link to the first support section. Stay about as long as the English. The section id is getting-started."
+            "description": "Table-of-contents link to the first support section. The section id is getting-started."
           }
         },
         {
@@ -1033,7 +1033,7 @@
           },
           "label": {
             "message": "Push-Up Counting",
-            "description": "Table-of-contents link to the counting section. Stay about as long as the English."
+            "description": "Table-of-contents link to the counting section."
           }
         },
         {
@@ -1043,7 +1043,7 @@
           },
           "label": {
             "message": "Apple Watch",
-            "description": "Table-of-contents link to the Apple Watch section. Leave Apple Watch as written. Stay about as long as the English."
+            "description": "Table-of-contents link to the Apple Watch section. Leave Apple Watch as written."
           }
         },
         {
@@ -1053,7 +1053,7 @@
           },
           "label": {
             "message": "Apple Health, Heart Rate, and Calories",
-            "description": "Table-of-contents link. Heart rate means beats per minute. Leave Apple Health as written. Stay about as long as the English."
+            "description": "Table-of-contents link. Heart rate means beats per minute. Leave Apple Health as written."
           }
         },
         {
@@ -1073,7 +1073,7 @@
           },
           "label": {
             "message": "Premium and Purchases",
-            "description": "Table-of-contents link to purchases. Premium means Pushanova Premium, not Club Pushanova. Stay about as long as the English."
+            "description": "Table-of-contents link to purchases. Keep Pushanova. Premium may be translated."
           }
         },
         {
@@ -1083,7 +1083,7 @@
           },
           "label": {
             "message": "Privacy and Data",
-            "description": "Table-of-contents link to privacy answers. The privacy policy page itself stays American English. Stay about as long as the English."
+            "description": "Table-of-contents link to privacy answers. The privacy policy page itself stays American English."
           }
         },
         {
@@ -1093,7 +1093,7 @@
           },
           "label": {
             "message": "Devices and Compatibility",
-            "description": "Table-of-contents link to supported devices and system versions. Stay about as long as the English."
+            "description": "Table-of-contents link to supported devices and system versions."
           }
         },
         {
@@ -1103,7 +1103,7 @@
           },
           "label": {
             "message": "Troubleshooting",
-            "description": "Table-of-contents link to the troubleshooting section. Stay about as long as the English."
+            "description": "Table-of-contents link to the troubleshooting section."
           }
         }
       ]
@@ -1136,7 +1136,7 @@
             },
             "answer": {
               "message": "<p>On iPhone or iPad, open <strong>Training</strong> and tap <strong>Choose Level</strong>. On Apple Watch, tap <strong>Choose</strong> next to Level.</p><p>The program has 50 levels in three stages. You can start at any level available to you. Completing the required push-ups advances the program to the next level.</p><p>Levels 1–10 are free. Levels 11–50 require Pushanova Premium.</p>",
-              "description": "Answer. Keep the HTML tags in place. Use the xliff targets for Training, Choose Level, and Choose inside the existing <strong> tags. The word Level beside Choose is the Level button; use the xliff target for Level there. Later uses of level are program steps, not the button. Leave Pushanova Premium as the purchase name. Keep 1–10 and 11–50 as numbers. Leave iPhone, iPad, and Apple Watch as written."
+              "description": "Answer. Keep the HTML tags in place. Use the xliff targets for Training, Choose Level, and Choose inside the existing <strong> tags. The word Level beside Choose is the Level button; use the xliff target for Level there. Later uses of level are program steps, not the button. Keep Pushanova. Premium may be translated. Keep 1–10 and 11–50 as numbers. Leave iPhone, iPad, and Apple Watch as written."
             }
           },
           {
@@ -1332,7 +1332,7 @@
             },
             "answer": {
               "message": "<p>Open the Health access settings for Pushanova in the Health app or system Settings. Review the categories that Pushanova can read and write.</p><p>Pushanova requests only the categories needed for workouts, heart rate, active calories, and calorie estimates. You can change access later in Apple Health or system Settings.</p>",
-              "description": "Answer. Keep the HTML tags in place. There are no Pushanova labels in <strong>. Health access is changed in the Health app or the iOS Settings app. Use Apple’s name for that system Settings app. Do not use the xliff target for Settings, which is the in-app screen. Heart rate means beats per minute. Leave Pushanova and Apple Health as written."
+              "description": "Answer. Keep the HTML tags in place. There are no Pushanova labels in <strong>. Health access is changed in the Health app or the iOS Settings app. Use Apple’s published name for that system Settings app. Search the web for it. Do not use the xliff target for Settings, which is the in-app screen. Heart rate means beats per minute. Leave Pushanova and Apple Health as written."
             }
           },
           {
@@ -1382,7 +1382,7 @@
             },
             "answer": {
               "message": "<p>Pushanova uses active calories from Apple Health when they are available. Otherwise, Pushanova estimates active calories from available workout information.</p><p>An estimate does not require heart-rate information. Allowing Pushanova to read your weight from Apple Health can improve the estimate.</p><p>Detailed heart-rate, pace, and cadence charts require Pushanova Premium. The workout and basic summary are still saved without Premium.</p>",
-              "description": "Answer. Keep the HTML tags in place. There are no in-app labels in <strong>. Calories come from Apple Health when available, otherwise the app estimates them. An estimate does not need heart rate. Weight from Apple Health can improve it. Pace is seconds per push-up. Cadence is push-ups per minute. Heart rate is beats per minute. The detailed charts need Pushanova Premium. Leave Pushanova, Apple Health, and Pushanova Premium as written."
+              "description": "Answer. Keep the HTML tags in place. There are no in-app labels in <strong>. Calories come from Apple Health when available, otherwise the app estimates them. An estimate does not need heart rate. Weight from Apple Health can improve it. Pace is seconds per push-up. Cadence is push-ups per minute. Heart rate is beats per minute. The detailed charts need Pushanova Premium. Leave Pushanova and Apple Health as written. Premium may be translated."
             }
           }
         ]
@@ -1434,7 +1434,7 @@
             },
             "answer": {
               "message": "<p>On iPhone or iPad:</p><ul><li>Open <strong>Workouts</strong> to view individual workouts, sets, duration, calories, notes, and available details.</li><li>Open <strong>Progress</strong> to view lifetime totals, recent consistency, your highest set, and available charts.</li><li>Open <strong>Calendar</strong> to view workouts by date. Calendar requires Pushanova Premium.</li></ul><p>Pushanova Premium also includes weekly comparisons, detailed progress charts, and additional pace, cadence, and heart-rate details.</p><p>Apple Watch shows a summary immediately after a workout. Full history and progress are available on iPhone and iPad.</p>",
-              "description": "Answer. Keep the HTML tags in place. Use the xliff targets for Workouts, Progress, and Calendar inside the existing <strong> tags. Calendar outside <strong> is the same screen; use that target there too. Calendar needs Pushanova Premium. Pace is seconds per push-up. Cadence is push-ups per minute. Heart rate is beats per minute. Leave Pushanova Premium, iPhone, iPad, and Apple Watch as written."
+              "description": "Answer. Keep the HTML tags in place. Use the xliff targets for Workouts, Progress, and Calendar inside the existing <strong> tags. Calendar outside <strong> is the same screen; use that target there too. Calendar needs Pushanova Premium. Pace is seconds per push-up. Cadence is push-ups per minute. Heart rate is beats per minute. Leave iPhone, iPad, and Apple Watch as written. Keep Pushanova. Premium may be translated."
             }
           },
           {
@@ -1444,7 +1444,7 @@
             },
             "answer": {
               "message": "<p>Open <strong>Choose Level</strong> on iPhone, iPad, or Apple Watch. Select any available level.</p><p>Completing the required push-ups advances the program to the next level. You can also repeat a level or skip to another level. Levels 11–50 require Pushanova Premium.</p>",
-              "description": "Answer. Keep the HTML tags in place. Use the xliff target for Choose Level inside the existing <strong> tags. Level outside <strong> is a program step, not the button. Keep 11–50 as numbers. Leave Pushanova Premium, iPhone, iPad, and Apple Watch as written."
+              "description": "Answer. Keep the HTML tags in place. Use the xliff target for Choose Level inside the existing <strong> tags. Level outside <strong> is a program step, not the button. Keep 11–50 as numbers. Leave iPhone, iPad, and Apple Watch as written. Keep Pushanova. Premium may be translated."
             }
           },
           {
@@ -1466,7 +1466,7 @@
         },
         "heading": {
           "message": "Premium and Purchases",
-          "description": "Heading of the purchases section. It matches the table-of-contents label. Premium means Pushanova Premium, not Club Pushanova."
+          "description": "Heading of the purchases section. It matches the table-of-contents label. Keep Pushanova. Premium may be translated."
         },
         "items": [
           {
@@ -1476,27 +1476,27 @@
             },
             "answer": {
               "message": "<p>The following features are free:</p><ul><li>Program levels 1–10</li><li>Training without preset targets</li><li>Automatic counting and Tap to Count</li><li>Manual workout entry</li><li>Workout history, notes, and sharing</li><li>Recent training consistency, lifetime totals, and your highest set</li><li>Live workout information on the Lock Screen and in Dynamic Island</li><li>Training reminders</li><li>Apple Health and iCloud synchronization</li></ul><p>Pushanova Premium unlocks program levels 11–50, the workout calendar, weekly comparisons, detailed progress charts, and additional workout details.</p>",
-              "description": "Answer. Keep the HTML tags in place. There are no labels inside <strong>. Tap to Count is the app setting; use the xliff target for Tap to Count. Training without preset targets describes Freestyle and is not the button name. Keep 1–10 and 11–50 as numbers. Leave Lock Screen, Dynamic Island, Apple Health, iCloud, and Pushanova Premium as written. Pushanova Premium is the purchase name."
+              "description": "Answer. Keep the HTML tags in place. There are no labels inside <strong>. Tap to Count is the app setting; use the xliff target for Tap to Count. Training without preset targets describes Freestyle and is not the button name. Keep 1–10 and 11–50 as numbers. Leave Apple Health and iCloud as written. Lock Screen uses Apple’s published name for that language. Search the web for it. Leave Dynamic Island as written. Keep Pushanova. Premium may be translated."
             }
           },
           {
             "question": {
               "message": "How do I restore Pushanova Premium?",
-              "description": "Support question. How to restore a purchase on a device. Leave Pushanova Premium as the purchase name."
+              "description": "Support question. How to restore a purchase on a device. Keep Pushanova. Premium may be translated."
             },
             "answer": {
               "message": "<p>Open the Pushanova Premium screen and tap <strong>Restore</strong>. Use the same Apple Account that purchased the yearly subscription or lifetime purchase.</p><p>Purchases are processed by Apple. Pushanova does not use its own account for purchases.</p>",
-              "description": "Answer. Keep the HTML tags in place. Use the xliff target for Restore inside the existing <strong> tags. This is not workout recovery. Leave Pushanova Premium, Apple Account, and Pushanova as written."
+              "description": "Answer. Keep the HTML tags in place. Use the xliff target for Restore inside the existing <strong> tags. This is not workout recovery. Leave Apple Account and Pushanova as written. Premium may be translated."
             }
           },
           {
             "question": {
               "message": "I paid for Premium, but it is still locked. What should I do?",
-              "description": "Support question. Premium stays locked after a purchase. Premium means Pushanova Premium."
+              "description": "Support question. Premium stays locked after a purchase. Keep Pushanova. Premium may be translated."
             },
             "answer": {
               "message": "<ol><li>Confirm that the device uses the Apple Account that made the purchase.</li><li>Confirm that the device has an internet connection.</li><li>Open the Pushanova Premium screen and tap <strong>Restore</strong>.</li><li>Close and reopen Pushanova.</li><li>Check that in-app purchases are allowed on the device.</li></ol><p>If Premium remains locked, email <a href=\"{mailto}\">{email}</a>. Include the device model, Pushanova version, purchase type, and a screenshot showing the purchase or error. Hide unrelated personal or payment information.</p>",
-              "description": "Answer. Keep the HTML tags and the step order in place. Use the xliff target for Restore inside the existing <strong> tags. Leave {mailto} and {email} untranslated. Leave Pushanova Premium, Apple Account, and Pushanova as written."
+              "description": "Answer. Keep the HTML tags and the step order in place. Use the xliff target for Restore inside the existing <strong> tags. Leave {mailto} and {email} untranslated. Leave Apple Account and Pushanova as written. Premium may be translated."
             }
           },
           {
@@ -1506,7 +1506,7 @@
             },
             "answer": {
               "message": "<p>Eligible new subscribers may receive a three-day free trial with the yearly subscription. The Pushanova Premium screen shows whether the trial is available for your Apple Account.</p><p>The yearly subscription starts automatically after the trial unless you cancel at least 24 hours before the trial ends. Apple manages eligibility, billing, and renewal.</p><p>The lifetime purchase does not include a free trial.</p>",
-              "description": "Answer. Keep the HTML tags in place. There are no in-app labels in <strong>. Keep three days and 24 hours. The lifetime purchase has no trial. Leave Pushanova Premium and Apple Account as written."
+              "description": "Answer. Keep the HTML tags in place. There are no in-app labels in <strong>. Keep three days and 24 hours. The lifetime purchase has no trial. Leave Apple Account as written. Keep Pushanova. Premium may be translated."
             }
           },
           {
@@ -1516,7 +1516,7 @@
             },
             "answer": {
               "message": "<p>Open <strong>Subscriptions</strong> in your Apple Account settings and select Pushanova.</p><p>Canceling stops the next renewal. It does not normally refund the current subscription period. Saved workouts remain available. Premium features lock when the paid period ends unless you purchase Premium again, redeem a valid offer, or own the lifetime purchase.</p>",
-              "description": "Answer. Keep the HTML tags in place. Subscriptions is the system screen in Apple Account settings, not a Pushanova label. Use Apple’s name for that screen, and keep it inside <strong>. Canceling stops the next renewal. Leave Pushanova and Apple Account as written."
+              "description": "Answer. Keep the HTML tags in place. Subscriptions is the system screen in Apple Account settings, not a Pushanova label. Use Apple’s published name for that screen. Search the web for it, and keep it inside <strong>. Canceling stops the next renewal. Leave Pushanova and Apple Account as written."
             }
           },
           {
@@ -1536,7 +1536,7 @@
             },
             "answer": {
               "message": "<p>Yes. Use the same Apple Account on the other device and tap <strong>Restore</strong> in Pushanova.</p><p>Family Sharing is not enabled for Pushanova Premium.</p>",
-              "description": "Answer. Keep the HTML tags in place. Use the xliff target for Restore inside the existing <strong> tags. Family Sharing is not enabled. Leave Family Sharing, Apple Account, Pushanova, and Pushanova Premium as written."
+              "description": "Answer. Keep the HTML tags in place. Use the xliff target for Restore inside the existing <strong> tags. Family Sharing is not enabled. Family Sharing uses Apple’s published name for that language. Search the web for it. Leave Apple Account and Pushanova as written. Premium may be translated."
             }
           },
           {
@@ -1608,7 +1608,7 @@
             },
             "answer": {
               "message": "<p>No. Pushanova does not require a sign-up, username, password, or social login.</p><p>Pushanova Premium is connected to the Apple Account used for the App Store purchase. This is not a Pushanova account.</p>",
-              "description": "Answer. Keep the HTML tags in place. There are no in-app labels in <strong>. There is no Pushanova account. Pushanova Premium follows the Apple Account used for the App Store purchase. It is not Club Pushanova. Leave Pushanova, Pushanova Premium, Apple Account, and App Store as written."
+              "description": "Answer. Keep the HTML tags in place. There are no in-app labels in <strong>. There is no Pushanova account. Pushanova Premium follows the Apple Account used for the App Store purchase. Keep Pushanova. Premium may be translated. Leave Apple Account and App Store as written."
             }
           },
           {
@@ -1692,7 +1692,7 @@
             },
             "answer": {
               "message": "<p>For workout history:</p><ul><li>Confirm that the devices use the same Apple Account.</li><li>Confirm that iCloud is enabled for Pushanova.</li><li>Connect both devices to the internet.</li><li>Open Pushanova on each device and allow time for synchronization.</li></ul><p>Apple Health stores a separate workout copy. Apple Health is not the source of Pushanova workout-history synchronization.</p><p>For Pushanova Premium, tap <strong>Restore</strong> on the device using the Apple Account that made the purchase.</p><p>For an active iPhone and Apple Watch workout, keep Watch unlocked and nearby and make sure <strong>Use Apple Watch</strong> is enabled in Pushanova Settings.</p>",
-              "description": "Answer. Keep the HTML tags in place. Use the xliff targets for Restore and Use Apple Watch inside the existing <strong> tags. History syncs through iCloud, not through Apple Health. Settings in this answer is the in-app settings screen; use the xliff target for Settings. Leave Pushanova, Apple Account, iCloud, Apple Health, Pushanova Premium, iPhone, Apple Watch, and Watch as written."
+              "description": "Answer. Keep the HTML tags in place. Use the xliff targets for Restore and Use Apple Watch inside the existing <strong> tags. History syncs through iCloud, not through Apple Health. Settings in this answer is the in-app settings screen; use the xliff target for Settings. Leave Pushanova, Apple Account, iCloud, Apple Health, iPhone, Apple Watch, and Watch as written. Premium may be translated."
             }
           }
         ]
