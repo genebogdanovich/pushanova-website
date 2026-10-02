@@ -18,6 +18,7 @@ yarn-error.log*
 
 # Editor rules, kept on disk only
 .cursorrules
+AGENTS.md
 
 # Product source, kept on disk only
 materials/
